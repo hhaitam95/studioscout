@@ -135,7 +135,7 @@ function FilterPicker({
 }) {
   return (
     <div className="form-field directory-filter-field">
-      <span className="directory-filter-label"><Icon name={icon} size={14} />{label}</span>
+      <span className="directory-filter-label"><Icon name={icon} size={14} /><span>{label}</span></span>
       <details className="directory-filter-picker">
         <summary aria-label={label + " filters"}>
           <span className="filter-picker-value">
@@ -509,7 +509,7 @@ export default function StudioDirectory({
           <FilterPicker label="Focus" icon="target" options={focusOptions} selected={focusFilters} onToggle={value => toggleSelected(setFocusFilters, value)} />
           <FilterPicker label="Studio role" icon="building" options={[...roleOptions]} selected={roleFilters} onToggle={value => toggleSelected(setRoleFilters, value)} />
           <label className="form-field work-model-filter">
-            <span className="directory-filter-label"><Icon name="laptop" size={14} />Work model</span>
+            <span className="directory-filter-label"><Icon name="laptop" size={14} /><span>Work model</span></span>
             <select className="form-select" value={workModel} onChange={(event) => setWorkModel(event.target.value)}>
               <option value="all">All work models</option>
               {Object.entries(workModelLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
