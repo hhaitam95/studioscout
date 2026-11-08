@@ -5355,7 +5355,7 @@
     "applicationUrl": "https://paintbucket.de/en/jobs",
     "evidenceUrl": "https://paintbucket.de/en/jobs",
     "notes": "Official Jobs page lists a full-time Unsolicited Application and explicitly welcomes candidates when no current job offer fits. Applicants are asked to send their application by email to jobs@paintbucket.de.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -5367,7 +5367,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
@@ -5377,7 +5377,7 @@
     "applicationUrl": "https://career.paradoxplaza.com/jobs/3359477-open-application-for-senior-game-programmers",
     "evidenceUrl": "https://career.paradoxplaza.com/jobs/3359477-open-application-for-senior-game-programmers",
     "notes": "Paradox Interactive's official company page describes the group as a developer and publisher, with five internal studios in five countries. Its current Teamtailor listing explicitly invites spontaneous applications for future opportunities, but this route is specifically for Senior Game Programmers using C++; it is not a general all-disciplines application. The listing is based in Stockholm, Sweden. Work model is not stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -5395,7 +5395,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
@@ -5405,7 +5405,7 @@
     "applicationUrl": "https://paranoidinteractive.net/career/",
     "evidenceUrl": "https://paranoidinteractive.net/career/",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -5417,7 +5417,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
@@ -5427,7 +5427,7 @@
     "applicationUrl": "https://piktiv.com/careers",
     "evidenceUrl": "https://piktiv.com/careers",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -5439,7 +5439,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
@@ -5482,7 +5482,7 @@
     "applicationUrl": "https://playagames.teamtailor.com/jobs/4985632-initiativbewerbung-playa-games",
     "evidenceUrl": "https://playagames.teamtailor.com/jobs/4985632-initiativbewerbung-playa-games",
     "notes": "The official Teamtailor job list includes an Initiativbewerbung - Playa Games route. Its description invites candidates to join the talent pool when no exact vacancy fits and states Hamburg (Alstertor 9), hybrid. The listing describes Playa as a developer of mobile and browser games and part of Stillfront Group.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -5502,7 +5502,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
@@ -5512,7 +5512,7 @@
     "applicationUrl": "https://playdead.breezy.hr/p/fbda7a56839001-speculative-applications",
     "evidenceUrl": "https://playdead.breezy.hr/p/fbda7a56839001-speculative-applications",
     "notes": "Official Breezy page lists a Speculative Applications route for experienced candidates. Full-time, Copenhagen office; the posting requests relevant professional experience and a portfolio. It is not advertised as remote.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -5528,7 +5528,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-06"
     }
   },
   {
