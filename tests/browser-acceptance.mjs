@@ -756,8 +756,8 @@ async function main() {
       await fourAGamesRow.locator(".popular-game-cover").evaluateAll(covers =>
         covers.map(cover => cover.getAttribute("data-game-title")),
       ),
-      ["Metro Exodus"],
-      "The compact studio table should show exactly one notable game thumbnail.",
+      ["Metro Exodus", "Metro: Last Light Redux"],
+      "The compact studio table should show two notable game thumbnails.",
     );
     await fourAGamesRow.locator("td").nth(3).click();
     const fourAGamesDetails = page.locator("#studio-details-4a-games");
