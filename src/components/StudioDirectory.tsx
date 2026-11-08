@@ -88,7 +88,10 @@ function locationFor(studio: Studio): string {
 }
 
 function locationSortFor(studio: Studio): string {
-  return locationFor(studio);
+  const hq = profiles[studio.name]?.headquarters;
+  const country = hq?.country || studio.country || "Not stated";
+  const flags = countryFlagsFor(country, hq?.countryCode);
+  return [flags.join(" "), locationFor(studio)].filter(Boolean).join(" ");
 }
 
 
