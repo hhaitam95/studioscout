@@ -882,11 +882,12 @@ async function main() {
       const rect = element.getBoundingClientRect();
       return rect.width / rect.height;
     });
-    assert.ok(tabletRatio > 1.8, "The official Tablet of Destinies artwork should use a landscape frame.");
+    assert.ok(tabletRatio > 0.62 && tabletRatio < 0.71, "Official landscape artwork should remain inside the shared 2:3 portrait frame.");
+    assert.equal(await tabletImage.evaluate(image => getComputedStyle(image).objectFit), "contain", "Official landscape artwork should be contained within the shared portrait frame.");
     await d4nRow.getByRole("button", { name: /D4N Games/ }).click();
     await d4nDetails.waitFor({ state: "detached" });
 
-    // Square mobile-app art from a studio website should not be forced into portrait or landscape frames.
+    // Square mobile-app art from a studio website should be contained in the same portrait frame as every other cover.
     const ahoiiiRow = rows.filter({ hasText: "Ahoiii Entertainment" });
     await ahoiiiRow.getByRole("button", { name: /Ahoiii Entertainment/ }).click();
     const ahoiiiDetails = page.locator("#studio-details-ahoiii-entertainment");
@@ -902,7 +903,8 @@ async function main() {
       const rect = element.getBoundingClientRect();
       return rect.width / rect.height;
     });
-    assert.ok(fieteRatio > 0.9 && fieteRatio < 1.1, "Official square app artwork should receive a square frame.");
+    assert.ok(fieteRatio > 0.62 && fieteRatio < 0.71, "Official square app artwork should remain inside the shared 2:3 portrait frame.");
+    assert.equal(await fieteImage.evaluate(image => getComputedStyle(image).objectFit), "contain", "Official square app artwork should be contained within the shared portrait frame.");
     await ahoiiiRow.getByRole("button", { name: /Ahoiii Entertainment/ }).click();
     await ahoiiiDetails.waitFor({ state: "detached" });
 
