@@ -823,14 +823,14 @@ async function main() {
     await hugecalfDetails.waitFor({ state: "detached" });
     await page.getByLabel("Search", { exact: true }).fill("");
 
-    // The compact table shows one featured title; the expanded gallery can retain other notable projects.
+    // The compact table shows the two most notable titles; the expanded gallery can retain further projects.
     const twentyTwoCansRow = rows.filter({ hasText: "22cans" });
     assert.deepEqual(
       await twentyTwoCansRow.locator(".popular-game-cover").evaluateAll(covers =>
         covers.map(cover => cover.getAttribute("data-game-title")),
       ),
-      ["Masters of Albion"],
-      "The compact studio table should show only the single most notable game.",
+      ["Masters of Albion", "The Trail"],
+      "The compact studio table should show its two most notable games.",
     );
     const twentyTwoCansButton = twentyTwoCansRow.getByRole("button", { name: /22cans/ });
     await twentyTwoCansButton.click();
