@@ -580,7 +580,6 @@ export default function StudioDirectory({
               const routeWorkModel = studio.applicationResearch?.workModel || "not_stated";
               const isTracked = tracked.has(studio.name);
               const isNew = isNewStudio(studio);
-              const flag = countryFlagFor(studioCountry, countryCode);
               const notableGames = profile?.popularGames?.slice(0, 1) || [];
               const profileGames = profile?.popularGames?.slice(0, 3) || [];
               const platforms = orderedTags(profile?.platforms || [], PLATFORM_ORDER);
@@ -625,7 +624,7 @@ export default function StudioDirectory({
                     </td>
                     <td>
                       <span className="location-cell">
-                        {flag ? <span className="country-flag" role="img" aria-label={studioCountry + " flag"}>{flag}</span> : null}
+                        <Icon name="map-pin" size={13} />
                         <span>{studioLocation}</span>
                       </span>
                     </td>
@@ -678,7 +677,7 @@ export default function StudioDirectory({
                                   {profile?.scale ? <ScaleBadge scale={profile.scale} basis={profile.scaleBasis} /> : <span className="scale-unclassified">Scale not classified</span>}
                                   {(profile?.studioRoles || []).map(role => <span className="studio-role-tag" key={role}>{role}</span>)}
                                 </div>
-                                <p>{flag ? <span className="country-flag" aria-hidden="true">{flag}</span> : null} Headquarters · {studioHeadquarters}</p>
+                                <p><Icon name="map-pin" size={13} /> Headquarters · {studioHeadquarters}</p>
                               </div>
                             </div>
                             <button className="studio-profile-close" type="button" onClick={() => setExpandedStudio(null)} aria-label={"Close " + studio.name + " profile"}>×</button>
