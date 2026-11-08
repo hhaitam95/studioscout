@@ -319,8 +319,8 @@ if (Array.isArray(studios) && profiles && typeof profiles === "object" && !Array
           errors.push(studio.name + ".profile.popularGames[" + gameIndex + "].officialArtworkLayout requires officialArtworkUrl.");
         }
         const hasIgdbMetadata = game?.igdbGameId !== undefined || game?.igdbSlug !== undefined || game?.igdbCoverId !== undefined;
-        if (hasIgdbMetadata && (!Number.isInteger(game?.igdbGameId) || typeof game?.igdbCoverId !== "string" || !game.igdbCoverId)) {
-          errors.push(studio.name + ".profile.popularGames[" + gameIndex + "] must include both igdbGameId and igdbCoverId when IGDB metadata is present.");
+        if (hasIgdbMetadata && !Number.isInteger(game?.igdbGameId)) {
+          errors.push(studio.name + ".profile.popularGames[" + gameIndex + "] must include a valid igdbGameId when IGDB metadata is present.");
         }
       }
     }

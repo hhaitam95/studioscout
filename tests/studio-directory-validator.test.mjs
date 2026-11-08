@@ -14,6 +14,44 @@ const profilesSource = JSON.parse(
   readFileSync(path.join(root, "src/data/studio-profiles.json"), "utf8"),
 );
 
+test("directory validator accepts a verified IGDB release year even when no cover exists", () => {
+  const tempRoot = mkdtempSync(path.join(os.tmpdir(), "studio-directory-igdb-year-"));
+  try {
+    const scriptsDir = path.join(tempRoot, "scripts");
+    const dataDir = path.join(tempRoot, "src", "data");
+    mkdirSync(scriptsDir, { recursive: true });
+    mkdirSync(dataDir, { recursive: true });
+
+    const studioName = Object.keys(profilesSource).find(name => profilesSource[name].popularGames?.length);
+    assert.ok(studioName, "the source dataset must contain at least one game profile");
+    const profiles = structuredClone(profilesSource);
+    const game = profiles[studioName].popularGames[0];
+    game.igdbGameId = 999999999;
+    game.igdbSlug = "year-only-game";
+    game.releaseYear = 2020;
+    game.releaseYearSourceUrl = "https://www.igdb.com/games/year-only-game";
+    delete game.igdbCoverId;
+    delete game.igdbCoverUrl;
+
+    writeFileSync(path.join(scriptsDir, "check-studio-directory.mjs"), validatorSource);
+    writeFileSync(
+      path.join(dataDir, "speculative-route-directory.json"),
+      JSON.stringify(studiosSource, null, 2),
+    );
+    writeFileSync(path.join(dataDir, "studio-profiles.json"), JSON.stringify(profiles, null, 2));
+
+    const result = spawnSync(
+      process.execPath,
+      [path.join(scriptsDir, "check-studio-directory.mjs")],
+      { cwd: tempRoot, encoding: "utf8" },
+    );
+
+    assert.equal(result.status, 0, "an exact IGDB match without an available cover should retain its verified year");
+  } finally {
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});
+
 test("directory validator rejects duplicate official application routes", () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), "studio-directory-duplicate-"));
   try {
