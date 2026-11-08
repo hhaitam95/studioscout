@@ -114,7 +114,9 @@
         "igdbSlug": "warcana",
         "igdbCoverId": "co8dc1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2022930/header.jpg?t=1763036720",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2022930/capsule_231x87.jpg?t=1763036720"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2022930/capsule_231x87.jpg?t=1763036720",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/warcana"
       }
     ],
     "profileSources": [
@@ -171,7 +173,9 @@
         "igdbSlug": "dysmantle",
         "igdbCoverId": "co1ixi",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/846770/header.jpg?t=1772050662",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/846770/capsule_231x87.jpg?t=1772050662"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/846770/capsule_231x87.jpg?t=1772050662",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/dysmantle"
       },
       {
         "title": "Tesla vs Lovecraft",
@@ -180,7 +184,9 @@
         "igdbSlug": "tesla-vs-lovecraft",
         "igdbCoverId": "co27ab",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636100/header.jpg?t=1666993707",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636100/capsule_231x87.jpg?t=1666993707"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/636100/capsule_231x87.jpg?t=1666993707",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tesla-vs-lovecraft"
       },
       {
         "title": "Neon Chrome",
@@ -189,7 +195,9 @@
         "igdbSlug": "neon-chrome",
         "igdbCoverId": "co4z6k",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/428750/header.jpg?t=1714816134",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/428750/capsule_231x87.jpg?t=1714816134"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/428750/capsule_231x87.jpg?t=1714816134",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/neon-chrome"
       },
       {
         "title": "Undead Horde",
@@ -198,7 +206,9 @@
         "igdbSlug": "undead-horde--1",
         "igdbCoverId": "co1ibk",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/790850/header.jpg?t=1725017054",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/790850/capsule_231x87.jpg?t=1725017054"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/790850/capsule_231x87.jpg?t=1725017054",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/undead-horde--1"
       }
     ],
     "profileSources": [
@@ -317,7 +327,9 @@
         "igdbSlug": "masters-of-albion",
         "igdbCoverId": "cobyli",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3165650/47c7ce5f41d5c0696cade13268f1004e63b7b2e5/header.jpg?t=1790870535",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3165650/fced525b0a698c0dd748c46885d94b1c68305a85/capsule_231x87.jpg?t=1790870535"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3165650/fced525b0a698c0dd748c46885d94b1c68305a85/capsule_231x87.jpg?t=1790870535",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/masters-of-albion"
       },
       {
         "title": "The Trail",
@@ -332,7 +344,9 @@
         "igdbSlug": "godus",
         "igdbCoverId": "co1zx4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232810/header.jpg?t=1702582458",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232810/capsule_231x87.jpg?t=1702582458"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232810/capsule_231x87.jpg?t=1702582458",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/godus"
       }
     ],
     "profileSources": [
@@ -608,7 +622,9 @@
         "igdbSlug": "reus",
         "igdbCoverId": "co1z3q",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222730/header.jpg?t=1730204355",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222730/capsule_231x87.jpg?t=1730204355"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222730/capsule_231x87.jpg?t=1730204355",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/reus"
       },
       {
         "title": "Renowned Explorers: International Society",
@@ -617,7 +633,9 @@
         "igdbSlug": "renowned-explorers-international-society",
         "igdbCoverId": "co2h13",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296970/header.jpg?t=1678189270",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296970/capsule_231x87.jpg?t=1678189270"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/296970/capsule_231x87.jpg?t=1678189270",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/renowned-explorers-international-society"
       },
       {
         "title": "Godhood",
@@ -626,7 +644,9 @@
         "igdbSlug": "godhood",
         "igdbCoverId": "co1j28",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/917150/header.jpg?t=1727946767",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/917150/capsule_231x87.jpg?t=1727946767"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/917150/capsule_231x87.jpg?t=1727946767",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/godhood"
       }
     ],
     "profileSources": [
@@ -694,7 +714,9 @@
         "appId": null,
         "igdbGameId": 120241,
         "igdbSlug": "mega-dead-pixel",
-        "igdbCoverId": "co8v23"
+        "igdbCoverId": "co8v23",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mega-dead-pixel"
       },
       {
         "title": "Cut and Hack",
@@ -769,7 +791,9 @@
         "igdbSlug": "faeria",
         "igdbCoverId": "co1mwi",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397060/header.jpg?t=1773309610",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397060/capsule_231x87.jpg?t=1773309610"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397060/capsule_231x87.jpg?t=1773309610",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/faeria"
       }
     ],
     "profileSources": [
@@ -825,7 +849,9 @@
         "igdbSlug": "classified-france-44",
         "igdbCoverId": "co6wxx",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2085370/header.jpg?t=1763036952",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2085370/capsule_231x87.jpg?t=1763036952"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2085370/capsule_231x87.jpg?t=1763036952",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/classified-france-44"
       },
       {
         "title": "Fangtopia",
@@ -835,7 +861,9 @@
         "igdbSlug": "fangtopia",
         "igdbCoverId": "coct9k",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010170/1b5d86f26f091647c9e16289f27f4c3706f74f22/header.jpg?t=1793100154",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010170/ffd9aec2aee4d59cfa9afba60b6be5b106dd057b/capsule_231x87.jpg?t=1793100154"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010170/ffd9aec2aee4d59cfa9afba60b6be5b106dd057b/capsule_231x87.jpg?t=1793100154",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/fangtopia"
       },
       {
         "title": "Worms: Galactic Tactics",
@@ -845,7 +873,9 @@
         "igdbSlug": "worms-galactic-tactics",
         "igdbCoverId": "cocrhb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3278930/78b6110d46a4301097e48ffe5494dba26c186e32/header.jpg?t=1789048517",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3278930/7d4a700b1c23a9667cc0b5be4613af0a481f40d5/capsule_231x87.jpg?t=1789048517"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3278930/7d4a700b1c23a9667cc0b5be4613af0a481f40d5/capsule_231x87.jpg?t=1789048517",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/worms-galactic-tactics"
       }
     ],
     "profileSources": [
@@ -902,7 +932,9 @@
         "igdbSlug": "train-station-tycoon",
         "igdbCoverId": "cocktf",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565490/5c298a0fccce232b938ce9b8e418c5c829e7c3cd/header_alt_assets_0.jpg?t=1792846169",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565490/5432f2913465725071a5621f116e4f97e0947662/capsule_231x87_alt_assets_0.jpg?t=1792846169"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565490/5432f2913465725071a5621f116e4f97e0947662/capsule_231x87_alt_assets_0.jpg?t=1792846169",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/train-station-tycoon"
       },
       {
         "title": "Wood'N'Destroy",
@@ -911,7 +943,9 @@
         "igdbSlug": "woodndestroy",
         "igdbCoverId": "cobuei",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4487540/1c61f0379c2e77576645f532eb29761585696715/header.jpg?t=1774630800",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4487540/869e6f7eb9a7ff721ff29de3c161c85d1ba266ac/capsule_231x87.jpg?t=1774630800"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4487540/869e6f7eb9a7ff721ff29de3c161c85d1ba266ac/capsule_231x87.jpg?t=1774630800",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/woodndestroy"
       },
       {
         "title": "Stereopoly",
@@ -982,7 +1016,9 @@
         "igdbSlug": "gladihaters",
         "igdbCoverId": "co41ay",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1559580/header.jpg?t=1678969687",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1559580/capsule_231x87.jpg?t=1678969687"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1559580/capsule_231x87.jpg?t=1678969687",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/gladihaters"
       },
       {
         "title": "Timepunk",
@@ -997,7 +1033,9 @@
       {
         "title": "AM I AI",
         "appId": null,
-        "stage": "Alpha"
+        "stage": "Alpha",
+        "igdbGameId": 263573,
+        "igdbSlug": "am-i-ai"
       }
     ],
     "applicationLocation": "Portugal or remote · see role conditions",
@@ -1056,7 +1094,9 @@
         "igdbSlug": "the-legend-of-khiimori",
         "igdbCoverId": "cobg18",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2697000/58512e9ea2f796098e09e6edae8315258259ccc8/header.jpg?t=1790172345",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2697000/2e403ce92f31b23e59c035b901d1ff7c7cbc85fa/capsule_231x87.jpg?t=1790172345"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2697000/2e403ce92f31b23e59c035b901d1ff7c7cbc85fa/capsule_231x87.jpg?t=1790172345",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-legend-of-khiimori"
       },
       {
         "title": "Ambulance Life: A Paramedic Simulator",
@@ -1065,7 +1105,9 @@
         "igdbSlug": "ambulance-life-a-paramedic-simulator",
         "igdbCoverId": "co7fj4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1926520/header.jpg?t=1764169525",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1926520/capsule_231x87.jpg?t=1764169525"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1926520/capsule_231x87.jpg?t=1764169525",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/ambulance-life-a-paramedic-simulator"
       },
       {
         "title": "Police Simulator: Patrol Officers",
@@ -1074,7 +1116,9 @@
         "igdbSlug": "police-simulator-patrol-officers",
         "igdbCoverId": "co39t1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/91aefad15cb27e4c8f03e519a5b3d3a9daa4d31d/header.jpg?t=1789143123",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/c4fae841f9d6551766104dacdb661f1e17801f1d/capsule_231x87.jpg?t=1789143123"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/c4fae841f9d6551766104dacdb661f1e17801f1d/capsule_231x87.jpg?t=1789143123",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/police-simulator-patrol-officers"
       },
       {
         "title": "Horse Tales: Emerald Valley Ranch",
@@ -1083,7 +1127,9 @@
         "igdbSlug": "horse-tales-emerald-valley-ranch",
         "igdbCoverId": "co5eef",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1474740/header.jpg?t=1786628040",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1474740/capsule_231x87.jpg?t=1786628040"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1474740/capsule_231x87.jpg?t=1786628040",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/horse-tales-emerald-valley-ranch"
       }
     ],
     "profileSources": [
@@ -1143,7 +1189,9 @@
         "igdbSlug": "rivals-of-aether",
         "igdbCoverId": "cobl61",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383980/header.jpg?t=1721063075",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383980/capsule_231x87.jpg?t=1721063075"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383980/capsule_231x87.jpg?t=1721063075",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rivals-of-aether"
       },
       {
         "title": "Rivals of Aether II",
@@ -1152,7 +1200,9 @@
         "igdbSlug": "rivals-of-aether-ii",
         "igdbCoverId": "coar00",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2217000/2b910bb921e54b7d84473618e3247d759de37541/header.jpg?t=1790763301",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2217000/e2904539fa9945a95c1a0cad5b124185abdc81cf/capsule_231x87.jpg?t=1790763301"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2217000/e2904539fa9945a95c1a0cad5b124185abdc81cf/capsule_231x87.jpg?t=1790763301",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rivals-of-aether-ii"
       },
       {
         "title": "Dungeons of Aether",
@@ -1161,7 +1211,9 @@
         "igdbSlug": "dungeons-of-aether",
         "igdbCoverId": "co4leu",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1668290/header.jpg?t=1714080470",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1668290/capsule_231x87.jpg?t=1714080470"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1668290/capsule_231x87.jpg?t=1714080470",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/dungeons-of-aether"
       },
       {
         "title": "Creatures of Aether",
@@ -1170,7 +1222,9 @@
         "igdbSlug": "creatures-of-aether",
         "igdbCoverId": "co686g",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593750/header.jpg?t=1685482641",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593750/capsule_231x87.jpg?t=1685482641"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593750/capsule_231x87.jpg?t=1685482641",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/creatures-of-aether"
       },
       {
         "title": "Lovers of Aether",
@@ -1179,7 +1233,9 @@
         "igdbSlug": "lovers-of-aether",
         "igdbCoverId": "co45hi",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1043180/header.jpg?t=1748939171",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1043180/capsule_231x87.jpg?t=1748939171"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1043180/capsule_231x87.jpg?t=1748939171",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lovers-of-aether"
       }
     ],
     "profileSources": [
@@ -1355,7 +1411,9 @@
         "title": "Fiete Soccer",
         "appId": null,
         "officialArtworkUrl": "https://www.ahoiii.com/images/apps/FieteSoccer_Kids-Games-Apps-180x180-1.png",
-        "officialArtworkLayout": "square"
+        "officialArtworkLayout": "square",
+        "igdbGameId": 103585,
+        "igdbSlug": "fiete-soccer"
       },
       {
         "title": "Sandmännchen app",
@@ -1500,7 +1558,9 @@
         "igdbSlug": "amber-isle",
         "igdbCoverId": "co8bun",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1663040/header.jpg?t=1793294409",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1663040/capsule_231x87.jpg?t=1793294409"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1663040/capsule_231x87.jpg?t=1793294409",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/amber-isle"
       }
     ],
     "profileSources": [
@@ -1609,14 +1669,18 @@
         "igdbSlug": "gorilla-tag",
         "igdbCoverId": "coau8c",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/fdd97735dfb6643a898070be587c4a057f2b978f/header.jpg?t=1791240923",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/ed1ad82670e4e507ad949632f35915080d42ee90/capsule_231x87.jpg?t=1791240923"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1533390/ed1ad82670e4e507ad949632f35915080d42ee90/capsule_231x87.jpg?t=1791240923",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/gorilla-tag"
       },
       {
         "title": "Orion Drift",
         "appId": null,
         "igdbGameId": 322571,
         "igdbSlug": "orion-drift",
-        "igdbCoverId": "co926x"
+        "igdbCoverId": "co926x",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/orion-drift"
       },
       {
         "title": "Monke Mayhem",
@@ -1629,7 +1693,9 @@
         "igdbSlug": "contagion",
         "igdbCoverId": "co2mtq",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238430/header.jpg?t=1746934221",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238430/capsule_231x87.jpg?t=1746934221"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238430/capsule_231x87.jpg?t=1746934221",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/contagion"
       }
     ],
     "profileSources": [
@@ -1687,7 +1753,9 @@
         "igdbSlug": "atmosfar",
         "igdbCoverId": "cod5l5",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1798230/96e6f00d5ecb7c37ba07577ac02ac75fad16055a/header.jpg?t=1793368647",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1798230/82597517be4e2548281437ff740983653f7a4d16/capsule_231x87.jpg?t=1793368647"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1798230/82597517be4e2548281437ff740983653f7a4d16/capsule_231x87.jpg?t=1793368647",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/atmosfar"
       },
       {
         "title": "Airport CEO",
@@ -1696,7 +1764,9 @@
         "igdbSlug": "airport-ceo",
         "igdbCoverId": "fskvagcnhvpxhnhngwgs",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/673610/header.jpg?t=1749627554",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/673610/capsule_231x87.jpg?t=1749627554"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/673610/capsule_231x87.jpg?t=1749627554",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/airport-ceo"
       }
     ],
     "profileSources": [
@@ -1758,7 +1828,9 @@
         "igdbSlug": "crown-wars-the-black-prince",
         "igdbCoverId": "co7pvv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1658920/header.jpg?t=1778173233",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1658920/capsule_231x87.jpg?t=1778173233"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1658920/capsule_231x87.jpg?t=1778173233",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/crown-wars-the-black-prince"
       },
       {
         "title": "Disciples: Domination",
@@ -1767,7 +1839,9 @@
         "igdbSlug": "disciples-domination",
         "igdbCoverId": "coa8ss",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2808560/3ef3cead69aa958a72f1c4b5739b80303a437dbb/header.jpg?t=1787238142",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2808560/8d5e73a17d298c5a408dfa0f622016fe5baaa1ea/capsule_231x87.jpg?t=1787238142"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2808560/8d5e73a17d298c5a408dfa0f622016fe5baaa1ea/capsule_231x87.jpg?t=1787238142",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/disciples-domination"
       }
     ],
     "applicationLocation": "Location not specified · use HQ as reference",
@@ -1939,7 +2013,9 @@
         "igdbSlug": "a-plague-tale-requiem",
         "igdbCoverId": "co5pwb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/header.jpg?t=1784712272",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/capsule_231x87.jpg?t=1784712272"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/capsule_231x87.jpg?t=1784712272",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/a-plague-tale-requiem"
       },
       {
         "title": "A Plague Tale: Innocence",
@@ -1948,7 +2024,9 @@
         "igdbSlug": "a-plague-tale-innocence",
         "igdbCoverId": "co1lat",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/header.jpg?t=1784712345",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/capsule_231x87.jpg?t=1784712345"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/capsule_231x87.jpg?t=1784712345",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/a-plague-tale-innocence"
       }
     ],
     "profileSources": [
@@ -2015,7 +2093,9 @@
         "igdbSlug": "stellar-cafe",
         "igdbCoverId": "coazal",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4415130/e29b3722f9d45c79affed914333e05d1c48599d1/header.jpg?t=1791037050",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4415130/d1057913646d4ed7ab2cf140be4f0440cb3b077a/capsule_231x87.jpg?t=1791037050"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4415130/d1057913646d4ed7ab2cf140be4f0440cb3b077a/capsule_231x87.jpg?t=1791037050",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/stellar-cafe"
       }
     ],
     "profileSources": [
@@ -2118,7 +2198,9 @@
         "igdbSlug": "bpm-bullets-per-minute",
         "igdbCoverId": "co555i",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286350/header.jpg?t=1667228772",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286350/capsule_231x87.jpg?t=1667228772"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286350/capsule_231x87.jpg?t=1667228772",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/bpm-bullets-per-minute"
       }
     ],
     "profileSources": [
@@ -2171,7 +2253,9 @@
         "appId": null,
         "igdbGameId": 87021,
         "igdbSlug": "extreme-car-driving-simulator",
-        "igdbCoverId": "co9sur"
+        "igdbCoverId": "co9sur",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/extreme-car-driving-simulator"
       },
       {
         "title": "Extreme Motorcycle Simulator",
@@ -2250,7 +2334,9 @@
         "igdbSlug": "scrap-mechanic",
         "igdbCoverId": "cocxak",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387990/5c31bde0a901d9459a8d8c556c5a44262b5f57e4/header.jpg?t=1784914037",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387990/c118d1cdb67183690eaf12eca1edc8065643f6cc/capsule_231x87.jpg?t=1784914037"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387990/c118d1cdb67183690eaf12eca1edc8065643f6cc/capsule_231x87.jpg?t=1784914037",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/scrap-mechanic"
       }
     ],
     "profileSources": [
@@ -2308,7 +2394,9 @@
         "igdbSlug": "son-of-thanjai",
         "igdbCoverId": "coab96",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2879790/57aa109359c9d8413ad04c3948dc7547edc79f19/header.jpg?t=1790925455",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2879790/b358651fab2070049989720034e457b5c7cd1004/capsule_231x87.jpg?t=1790925455"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2879790/b358651fab2070049989720034e457b5c7cd1004/capsule_231x87.jpg?t=1790925455",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/son-of-thanjai"
       }
     ],
     "profileSources": [
@@ -2366,7 +2454,9 @@
         "igdbSlug": "ereban-shadow-legacy",
         "igdbCoverId": "co7wdb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671360/header.jpg?t=1776370419",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671360/capsule_231x87.jpg?t=1776370419"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671360/capsule_231x87.jpg?t=1776370419",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/ereban-shadow-legacy"
       }
     ],
     "profileSources": [
@@ -2524,7 +2614,9 @@
         "igdbSlug": "the-1-percent-club-world-challenge",
         "igdbCoverId": "coclrv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461210/ab17a8df927e4f5b4980e4adfcba68a8fa00617c/header.jpg?t=1787735687",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461210/71ad4047cd91cadec13afff215876ad4e1d301b3/capsule_231x87.jpg?t=1787735687"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461210/71ad4047cd91cadec13afff215876ad4e1d301b3/capsule_231x87.jpg?t=1787735687",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-1-percent-club-world-challenge"
       },
       {
         "title": "The Chase: World Tour",
@@ -2538,7 +2630,9 @@
       },
       {
         "title": "Tenable",
-        "appId": null
+        "appId": null,
+        "igdbGameId": 133791,
+        "igdbSlug": "tenable"
       },
       {
         "title": "The Chase: World Tour",
@@ -2608,7 +2702,9 @@
         "igdbSlug": "beamng-dot-drive",
         "igdbCoverId": "co1sym",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/17f8af1312bc48e6cd90e5fb639d4981682af260/header.jpg?t=1792417797",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/727b938bf07eaf615baf2d9bb6ffebca1fa8b5d5/capsule_231x87.jpg?t=1792417797"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/284160/727b938bf07eaf615baf2d9bb6ffebca1fa8b5d5/capsule_231x87.jpg?t=1792417797",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/beamng-dot-drive"
       }
     ],
     "profileSources": [
@@ -2665,14 +2761,18 @@
         "appId": 731490,
         "igdbGameId": 26196,
         "igdbSlug": "crash-bandicoot-n-sane-trilogy",
-        "igdbCoverId": "co1v62"
+        "igdbCoverId": "co1v62",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/crash-bandicoot-n-sane-trilogy"
       },
       {
         "title": "Tony Hawk's Pro Skater 1 + 2",
         "appId": 2395210,
         "igdbGameId": 133887,
         "igdbSlug": "tony-hawks-pro-skater-1-plus-2",
-        "igdbCoverId": "co25u7"
+        "igdbCoverId": "co25u7",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tony-hawks-pro-skater-1-plus-2"
       },
       {
         "title": "Call of Duty: Modern Warfare III",
@@ -2681,7 +2781,9 @@
         "igdbSlug": "call-of-duty-modern-warfare-iii",
         "igdbCoverId": "co7ctx",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/7d0f21912a075c33bbb5ea558100e187ceb234ac/header.jpg?t=1778886604",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/05b8f73493348dfa9b6662dc13a6740929ea195b/capsule_231x87.jpg?t=1778886604"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/05b8f73493348dfa9b6662dc13a6740929ea195b/capsule_231x87.jpg?t=1778886604",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/call-of-duty-modern-warfare-iii"
       }
     ],
     "profileSources": [
@@ -2732,7 +2834,9 @@
         "appId": 249990,
         "igdbGameId": 5626,
         "igdbSlug": "forced",
-        "igdbCoverId": "co2gzn"
+        "igdbCoverId": "co2gzn",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/forced"
       },
       {
         "title": "Minion Masters",
@@ -2741,7 +2845,9 @@
         "igdbSlug": "minion-masters",
         "igdbCoverId": "co8scr",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489520/header.jpg?t=1776070207",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489520/capsule_231x87.jpg?t=1776070207"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489520/capsule_231x87.jpg?t=1776070207",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/minion-masters"
       },
       {
         "title": "Forced Showdown",
@@ -2750,7 +2856,9 @@
         "igdbSlug": "forced-showdown",
         "igdbCoverId": "co1ii2",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/265000/header.jpg?t=1667816203",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/265000/capsule_231x87.jpg?t=1667816203"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/265000/capsule_231x87.jpg?t=1667816203",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/forced-showdown"
       }
     ],
     "profileSources": [
@@ -2946,7 +3054,9 @@
         "igdbSlug": "hardspace-shipbreaker",
         "igdbCoverId": "co2m8b",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1161580/header.jpg?t=1779314331",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1161580/capsule_231x87.jpg?t=1779314331"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1161580/capsule_231x87.jpg?t=1779314331",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hardspace-shipbreaker"
       },
       {
         "title": "Homeworld 3",
@@ -2955,7 +3065,9 @@
         "igdbSlug": "homeworld-3",
         "igdbCoverId": "co4a9d",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1781819110",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/capsule_231x87.jpg?t=1781819110"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/capsule_231x87.jpg?t=1781819110",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/homeworld-3"
       }
     ],
     "profileSources": [
@@ -3107,7 +3219,9 @@
         "igdbSlug": "generation-zero",
         "igdbCoverId": "co66ky",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/704270/header.jpg?t=1790320635",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/704270/capsule_231x87.jpg?t=1790320635"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/704270/capsule_231x87.jpg?t=1790320635",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/generation-zero"
       },
       {
         "title": "Waffenträger event / World of Tanks",
@@ -3175,7 +3289,9 @@
         "igdbSlug": "i-am-bread",
         "igdbCoverId": "co8xt7",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/327890/header.jpg?t=1781528803",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/327890/capsule_231x87.jpg?t=1781528803"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/327890/capsule_231x87.jpg?t=1781528803",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/i-am-bread"
       },
       {
         "title": "Lost Skies",
@@ -3184,7 +3300,9 @@
         "igdbSlug": "lost-skies",
         "igdbCoverId": "co9ory",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931180/header.jpg?t=1788992823",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931180/391c6be29537117f6b8c1ebe7b86322e0dfde1a7/capsule_231x87.jpg?t=1788992823"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931180/391c6be29537117f6b8c1ebe7b86322e0dfde1a7/capsule_231x87.jpg?t=1788992823",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lost-skies"
       }
     ],
     "applicationLocation": "Remote-first · application eligibility to confirm",
@@ -3288,7 +3406,9 @@
         "igdbSlug": "yes-your-grace",
         "igdbCoverId": "co2c8o",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1115690/header.jpg?t=1773841283",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1115690/capsule_231x87.jpg?t=1773841283"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1115690/capsule_231x87.jpg?t=1773841283",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/yes-your-grace"
       },
       {
         "title": "Yes, Your Grace: Snowfall",
@@ -3296,7 +3416,9 @@
         "stage": "Released 2025",
         "igdbGameId": 252483,
         "igdbSlug": "yes-your-grace-snowfall",
-        "igdbCoverId": "cobz7y"
+        "igdbCoverId": "cobz7y",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/yes-your-grace-snowfall"
       },
       {
         "title": "Mind Scanners",
@@ -3306,7 +3428,9 @@
         "igdbSlug": "mind-scanners",
         "igdbCoverId": "co2j6m",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1389550/9ff6d0f1d84d667b8614d3de5135b8c6abeb7cbc/header.jpg?t=1779784453",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1389550/b96cf5cedc9bab8105d642278dc002979d5966b9/capsule_231x87.jpg?t=1779784453"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1389550/b96cf5cedc9bab8105d642278dc002979d5966b9/capsule_231x87.jpg?t=1779784453",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mind-scanners"
       }
     ],
     "applicationLocation": "Manchester, United Kingdom · remote and applicant-country eligibility not stated",
@@ -3372,7 +3496,9 @@
         "igdbSlug": "insurmountable",
         "igdbCoverId": "co2fhl",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1385100/header.jpg?t=1789476911",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1385100/capsule_231x87.jpg?t=1789476911"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1385100/capsule_231x87.jpg?t=1789476911",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/insurmountable"
       },
       {
         "title": "Beat Slayer",
@@ -3382,7 +3508,9 @@
         "igdbSlug": "beat-slayer",
         "igdbCoverId": "co7glr",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2089830/header.jpg?t=1792067302",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2089830/capsule_231x87.jpg?t=1792067302"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2089830/capsule_231x87.jpg?t=1792067302",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/beat-slayer"
       },
       {
         "title": "Gelly Break Deluxe",
@@ -3392,7 +3520,9 @@
         "igdbSlug": "gelly-break-deluxe",
         "igdbCoverId": "co417z",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1690060/header.jpg?t=1763559409",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1690060/capsule_231x87.jpg?t=1763559409"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1690060/capsule_231x87.jpg?t=1763559409",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/gelly-break-deluxe"
       },
       {
         "title": "The Regreening",
@@ -3476,7 +3606,9 @@
         "igdbSlug": "expeditions-conquistador",
         "igdbCoverId": "co24mt",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/237430/header.jpg?t=1781074045",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/237430/capsule_231x87.jpg?t=1781074045"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/237430/capsule_231x87.jpg?t=1781074045",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/expeditions-conquistador"
       },
       {
         "title": "Expeditions: Viking",
@@ -3485,7 +3617,9 @@
         "igdbSlug": "expeditions-viking",
         "igdbCoverId": "co24rl",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/445190/header.jpg?t=1781073967",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/445190/capsule_231x87.jpg?t=1781073967"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/445190/capsule_231x87.jpg?t=1781073967",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/expeditions-viking"
       },
       {
         "title": "Expeditions: Rome",
@@ -3494,7 +3628,9 @@
         "igdbSlug": "expeditions-rome",
         "igdbCoverId": "co3ub5",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/987840/header.jpg?t=1786105603",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/987840/capsule_231x87.jpg?t=1786105603"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/987840/capsule_231x87.jpg?t=1786105603",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/expeditions-rome"
       },
       {
         "title": "Expeditions: Samurai",
@@ -3504,7 +3640,9 @@
         "igdbSlug": "expeditions-samurai",
         "igdbCoverId": "coc6vi",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2212910/7882263290d29dd972fc0439eb6a10c708f8c004/header.jpg?t=1786110990",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2212910/8c648661d6c32a9df15bb12f937e160bf199fc2b/capsule_231x87.jpg?t=1786110990"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2212910/8c648661d6c32a9df15bb12f937e160bf199fc2b/capsule_231x87.jpg?t=1786110990",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/expeditions-samurai"
       }
     ],
     "profileSources": [
@@ -3790,14 +3928,18 @@
         "igdbSlug": "songs-of-silence",
         "igdbCoverId": "coayrg",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195410/a23dc3dc83a4871b151cd62533802bcac262746c/header.jpg?t=1786366406",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195410/e7dba6c1092477fcf7cac61bf3926aba959de943/capsule_231x87.jpg?t=1786366406"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195410/e7dba6c1092477fcf7cac61bf3926aba959de943/capsule_231x87.jpg?t=1786366406",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/songs-of-silence"
       },
       {
         "title": "Shadow and Bone: Enter the Fold",
         "appId": null,
         "igdbGameId": 204448,
         "igdbSlug": "shadow-and-bone-enter-the-fold--1",
-        "igdbCoverId": "co7d9b"
+        "igdbCoverId": "co7d9b",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shadow-and-bone-enter-the-fold--1"
       }
     ],
     "applicationLocation": "Munich ATS listing; company careers page also reports remote/hybrid work and permanent employment options in Germany, Spain, Portugal, Italy, Finland, Poland and Romania; internships are on-site in Munich",
@@ -3859,7 +4001,9 @@
         "appId": null,
         "igdbGameId": 87059,
         "igdbSlug": "baseball-boy",
-        "igdbCoverId": "ebjhsnalbpzkawwml52z"
+        "igdbCoverId": "ebjhsnalbpzkawwml52z",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/baseball-boy"
       },
       {
         "title": "Rider",
@@ -3870,7 +4014,9 @@
         "appId": null,
         "igdbGameId": 87657,
         "igdbSlug": "stack-jump",
-        "igdbCoverId": "coc62o"
+        "igdbCoverId": "coc62o",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/stack-jump"
       },
       {
         "title": "Horizon",
@@ -3943,7 +4089,9 @@
         "igdbSlug": "sniper-ghost-warrior-contracts-2",
         "igdbCoverId": "co2nuh",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1338770/header.jpg?t=1747413239",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1338770/capsule_231x87.jpg?t=1747413239"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1338770/capsule_231x87.jpg?t=1747413239",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/sniper-ghost-warrior-contracts-2"
       }
     ],
     "profileSources": [
@@ -3999,19 +4147,27 @@
         "appId": null,
         "igdbGameId": 9596,
         "igdbSlug": "tibia",
-        "igdbCoverId": "co255g"
+        "igdbCoverId": "co255g",
+        "releaseYear": 1997,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tibia"
       },
       {
         "title": "TibiaME",
         "appId": null,
         "igdbGameId": 115761,
         "igdbSlug": "tibiame",
-        "igdbCoverId": "co9sni"
+        "igdbCoverId": "co9sni",
+        "releaseYear": 2003,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tibiame"
       },
       {
         "title": "Panzer League",
         "appId": null,
-        "stage": "Discontinued in 2020"
+        "stage": "Discontinued in 2020",
+        "igdbGameId": 111542,
+        "igdbSlug": "panzer-league",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/panzer-league"
       }
     ],
     "profileSources": [
@@ -4116,7 +4272,9 @@
         "appId": null,
         "igdbGameId": 25552,
         "igdbSlug": "treasure-hunters",
-        "igdbCoverId": "cobul4"
+        "igdbCoverId": "cobul4",
+        "releaseYear": 2011,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/treasure-hunters"
       },
       {
         "title": "Magic Portal",
@@ -4332,7 +4490,9 @@
         "igdbSlug": "mortal-shell",
         "igdbCoverId": "co227z",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1110910/2695c5fe40198e5ada83472e0250f3e6b7e5726e/header.jpg?t=1785160664",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1110910/1f61bd0ef7b1f29a2c87a76572565f853ddf42c8/capsule_231x87.jpg?t=1785160664"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1110910/1f61bd0ef7b1f29a2c87a76572565f853ddf42c8/capsule_231x87.jpg?t=1785160664",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mortal-shell"
       }
     ],
     "profileSources": [
@@ -4541,21 +4701,27 @@
         "appId": 391220,
         "igdbGameId": 7323,
         "igdbSlug": "rise-of-the-tomb-raider",
-        "igdbCoverId": "co1rqa"
+        "igdbCoverId": "co1rqa",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rise-of-the-tomb-raider"
       },
       {
         "title": "Shadow of the Tomb Raider",
         "appId": 750920,
         "igdbGameId": 37777,
         "igdbSlug": "shadow-of-the-tomb-raider",
-        "igdbCoverId": "co1vcn"
+        "igdbCoverId": "co1vcn",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shadow-of-the-tomb-raider"
       },
       {
         "title": "Marvel's Avengers",
         "appId": null,
         "igdbGameId": 26950,
         "igdbSlug": "marvels-avengers",
-        "igdbCoverId": "co2edq"
+        "igdbCoverId": "co2edq",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/marvels-avengers"
       },
       {
         "title": "Legacy of Kain",
@@ -4677,7 +4843,9 @@
         "igdbSlug": "styx-shards-of-darkness",
         "igdbCoverId": "co24zt",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/355790/header.jpg?t=1778174587",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/355790/capsule_231x87.jpg?t=1778174587"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/355790/capsule_231x87.jpg?t=1778174587",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/styx-shards-of-darkness"
       },
       {
         "title": "Blood Bowl 3",
@@ -4692,7 +4860,9 @@
         "igdbSlug": "werewolf-the-apocalypse-earthblood",
         "igdbCoverId": "co259p",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/679110/header.jpg?t=1778175292",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/679110/capsule_231x87.jpg?t=1778175292"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/679110/capsule_231x87.jpg?t=1778175292",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/werewolf-the-apocalypse-earthblood"
       }
     ],
     "profileSources": [
@@ -4848,7 +5018,9 @@
         "igdbSlug": "hubris",
         "igdbCoverId": "co8cv5",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1265800/header.jpg?t=1708101058",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1265800/capsule_231x87.jpg?t=1708101058"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1265800/capsule_231x87.jpg?t=1708101058",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hubris"
       },
       {
         "title": "Wall Town Wonders",
@@ -4857,7 +5029,9 @@
         "igdbSlug": "wall-town-wonders",
         "igdbCoverId": "co8z3w",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3570400/3b4b9b673c3eca2cf5b4967cc91ae85d90ccbd3b/header.jpg?t=1765795518",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3570400/d1d79c6350ac3a3528e9f0e46b326a48e5a259a4/capsule_231x87.jpg?t=1765795518"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3570400/d1d79c6350ac3a3528e9f0e46b326a48e5a259a4/capsule_231x87.jpg?t=1765795518",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wall-town-wonders"
       }
     ],
     "profileSources": [
@@ -4928,7 +5102,9 @@
         "igdbSlug": "granblue-fantasy",
         "igdbCoverId": "cocrun",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/767320/3b65b8a82a07a5dfdc13060516c9f2a49d99e683/header.jpg?t=1773126006",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/767320/8cccc8da0ed4826abb5514d79422e98d20efb415/capsule_231x87.jpg?t=1773126006"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/767320/8cccc8da0ed4826abb5514d79422e98d20efb415/capsule_231x87.jpg?t=1773126006",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/granblue-fantasy"
       },
       {
         "title": "Umamusume: Pretty Derby",
@@ -4937,14 +5113,18 @@
         "igdbSlug": "umamusume-pretty-derby",
         "igdbCoverId": "coclen",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/d7ddfe8985d7be8db7a0195d5c482c4438ed929d/header.jpg?t=1773306345",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/8ec1b9ecbdf9af10a1c21aaf1b2a2f3be58bf097/capsule_231x87.jpg?t=1773306345"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/8ec1b9ecbdf9af10a1c21aaf1b2a2f3be58bf097/capsule_231x87.jpg?t=1773306345",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/umamusume-pretty-derby"
       },
       {
         "title": "Shadowverse",
         "appId": 453480,
         "igdbGameId": 25811,
         "igdbSlug": "shadowverse",
-        "igdbCoverId": "co1twx"
+        "igdbCoverId": "co1twx",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shadowverse"
       },
       {
         "title": "Shadowverse: Worlds Beyond",
@@ -4953,7 +5133,9 @@
         "igdbSlug": "shadowverse-worlds-beyond",
         "igdbCoverId": "co9s57",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header.jpg?t=1788991178",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/be338a40ec9d7cc06d4b885f02b56edfb674c65f/capsule_231x87.jpg?t=1788991178"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584990/be338a40ec9d7cc06d4b885f02b56edfb674c65f/capsule_231x87.jpg?t=1788991178",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shadowverse-worlds-beyond"
       }
     ],
     "profileSources": [
@@ -5114,7 +5296,9 @@
         "igdbSlug": "the-surge",
         "igdbCoverId": "co1odu",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378540/header.jpg?t=1727864911",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378540/capsule_231x87.jpg?t=1727864911"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/378540/capsule_231x87.jpg?t=1727864911",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-surge"
       },
       {
         "title": "The Surge 2",
@@ -5123,14 +5307,18 @@
         "igdbSlug": "the-surge-2",
         "igdbCoverId": "co1y0k",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644830/header.jpg?t=1727794351",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644830/capsule_231x87.jpg?t=1727794351"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644830/capsule_231x87.jpg?t=1727794351",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-surge-2"
       },
       {
         "title": "Atlas Fallen",
         "appId": 1230530,
         "igdbGameId": 214409,
         "igdbSlug": "atlas-fallen",
-        "igdbCoverId": "co546f"
+        "igdbCoverId": "co546f",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/atlas-fallen"
       },
       {
         "title": "Lords of the Fallen",
@@ -5192,7 +5380,9 @@
         "igdbSlug": "founders-fortune",
         "igdbCoverId": "co1pu5",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1104330/header.jpg?t=1787159286",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1104330/capsule_231x87.jpg?t=1787159286"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1104330/capsule_231x87.jpg?t=1787159286",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/founders-fortune"
       },
       {
         "title": "InfraSpace",
@@ -5201,7 +5391,9 @@
         "igdbSlug": "infraspace",
         "igdbCoverId": "co43kc",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1511460/header.jpg?t=1773847551",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1511460/capsule_231x87.jpg?t=1773847551"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1511460/capsule_231x87.jpg?t=1773847551",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/infraspace"
       },
       {
         "title": "HavenCraft",
@@ -5311,7 +5503,9 @@
         "appId": 319630,
         "igdbGameId": 7599,
         "igdbSlug": "life-is-strange",
-        "igdbCoverId": "co1r8e"
+        "igdbCoverId": "co1r8e",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/life-is-strange"
       },
       {
         "title": "Tell Me Why",
@@ -5320,7 +5514,9 @@
         "igdbSlug": "tell-me-why",
         "igdbCoverId": "co2ej1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1180660/header.jpg?t=1780349055",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1180660/capsule_231x87.jpg?t=1780349055"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1180660/capsule_231x87.jpg?t=1780349055",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tell-me-why"
       },
       {
         "title": "Twin Mirror",
@@ -5329,7 +5525,9 @@
         "igdbSlug": "twin-mirror",
         "igdbCoverId": "co5w0s",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1552810/header.jpg?t=1771331232",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1552810/capsule_231x87.jpg?t=1771331232"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1552810/capsule_231x87.jpg?t=1771331232",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/twin-mirror"
       },
       {
         "title": "Vampyr",
@@ -5338,7 +5536,9 @@
         "igdbSlug": "vampyr",
         "igdbCoverId": "co8lrg",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/header.jpg?t=1773669973",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/capsule_231x87.jpg?t=1773669973"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/capsule_231x87.jpg?t=1773669973",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/vampyr"
       },
       {
         "title": "Remember Me",
@@ -5402,7 +5602,9 @@
         "igdbSlug": "lost-records-bloom-and-rage",
         "igdbCoverId": "co9p3a",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902960/header.jpg?t=1783519491",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902960/capsule_231x87.jpg?t=1783519491"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902960/capsule_231x87.jpg?t=1783519491",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lost-records-bloom-and-rage"
       }
     ],
     "profileSources": [
@@ -5474,7 +5676,9 @@
         "igdbSlug": "fallout-76",
         "igdbCoverId": "co1yc4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/f85dc32bab9fe57807cf588150579a8b2ab409f4/header.jpg?t=1791379859",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/5ff8cf414a0d102dbc2024613d7f5bd27c6609db/capsule_231x87.jpg?t=1791379859"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/5ff8cf414a0d102dbc2024613d7f5bd27c6609db/capsule_231x87.jpg?t=1791379859",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/fallout-76"
       },
       {
         "title": "Minecraft Dungeons",
@@ -5484,21 +5688,27 @@
         "igdbSlug": "minecraft-dungeons",
         "igdbCoverId": "co233r",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/header.jpg?t=1787063807",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/capsule_231x87.jpg?t=1787063807"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/capsule_231x87.jpg?t=1787063807",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/minecraft-dungeons"
       },
       {
         "title": "Rust Console Edition",
         "appId": null,
         "igdbGameId": 145149,
         "igdbSlug": "rust-console-edition",
-        "igdbCoverId": "coauwt"
+        "igdbCoverId": "coauwt",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rust-console-edition"
       },
       {
         "title": "RimWorld Console Edition",
         "appId": null,
         "igdbGameId": 210525,
         "igdbSlug": "rimworld-console-edition--1",
-        "igdbCoverId": "co506s"
+        "igdbCoverId": "co506s",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rimworld-console-edition--1"
       },
       {
         "title": "Songbringer",
@@ -5507,7 +5717,9 @@
         "igdbSlug": "songbringer",
         "igdbCoverId": "co1szv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367080/header.jpg?t=1700600415",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367080/capsule_231x87.jpg?t=1700600415"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367080/capsule_231x87.jpg?t=1700600415",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/songbringer"
       }
     ],
     "profileSources": [
@@ -5617,7 +5829,9 @@
         "appId": null,
         "igdbGameId": 43,
         "igdbSlug": "deus-ex-human-revolution",
-        "igdbCoverId": "co1rd2"
+        "igdbCoverId": "co1rd2",
+        "releaseYear": 2011,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/deus-ex-human-revolution"
       },
       {
         "title": "Deus Ex: Mankind Divided",
@@ -5626,14 +5840,18 @@
         "igdbSlug": "deus-ex-mankind-divided",
         "igdbCoverId": "co25jt",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/337000/39cf848b5d93541865bdf81e1f415cc615de5d80/header.jpg?t=1780670420",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/337000/96fc2a82c1820c77aae26304c62388841c2a93be/capsule_231x87.jpg?t=1780670420"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/337000/96fc2a82c1820c77aae26304c62388841c2a93be/capsule_231x87.jpg?t=1780670420",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/deus-ex-mankind-divided"
       },
       {
         "title": "Shadow of the Tomb Raider",
         "appId": 750920,
         "igdbGameId": 37777,
         "igdbSlug": "shadow-of-the-tomb-raider",
-        "igdbCoverId": "co1vcn"
+        "igdbCoverId": "co1vcn",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shadow-of-the-tomb-raider"
       },
       {
         "title": "Marvel's Guardians of the Galaxy",
@@ -5642,7 +5860,9 @@
         "igdbSlug": "marvels-guardians-of-the-galaxy",
         "igdbCoverId": "co39pu",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088850/bdbf8be37e665ba0e6f44111e3665d280f13ed16/header.jpg?t=1780588517",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088850/53f3b01bda1af49ddb58543bfd8a2f46c99b92fe/capsule_231x87.jpg?t=1780588517"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088850/53f3b01bda1af49ddb58543bfd8a2f46c99b92fe/capsule_231x87.jpg?t=1780588517",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/marvels-guardians-of-the-galaxy"
       },
       {
         "title": "Thief VR: Legacy of Shadow",
@@ -5651,7 +5871,9 @@
         "igdbSlug": "thief-vr-legacy-of-shadow",
         "igdbCoverId": "co9ww7",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/052ddf4a3541b04731fc88e5f675943685eeeb99/header.jpg?t=1770198880",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/137303db662776efda2435f6bd6ebc6c72d5f74e/capsule_231x87.jpg?t=1770198880"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/137303db662776efda2435f6bd6ebc6c72d5f74e/capsule_231x87.jpg?t=1770198880",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/thief-vr-legacy-of-shadow"
       },
       {
         "title": "Grounded 2",
@@ -5660,7 +5882,9 @@
         "igdbSlug": "grounded-2",
         "igdbCoverId": "co9xwo",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2661300/91c758b9591805d15b26d9fa185a8b9ebab0a334/header.jpg?t=1792539149",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2661300/75319f2fdb61134e51d37337a1beb610f05225a3/capsule_231x87.jpg?t=1792539149"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2661300/75319f2fdb61134e51d37337a1beb610f05225a3/capsule_231x87.jpg?t=1792539149",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/grounded-2"
       }
     ],
     "profileSources": [
@@ -5874,7 +6098,9 @@
         "igdbSlug": "garry-s-mod",
         "igdbCoverId": "co8pgw",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1776868682",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/2e52d9b905feebfdaaf2db6ad7afece10991d504/capsule_231x87.jpg?t=1776868682"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/2e52d9b905feebfdaaf2db6ad7afece10991d504/capsule_231x87.jpg?t=1776868682",
+        "releaseYear": 2004,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/garry-s-mod"
       },
       {
         "title": "s&box",
@@ -5883,7 +6109,9 @@
         "igdbSlug": "s-and-box",
         "igdbCoverId": "cobzd1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590830/0f64b7e4f9628fdcff7e1f86696d08b9d280de5e/header.jpg?t=1791282405",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590830/e84fd763ea67bb44bf663b0f96f2af44cc882193/capsule_231x87.jpg?t=1791282405"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590830/e84fd763ea67bb44bf663b0f96f2af44cc882193/capsule_231x87.jpg?t=1791282405",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/s-and-box"
       },
       {
         "title": "Chippy",
@@ -5892,7 +6120,9 @@
         "igdbSlug": "chippy",
         "igdbCoverId": "co268j",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602700/header.jpg?t=1724162553",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602700/f261940c0b3588d4fc1ad263133259deade507d5/capsule_231x87.jpg?t=1724162553"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602700/f261940c0b3588d4fc1ad263133259deade507d5/capsule_231x87.jpg?t=1724162553",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/chippy"
       },
       {
         "title": "Rust",
@@ -5958,7 +6188,9 @@
         "igdbSlug": "barotrauma",
         "igdbCoverId": "coa97f",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/header.jpg?t=1791473680",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1791473680"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1791473680",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/barotrauma"
       },
       {
         "title": "Undisclosed second game",
@@ -5972,7 +6204,9 @@
         "igdbSlug": "barotrauma",
         "igdbCoverId": "coa97f",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/header.jpg?t=1791473680",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1791473680"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1791473680",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/barotrauma"
       }
     ],
     "profileSources": [
@@ -6038,7 +6272,9 @@
         "igdbSlug": "apex-construct",
         "igdbCoverId": "co28u8",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/694090/header.jpg?t=1733839694",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/694090/2bccfbf300f99238adc6c8fa077ff9c4abb22f52/capsule_231x87.jpg?t=1733839694"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/694090/2bccfbf300f99238adc6c8fa077ff9c4abb22f52/capsule_231x87.jpg?t=1733839694",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/apex-construct"
       },
       {
         "title": "The Curious Tale of the Stolen Pets",
@@ -6047,7 +6283,9 @@
         "igdbSlug": "the-curious-tale-of-the-stolen-pets",
         "igdbCoverId": "co1m5v",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1099500/header.jpg?t=1733841153",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1099500/70e5de94eb69bcc214451a063038ce8f77f92182/capsule_231x87.jpg?t=1733841153"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1099500/70e5de94eb69bcc214451a063038ce8f77f92182/capsule_231x87.jpg?t=1733841153",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-curious-tale-of-the-stolen-pets"
       },
       {
         "title": "Wraith: The Oblivion – Afterlife",
@@ -6056,7 +6294,9 @@
         "igdbSlug": "wraith-the-oblivion-afterlife",
         "igdbCoverId": "co2s3e",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386870/header.jpg?t=1733840140",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386870/a958465c7e61c019f3a74a5f155911a855ca7fdf/capsule_231x87.jpg?t=1733840140"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386870/a958465c7e61c019f3a74a5f155911a855ca7fdf/capsule_231x87.jpg?t=1733840140",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wraith-the-oblivion-afterlife"
       },
       {
         "title": "Ghost Signal: A Stellaris Game",
@@ -6065,7 +6305,9 @@
         "igdbSlug": "ghost-signal-a-stellaris-game",
         "igdbCoverId": "co8d8z",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2156770/header.jpg?t=1729605994",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2156770/4dacc2a1c0d59eb7bfcaf6726f53f9dbce3c345c/capsule_231x87.jpg?t=1729605994"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2156770/4dacc2a1c0d59eb7bfcaf6726f53f9dbce3c345c/capsule_231x87.jpg?t=1729605994",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/ghost-signal-a-stellaris-game"
       },
       {
         "title": "Mannequin",
@@ -6192,7 +6434,9 @@
         "igdbSlug": "shaiya",
         "igdbCoverId": "co2ra7",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2690190/header.jpg?t=1728650108",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2690190/capsule_231x87.jpg?t=1728650108"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2690190/capsule_231x87.jpg?t=1728650108",
+        "releaseYear": 2007,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shaiya"
       },
       {
         "title": "Defiance",
@@ -6207,7 +6451,9 @@
         "stage": "Operated live-service title",
         "igdbGameId": 90316,
         "igdbSlug": "last-chaos",
-        "igdbCoverId": "co5qjy"
+        "igdbCoverId": "co5qjy",
+        "releaseYear": 2006,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/last-chaos"
       },
       {
         "title": "Desert Operations",
@@ -6283,7 +6529,9 @@
         "igdbSlug": "eve-online",
         "igdbCoverId": "cociug",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/fed1ea9b01dd6564101518a5201740fb44929fb4/header.jpg?t=1793370178",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/4e046ff130b7049f1ef89b43a827b07af1f388d9/capsule_231x87.jpg?t=1793370178"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/4e046ff130b7049f1ef89b43a827b07af1f388d9/capsule_231x87.jpg?t=1793370178",
+        "releaseYear": 2003,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/eve-online"
       },
       {
         "title": "EVE Frontier",
@@ -6344,7 +6592,9 @@
         "igdbSlug": "trailmakers",
         "igdbCoverId": "co8u8s",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/585420/007e3884b218b63a0fdcd10a278bd07e179b4db1/header.jpg?t=1790340872",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/585420/14bb7ef405602704b243b528114ce6090dcc6a87/capsule_231x87.jpg?t=1790340872"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/585420/14bb7ef405602704b243b528114ce6090dcc6a87/capsule_231x87.jpg?t=1790340872",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/trailmakers"
       },
       {
         "title": "Rubber Bandits",
@@ -6353,7 +6603,9 @@
         "igdbSlug": "rubber-bandits",
         "igdbCoverId": "co496w",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1206610/header.jpg?t=1772704226",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1206610/capsule_231x87.jpg?t=1772704226"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1206610/capsule_231x87.jpg?t=1772704226",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rubber-bandits"
       }
     ],
     "profileSources": [
@@ -6408,7 +6660,9 @@
         "igdbSlug": "lens-island",
         "igdbCoverId": "coa0fm",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1335830/0ba673c67110e0de186ba545594f4d4009234f5a/header.jpg?t=1788194921",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1335830/6c67b110da1f192297e5f3a385fc584f0fc61f56/capsule_231x87.jpg?t=1788194921"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1335830/6c67b110da1f192297e5f3a385fc584f0fc61f56/capsule_231x87.jpg?t=1788194921",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lens-island"
       }
     ],
     "profileSources": [
@@ -6462,7 +6716,9 @@
         "appId": null,
         "igdbGameId": 18908,
         "igdbSlug": "seven-the-days-long-gone",
-        "igdbCoverId": "co24sa"
+        "igdbCoverId": "co24sa",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/seven-the-days-long-gone"
       },
       {
         "title": "The Thaumaturge",
@@ -6471,7 +6727,9 @@
         "igdbSlug": "the-thaumaturge",
         "igdbCoverId": "cob3e3",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1684350/header.jpg?t=1787664401",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1684350/448960e01c761c4b9a4046ee47b44b409c813313/capsule_231x87.jpg?t=1787664401"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1684350/448960e01c761c4b9a4046ee47b44b409c813313/capsule_231x87.jpg?t=1787664401",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-thaumaturge"
       },
       {
         "title": "The Witcher remake",
@@ -6535,7 +6793,9 @@
         "stage": "In development",
         "igdbGameId": 347555,
         "igdbSlug": "club",
-        "igdbCoverId": "co9xf5"
+        "igdbCoverId": "co9xf5",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/club"
       }
     ],
     "profileSources": [
@@ -6596,7 +6856,9 @@
         "igdbSlug": "disciples-liberation",
         "igdbCoverId": "co4e4h",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1287840/header.jpg?t=1769442052",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1287840/capsule_231x87.jpg?t=1769442052"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1287840/capsule_231x87.jpg?t=1769442052",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/disciples-liberation"
       },
       {
         "title": "Triangle Strategy",
@@ -6611,7 +6873,9 @@
         "stage": "Development contribution",
         "igdbGameId": 312929,
         "igdbSlug": "temple-run-legends",
-        "igdbCoverId": "co8nk7"
+        "igdbCoverId": "co8nk7",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/temple-run-legends"
       }
     ],
     "applicationLocation": "Québec / Montréal · see role-specific conditions",
@@ -6666,7 +6930,9 @@
         "igdbSlug": "trine-5-a-clockwork-conspiracy",
         "igdbCoverId": "co6dpx",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1436700/header.jpg?t=1788967232",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1436700/capsule_231x87.jpg?t=1788967232"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1436700/capsule_231x87.jpg?t=1788967232",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/trine-5-a-clockwork-conspiracy"
       },
       {
         "title": "Starbase",
@@ -6675,7 +6941,9 @@
         "igdbSlug": "starbase",
         "igdbCoverId": "co4sm0",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454120/header.jpg?t=1730718967",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454120/19e7b95d3705cd8cfc77587894a91bfe01d155aa/capsule_231x87.jpg?t=1730718967"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/454120/19e7b95d3705cd8cfc77587894a91bfe01d155aa/capsule_231x87.jpg?t=1730718967",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/starbase"
       },
       {
         "title": "Trine 4: The Nightmare Prince",
@@ -6684,7 +6952,9 @@
         "igdbSlug": "trine-4-the-nightmare-prince",
         "igdbCoverId": "co1qsm",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690640/64169d6388ed69eb94b7c9d77e4e7fb80f597025/header.jpg?t=1789546865",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690640/2f8046e5409963a84cec48d9c116f7ec287b9f76/capsule_231x87.jpg?t=1789546865"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690640/2f8046e5409963a84cec48d9c116f7ec287b9f76/capsule_231x87.jpg?t=1789546865",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/trine-4-the-nightmare-prince"
       }
     ],
     "profileSources": [
@@ -6825,7 +7095,9 @@
         "igdbSlug": "deep-rock-galactic-survivor",
         "igdbCoverId": "co68ah",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2321470/header.jpg?t=1790750403",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2321470/82a1a92836c83b32f83ceb8bff5f9133efb98442/capsule_231x87.jpg?t=1790750403"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2321470/82a1a92836c83b32f83ceb8bff5f9133efb98442/capsule_231x87.jpg?t=1790750403",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/deep-rock-galactic-survivor"
       },
       {
         "title": "Wild Indigo Ranch",
@@ -6834,7 +7106,9 @@
         "igdbSlug": "wild-indigo-ranch",
         "igdbCoverId": "co8tz8",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1751350/header_alt_assets_5.jpg?t=1739869091",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1751350/33f6d340c40bed56436089187f80224a0e5a9dc2/capsule_231x87_alt_assets_5.jpg?t=1739869091"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1751350/33f6d340c40bed56436089187f80224a0e5a9dc2/capsule_231x87_alt_assets_5.jpg?t=1739869091",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wild-indigo-ranch"
       },
       {
         "title": "The Margot Collapse",
@@ -7046,7 +7320,9 @@
         "appId": null,
         "igdbGameId": 88124,
         "igdbSlug": "idle-farming-empire",
-        "igdbCoverId": "gwcxecdf7wtmbakvzd0a"
+        "igdbCoverId": "gwcxecdf7wtmbakvzd0a",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/idle-farming-empire"
       },
       {
         "title": "Merge Gardens",
@@ -7172,7 +7448,9 @@
         "appId": null,
         "igdbGameId": 18196,
         "igdbSlug": "pocket-card-jockey",
-        "igdbCoverId": "co2dzs"
+        "igdbCoverId": "co2dzs",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/pocket-card-jockey"
       }
     ],
     "profileSources": [
@@ -7277,14 +7555,18 @@
         "appId": null,
         "igdbGameId": 87622,
         "igdbSlug": "free-fire",
-        "igdbCoverId": "co52c7"
+        "igdbCoverId": "co52c7",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/free-fire"
       },
       {
         "title": "Arena of Valor",
         "appId": null,
         "igdbGameId": 55044,
         "igdbSlug": "arena-of-valor",
-        "igdbCoverId": "co2pg0"
+        "igdbCoverId": "co2pg0",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/arena-of-valor"
       },
       {
         "title": "Call of Duty: Mobile – Garena",
@@ -7402,7 +7684,9 @@
         "igdbSlug": "deep-rock-galactic",
         "igdbCoverId": "coaat4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/bc070678ce5c33e86ff818b3e9a51479b53f52f5/header_alt_assets_30.jpg?t=1792497307",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/1a881a724266fff7af201e18b1af3d2f4d6f4290/capsule_231x87.jpg?t=1792497307"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/1a881a724266fff7af201e18b1af3d2f4d6f4290/capsule_231x87.jpg?t=1792497307",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/deep-rock-galactic"
       },
       {
         "title": "Deep Rock Galactic: Rogue Core",
@@ -7412,7 +7696,9 @@
         "igdbSlug": "deep-rock-galactic-rogue-core",
         "igdbCoverId": "coay8u",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2605790/9d0c2bf98e5e10ebf27fc473a92fb26f3623b148/header_alt_assets_1.jpg?t=1788348461",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2605790/5abda7555a5da6a2d817f192b478b8a12b490b45/capsule_231x87_alt_assets_1.jpg?t=1788348461"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2605790/5abda7555a5da6a2d817f192b478b8a12b490b45/capsule_231x87_alt_assets_1.jpg?t=1788348461",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/deep-rock-galactic-rogue-core"
       }
     ],
     "profileSources": [
@@ -7472,7 +7758,9 @@
         "igdbSlug": "rogue-fortune",
         "igdbCoverId": "cocrxy",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4891150/48ffb03ee9fb344ffec05b17d4eb682bc8d04a42/header.jpg?t=1788775110",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4891150/73129edc65a1e5c9778d291ab81650a43bfb11bb/capsule_231x87.jpg?t=1788775110"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4891150/73129edc65a1e5c9778d291ab81650a43bfb11bb/capsule_231x87.jpg?t=1788775110",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/rogue-fortune"
       }
     ],
     "profileSources": [
@@ -7526,7 +7814,9 @@
         "igdbSlug": "goals--3",
         "igdbCoverId": "cocuxb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2753000/e82c01d4d194e5652239f884cc023008b6168b50/header.jpg?t=1789981933",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2753000/f923766858c3aa93741df592c7d8e19a1072a623/capsule_231x87.jpg?t=1789981933"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2753000/f923766858c3aa93741df592c7d8e19a1072a623/capsule_231x87.jpg?t=1789981933",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/goals--3"
       }
     ],
     "profileSources": [
@@ -7582,7 +7872,9 @@
         "appId": 1086430,
         "igdbGameId": 118978,
         "igdbSlug": "tnt--2",
-        "igdbCoverId": "co46ek"
+        "igdbCoverId": "co46ek",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tnt--2"
       },
       {
         "title": "Dinosaur Dimension",
@@ -7597,7 +7889,9 @@
         "appId": null,
         "igdbGameId": 334026,
         "igdbSlug": "naturalist",
-        "igdbCoverId": "co9hch"
+        "igdbCoverId": "co9hch",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/naturalist"
       }
     ],
     "profileSources": [
@@ -7644,7 +7938,9 @@
     "popularGames": [
       {
         "title": "World Hockey Manager",
-        "appId": null
+        "appId": null,
+        "igdbGameId": 88883,
+        "igdbSlug": "world-hockey-manager"
       }
     ],
     "profileSources": [
@@ -7752,14 +8048,18 @@
         "appId": null,
         "igdbGameId": 38946,
         "igdbSlug": "dan-the-man",
-        "igdbCoverId": "co5v9e"
+        "igdbCoverId": "co5v9e",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/dan-the-man"
       },
       {
         "title": "Monster Dash",
         "appId": null,
         "igdbGameId": 18497,
         "igdbSlug": "monster-dash",
-        "igdbCoverId": "co2xi2"
+        "igdbCoverId": "co2xi2",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/monster-dash"
       },
       {
         "title": "Fruit Ninja",
@@ -7814,7 +8114,9 @@
         "stage": "In development",
         "igdbGameId": 415847,
         "igdbSlug": "wex",
-        "igdbCoverId": "cocsz9"
+        "igdbCoverId": "cocsz9",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wex"
       }
     ],
     "profileSources": [
@@ -7871,7 +8173,9 @@
         "igdbSlug": "brothers-a-tale-of-two-sons",
         "igdbCoverId": "co1rro",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225080/dbfc904916a519d4c0cbea79f898cf33fc231ee1/header.jpg?t=1776415514",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225080/capsule_231x87.jpg?t=1776415514"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225080/capsule_231x87.jpg?t=1776415514",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/brothers-a-tale-of-two-sons"
       },
       {
         "title": "A Way Out",
@@ -7880,7 +8184,9 @@
         "igdbSlug": "a-way-out",
         "igdbCoverId": "co1vca",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/header.jpg?t=1777323433",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/capsule_231x87.jpg?t=1777323433"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/capsule_231x87.jpg?t=1777323433",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/a-way-out"
       },
       {
         "title": "It Takes Two",
@@ -7895,7 +8201,9 @@
         "igdbSlug": "split-fiction",
         "igdbCoverId": "co95gf",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/split-fiction"
       }
     ],
     "profileSources": [
@@ -7961,7 +8269,9 @@
         "igdbSlug": "gi-joe-operation-blackout",
         "igdbCoverId": "co2ikm",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1432220/header.jpg?t=1735656152",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1432220/capsule_231x87.jpg?t=1735656152"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1432220/capsule_231x87.jpg?t=1735656152",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/gi-joe-operation-blackout"
       },
       {
         "title": "Quar: Infernal Machines",
@@ -7969,7 +8279,9 @@
         "stage": "Porting / engineering",
         "igdbGameId": 116239,
         "igdbSlug": "quar-infernal-machines",
-        "igdbCoverId": "co1js8"
+        "igdbCoverId": "co1js8",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/quar-infernal-machines"
       },
       {
         "title": "Cobra Kai: The Karate Kid Saga Continues",
@@ -7979,7 +8291,9 @@
         "igdbSlug": "cobra-kai-the-karate-kid-saga-continues",
         "igdbCoverId": "co2gkb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1279920/header.jpg?t=1746025394",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1279920/capsule_231x87.jpg?t=1746025394"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1279920/capsule_231x87.jpg?t=1746025394",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/cobra-kai-the-karate-kid-saga-continues"
       },
       {
         "title": "Cobra Kai 2: Dojos Rising",
@@ -7989,7 +8303,9 @@
         "igdbSlug": "cobra-kai-2-dojos-rising",
         "igdbCoverId": "co536q",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1681870/header.jpg?t=1746025330",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1681870/capsule_231x87.jpg?t=1746025330"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1681870/capsule_231x87.jpg?t=1746025330",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/cobra-kai-2-dojos-rising"
       },
       {
         "title": "CrisTales",
@@ -8004,7 +8320,9 @@
         "igdbSlug": "nickelodeon-all-star-brawl",
         "igdbCoverId": "co4upo",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1414850/header.jpg?t=1746026335",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1414850/capsule_231x87.jpg?t=1746026335"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1414850/capsule_231x87.jpg?t=1746026335",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/nickelodeon-all-star-brawl"
       },
       {
         "title": "Bramble: The Mountain King",
@@ -8014,7 +8332,9 @@
         "igdbSlug": "bramble-the-mountain-king",
         "igdbCoverId": "co6f01",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623940/header.jpg?t=1787164429",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623940/capsule_231x87.jpg?t=1787164429"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623940/capsule_231x87.jpg?t=1787164429",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/bramble-the-mountain-king"
       }
     ],
     "profileSources": [
@@ -8129,7 +8449,9 @@
         "igdbSlug": "turbo-golf-racing",
         "igdbCoverId": "co4kxg",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1324350/header.jpg?t=1716977886",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1324350/capsule_231x87.jpg?t=1716977886"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1324350/capsule_231x87.jpg?t=1716977886",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/turbo-golf-racing"
       },
       {
         "title": "When Ski Lifts Go Wrong",
@@ -8138,7 +8460,9 @@
         "igdbSlug": "when-ski-lifts-go-wrong",
         "igdbCoverId": "co1ix9",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638000/header.jpg?t=1743421609",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638000/capsule_231x87.jpg?t=1743421609"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638000/capsule_231x87.jpg?t=1743421609",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/when-ski-lifts-go-wrong"
       },
       {
         "title": "Stuck Together",
@@ -8323,7 +8647,9 @@
         "igdbSlug": "world-war-armies",
         "igdbCoverId": "co8ul2",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2438160/header.jpg?t=1782468490",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2438160/capsule_231x87.jpg?t=1782468490"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2438160/capsule_231x87.jpg?t=1782468490",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/world-war-armies"
       }
     ],
     "profileSources": [
@@ -8416,7 +8742,9 @@
         "igdbSlug": "cities-skylines-ii",
         "igdbCoverId": "coaasz",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/header.jpg?t=1793116151",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/2b264fcfffbdc89083c626e70d8e5f0b352672a9/capsule_231x87.jpg?t=1793116151"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/2b264fcfffbdc89083c626e70d8e5f0b352672a9/capsule_231x87.jpg?t=1793116151",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/cities-skylines-ii"
       },
       {
         "title": "Surviving the Aftermath",
@@ -8425,7 +8753,9 @@
         "igdbSlug": "surviving-the-aftermath",
         "igdbCoverId": "co3wsb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/684450/header.jpg?t=1726498077",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/684450/capsule_231x87.jpg?t=1726498077"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/684450/capsule_231x87.jpg?t=1726498077",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/surviving-the-aftermath"
       },
       {
         "title": "LEGO Skylines",
@@ -8434,7 +8764,9 @@
         "igdbSlug": "lego-skylines",
         "igdbCoverId": "cocriw",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1573550/782eac4f6d5430d14031ef783a2e938fe553d513/header.jpg?t=1789548234",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1573550/3a69eafd4a3079e29a648ce66891d20a5da2c21e/capsule_231x87.jpg?t=1789548234"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1573550/3a69eafd4a3079e29a648ce66891d20a5da2c21e/capsule_231x87.jpg?t=1789548234",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lego-skylines"
       }
     ],
     "profileSources": [
@@ -8516,7 +8848,9 @@
         "igdbSlug": "crime-boss-rockay-city",
         "igdbCoverId": "co6mey",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2933080/header.jpg?t=1793290090",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2933080/cd738ecfb5e5250a9abd76c2789e7017546d2b41/capsule_231x87.jpg?t=1793290090"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2933080/cd738ecfb5e5250a9abd76c2789e7017546d2b41/capsule_231x87.jpg?t=1793290090",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/crime-boss-rockay-city"
       }
     ],
     "profileSources": [
@@ -8669,7 +9003,9 @@
         "igdbSlug": "hitman-world-of-assassination",
         "igdbCoverId": "co620f",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/c62446d5c95f583a296d7f1b99045a61e2f81dea/header.jpg?t=1793287448",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/6ec523ac63e60d52f3507929631e4f8b18e876e8/capsule_231x87_alt_assets_15.jpg?t=1793287448"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/6ec523ac63e60d52f3507929631e4f8b18e876e8/capsule_231x87_alt_assets_15.jpg?t=1793287448",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hitman-world-of-assassination"
       },
       {
         "title": "007 First Light",
@@ -8679,7 +9015,9 @@
         "igdbSlug": "007-first-light",
         "igdbCoverId": "coaoiz",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/c5b553fd05ba41aefa6daeddac95849a10c93022/header_alt_assets_4.jpg?t=1791886607",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/6833c82f518e5a4d0881152fa9cbf01c5d103924/capsule_231x87_alt_assets_4.jpg?t=1791886607"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/6833c82f518e5a4d0881152fa9cbf01c5d103924/capsule_231x87_alt_assets_4.jpg?t=1791886607",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/007-first-light"
       },
       {
         "title": "Project Fantasy",
@@ -8842,7 +9180,9 @@
         "igdbSlug": "marvel-contest-of-champions",
         "igdbCoverId": "coblax",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3127280/e44e59af57bfda1c569602213fca7dcb93433734/header.jpg?t=1776814556",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3127280/dfa92b9fcab35447b55b778cf87495f106b403b9/capsule_231x87.jpg?t=1776814556"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3127280/dfa92b9fcab35447b55b778cf87495f106b403b9/capsule_231x87.jpg?t=1776814556",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/marvel-contest-of-champions"
       },
       {
         "title": "Shop Titans",
@@ -8851,7 +9191,9 @@
         "igdbSlug": "shop-titans",
         "igdbCoverId": "coaosu",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/8c0601da3ee8fc826c62193888e77554b7934795/header.jpg?t=1754432193",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/7d069b1e681bc6cf2c88e6b93b87fc519c6b394d/capsule_231x87.jpg?t=1754432193"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/7d069b1e681bc6cf2c88e6b93b87fc519c6b394d/capsule_231x87.jpg?t=1754432193",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shop-titans"
       }
     ],
     "profileSources": [
@@ -8955,7 +9297,9 @@
         "igdbSlug": "space-engineers",
         "igdbCoverId": "coaaw8",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244850/3658a69c81af5f4014b0ffa88941285e74825b86/header.jpg?t=1785173739",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244850/bda417a19c8595216234c1d416513ef073c92557/capsule_231x87.jpg?t=1785173739"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244850/bda417a19c8595216234c1d416513ef073c92557/capsule_231x87.jpg?t=1785173739",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/space-engineers"
       },
       {
         "title": "Medieval Engineers",
@@ -8964,7 +9308,9 @@
         "igdbSlug": "medieval-engineers",
         "igdbCoverId": "co2qnz",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333950/header.jpg?t=1726043012",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333950/7289979790b415e54aa08377405a07fdec9185a9/capsule_231x87.jpg?t=1726043012"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333950/7289979790b415e54aa08377405a07fdec9185a9/capsule_231x87.jpg?t=1726043012",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/medieval-engineers"
       }
     ],
     "applicationLocation": "Remote considered · CET overlap; experienced candidates preferred",
@@ -9103,7 +9449,9 @@
         "igdbSlug": "phasmophobia",
         "igdbCoverId": "coamcz",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1791632508",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0268c77668d5643d3f2c19e67e92e252fdfe6c7f/capsule_231x87.jpg?t=1791632508"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0268c77668d5643d3f2c19e67e92e252fdfe6c7f/capsule_231x87.jpg?t=1791632508",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/phasmophobia"
       }
     ],
     "applicationLocation": "Southampton hybrid · UK right-to-work required",
@@ -9236,7 +9584,9 @@
         "appId": null,
         "igdbGameId": 87052,
         "igdbSlug": "idle-miner-tycoon",
-        "igdbCoverId": "co2qe6"
+        "igdbCoverId": "co2qe6",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/idle-miner-tycoon"
       }
     ],
     "profileSources": [
@@ -9302,21 +9652,27 @@
         "igdbSlug": "moorhuhn-kart-4",
         "igdbCoverId": "co9d8l",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3012980/header.jpg?t=1755522359",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3012980/50597888ada1984521d096acb0e57aedba0dda78/capsule_231x87.jpg?t=1755522359"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3012980/50597888ada1984521d096acb0e57aedba0dda78/capsule_231x87.jpg?t=1755522359",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/moorhuhn-kart-4"
       },
       {
         "title": "Yatzi 2",
         "appId": null,
         "igdbGameId": 364082,
         "igdbSlug": "yatzi-2",
-        "igdbCoverId": "coad4b"
+        "igdbCoverId": "coad4b",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/yatzi-2"
       },
       {
         "title": "Ludo XXL 2",
         "appId": null,
         "igdbGameId": 362369,
         "igdbSlug": "ludo-xxl-2",
-        "igdbCoverId": "coac9d"
+        "igdbCoverId": "coac9d",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/ludo-xxl-2"
       },
       {
         "title": "Tow Game",
@@ -9325,14 +9681,18 @@
         "igdbSlug": "tow-game",
         "igdbCoverId": "cob4lr",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3690870/6c69ae74112d18c2e10a90f26a3fb88efe09b73b/header.jpg?t=1792674107",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3690870/ee4481b75d3f85b3138de6243899bbe0f1e2762b/capsule_231x87.jpg?t=1792674107"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3690870/ee4481b75d3f85b3138de6243899bbe0f1e2762b/capsule_231x87.jpg?t=1792674107",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tow-game"
       },
       {
         "title": "Whoowasit?",
         "appId": null,
         "igdbGameId": 381712,
         "igdbSlug": "whoowasit",
-        "igdbCoverId": "cob1sp"
+        "igdbCoverId": "cob1sp",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/whoowasit"
       }
     ],
     "profileSources": [
@@ -9465,14 +9825,18 @@
         "igdbSlug": "test-drive-unlimited-solar-crown",
         "igdbCoverId": "co7my1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/0019588f5e579727a0f653c97dc7cb62e8e4de00/header.jpg?t=1788364521",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/1fd20f2c66babbb2c4e134b07c62582da056b047/capsule_231x87.jpg?t=1788364521"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/1fd20f2c66babbb2c4e134b07c62582da056b047/capsule_231x87.jpg?t=1788364521",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/test-drive-unlimited-solar-crown"
       },
       {
         "title": "WRC Generations",
         "appId": 1953520,
         "igdbGameId": 201963,
         "igdbSlug": "wrc-generations",
-        "igdbCoverId": "co4rp1"
+        "igdbCoverId": "co4rp1",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wrc-generations"
       }
     ],
     "profileSources": [
@@ -9529,7 +9893,9 @@
         "igdbSlug": "oaken",
         "igdbCoverId": "co3p5p",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1348690/header.jpg?t=1727780922",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1348690/capsule_231x87.jpg?t=1727780922"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1348690/capsule_231x87.jpg?t=1727780922",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/oaken"
       },
       {
         "title": "Haze",
@@ -9602,14 +9968,18 @@
         "appId": null,
         "igdbGameId": 11800,
         "igdbSlug": "divinity-original-sin-ii",
-        "igdbCoverId": "co1y5v"
+        "igdbCoverId": "co1y5v",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/divinity-original-sin-ii"
       },
       {
         "title": "Divinity: Original Sin",
         "appId": null,
         "igdbGameId": 5082,
         "igdbSlug": "divinity-original-sin",
-        "igdbCoverId": "co2axn"
+        "igdbCoverId": "co2axn",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/divinity-original-sin"
       }
     ],
     "profileSources": [
@@ -9967,7 +10337,9 @@
         "igdbSlug": "wwe-2k26",
         "igdbCoverId": "cobebd",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3717070/d029df51e72334b3a63a64914a6572df6f4a7ee0/header_alt_assets_2.jpg?t=1793220236",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3717070/b80c0a5dcfc2e8400a0bf58692f2a4bb779b82a7/capsule_231x87_alt_assets_2.jpg?t=1793220236"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3717070/b80c0a5dcfc2e8400a0bf58692f2a4bb779b82a7/capsule_231x87_alt_assets_2.jpg?t=1793220236",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wwe-2k26"
       },
       {
         "title": "Tiny Tina's Wonderlands",
@@ -9977,7 +10349,9 @@
         "igdbSlug": "tiny-tinas-wonderlands",
         "igdbCoverId": "co390m",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286680/header.jpg?t=1737970341",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286680/capsule_231x87.jpg?t=1737970341"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286680/capsule_231x87.jpg?t=1737970341",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/tiny-tinas-wonderlands"
       },
       {
         "title": "Diablo IV",
@@ -9987,7 +10361,9 @@
         "igdbSlug": "diablo-iv",
         "igdbCoverId": "co69sm",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/80f21a42e378b93e8fbb68ee43103be8ab84891b/header.jpg?t=1789491624",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/7086c858ce766d047bf357515805eda229d966b0/capsule_231x87.jpg?t=1789491624"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/7086c858ce766d047bf357515805eda229d966b0/capsule_231x87.jpg?t=1789491624",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/diablo-iv"
       }
     ],
     "profileSources": [
@@ -10164,7 +10540,9 @@
         "igdbSlug": "the-house-of-hikmah",
         "igdbCoverId": "coay7c",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3451680/c7470ed89da08b0d450fb9ee54e6934e1d595f6f/header.jpg?t=1780439512",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3451680/fc2e9639946c179a30ce0be6645e5089335101c3/capsule_231x87.jpg?t=1780439512"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3451680/fc2e9639946c179a30ce0be6645e5089335101c3/capsule_231x87.jpg?t=1780439512",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-house-of-hikmah"
       }
     ],
     "applicationLocation": "Fully remote · global team; eligibility not stated",
@@ -10221,7 +10599,9 @@
         "igdbSlug": "pax-dei",
         "igdbCoverId": "co8b9p",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1995520/de17115127459af00a30c24bdd516af4d5f40fd9/header.jpg?t=1789563288",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1995520/917d8f4872344b8fce4bfa697838b28dc73e415e/capsule_231x87.jpg?t=1789563288"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1995520/917d8f4872344b8fce4bfa697838b28dc73e415e/capsule_231x87.jpg?t=1789563288",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/pax-dei"
       }
     ],
     "profileSources": [
@@ -10777,14 +11157,18 @@
         "appId": null,
         "igdbGameId": 109455,
         "igdbSlug": "luigis-mansion-3",
-        "igdbCoverId": "co22a9"
+        "igdbCoverId": "co22a9",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/luigis-mansion-3"
       },
       {
         "title": "Mario Strikers: Battle League",
         "appId": null,
         "igdbGameId": 191398,
         "igdbSlug": "mario-strikers-battle-league",
-        "igdbCoverId": "co83vf"
+        "igdbCoverId": "co83vf",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mario-strikers-battle-league"
       }
     ],
     "profileSources": [
@@ -10943,7 +11327,11 @@
         "title": "Fury of Dracula",
         "appId": 958530,
         "appStoreArtworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/02/8e/2b028ea7-e33c-808a-25bc-cdf9e42b5b7f/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg",
-        "appStoreUrl": "https://apps.apple.com/us/app/fury-of-dracula/id1499802612?uo=4"
+        "appStoreUrl": "https://apps.apple.com/us/app/fury-of-dracula/id1499802612?uo=4",
+        "igdbGameId": 175327,
+        "igdbSlug": "fury-of-dracula",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/fury-of-dracula"
       },
       {
         "title": "Fighting Fantasy Legends",
@@ -10952,18 +11340,26 @@
         "igdbSlug": "fighting-fantasy-legends",
         "igdbCoverId": "co24gv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496340/header.jpg?t=1760518443",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496340/capsule_231x87.jpg?t=1760518443"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496340/capsule_231x87.jpg?t=1760518443",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/fighting-fantasy-legends"
       },
       {
         "title": "Talisman: Origins",
         "appId": 1033170,
         "igdbGameId": 117644,
         "igdbSlug": "talisman-origins",
-        "igdbCoverId": "co42ws"
+        "igdbCoverId": "co42ws",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/talisman-origins"
       },
       {
         "title": "Fury of Dracula",
-        "appId": 958530
+        "appId": 958530,
+        "igdbGameId": 175327,
+        "igdbSlug": "fury-of-dracula",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/fury-of-dracula"
       }
     ],
     "profileSources": [
@@ -11053,7 +11449,9 @@
         "igdbSlug": "avowed",
         "igdbCoverId": "co7nbb",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2457220/header.jpg?t=1771352530",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2457220/4ebac678f596dd964e3a339a823b7e5df4567153/capsule_231x87.jpg?t=1771352530"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2457220/4ebac678f596dd964e3a339a823b7e5df4567153/capsule_231x87.jpg?t=1771352530",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/avowed"
       },
       {
         "title": "The Outer Worlds",
@@ -11062,7 +11460,9 @@
         "igdbSlug": "the-outer-worlds",
         "igdbCoverId": "co2eew",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578650/header.jpg?t=1779901907",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578650/capsule_231x87.jpg?t=1779901907"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578650/capsule_231x87.jpg?t=1779901907",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-outer-worlds"
       },
       {
         "title": "The Outer Worlds 2",
@@ -11071,7 +11471,9 @@
         "igdbSlug": "the-outer-worlds-2",
         "igdbCoverId": "co9xx4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/fe273e39cbaf4997d1c8e53879800f07dba0ee03/header.jpg?t=1761760147",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/da980550b308768b5a9b3ba451e3e25ed00aae06/capsule_231x87.jpg?t=1761760147"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/da980550b308768b5a9b3ba451e3e25ed00aae06/capsule_231x87.jpg?t=1761760147",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-outer-worlds-2"
       },
       {
         "title": "Pillars of Eternity",
@@ -11080,7 +11482,9 @@
         "igdbSlug": "pillars-of-eternity",
         "igdbCoverId": "co8tzg",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/header.jpg?t=1783357801",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/capsule_231x87.jpg?t=1783357801"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/capsule_231x87.jpg?t=1783357801",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/pillars-of-eternity"
       }
     ],
     "profileSources": [
@@ -11149,7 +11553,9 @@
         "stage": "Art / live-operations services",
         "igdbGameId": 15707,
         "igdbSlug": "clash-royale",
-        "igdbCoverId": "cobb48"
+        "igdbCoverId": "cobb48",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/clash-royale"
       },
       {
         "title": "Fortnite",
@@ -11175,7 +11581,9 @@
         "stage": "Art/live-operations services",
         "igdbGameId": 15707,
         "igdbSlug": "clash-royale",
-        "igdbCoverId": "cobb48"
+        "igdbCoverId": "cobb48",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/clash-royale"
       },
       {
         "title": "Fortnite",
@@ -11285,7 +11693,9 @@
         "igdbSlug": "slapshot-rebound",
         "igdbCoverId": "co76nd",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1173370/header.jpg?t=1744997858",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1173370/capsule_231x87.jpg?t=1744997858"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1173370/capsule_231x87.jpg?t=1744997858",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/slapshot-rebound"
       },
       {
         "title": "Strikers Club",
@@ -11294,7 +11704,9 @@
         "igdbSlug": "strikers-club",
         "igdbCoverId": "coc7xa",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1952920/134cf5a567b4ee04a70712a786b5a5a4bf536647/header.jpg?t=1786706539",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1952920/a409c9dd3bd1fe3d1ca059608e490c7ba1a8d0c4/capsule_231x87.jpg?t=1786706539"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1952920/a409c9dd3bd1fe3d1ca059608e490c7ba1a8d0c4/capsule_231x87.jpg?t=1786706539",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/strikers-club"
       }
     ],
     "profileSources": [
@@ -11531,14 +11943,18 @@
         "igdbSlug": "the-incentive-program",
         "igdbCoverId": "coc3oh",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429290/8d0545c838b64168e24fa49a031caa1cb32716c4/header.jpg?t=1792591188",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429290/e16471edfd7e68fa4484f5c53f135d2d31ce70b5/capsule_231x87.jpg?t=1792591188"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429290/e16471edfd7e68fa4484f5c53f135d2d31ce70b5/capsule_231x87.jpg?t=1792591188",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-incentive-program"
       },
       {
         "title": "The Creeps",
         "appId": null,
         "igdbGameId": 232581,
         "igdbSlug": "the-creeps",
-        "igdbCoverId": "co6ybn"
+        "igdbCoverId": "co6ybn",
+        "releaseYear": 2008,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-creeps"
       },
       {
         "title": "Monopoly Match",
@@ -11600,7 +12016,9 @@
         "igdbSlug": "through-the-darkest-of-times",
         "igdbCoverId": "co1xel",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1003090/c24b54da117e331be6537d624dc3fb9df96070ca/header.jpg?t=1791469951",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1003090/56e51a2a9fd0c91ee01bb47e08577be6caf3e8a6/capsule_231x87.jpg?t=1791469951"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1003090/56e51a2a9fd0c91ee01bb47e08577be6caf3e8a6/capsule_231x87.jpg?t=1791469951",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/through-the-darkest-of-times"
       },
       {
         "title": "The Darkest Files",
@@ -11609,7 +12027,9 @@
         "igdbSlug": "the-darkest-files",
         "igdbCoverId": "co66ds",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058730/068d70bfdff5ad6fceb45d6d3868f91f422f765d/header.jpg?t=1784716376",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058730/capsule_231x87.jpg?t=1784716376"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058730/capsule_231x87.jpg?t=1784716376",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-darkest-files"
       }
     ],
     "applicationLocation": "Berlin · full-time",
@@ -11663,19 +12083,44 @@
     ],
     "popularGames": [
       {
-        "title": "Stellaris"
+        "title": "Stellaris",
+        "igdbGameId": 11582,
+        "igdbSlug": "stellaris",
+        "igdbCoverId": "coaaru",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/stellaris"
       },
       {
-        "title": "Europa Universalis"
+        "title": "Europa Universalis",
+        "igdbGameId": 2022,
+        "igdbSlug": "europa-universalis",
+        "igdbCoverId": "co2sm8",
+        "releaseYear": 2000,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/europa-universalis"
       },
       {
-        "title": "Hearts of Iron"
+        "title": "Hearts of Iron",
+        "igdbGameId": 22227,
+        "igdbSlug": "hearts-of-iron",
+        "igdbCoverId": "co2qbj",
+        "releaseYear": 2002,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hearts-of-iron"
       },
       {
-        "title": "Crusader Kings"
+        "title": "Crusader Kings",
+        "igdbGameId": 2922,
+        "igdbSlug": "crusader-kings",
+        "igdbCoverId": "co2ptq",
+        "releaseYear": 2004,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/crusader-kings"
       },
       {
-        "title": "Prison Architect"
+        "title": "Prison Architect",
+        "igdbGameId": 1338,
+        "igdbSlug": "prison-architect",
+        "igdbCoverId": "co62ch",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/prison-architect"
       }
     ],
     "profileSources": [
@@ -11838,7 +12283,9 @@
         "igdbSlug": "shakes-and-fidget",
         "igdbCoverId": "coab01",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438040/header.jpg?t=1789479263",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438040/617b1af669e3d62457c29848b8f420f997f42298/capsule_231x87.jpg?t=1789479263"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438040/617b1af669e3d62457c29848b8f420f997f42298/capsule_231x87.jpg?t=1789479263",
+        "releaseYear": 2009,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/shakes-and-fidget"
       }
     ],
     "profileSources": [
@@ -12087,7 +12534,9 @@
         "igdbSlug": "motorsport-manager",
         "igdbCoverId": "co4kgg",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/415200/b51d005e6cc79f7442a79c9754a58db28e4a3569/header.jpg?t=1792769935",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/415200/0cfb4bb872e38413dbd0970129333ac39d6283bc/capsule_231x87.jpg?t=1792769935"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/415200/0cfb4bb872e38413dbd0970129333ac39d6283bc/capsule_231x87.jpg?t=1792769935",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/motorsport-manager"
       }
     ],
     "profileSources": [
@@ -12368,13 +12817,24 @@
         "title": "Crime Scene Cleaner"
       },
       {
-        "title": "Celestial Empire"
+        "title": "Celestial Empire",
+        "igdbGameId": 149756,
+        "igdbSlug": "celestial-empire",
+        "igdbCoverId": "coah9e",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/celestial-empire"
       },
       {
-        "title": "Ship Builder"
+        "title": "Ship Builder",
+        "igdbGameId": 116490,
+        "igdbSlug": "ship-builder",
+        "igdbCoverId": "co4bzw"
       },
       {
-        "title": "Viking City Builder"
+        "title": "Viking City Builder",
+        "igdbGameId": 138984,
+        "igdbSlug": "viking-city-builder",
+        "igdbCoverId": "co5xyz"
       }
     ],
     "profileSources": [
@@ -12755,7 +13215,9 @@
         "appId": null,
         "igdbGameId": 309589,
         "igdbSlug": "backpack-brawl",
-        "igdbCoverId": "coa1mb"
+        "igdbCoverId": "coa1mb",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/backpack-brawl"
       }
     ],
     "profileSources": [
@@ -12870,7 +13332,12 @@
     "popularGames": [
       {
         "title": "Unbroken",
-        "appId": 2842690
+        "appId": 2842690,
+        "igdbGameId": 298600,
+        "igdbSlug": "unbroken--1",
+        "igdbCoverId": "co83yy",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/unbroken--1"
       },
       {
         "title": "Adventurers",
@@ -13040,7 +13507,9 @@
         "igdbSlug": "the-blood-of-dawnwalker",
         "igdbCoverId": "cob7ym",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/9a83d0fa47c662298e15a989ff142fb5c0fda5c7/header_alt_assets_0.jpg?t=1793066343",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/0e39286dc9f7010d02d6da9000939827471d0f4d/capsule_231x87_alt_assets_0.jpg?t=1793066343"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/0e39286dc9f7010d02d6da9000939827471d0f4d/capsule_231x87_alt_assets_0.jpg?t=1793066343",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-blood-of-dawnwalker"
       }
     ],
     "profileSources": [
@@ -13203,7 +13672,9 @@
         "igdbSlug": "soulstice",
         "igdbCoverId": "co39sa",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1602080/header.jpg?t=1746539339",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1602080/capsule_231x87.jpg?t=1746539339"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1602080/capsule_231x87.jpg?t=1746539339",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/soulstice"
       },
       {
         "title": "Theseus",
@@ -13357,7 +13828,9 @@
         "igdbSlug": "hell-clock",
         "igdbCoverId": "cocczq",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1782460/ad535db40678e4c07263cd6378194d2f3924a36b/header_alt_assets_0.jpg?t=1792677583",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1782460/7a68de140430fda054212c2d08a532880818d0ad/capsule_231x87_alt_assets_0.jpg?t=1792677583"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1782460/7a68de140430fda054212c2d08a532880818d0ad/capsule_231x87_alt_assets_0.jpg?t=1792677583",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hell-clock"
       },
       {
         "title": "Relic Hunters Legend",
@@ -13366,21 +13839,27 @@
         "igdbSlug": "relic-hunters-legend",
         "igdbCoverId": "co757i",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633080/header.jpg?t=1755196862",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633080/3d045952c07c7eed61add73ccd7fa0746b817df7/capsule_231x87.jpg?t=1755196862"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633080/3d045952c07c7eed61add73ccd7fa0746b817df7/capsule_231x87.jpg?t=1755196862",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/relic-hunters-legend"
       },
       {
         "title": "Relic Hunters Rebels",
         "appId": null,
         "igdbGameId": 200309,
         "igdbSlug": "relic-hunters-rebels",
-        "igdbCoverId": "co4q50"
+        "igdbCoverId": "co4q50",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/relic-hunters-rebels"
       },
       {
         "title": "Relic Hunters Zero",
         "appId": null,
         "igdbGameId": 12301,
         "igdbSlug": "relic-hunters-zero",
-        "igdbCoverId": "co1pj8"
+        "igdbCoverId": "co1pj8",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/relic-hunters-zero"
       },
       {
         "title": "Star Vikings Forever",
@@ -13389,7 +13868,9 @@
         "igdbSlug": "star-vikings-forever",
         "igdbCoverId": "cobxmt",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/488960/header.jpg?t=1791224376",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/488960/capsule_231x87.jpg?t=1791224376"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/488960/capsule_231x87.jpg?t=1791224376",
+        "releaseYear": 2016,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/star-vikings-forever"
       }
     ],
     "profileSources": [
@@ -13698,7 +14179,9 @@
         "igdbSlug": "faraday-blues",
         "igdbCoverId": "cocxgl",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5221470/dfc60e76c3e26010fbc51c057669e57e85b42aea/header.jpg?t=1790236823",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5221470/c81be35c98dfe98cbafce985e064e618262668d7/capsule_231x87.jpg?t=1790236823"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5221470/c81be35c98dfe98cbafce985e064e618262668d7/capsule_231x87.jpg?t=1790236823",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/faraday-blues"
       },
       {
         "title": "Vivarium",
@@ -13722,7 +14205,9 @@
         "igdbSlug": "springs-eternal",
         "igdbCoverId": "coay7y",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3677850/b02d160b50cddfbaf6f5688115d9979ab1378c49/header.jpg?t=1791493361",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3677850/4a5355bff3f70aec7d65da1df038806ba54a4d29/capsule_231x87.jpg?t=1791493361"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3677850/4a5355bff3f70aec7d65da1df038806ba54a4d29/capsule_231x87.jpg?t=1791493361",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/springs-eternal"
       }
     ],
     "profileSources": [
@@ -13780,7 +14265,9 @@
         "igdbSlug": "evoland",
         "igdbCoverId": "co2sb1",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233470/header.jpg?t=1716563896",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233470/capsule_231x87.jpg?t=1716563896"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233470/capsule_231x87.jpg?t=1716563896",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/evoland"
       },
       {
         "title": "Evoland 2",
@@ -13789,14 +14276,18 @@
         "igdbSlug": "evoland-2",
         "igdbCoverId": "co295h",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359310/header.jpg?t=1737537707",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359310/capsule_231x87.jpg?t=1737537707"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359310/capsule_231x87.jpg?t=1737537707",
+        "releaseYear": 2015,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/evoland-2"
       },
       {
         "title": "Northgard",
         "appId": null,
         "igdbGameId": 18918,
         "igdbSlug": "northgard",
-        "igdbCoverId": "guqifzispzew1rubnyzd"
+        "igdbCoverId": "guqifzispzew1rubnyzd",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/northgard"
       },
       {
         "title": "Wartales",
@@ -13805,7 +14296,9 @@
         "igdbSlug": "wartales",
         "igdbCoverId": "co6dpz",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/header.jpg?t=1788942263",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/capsule_231x87.jpg?t=1788942263"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/capsule_231x87.jpg?t=1788942263",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wartales"
       },
       {
         "title": "Dune: Spice Wars",
@@ -13814,7 +14307,9 @@
         "igdbSlug": "dune-spice-wars",
         "igdbCoverId": "co4a96",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1605220/header.jpg?t=1792574625",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1605220/capsule_231x87.jpg?t=1792574625"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1605220/capsule_231x87.jpg?t=1792574625",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/dune-spice-wars"
       }
     ],
     "profileSources": [
@@ -14128,7 +14623,9 @@
         "igdbSlug": "windstorm-start-of-a-great-friendship-remastered",
         "igdbCoverId": "co8dsv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2829790/header.jpg?t=1758022468",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2829790/capsule_231x87.jpg?t=1758022468"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2829790/capsule_231x87.jpg?t=1758022468",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/windstorm-start-of-a-great-friendship-remastered"
       }
     ],
     "profileSources": [
@@ -14803,7 +15300,9 @@
         "appId": null,
         "igdbGameId": 334026,
         "igdbSlug": "naturalist",
-        "igdbCoverId": "co9hch"
+        "igdbCoverId": "co9hch",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/naturalist"
       },
       {
         "title": "SpongeBob Biomes",
@@ -14915,7 +15414,9 @@
         "igdbSlug": "moods",
         "igdbCoverId": "coa458",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1956770/8a6d892e4579c9ac2bf2933a8d8c2ce7f4210539/header.jpg?t=1766156071",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1956770/1244958679fcf4f1e6e18707928d6b9bf79bd031/capsule_231x87.jpg?t=1766156071"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1956770/1244958679fcf4f1e6e18707928d6b9bf79bd031/capsule_231x87.jpg?t=1766156071",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/moods"
       },
       {
         "title": "Memorrha",
@@ -14925,7 +15426,9 @@
         "igdbSlug": "memorrha",
         "igdbCoverId": "cocs6h",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/954080/header.jpg?t=1710748610",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/954080/capsule_231x87.jpg?t=1710748610"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/954080/capsule_231x87.jpg?t=1710748610",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/memorrha"
       }
     ],
     "profileSources": [
@@ -15025,7 +15528,9 @@
         "igdbSlug": "remothered-red-nuns-legacy",
         "igdbCoverId": "cobrbr",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3335310/36b0a83ca1f760fae7b0d063b89b2f5ad2e7115a/header.jpg?t=1793352162",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3335310/de4626326c1bfe3918f8fa50f73f5af7e1a53127/capsule_231x87.jpg?t=1793352162"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3335310/de4626326c1bfe3918f8fa50f73f5af7e1a53127/capsule_231x87.jpg?t=1793352162",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/remothered-red-nuns-legacy"
       },
       {
         "title": "Remothered: Tormented Fathers Remastered",
@@ -15045,7 +15550,9 @@
         "igdbSlug": "remothered-broken-porcelain-remastered",
         "igdbCoverId": "coccre",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461560/26de67a99faa33af494652cb8bb18ebe749a25d2/header.jpg?t=1790686525",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461560/123361b3d20042f9ab8c5d1b22c2d44b9c393850/capsule_231x87.jpg?t=1790686525"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4461560/123361b3d20042f9ab8c5d1b22c2d44b9c393850/capsule_231x87.jpg?t=1790686525",
+        "releaseYear": 2027,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/remothered-broken-porcelain-remastered"
       },
       {
         "title": "A Quiet Place: The Road Ahead",
@@ -15055,7 +15562,9 @@
         "igdbSlug": "a-quiet-place-the-road-ahead",
         "igdbCoverId": "co8gtp",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/header.jpg?t=1790864553",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/capsule_231x87.jpg?t=1790864553"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/capsule_231x87.jpg?t=1790864553",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/a-quiet-place-the-road-ahead"
       },
       {
         "title": "Batora: Lost Haven",
@@ -15065,7 +15574,9 @@
         "igdbSlug": "batora-lost-haven",
         "igdbCoverId": "co2p95",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/header.jpg?t=1778534731",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/capsule_231x87.jpg?t=1778534731"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/capsule_231x87.jpg?t=1778534731",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/batora-lost-haven"
       },
       {
         "title": "Mafia: The Old Country",
@@ -15075,7 +15586,9 @@
         "igdbSlug": "mafia-the-old-country",
         "igdbCoverId": "coa9dq",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1941540/d06980bb8f41737ca68da8eed40079347db09c84/header.jpg?t=1788898865",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1941540/4cba4ed7de77ea84d94e22eef5cd8c9b284e5b25/capsule_231x87.jpg?t=1788898865"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1941540/4cba4ed7de77ea84d94e22eef5cd8c9b284e5b25/capsule_231x87.jpg?t=1788898865",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mafia-the-old-country"
       },
       {
         "title": "Remothered: Tormented Fathers",
@@ -15084,7 +15597,9 @@
         "igdbSlug": "remothered-tormented-fathers",
         "igdbCoverId": "co26dl",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633360/header.jpg?t=1778183363",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633360/capsule_231x87.jpg?t=1778183363"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/633360/capsule_231x87.jpg?t=1778183363",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/remothered-tormented-fathers"
       },
       {
         "title": "Batora: Lost Haven",
@@ -15093,7 +15608,9 @@
         "igdbSlug": "batora-lost-haven",
         "igdbCoverId": "co2p95",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/header.jpg?t=1778534731",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/capsule_231x87.jpg?t=1778534731"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506440/capsule_231x87.jpg?t=1778534731",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/batora-lost-haven"
       },
       {
         "title": "A Quiet Place: The Road Ahead",
@@ -15102,7 +15619,9 @@
         "igdbSlug": "a-quiet-place-the-road-ahead",
         "igdbCoverId": "co8gtp",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/header.jpg?t=1790864553",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/capsule_231x87.jpg?t=1790864553"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2233120/capsule_231x87.jpg?t=1790864553",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/a-quiet-place-the-road-ahead"
       }
     ],
     "profileSources": [
@@ -15423,7 +15942,9 @@
         "igdbSlug": "v-rising",
         "igdbCoverId": "coby9v",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1604030/be49834ab147ad22ba17005fb847c93917d18b97/header.jpg?t=1793181016",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1604030/9b1b1d0c19ed80e9446c6a3ce37e9fdacf7f14c1/capsule_231x87.jpg?t=1793181016"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1604030/9b1b1d0c19ed80e9446c6a3ce37e9fdacf7f14c1/capsule_231x87.jpg?t=1793181016",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/v-rising"
       },
       {
         "title": "Battlerite",
@@ -15432,7 +15953,9 @@
         "igdbSlug": "battlerite",
         "igdbCoverId": "cocsmn",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504370/header.jpg?t=1769726771",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504370/capsule_231x87.jpg?t=1769726771"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504370/capsule_231x87.jpg?t=1769726771",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/battlerite"
       },
       {
         "title": "Bloodline Champions",
@@ -15441,7 +15964,9 @@
         "igdbSlug": "bloodline-champions",
         "igdbCoverId": "co2pkx",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6370/header.jpg?t=1769727071",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6370/capsule_231x87.jpg?t=1769727071"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6370/capsule_231x87.jpg?t=1769727071",
+        "releaseYear": 2011,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/bloodline-champions"
       }
     ],
     "profileSources": [
@@ -15631,7 +16156,9 @@
         "igdbSlug": "the-quarry",
         "igdbCoverId": "co4kl4",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1577120/header.jpg?t=1730303267",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1577120/capsule_231x87.jpg?t=1730303267"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1577120/capsule_231x87.jpg?t=1730303267",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-quarry"
       },
       {
         "title": "Little Nightmares III",
@@ -15640,7 +16167,9 @@
         "igdbSlug": "little-nightmares-iii--1",
         "igdbCoverId": "coa171",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1392860/7aba96b32736990ec8a131bfdf395d2dc35b282b/header.jpg?t=1790849221",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1392860/6fbaf98a2692a036262ddae76963a3f41dba3edd/capsule_231x87.jpg?t=1790849221"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1392860/6fbaf98a2692a036262ddae76963a3f41dba3edd/capsule_231x87.jpg?t=1790849221",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/little-nightmares-iii--1"
       }
     ],
     "profileSources": [
@@ -15782,7 +16311,9 @@
         "appId": null,
         "igdbGameId": 129160,
         "igdbSlug": "lilys-garden",
-        "igdbCoverId": "co2hp6"
+        "igdbCoverId": "co2hp6",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/lilys-garden"
       }
     ],
     "profileSources": [
@@ -15839,7 +16370,9 @@
         "appId": null,
         "igdbGameId": 250430,
         "igdbSlug": "blackpink-the-game",
-        "igdbCoverId": "co6j74"
+        "igdbCoverId": "co6j74",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/blackpink-the-game"
       },
       {
         "title": "BTS WORLD Season 2",
@@ -15858,7 +16391,9 @@
         "appId": null,
         "igdbGameId": 239003,
         "igdbSlug": "pucca-puzzle-adventure",
-        "igdbCoverId": "co66ll"
+        "igdbCoverId": "co66ll",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/pucca-puzzle-adventure"
       }
     ],
     "profileSources": [
@@ -16095,7 +16630,9 @@
         "igdbSlug": "project-zomboid",
         "igdbCoverId": "co7kod",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1793224893",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/capsule_231x87.jpg?t=1793224893"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/capsule_231x87.jpg?t=1793224893",
+        "releaseYear": 2013,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/project-zomboid"
       }
     ],
     "applicationLocation": "Fully remote · worldwide contributors",
@@ -16260,7 +16797,9 @@
         "stage": "Co-development credit",
         "igdbGameId": 3047,
         "igdbSlug": "forza-horizon",
-        "igdbCoverId": "co228y"
+        "igdbCoverId": "co228y",
+        "releaseYear": 2012,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/forza-horizon"
       },
       {
         "title": "Sea of Thieves",
@@ -16268,7 +16807,9 @@
         "stage": "Co-development credit",
         "igdbGameId": 11137,
         "igdbSlug": "sea-of-thieves",
-        "igdbCoverId": "co2558"
+        "igdbCoverId": "co2558",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/sea-of-thieves"
       },
       {
         "title": "Hearthstone",
@@ -16276,7 +16817,9 @@
         "stage": "Co-development credit",
         "igdbGameId": 1279,
         "igdbSlug": "hearthstone",
-        "igdbCoverId": "co1sh2"
+        "igdbCoverId": "co1sh2",
+        "releaseYear": 2014,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hearthstone"
       }
     ],
     "applicationLocation": "Location not specified · use HQ as reference",
@@ -16375,7 +16918,9 @@
         "appId": null,
         "igdbGameId": 1270,
         "igdbSlug": "darksiders",
-        "igdbCoverId": "co29t0"
+        "igdbCoverId": "co29t0",
+        "releaseYear": 2010,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/darksiders"
       },
       {
         "title": "Destroy All Humans!",
@@ -16390,7 +16935,9 @@
         "igdbSlug": "wreckfest",
         "igdbCoverId": "co3vof",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/header.jpg?t=1742490584",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/capsule_231x87.jpg?t=1742490584"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/capsule_231x87.jpg?t=1742490584",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/wreckfest"
       }
     ],
     "profileSources": [
@@ -16725,7 +17272,9 @@
         "stage": "Co-development contribution",
         "igdbGameId": 159029,
         "igdbSlug": "xdefiant",
-        "igdbCoverId": "co6dta"
+        "igdbCoverId": "co6dta",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/xdefiant"
       }
     ],
     "profileSources": [
@@ -16779,7 +17328,9 @@
         "igdbSlug": "subnautica",
         "igdbCoverId": "coa938",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1777456112",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/capsule_231x87.jpg?t=1777456112"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/capsule_231x87.jpg?t=1777456112",
+        "releaseYear": 2018,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/subnautica"
       },
       {
         "title": "Subnautica: Below Zero",
@@ -16788,7 +17339,9 @@
         "igdbSlug": "subnautica-below-zero",
         "igdbCoverId": "co39ve",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/header.jpg?t=1777456254",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/capsule_231x87.jpg?t=1777456254"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/capsule_231x87.jpg?t=1777456254",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/subnautica-below-zero"
       }
     ],
     "profileSources": [
@@ -16938,35 +17491,45 @@
         "igdbSlug": "midnight-murder-club",
         "igdbCoverId": "co96gv",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2698870/header.jpg?t=1780592127",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2698870/7affbe7baff7738a71611f0fde0ca2fb1daed5b7/capsule_231x87.jpg?t=1780592127"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2698870/7affbe7baff7738a71611f0fde0ca2fb1daed5b7/capsule_231x87.jpg?t=1780592127",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/midnight-murder-club"
       },
       {
         "title": "Bounce Arcade",
         "appId": null,
         "igdbGameId": 306945,
         "igdbSlug": "bounce-arcade",
-        "igdbCoverId": "co8eme"
+        "igdbCoverId": "co8eme",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/bounce-arcade"
       },
       {
         "title": "Hot Wheels Rift Rally",
         "appId": null,
         "igdbGameId": 254347,
         "igdbSlug": "hot-wheels-rift-rally",
-        "igdbCoverId": "co72ms"
+        "igdbCoverId": "co72ms",
+        "releaseYear": 2023,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/hot-wheels-rift-rally"
       },
       {
         "title": "Knockout City",
         "appId": 1301210,
         "igdbGameId": 143615,
         "igdbSlug": "knockout-city",
-        "igdbCoverId": "co2tvg"
+        "igdbCoverId": "co2tvg",
+        "releaseYear": 2021,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/knockout-city"
       },
       {
         "title": "Mario Kart Live: Home Circuit",
         "appId": null,
         "igdbGameId": 138251,
         "igdbSlug": "mario-kart-live-home-circuit",
-        "igdbCoverId": "co2fuw"
+        "igdbCoverId": "co2fuw",
+        "releaseYear": 2020,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/mario-kart-live-home-circuit"
       }
     ],
     "profileSources": [
@@ -17026,7 +17589,9 @@
         "igdbSlug": "the-7th-guest-remake",
         "igdbCoverId": "cobrc7",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4491360/ba4e68cf5d709de4d3c4971850548d66321c6110/header.jpg?t=1782214150",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4491360/d680f60c3062ad72ad9d0c145cbb1bc37de87704/capsule_231x87.jpg?t=1782214150"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4491360/d680f60c3062ad72ad9d0c145cbb1bc37de87704/capsule_231x87.jpg?t=1782214150",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/the-7th-guest-remake"
       },
       {
         "title": "Thief VR: Legacy of Shadow",
@@ -17035,7 +17600,9 @@
         "igdbSlug": "thief-vr-legacy-of-shadow",
         "igdbCoverId": "co9ww7",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/052ddf4a3541b04731fc88e5f675943685eeeb99/header.jpg?t=1770198880",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/137303db662776efda2435f6bd6ebc6c72d5f74e/capsule_231x87.jpg?t=1770198880"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2800080/137303db662776efda2435f6bd6ebc6c72d5f74e/capsule_231x87.jpg?t=1770198880",
+        "releaseYear": 2025,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/thief-vr-legacy-of-shadow"
       },
       {
         "title": "Metro Awakening",
@@ -17103,7 +17670,9 @@
         "igdbSlug": "eville",
         "igdbCoverId": "co4vhs",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/header.jpg?t=1773308897",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/capsule_231x87.jpg?t=1773308897"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/capsule_231x87.jpg?t=1773308897",
+        "releaseYear": 2022,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/eville"
       }
     ],
     "applicationLocation": "Hybrid / remote · full-time roles require German; English required",
@@ -17263,7 +17832,9 @@
         "igdbSlug": "galactic-prospectors",
         "igdbCoverId": "cocwd8",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561380/14976bfd2eb8ee3e9c5263eeee16aff3ebd7cab9/header.jpg?t=1792452948",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561380/00f4597c0fbc9dce1319825d8adcced3d8e6777c/capsule_231x87.jpg?t=1792452948"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561380/00f4597c0fbc9dce1319825d8adcced3d8e6777c/capsule_231x87.jpg?t=1792452948",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/galactic-prospectors"
       },
       {
         "title": "Starbreaker",
@@ -17403,7 +17974,9 @@
         "igdbSlug": "we-are-football-2027",
         "igdbCoverId": "cocwyq",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4328570/1d3ac8128f0cf954b90c07176a18a45f0b7b142e/header.jpg?t=1791985731",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4328570/961584c6cb6f746f5b3bec021a0e8033fb2fe801/capsule_231x87.jpg?t=1791985731"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4328570/961584c6cb6f746f5b3bec021a0e8033fb2fe801/capsule_231x87.jpg?t=1791985731",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/we-are-football-2027"
       },
       {
         "title": "WE ARE FOOTBALL 2024",
@@ -17413,7 +17986,9 @@
         "igdbSlug": "we-are-football-2024",
         "igdbCoverId": "co7tr3",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1951410/0b9fef0af835526d49193dc496a1739a5504ccbc/header.jpg?t=1791536577",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1951410/7b934d6044e41c2409859fa3f85ed40c92d476c7/capsule_231x87.jpg?t=1791536577"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1951410/7b934d6044e41c2409859fa3f85ed40c92d476c7/capsule_231x87.jpg?t=1791536577",
+        "releaseYear": 2024,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/we-are-football-2024"
       },
       {
         "title": "Taktikfuchs: Eishockey",
@@ -17482,7 +18057,9 @@
         "igdbSlug": "destiny-2",
         "igdbCoverId": "coc89g",
         "steamHeaderUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/0ccf0dc0a8c4ec078db7ab99ddc820b2fa884441/header.jpg?t=1781815889",
-        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/953a00adc58cc0758102a5026dda6f2a76a5a6a1/capsule_231x87.jpg?t=1781815889"
+        "steamCapsuleUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/953a00adc58cc0758102a5026dda6f2a76a5a6a1/capsule_231x87.jpg?t=1781815889",
+        "releaseYear": 2017,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/destiny-2"
       },
       {
         "title": "Apex Legends",
@@ -17490,7 +18067,9 @@
         "stage": "Technology services",
         "igdbGameId": 114795,
         "igdbSlug": "apex-legends",
-        "igdbCoverId": "cocqh2"
+        "igdbCoverId": "cocqh2",
+        "releaseYear": 2019,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/apex-legends"
       },
       {
         "title": "NBA 2K",
@@ -17498,7 +18077,9 @@
         "stage": "Technology services",
         "igdbGameId": 8832,
         "igdbSlug": "nba-2k",
-        "igdbCoverId": "co5xx3"
+        "igdbCoverId": "co5xx3",
+        "releaseYear": 1999,
+        "releaseYearSourceUrl": "https://www.igdb.com/games/nba-2k"
       }
     ],
     "profileSources": [
