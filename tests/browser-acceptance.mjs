@@ -559,7 +559,7 @@ async function main() {
     assert.ok(totalResults > 100, "The global directory should contain a substantial set of active studios.");
     assert.equal(initialCount, 100, "The selected page size should cap the initial directory view at 100 rows.");
     assert.ok(await page.locator(".studio-mark").count() > 50, "Studio marks should appear for visible directory rows.");
-    assert.ok(await page.locator(".country-flag").count() > 50, "Known studio locations should display flags.");
+    assert.ok(await page.locator(".location-cell svg.ui-icon").count() > 50, "Known studio locations should display a consistent location icon.");
     assert.ok(await page.locator(".studio-scale-tag").count() > 0, "Classified studios should show a scale badge beside the name.");
     assert.ok(await page.locator(".studio-table .tag-list-platform .studio-facet-tag").count() > 0, "Platform should have its own column.");
     assert.ok(await page.locator(".studio-table .tag-list-focus .studio-facet-tag").count() > 0, "Focus should have its own column.");
