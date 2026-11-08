@@ -253,6 +253,7 @@ export default function ApplicationTracker({
                     </td>
                     <td>
                       <span className="location-cell">
+                        <Icon name="map-pin" size={13} />
                         <span>{application.country || "Not stated"}</span>
                       </span>
                     </td>

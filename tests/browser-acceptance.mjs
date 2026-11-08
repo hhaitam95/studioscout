@@ -653,8 +653,11 @@ async function main() {
     await platformPicker.locator("summary").click();
     assert.equal(await scalePicker.getAttribute("open"), null, "Opening another filter should close the previously open dropdown.");
     assert.notEqual(await platformPicker.getAttribute("open"), null, "The newly selected filter should open.");
-    await page.locator(".page-heading").click();
+    await page.locator(".directory-page > .page-heading").click();
     assert.equal(await platformPicker.getAttribute("open"), null, "Clicking outside the filters should close an open dropdown.");
+    await scalePicker.locator("summary").click();
+    await page.keyboard.press("Escape");
+    assert.equal(await scalePicker.getAttribute("open"), null, "Pressing Escape should close an open dropdown.");
     await platformPicker.locator("summary").click();
     const pcFilter = page.getByRole("checkbox", { name: "Platform: PC" });
     const mobileFilter = page.getByRole("checkbox", { name: "Platform: Mobile" });
