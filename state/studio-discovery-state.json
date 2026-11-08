@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T16:42:51.097251+00:00",
+  "updated_at": "2026-11-08T20:55:49.532716+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "",
+    "wikidata_video_game_developers": "Q111307735",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "7701",
-    "wikidata_video_game_industry": "Q2577763",
-    "igdb_companies": "45318",
+    "gamedevmap": "7901",
+    "wikidata_video_game_industry": "Q30895649",
+    "igdb_companies": "45945",
     "scottish_games_industry": ""
   },
   "feed_done": {
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 5,
-  "cycle": 58,
+  "cycle": 59,
   "cycle_additions": 3,
   "empty_cycles": 0,
   "saturated": false,
@@ -806,7 +806,8 @@
       "sources_seen": [
         "wikidata_video_game_industry",
         "wikidata_game_developer_credits",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "gamedevmap"
       ]
     },
     "Q101115212": {
@@ -1063,7 +1064,8 @@
       "sources_seen": [
         "wikidata_video_game_industry",
         "wikidata_game_developer_credits",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "igdb_companies"
       ]
     },
     "Q101807463": {
@@ -1534,7 +1536,8 @@
       "sources_seen": [
         "wikidata_video_game_industry",
         "wikidata_game_developer_credits",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "gamedevmap"
       ]
     },
     "Q104158530": {
@@ -8078,7 +8081,8 @@
       "source_cycle": 2,
       "sources_seen": [
         "gamedevmap",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "igdb_companies"
       ]
     },
     "GDM:e3c09b7dfff6ea8b0d68": {
@@ -16935,7 +16939,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:9cd9240fb6512c4223c3": {
@@ -19446,7 +19451,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:5ed860887e65d84a0124": {
@@ -31109,7 +31115,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:88dcf8b7f581ec00c2af": {
@@ -52648,7 +52655,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:76c0f111489d2df8f05e": {
@@ -59455,7 +59463,8 @@
       "sources_seen": [
         "gamedevmap",
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "GDM:9201b6250b8b623dc178": {
@@ -60538,7 +60547,8 @@
       "reason": "http-status",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:91078db2b6317030759a": {
@@ -61274,7 +61284,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:a19adffd7a4fd1a3705f": {
@@ -81257,7 +81268,8 @@
       "source_cycle": 2,
       "sources_seen": [
         "gamedevmap",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "igdb_companies"
       ]
     },
     "GDM:16d5af3d06557da2fb26": {
@@ -87018,7 +87030,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:a95a57d01c0d0111d405": {
@@ -89846,7 +89859,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:dd398e972b03cc663904": {
@@ -101754,7 +101768,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:0d1307c42b0dcdc351b0": {
@@ -109392,7 +109407,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:c0d40e79e87a0d62cbf5": {
@@ -121872,7 +121888,8 @@
       "sources_seen": [
         "gamedevmap",
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "GDM:c966656c15ce467f389b": {
@@ -135770,7 +135787,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:420238bbabf022d9ddfb": {
@@ -150577,7 +150595,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:8a8e96167c16e0542da8": {
       "qid": "GDM:8a8e96167c16e0542da8",
@@ -150598,7 +150619,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:29645761099666f33e9d": {
       "qid": "GDM:29645761099666f33e9d",
@@ -150645,7 +150669,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:082d0a13deca2ddfdf1e": {
       "qid": "GDM:082d0a13deca2ddfdf1e",
@@ -150666,7 +150693,11 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap",
+        "igdb_companies"
+      ]
     },
     "GDM:65bf21e986f8cd175b3f": {
       "qid": "GDM:65bf21e986f8cd175b3f",
@@ -150687,7 +150718,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:2c7f7f41e89ed0f6f09f": {
       "qid": "GDM:2c7f7f41e89ed0f6f09f",
@@ -150708,7 +150742,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:89f7c596a32dc69a89e0": {
       "qid": "GDM:89f7c596a32dc69a89e0",
@@ -150754,7 +150791,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:bd33ad460b37f4ca8f30": {
       "qid": "GDM:bd33ad460b37f4ca8f30",
@@ -150825,7 +150865,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e1a2348c0910919fe9b6": {
       "qid": "GDM:e1a2348c0910919fe9b6",
@@ -150898,7 +150941,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:210b3034f5ada9ea0847": {
       "qid": "GDM:210b3034f5ada9ea0847",
@@ -150971,7 +151017,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "http-status",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:9780adbc2cf9e54d01f1": {
       "qid": "GDM:9780adbc2cf9e54d01f1",
@@ -151042,7 +151091,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:4e72a4510c7355fe87d1": {
       "qid": "GDM:4e72a4510c7355fe87d1",
@@ -151063,7 +151115,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:676b2647d35e507dbf95": {
       "qid": "GDM:676b2647d35e507dbf95",
@@ -151084,7 +151139,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "http-status",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:3bd8eccbfb86e00f3d4d": {
       "qid": "GDM:3bd8eccbfb86e00f3d4d",
@@ -151131,7 +151189,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:2cf53bbad29d235cba9c": {
       "qid": "GDM:2cf53bbad29d235cba9c",
@@ -151152,7 +151213,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:99adc349a604294c29c2": {
       "qid": "GDM:99adc349a604294c29c2",
@@ -151225,7 +151289,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:ad71860fb49dcad1c1d5": {
       "qid": "GDM:ad71860fb49dcad1c1d5",
@@ -151273,7 +151340,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d6adaea71842879a1096": {
       "qid": "GDM:d6adaea71842879a1096",
@@ -151294,7 +151364,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d9f7535a71d647a1133b": {
       "qid": "GDM:d9f7535a71d647a1133b",
@@ -151315,7 +151388,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e8bde3c8fcd4c53c9460": {
       "qid": "GDM:e8bde3c8fcd4c53c9460",
@@ -151336,7 +151412,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:bf16894255f21450f708": {
       "qid": "GDM:bf16894255f21450f708",
@@ -151357,7 +151436,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "explicit_route_text_without_a_detectable_submission_method",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e9a2ff6293518e952f52": {
       "qid": "GDM:e9a2ff6293518e952f52",
@@ -151378,7 +151460,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:0227d098e74f4e719ed6": {
       "qid": "GDM:0227d098e74f4e719ed6",
@@ -151425,7 +151510,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:4e12a964ed154a6c90e2": {
       "qid": "GDM:4e12a964ed154a6c90e2",
@@ -151473,7 +151561,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:a686554e9986861e9cb2": {
       "qid": "GDM:a686554e9986861e9cb2",
@@ -151494,7 +151585,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:66adc8da13e63dc2a583": {
       "qid": "GDM:66adc8da13e63dc2a583",
@@ -151619,7 +151713,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e2698b0193a711176d0b": {
       "qid": "GDM:e2698b0193a711176d0b",
@@ -151719,7 +151816,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "http-status",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:20ab84ad910e5cfb3a58": {
       "qid": "GDM:20ab84ad910e5cfb3a58",
@@ -151740,7 +151840,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:f3f4b095e267533c97e4": {
       "qid": "GDM:f3f4b095e267533c97e4",
@@ -151761,7 +151864,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:04fa23551d2676a2ffac": {
       "qid": "GDM:04fa23551d2676a2ffac",
@@ -151807,7 +151913,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:4f8b6b04c45b68c8c5fe": {
       "qid": "GDM:4f8b6b04c45b68c8c5fe",
@@ -151853,7 +151962,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:c179e76319267de638fa": {
       "qid": "GDM:c179e76319267de638fa",
@@ -151874,7 +151986,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:8c020471fcafc7bd73fe": {
       "qid": "GDM:8c020471fcafc7bd73fe",
@@ -151895,7 +152010,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:cff3db9711dee4dadea6": {
       "qid": "GDM:cff3db9711dee4dadea6",
@@ -151916,7 +152034,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:b13ac1e4a93467db8118": {
       "qid": "GDM:b13ac1e4a93467db8118",
@@ -151937,7 +152058,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:47156373d515e848982f": {
       "qid": "GDM:47156373d515e848982f",
@@ -151958,7 +152082,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:40cb28584672ce3c8ad5": {
       "qid": "GDM:40cb28584672ce3c8ad5",
@@ -151979,7 +152106,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:7253777537ef7ab684b5": {
       "qid": "GDM:7253777537ef7ab684b5",
@@ -152040,7 +152170,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:f2c76c2909cc3fc37de3": {
       "qid": "GDM:f2c76c2909cc3fc37de3",
@@ -152061,7 +152194,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:33cdbf0265e59ed097b0": {
       "qid": "GDM:33cdbf0265e59ed097b0",
@@ -152159,7 +152295,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:8a505c58ed255ceb26d6": {
       "qid": "GDM:8a505c58ed255ceb26d6",
@@ -152180,7 +152319,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:b3aeecd22028e2c1817e": {
       "qid": "GDM:b3aeecd22028e2c1817e",
@@ -152201,7 +152343,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:b1af1e432da19209da96": {
       "qid": "GDM:b1af1e432da19209da96",
@@ -152273,7 +152418,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:7e9bb2c33d6b8626bf10": {
       "qid": "GDM:7e9bb2c33d6b8626bf10",
@@ -152294,7 +152442,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:0d52d3c35e024aabb3d1": {
       "qid": "GDM:0d52d3c35e024aabb3d1",
@@ -152315,7 +152466,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:3aa0811114e15fe7618a": {
       "qid": "GDM:3aa0811114e15fe7618a",
@@ -152336,7 +152490,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d54e53a189f21a255e91": {
       "qid": "GDM:d54e53a189f21a255e91",
@@ -152357,7 +152514,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:a7f450f285a922bb58ac": {
       "qid": "GDM:a7f450f285a922bb58ac",
@@ -152378,7 +152538,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:ed77fd776ae15e47f99f": {
       "qid": "GDM:ed77fd776ae15e47f99f",
@@ -152399,7 +152562,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:243edde3bb58b7f2cfdd": {
       "qid": "GDM:243edde3bb58b7f2cfdd",
@@ -152420,7 +152586,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:f0734129beffa0e717d4": {
       "qid": "GDM:f0734129beffa0e717d4",
@@ -152441,7 +152610,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e622355ec43218f3a09d": {
       "qid": "GDM:e622355ec43218f3a09d",
@@ -152512,7 +152684,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:f5a389d7903a1b95b74d": {
       "qid": "GDM:f5a389d7903a1b95b74d",
@@ -152533,7 +152708,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e3f0c6d6674ea9ff34b3": {
       "qid": "GDM:e3f0c6d6674ea9ff34b3",
@@ -152581,7 +152759,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "non-public-host-or-dns-failure",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:50c8375fe9cbadd0b199": {
       "qid": "GDM:50c8375fe9cbadd0b199",
@@ -152602,7 +152783,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:825124406b0047edda35": {
       "qid": "GDM:825124406b0047edda35",
@@ -152623,7 +152807,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:2306e1f2b411597cd200": {
       "qid": "GDM:2306e1f2b411597cd200",
@@ -152644,7 +152831,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:479666d623688a8cc87b": {
       "qid": "GDM:479666d623688a8cc87b",
@@ -152665,7 +152855,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:884a769a08aef27ea086": {
       "qid": "GDM:884a769a08aef27ea086",
@@ -152686,7 +152879,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:ee74bdd2506cfcddd149": {
       "qid": "GDM:ee74bdd2506cfcddd149",
@@ -152732,7 +152928,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:74e6866c6afc84d17394": {
       "qid": "GDM:74e6866c6afc84d17394",
@@ -152753,7 +152952,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:be3a72f2271dc0f3c652": {
       "qid": "GDM:be3a72f2271dc0f3c652",
@@ -152774,7 +152976,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:efc581a06defcb2465ca": {
       "qid": "GDM:efc581a06defcb2465ca",
@@ -152820,7 +153025,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:a53cbff574bc803245bf": {
       "qid": "GDM:a53cbff574bc803245bf",
@@ -152841,7 +153049,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:440d8ed1f0a7a965c40b": {
       "qid": "GDM:440d8ed1f0a7a965c40b",
@@ -152862,7 +153073,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:33288e645a0df2a6a758": {
       "qid": "GDM:33288e645a0df2a6a758",
@@ -152883,7 +153097,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:83f0ad61962938238800": {
       "qid": "GDM:83f0ad61962938238800",
@@ -152954,7 +153171,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:52a9380e27a16de3272c": {
       "qid": "GDM:52a9380e27a16de3272c",
@@ -152975,7 +153195,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:4e61b2a2959f90d1aae9": {
       "qid": "GDM:4e61b2a2959f90d1aae9",
@@ -152996,7 +153219,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:ddd315c287f630bd832d": {
       "qid": "GDM:ddd315c287f630bd832d",
@@ -153069,7 +153295,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:8383b3e16a5f46cd5c78": {
       "qid": "GDM:8383b3e16a5f46cd5c78",
@@ -153090,7 +153319,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "http-status",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:3328183a12763e6ac6da": {
       "qid": "GDM:3328183a12763e6ac6da",
@@ -153136,7 +153368,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:b680304c3933f87a5b4f": {
       "qid": "GDM:b680304c3933f87a5b4f",
@@ -153208,7 +153443,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:341860b29edfba083d7f": {
       "qid": "GDM:341860b29edfba083d7f",
@@ -153255,7 +153493,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:68c846256161dffb34d4": {
       "qid": "GDM:68c846256161dffb34d4",
@@ -153276,7 +153517,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:0034d93d7d4db2a3d4aa": {
       "qid": "GDM:0034d93d7d4db2a3d4aa",
@@ -153324,7 +153568,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:6c82468908feae2bc89c": {
       "qid": "GDM:6c82468908feae2bc89c",
@@ -153345,7 +153592,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:1eb7ceb43774d572b588": {
       "qid": "GDM:1eb7ceb43774d572b588",
@@ -153419,7 +153669,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:3b1896d4ef363efaa2d1": {
       "qid": "GDM:3b1896d4ef363efaa2d1",
@@ -153440,7 +153693,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:44275aacdadb9d3c5736": {
       "qid": "GDM:44275aacdadb9d3c5736",
@@ -153499,7 +153755,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:cc8153e296bcb5ebb64c": {
       "qid": "GDM:cc8153e296bcb5ebb64c",
@@ -153520,7 +153779,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:a907e75a4669fa5141fa": {
       "qid": "GDM:a907e75a4669fa5141fa",
@@ -153541,7 +153803,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:143ad72e5f99431a8476": {
       "qid": "GDM:143ad72e5f99431a8476",
@@ -153562,7 +153827,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:9982c8b7b62281097f46": {
       "qid": "GDM:9982c8b7b62281097f46",
@@ -153635,7 +153903,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "http-status",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:06e0bbec53d51ebffd22": {
       "qid": "GDM:06e0bbec53d51ebffd22",
@@ -153681,7 +153952,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:725615010f2606bd692e": {
       "qid": "GDM:725615010f2606bd692e",
@@ -153728,7 +154002,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:17b5a2bb81f001915f48": {
       "qid": "GDM:17b5a2bb81f001915f48",
@@ -153881,7 +154158,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:7fac4c4964b038485de4": {
       "qid": "GDM:7fac4c4964b038485de4",
@@ -153902,7 +154182,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:f3fe71ac83bfffddc41c": {
       "qid": "GDM:f3fe71ac83bfffddc41c",
@@ -153923,7 +154206,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:c5826e7166446a1f0ca2": {
       "qid": "GDM:c5826e7166446a1f0ca2",
@@ -153944,7 +154230,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:dc6d0a3aabcaf15b2a86": {
       "qid": "GDM:dc6d0a3aabcaf15b2a86",
@@ -153990,7 +154279,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:e7ba5156d6a75f5d8893": {
       "qid": "GDM:e7ba5156d6a75f5d8893",
@@ -154062,7 +154354,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:7bc84b992769a8a97807": {
       "qid": "GDM:7bc84b992769a8a97807",
@@ -154083,7 +154378,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:6ff7acc8bb09a961e1fc": {
       "qid": "GDM:6ff7acc8bb09a961e1fc",
@@ -154104,7 +154402,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d04fe3cdb685ddf33bc9": {
       "qid": "GDM:d04fe3cdb685ddf33bc9",
@@ -154151,7 +154452,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:6e8fe5cb2666500a84a5": {
       "qid": "GDM:6e8fe5cb2666500a84a5",
@@ -154198,7 +154502,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:2bd371aecef9d05ecd20": {
       "qid": "GDM:2bd371aecef9d05ecd20",
@@ -154219,7 +154526,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d59766558500155d8d7a": {
       "qid": "GDM:d59766558500155d8d7a",
@@ -154240,7 +154550,10 @@
       "attempts": 2,
       "cycle": 1,
       "reason": "robots-disallowed",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:47bc40915270418abea7": {
       "qid": "GDM:47bc40915270418abea7",
@@ -154288,7 +154601,10 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap"
+      ]
     },
     "GDM:d2c6cf55193b3fb26a87": {
       "qid": "GDM:d2c6cf55193b3fb26a87",
@@ -154399,7 +154715,11 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap",
+        "igdb_companies"
+      ]
     },
     "GDM:8a35e4ba3304881ba57d": {
       "qid": "GDM:8a35e4ba3304881ba57d",
@@ -171356,7 +171676,11 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap",
+        "igdb_companies"
+      ]
     },
     "GDM:bcae4ba447946d9dec84": {
       "qid": "GDM:bcae4ba447946d9dec84",
@@ -175510,7 +175834,8 @@
       "sources_seen": [
         "gamedevmap",
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "GDM:72e9c513c8e4debd2185": {
@@ -177704,7 +178029,11 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap",
+        "igdb_companies"
+      ]
     },
     "GDM:751a4aac7d5e8c14f9aa": {
       "qid": "GDM:751a4aac7d5e8c14f9aa",
@@ -188771,7 +189100,11 @@
       "attempts": 1,
       "cycle": 1,
       "reason": "no_explicit_speculative_route_found",
-      "source_cycle": 2
+      "source_cycle": 2,
+      "sources_seen": [
+        "gamedevmap",
+        "igdb_companies"
+      ]
     },
     "GDM:542d54f82c208638f940": {
       "qid": "GDM:542d54f82c208638f940",
@@ -206306,7 +206639,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_industry",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "gamedevmap"
       ]
     },
     "Q109928554": {
@@ -206996,7 +207330,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_industry",
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "igdb_companies"
       ]
     },
     "Q110189455": {
@@ -212612,7 +212947,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q1154544": {
@@ -213432,7 +213768,8 @@
       "sources_seen": [
         "wikidata_video_game_developers",
         "wikidata_video_game_industry",
-        "igdb_companies"
+        "igdb_companies",
+        "gamedevmap"
       ]
     },
     "Q116761402": {
@@ -215663,7 +216000,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q1207809": {
@@ -216977,7 +217315,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q123117982": {
@@ -217350,7 +217689,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q123371166": {
@@ -217654,7 +217994,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q123739725": {
@@ -219856,7 +220197,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "igdb_companies"
+        "igdb_companies",
+        "gamedevmap"
       ]
     },
     "Q130528119": {
@@ -236012,7 +236354,8 @@
       "source_id": "legacy_unattributed",
       "sources_seen": [
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ]
     },
     "Q5163431": {
@@ -242329,7 +242672,8 @@
       "reason": "non-public-host-or-dns-failure",
       "source_id": "legacy_unattributed",
       "sources_seen": [
-        "wikidata_video_game_developers"
+        "wikidata_video_game_developers",
+        "igdb_companies"
       ]
     },
     "Q6778266": {
@@ -243457,7 +243801,8 @@
         "legacy_unattributed",
         "igdb_companies",
         "wikidata_video_game_developers",
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "gamedevmap"
       ]
     },
     "Q7304783": {
@@ -286573,7 +286918,8 @@
       "country_code": "",
       "company_type": "Developer",
       "sources_seen": [
-        "igdb_companies"
+        "igdb_companies",
+        "gamedevmap"
       ],
       "source_cycle": 20,
       "status": "needs_review",
@@ -317068,7 +317414,8 @@
       "country_code": "",
       "company_type": "Developer",
       "sources_seen": [
-        "igdb_companies"
+        "igdb_companies",
+        "gamedevmap"
       ],
       "source_cycle": 20,
       "status": "no_route",
@@ -321353,7 +321700,8 @@
       "country_code": "",
       "company_type": "Developer",
       "sources_seen": [
-        "igdb_companies"
+        "igdb_companies",
+        "gamedevmap"
       ],
       "source_cycle": 20,
       "status": "retry",
@@ -337072,7 +337420,8 @@
       "country_code": "",
       "company_type": "Microstudio",
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ],
       "source_cycle": 3,
       "status": "needs_review",
@@ -358200,6 +358549,3318 @@
       "attempts": 1,
       "cycle": 57,
       "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45319": {
+      "qid": "IGDB:45319",
+      "source_cursor": "45319",
+      "entity_url": "https://www.igdb.com/companies/cave-bear-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Cave Bear Studio",
+      "website": "https://www.cavebear.studio/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.025052+00:00",
+      "checked_at": "2026-11-08T20:53:27.916797+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45334": {
+      "qid": "IGDB:45334",
+      "source_cursor": "45334",
+      "entity_url": "https://www.igdb.com/companies/vazkii",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Vazkii",
+      "website": "https://vazkii.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025577+00:00",
+      "checked_at": "2026-11-08T20:53:27.916814+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45335": {
+      "qid": "IGDB:45335",
+      "source_cursor": "45335",
+      "entity_url": "https://www.igdb.com/companies/violet-moon",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Violet Moon",
+      "website": "https://violetmoon.org/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025597+00:00",
+      "checked_at": "2026-11-08T20:53:27.916821+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45337": {
+      "qid": "IGDB:45337",
+      "source_cursor": "45337",
+      "entity_url": "https://www.igdb.com/companies/buildcraft-team",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "BuildCraft Team",
+      "website": "https://www.mod-buildcraft.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025614+00:00",
+      "checked_at": "2026-11-08T20:53:27.916827+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45341": {
+      "qid": "IGDB:45341",
+      "source_cursor": "45341",
+      "entity_url": "https://www.igdb.com/companies/squishiverse",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Squishiverse",
+      "website": "https://squishiverse.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025629+00:00",
+      "checked_at": "2026-11-08T20:53:27.916833+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45343": {
+      "qid": "IGDB:45343",
+      "source_cursor": "45343",
+      "entity_url": "https://www.igdb.com/companies/swdteam",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "SWDTeam",
+      "website": "https://swdteam.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025643+00:00",
+      "checked_at": "2026-11-08T20:53:27.916838+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45365": {
+      "qid": "IGDB:45365",
+      "source_cursor": "45365",
+      "entity_url": "https://www.igdb.com/companies/wagon-software-sia",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Wagon Software SIA",
+      "website": "https://wagon.llc/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.025888+00:00",
+      "checked_at": "2026-11-08T20:53:27.916842+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45367": {
+      "qid": "IGDB:45367",
+      "source_cursor": "45367",
+      "entity_url": "https://www.igdb.com/companies/big-blaze-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Big Blaze Games",
+      "website": "https://www.bigblazegames.de/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025903+00:00",
+      "checked_at": "2026-11-08T20:53:27.916847+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45368": {
+      "qid": "IGDB:45368",
+      "source_cursor": "45368",
+      "entity_url": "https://www.igdb.com/companies/shezo-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Shezo Games",
+      "website": "https://shezo.ru/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.025918+00:00",
+      "checked_at": "2026-11-08T20:53:37.220301+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45369": {
+      "qid": "IGDB:45369",
+      "source_cursor": "45369",
+      "entity_url": "https://www.igdb.com/companies/kyrieru",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Kyrieru",
+      "website": "https://kyrieru.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025932+00:00",
+      "checked_at": "2026-11-08T20:53:37.220329+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45379": {
+      "qid": "IGDB:45379",
+      "source_cursor": "45379",
+      "entity_url": "https://www.igdb.com/companies/aidan-brady",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Aidan Brady",
+      "website": "https://aidancbrady.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026149+00:00",
+      "checked_at": "2026-11-08T20:53:37.220340+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45383": {
+      "qid": "IGDB:45383",
+      "source_cursor": "45383",
+      "entity_url": "https://www.igdb.com/companies/possiblyaxolotl",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "PossiblyAxolotl",
+      "website": "https://possiblyaxolotl.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026163+00:00",
+      "checked_at": "2026-11-08T20:53:37.220347+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45396": {
+      "qid": "IGDB:45396",
+      "source_cursor": "45396",
+      "entity_url": "https://www.igdb.com/companies/loblast",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "LoBlast",
+      "website": "https://loblast.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026408+00:00",
+      "checked_at": "2026-11-08T20:53:37.220353+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45404": {
+      "qid": "IGDB:45404",
+      "source_cursor": "45404",
+      "entity_url": "https://www.igdb.com/companies/subpixel",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Subpixel",
+      "website": "https://www.subpixel.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026424+00:00",
+      "checked_at": "2026-11-08T20:53:37.220360+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45408": {
+      "qid": "IGDB:45408",
+      "source_cursor": "45408",
+      "entity_url": "https://www.igdb.com/companies/tropicraft-dev-team",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Tropicraft Dev Team",
+      "website": "https://tropicraft.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026437+00:00",
+      "checked_at": "2026-11-08T20:53:37.220367+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45410": {
+      "qid": "IGDB:45410",
+      "source_cursor": "45410",
+      "entity_url": "https://www.igdb.com/companies/luwen-workshop",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Luwen Workshop",
+      "website": "https://www.luwenworkshop.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026451+00:00",
+      "checked_at": "2026-11-08T20:53:37.220373+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45411": {
+      "qid": "IGDB:45411",
+      "source_cursor": "45411",
+      "entity_url": "https://www.igdb.com/companies/pedro-limas-productions",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Pedro Lima's Productions",
+      "website": "https://www.pedrolima.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026466+00:00",
+      "checked_at": "2026-11-08T20:53:41.000495+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45415": {
+      "qid": "IGDB:45415",
+      "source_cursor": "45415",
+      "entity_url": "https://www.igdb.com/companies/pandas-fight-club",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Pandas Fight Club",
+      "website": "https://pandasfight.club/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026479+00:00",
+      "checked_at": "2026-11-08T20:53:41.000518+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45416": {
+      "qid": "IGDB:45416",
+      "source_cursor": "45416",
+      "entity_url": "https://www.igdb.com/companies/charlsebob",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "charlsebob",
+      "website": "https://charlsebob.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026494+00:00",
+      "checked_at": "2026-11-08T20:53:41.000527+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45417": {
+      "qid": "IGDB:45417",
+      "source_cursor": "45417",
+      "entity_url": "https://www.igdb.com/companies/capcrowgames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "CapCrowGames",
+      "website": "https://capcrowgames.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.026513+00:00",
+      "checked_at": "2026-11-08T20:53:41.000534+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45418": {
+      "qid": "IGDB:45418",
+      "source_cursor": "45418",
+      "entity_url": "https://www.igdb.com/companies/danilo-abella",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Danilo Abellá",
+      "website": "https://daniloabella.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026526+00:00",
+      "checked_at": "2026-11-08T20:53:41.000540+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45425": {
+      "qid": "IGDB:45425",
+      "source_cursor": "45425",
+      "entity_url": "https://www.igdb.com/companies/northern-dev-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Northern Dev Studio",
+      "website": "https://www.northerndevstudio.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026795+00:00",
+      "checked_at": "2026-11-08T20:53:41.000546+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45426": {
+      "qid": "IGDB:45426",
+      "source_cursor": "45426",
+      "entity_url": "https://www.igdb.com/companies/city-beetles",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "City Beetles",
+      "website": "https://citybeetles.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026809+00:00",
+      "checked_at": "2026-11-08T20:53:41.000553+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45431": {
+      "qid": "IGDB:45431",
+      "source_cursor": "45431",
+      "entity_url": "https://www.igdb.com/companies/unitystation-community",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Unitystation Community",
+      "website": "https://www.unitystation.org/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026822+00:00",
+      "checked_at": "2026-11-08T20:53:41.000559+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45439": {
+      "qid": "IGDB:45439",
+      "source_cursor": "45439",
+      "entity_url": "https://www.igdb.com/companies/monkey-mac-jones-adventures-ug",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Monkey Mac Jones Adventures UG",
+      "website": "https://monkeymacjones.de/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026849+00:00",
+      "checked_at": "2026-11-08T20:53:44.909519+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45443": {
+      "qid": "IGDB:45443",
+      "source_cursor": "45443",
+      "entity_url": "https://www.igdb.com/companies/misstep-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Misstep Studio",
+      "website": "https://deathbymisstep.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026862+00:00",
+      "checked_at": "2026-11-08T20:53:44.909542+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45448": {
+      "qid": "IGDB:45448",
+      "source_cursor": "45448",
+      "entity_url": "https://www.igdb.com/companies/donna-draws",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Donna Draws",
+      "website": "https://donna-draws.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.026878+00:00",
+      "checked_at": "2026-11-08T20:53:44.909550+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45449": {
+      "qid": "IGDB:45449",
+      "source_cursor": "45449",
+      "entity_url": "https://www.igdb.com/companies/solitarystudios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "SolitaryStudios",
+      "website": "https://solitarystudios.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.026891+00:00",
+      "checked_at": "2026-11-08T20:53:44.909558+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45450": {
+      "qid": "IGDB:45450",
+      "source_cursor": "45450",
+      "entity_url": "https://www.igdb.com/companies/ludzik",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Ludzik",
+      "website": "https://ludzik.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026905+00:00",
+      "checked_at": "2026-11-08T20:53:44.909564+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45453": {
+      "qid": "IGDB:45453",
+      "source_cursor": "45453",
+      "entity_url": "https://www.igdb.com/companies/anata",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "ANATA",
+      "website": "https://anatagames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.027141+00:00",
+      "checked_at": "2026-11-08T20:53:44.909571+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45461": {
+      "qid": "IGDB:45461",
+      "source_cursor": "45461",
+      "entity_url": "https://www.igdb.com/companies/phantogast",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Phantogast",
+      "website": "https://phantogast.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027375+00:00",
+      "checked_at": "2026-11-08T20:53:44.909577+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45464": {
+      "qid": "IGDB:45464",
+      "source_cursor": "45464",
+      "entity_url": "https://www.igdb.com/companies/bitcave",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "BitCave",
+      "website": "https://bitcave.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027404+00:00",
+      "checked_at": "2026-11-08T20:53:44.909583+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45465": {
+      "qid": "IGDB:45465",
+      "source_cursor": "45465",
+      "entity_url": "https://www.igdb.com/companies/vandehigh",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Vandehigh",
+      "website": "https://vandehigh.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027417+00:00",
+      "checked_at": "2026-11-08T20:53:47.069016+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45466": {
+      "qid": "IGDB:45466",
+      "source_cursor": "45466",
+      "entity_url": "https://www.igdb.com/companies/ryan-entertainment",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Ryan Entertainment",
+      "website": "https://ryan-entertainment.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027431+00:00",
+      "checked_at": "2026-11-08T20:53:47.069039+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45467": {
+      "qid": "IGDB:45467",
+      "source_cursor": "45467",
+      "entity_url": "https://www.igdb.com/companies/mjessen86",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "mjessen86",
+      "website": "https://mjessen86.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027444+00:00",
+      "checked_at": "2026-11-08T20:53:47.069048+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45468": {
+      "qid": "IGDB:45468",
+      "source_cursor": "45468",
+      "entity_url": "https://www.igdb.com/companies/cheesykirah",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "CheesyKirah",
+      "website": "https://cheesykirah.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027457+00:00",
+      "checked_at": "2026-11-08T20:53:47.069056+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45485": {
+      "qid": "IGDB:45485",
+      "source_cursor": "45485",
+      "entity_url": "https://www.igdb.com/companies/quint-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Quint Studio",
+      "website": "https://www.quintgamesstudio.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.027470+00:00",
+      "checked_at": "2026-11-08T20:53:47.069063+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45486": {
+      "qid": "IGDB:45486",
+      "source_cursor": "45486",
+      "entity_url": "https://www.igdb.com/companies/team-panoptes",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Team Panoptes",
+      "website": "https://teampanoptes.be/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.027485+00:00",
+      "checked_at": "2026-11-08T20:53:47.069070+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45488": {
+      "qid": "IGDB:45488",
+      "source_cursor": "45488",
+      "entity_url": "https://www.igdb.com/companies/sketbr",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "SketBR",
+      "website": "https://sketbr.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.027498+00:00",
+      "checked_at": "2026-11-08T20:53:47.069075+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45491": {
+      "qid": "IGDB:45491",
+      "source_cursor": "45491",
+      "entity_url": "https://www.igdb.com/companies/phodex-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Phodex Games",
+      "website": "https://phodexgames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027512+00:00",
+      "checked_at": "2026-11-08T20:53:47.069082+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45501": {
+      "qid": "IGDB:45501",
+      "source_cursor": "45501",
+      "entity_url": "https://www.igdb.com/companies/prox",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "ProX",
+      "website": "https://prox.team/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027525+00:00",
+      "checked_at": "2026-11-08T20:53:49.261330+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45505": {
+      "qid": "IGDB:45505",
+      "source_cursor": "45505",
+      "entity_url": "https://www.igdb.com/companies/intercept-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Intercept Games",
+      "website": "https://www.interceptgames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.027756+00:00",
+      "checked_at": "2026-11-08T20:53:49.261354+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45517": {
+      "qid": "IGDB:45517",
+      "source_cursor": "45517",
+      "entity_url": "https://www.igdb.com/companies/nescuaiko",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Nescuaiko",
+      "website": "https://nescuaiko.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.027996+00:00",
+      "checked_at": "2026-11-08T20:53:49.261365+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45519": {
+      "qid": "IGDB:45519",
+      "source_cursor": "45519",
+      "entity_url": "https://www.igdb.com/companies/rich-whitehouse",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Rich Whitehouse",
+      "website": "https://richwhitehouse.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028218+00:00",
+      "checked_at": "2026-11-08T20:53:49.261374+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45524": {
+      "qid": "IGDB:45524",
+      "source_cursor": "45524",
+      "entity_url": "https://www.igdb.com/companies/apart-of-me",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Apart of Me",
+      "website": "https://www.apartofme.app/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.028245+00:00",
+      "checked_at": "2026-11-08T20:53:49.261400+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45537": {
+      "qid": "IGDB:45537",
+      "source_cursor": "45537",
+      "entity_url": "https://www.igdb.com/companies/remi-adriano",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Rémi Adriano",
+      "website": "https://remiadriano.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.028482+00:00",
+      "checked_at": "2026-11-08T20:53:49.261409+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45544": {
+      "qid": "IGDB:45544",
+      "source_cursor": "45544",
+      "entity_url": "https://www.igdb.com/companies/giochi-penosi",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Giochi Penosi",
+      "website": "https://www.giochipenosi.it/giochi-penosi",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028501+00:00",
+      "checked_at": "2026-11-08T20:53:49.261415+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45545": {
+      "qid": "IGDB:45545",
+      "source_cursor": "45545",
+      "entity_url": "https://www.igdb.com/companies/remoob",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Remoob",
+      "website": "https://remoobgames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.028514+00:00",
+      "checked_at": "2026-11-08T20:53:49.261423+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45551": {
+      "qid": "IGDB:45551",
+      "source_cursor": "45551",
+      "entity_url": "https://www.igdb.com/companies/burger-king",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Burger King",
+      "website": "https://www.bk.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028754+00:00",
+      "checked_at": "2026-11-08T20:54:00.765984+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45552": {
+      "qid": "IGDB:45552",
+      "source_cursor": "45552",
+      "entity_url": "https://www.igdb.com/companies/normogames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Normogames",
+      "website": "https://normogames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:35:19.028768+00:00",
+      "checked_at": "2026-11-08T20:54:00.766011+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45555": {
+      "qid": "IGDB:45555",
+      "source_cursor": "45555",
+      "entity_url": "https://www.igdb.com/companies/davey-grotendorst",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Davey Grotendorst",
+      "website": "https://daveygrotendorstdesign.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029194+00:00",
+      "checked_at": "2026-11-08T20:54:00.766022+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45556": {
+      "qid": "IGDB:45556",
+      "source_cursor": "45556",
+      "entity_url": "https://www.igdb.com/companies/nemori-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Nemori Studio",
+      "website": "https://nemoristudio.mailerpage.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029208+00:00",
+      "checked_at": "2026-11-08T20:54:00.766030+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45557": {
+      "qid": "IGDB:45557",
+      "source_cursor": "45557",
+      "entity_url": "https://www.igdb.com/companies/astrolabe-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Astrolabe Games",
+      "website": "https://www.astrolabe-games.ca/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029225+00:00",
+      "checked_at": "2026-11-08T20:54:00.766039+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45558": {
+      "qid": "IGDB:45558",
+      "source_cursor": "45558",
+      "entity_url": "https://www.igdb.com/companies/futu-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Futu Studio",
+      "website": "https://footooo.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029239+00:00",
+      "checked_at": "2026-11-08T20:54:00.766046+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45559": {
+      "qid": "IGDB:45559",
+      "source_cursor": "45559",
+      "entity_url": "https://www.igdb.com/companies/shoukichi-karekusa",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Shoukichi Karekusa",
+      "website": "https://blackhat.a.la9.jp/ftotfr/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029256+00:00",
+      "checked_at": "2026-11-08T20:54:00.766053+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45585": {
+      "qid": "IGDB:45585",
+      "source_cursor": "45585",
+      "entity_url": "https://www.igdb.com/companies/sleeprunner-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Sleeprunner Studios",
+      "website": "https://sleeprunnerstudios.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "duplicate",
+      "discovered_at": "2026-11-08T20:35:19.029497+00:00",
+      "checked_at": "2026-11-08T20:54:00.766060+00:00",
+      "next_check_at": null,
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "official_domain_already_in_directory"
+    },
+    "IGDB:45589": {
+      "qid": "IGDB:45589",
+      "source_cursor": "45589",
+      "entity_url": "https://www.igdb.com/companies/andreev-worlds",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Andreev Worlds",
+      "website": "https://andreev.world/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029514+00:00",
+      "checked_at": "2026-11-08T20:54:00.766066+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45590": {
+      "qid": "IGDB:45590",
+      "source_cursor": "45590",
+      "entity_url": "https://www.igdb.com/companies/island-bender-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Island Bender Games",
+      "website": "https://islandbender.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029527+00:00",
+      "checked_at": "2026-11-08T20:54:09.748758+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45598": {
+      "qid": "IGDB:45598",
+      "source_cursor": "45598",
+      "entity_url": "https://www.igdb.com/companies/project-99",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Project 99",
+      "website": "https://project99.gg/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029540+00:00",
+      "checked_at": "2026-11-08T20:54:09.748785+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45608": {
+      "qid": "IGDB:45608",
+      "source_cursor": "45608",
+      "entity_url": "https://www.igdb.com/companies/doubleseraph",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "doubleseraph",
+      "website": "https://bloodymarried.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029567+00:00",
+      "checked_at": "2026-11-08T20:54:09.748795+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45610": {
+      "qid": "IGDB:45610",
+      "source_cursor": "45610",
+      "entity_url": "https://www.igdb.com/companies/furlough-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Furlough Games",
+      "website": "https://furlough-games.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029786+00:00",
+      "checked_at": "2026-11-08T20:54:09.748803+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45619": {
+      "qid": "IGDB:45619",
+      "source_cursor": "45619",
+      "entity_url": "https://www.igdb.com/companies/runway-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Runway Studios",
+      "website": "https://www.runwaystudios.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:35:19.029815+00:00",
+      "checked_at": "2026-11-08T20:54:09.748810+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45621": {
+      "qid": "IGDB:45621",
+      "source_cursor": "45621",
+      "entity_url": "https://www.igdb.com/companies/cem-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Cem Games",
+      "website": "https://cemgames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029828+00:00",
+      "checked_at": "2026-11-08T20:54:09.748816+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45648": {
+      "qid": "IGDB:45648",
+      "source_cursor": "45648",
+      "entity_url": "https://www.igdb.com/companies/eastfog-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "EastFog Studios",
+      "website": "https://eastfog.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.030263+00:00",
+      "checked_at": "2026-11-08T20:54:09.748822+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "relevant_career_page_unavailable"
+    },
+    "IGDB:45649": {
+      "qid": "IGDB:45649",
+      "source_cursor": "45649",
+      "entity_url": "https://www.igdb.com/companies/dobuki-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Dobuki Studio",
+      "website": "https://dobuki.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.030278+00:00",
+      "checked_at": "2026-11-08T20:54:09.748829+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45664": {
+      "qid": "IGDB:45664",
+      "source_cursor": "45664",
+      "entity_url": "https://www.igdb.com/companies/fpi-productions",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "FPI Productions",
+      "website": "https://www.fpi-productions.de/index.html",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434491+00:00",
+      "checked_at": "2026-11-08T20:54:19.914157+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45665": {
+      "qid": "IGDB:45665",
+      "source_cursor": "45665",
+      "entity_url": "https://www.igdb.com/companies/nyx-goddess-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Nyx Goddess Games",
+      "website": "https://nyxgaming.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434511+00:00",
+      "checked_at": "2026-11-08T20:54:19.914189+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45673": {
+      "qid": "IGDB:45673",
+      "source_cursor": "45673",
+      "entity_url": "https://www.igdb.com/companies/cbgames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "CBGames",
+      "website": "https://www.cbgames.co/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434528+00:00",
+      "checked_at": "2026-11-08T20:54:19.914200+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45680": {
+      "qid": "IGDB:45680",
+      "source_cursor": "45680",
+      "entity_url": "https://www.igdb.com/companies/kaiigame",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "KaiiGame",
+      "website": "https://kaiigame.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434542+00:00",
+      "checked_at": "2026-11-08T20:54:19.914209+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45682": {
+      "qid": "IGDB:45682",
+      "source_cursor": "45682",
+      "entity_url": "https://www.igdb.com/companies/last-man-gaming",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Last Man Gaming",
+      "website": "https://www.lastmangaming.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434556+00:00",
+      "checked_at": "2026-11-08T20:54:19.914215+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45686": {
+      "qid": "IGDB:45686",
+      "source_cursor": "45686",
+      "entity_url": "https://www.igdb.com/companies/plazatin",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "plazatin",
+      "website": "https://plazatin.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434587+00:00",
+      "checked_at": "2026-11-08T20:54:19.914222+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45687": {
+      "qid": "IGDB:45687",
+      "source_cursor": "45687",
+      "entity_url": "https://www.igdb.com/companies/navigator-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Navigator Games",
+      "website": "https://navigatorgames.ca/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434601+00:00",
+      "checked_at": "2026-11-08T20:54:19.914229+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45688": {
+      "qid": "IGDB:45688",
+      "source_cursor": "45688",
+      "entity_url": "https://www.igdb.com/companies/good-place-games-ou",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Good Place Games Öu",
+      "website": "https://www.goodplace.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434615+00:00",
+      "checked_at": "2026-11-08T20:54:19.914235+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45692": {
+      "qid": "IGDB:45692",
+      "source_cursor": "45692",
+      "entity_url": "https://www.igdb.com/companies/7quark",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "7QUARK",
+      "website": "https://7quark.com/yasha-zh/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434628+00:00",
+      "checked_at": "2026-11-08T20:54:23.899430+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45719": {
+      "qid": "IGDB:45719",
+      "source_cursor": "45719",
+      "entity_url": "https://www.igdb.com/companies/meta-apes",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Meta Apes",
+      "website": "https://metaapesgame.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434855+00:00",
+      "checked_at": "2026-11-08T20:54:23.899454+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45720": {
+      "qid": "IGDB:45720",
+      "source_cursor": "45720",
+      "entity_url": "https://www.igdb.com/companies/crescent-shine",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Crescent Shine",
+      "website": "https://crescentshine.studio/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.434868+00:00",
+      "checked_at": "2026-11-08T20:54:23.899465+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45724": {
+      "qid": "IGDB:45724",
+      "source_cursor": "45724",
+      "entity_url": "https://www.igdb.com/companies/matthew-ager",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Matthew Ager",
+      "website": "https://agerdev.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434882+00:00",
+      "checked_at": "2026-11-08T20:54:23.899473+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45726": {
+      "qid": "IGDB:45726",
+      "source_cursor": "45726",
+      "entity_url": "https://www.igdb.com/companies/omniscapes-interactive",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "OmniScapes Interactive",
+      "website": "https://www.playflipscapes.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434896+00:00",
+      "checked_at": "2026-11-08T20:54:23.899480+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45731": {
+      "qid": "IGDB:45731",
+      "source_cursor": "45731",
+      "entity_url": "https://www.igdb.com/companies/longmire-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Longmire Studio",
+      "website": "https://longmirestudio.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434909+00:00",
+      "checked_at": "2026-11-08T20:54:23.899488+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45739": {
+      "qid": "IGDB:45739",
+      "source_cursor": "45739",
+      "entity_url": "https://www.igdb.com/companies/hajimeli",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Hajimeli",
+      "website": "https://hajimeli.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435138+00:00",
+      "checked_at": "2026-11-08T20:54:23.899494+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45743": {
+      "qid": "IGDB:45743",
+      "source_cursor": "45743",
+      "entity_url": "https://www.igdb.com/companies/glodia",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Glodia",
+      "website": "https://www.quarter-dev.info/index.php",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435585+00:00",
+      "checked_at": "2026-11-08T20:54:23.899500+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45745": {
+      "qid": "IGDB:45745",
+      "source_cursor": "45745",
+      "entity_url": "https://www.igdb.com/companies/namikaze-project",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Namikaze Project",
+      "website": "https://www.namikaze.org/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.435810+00:00",
+      "checked_at": "2026-11-08T20:54:33.912150+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45754": {
+      "qid": "IGDB:45754",
+      "source_cursor": "45754",
+      "entity_url": "https://www.igdb.com/companies/blue-and-red-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Blue and Red Games",
+      "website": "https://www.ghostatdawn.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.435852+00:00",
+      "checked_at": "2026-11-08T20:54:33.912197+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45756": {
+      "qid": "IGDB:45756",
+      "source_cursor": "45756",
+      "entity_url": "https://www.igdb.com/companies/blue-math",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Blue Math",
+      "website": "https://www.bluemathsoftware.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435865+00:00",
+      "checked_at": "2026-11-08T20:54:33.912209+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45758": {
+      "qid": "IGDB:45758",
+      "source_cursor": "45758",
+      "entity_url": "https://www.igdb.com/companies/misstic-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Misstic Studio",
+      "website": "https://missticstudio.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.435878+00:00",
+      "checked_at": "2026-11-08T20:54:33.912217+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45759": {
+      "qid": "IGDB:45759",
+      "source_cursor": "45759",
+      "entity_url": "https://www.igdb.com/companies/emupanda-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "EmuPanda Studios",
+      "website": "https://emupanda.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.435892+00:00",
+      "checked_at": "2026-11-08T20:54:33.912223+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45762": {
+      "qid": "IGDB:45762",
+      "source_cursor": "45762",
+      "entity_url": "https://www.igdb.com/companies/iznaut",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Iznaut",
+      "website": "https://iznaut.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.435904+00:00",
+      "checked_at": "2026-11-08T20:54:33.912231+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45763": {
+      "qid": "IGDB:45763",
+      "source_cursor": "45763",
+      "entity_url": "https://www.igdb.com/companies/split-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Split Studio",
+      "website": "https://www.splitstudio.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.435917+00:00",
+      "checked_at": "2026-11-08T20:54:33.912237+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45764": {
+      "qid": "IGDB:45764",
+      "source_cursor": "45764",
+      "entity_url": "https://www.igdb.com/companies/knightsoft-technologies",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "KnightSoft Technologies",
+      "website": "https://knightsoft.ca/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435931+00:00",
+      "checked_at": "2026-11-08T20:54:33.912245+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45770": {
+      "qid": "IGDB:45770",
+      "source_cursor": "45770",
+      "entity_url": "https://www.igdb.com/companies/curious-chicken-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Curious Chicken Games",
+      "website": "https://curiouschicken.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.435944+00:00",
+      "checked_at": "2026-11-08T20:54:39.377884+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45775": {
+      "qid": "IGDB:45775",
+      "source_cursor": "45775",
+      "entity_url": "https://www.igdb.com/companies/ujumiru",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "ujumiru",
+      "website": "https://ujumiru.wixsite.com/jiholee",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436407+00:00",
+      "checked_at": "2026-11-08T20:54:39.377906+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45777": {
+      "qid": "IGDB:45777",
+      "source_cursor": "45777",
+      "entity_url": "https://www.igdb.com/companies/tonakai-interactive",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Tonakai Interactive",
+      "website": "https://tonakai.aki.gs/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.436421+00:00",
+      "checked_at": "2026-11-08T20:54:39.377916+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45778": {
+      "qid": "IGDB:45778",
+      "source_cursor": "45778",
+      "entity_url": "https://www.igdb.com/companies/gionatan-iasio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Gionatan Iasio",
+      "website": "https://www.ioji.it/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436435+00:00",
+      "checked_at": "2026-11-08T20:54:39.377924+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45787": {
+      "qid": "IGDB:45787",
+      "source_cursor": "45787",
+      "entity_url": "https://www.igdb.com/companies/speedrungames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "SpeedRunGames",
+      "website": "https://www.speedrungames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.436450+00:00",
+      "checked_at": "2026-11-08T20:54:39.377932+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45793": {
+      "qid": "IGDB:45793",
+      "source_cursor": "45793",
+      "entity_url": "https://www.igdb.com/companies/little-thingie",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Little Thingie",
+      "website": "https://littlethingie.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436491+00:00",
+      "checked_at": "2026-11-08T20:54:39.377938+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45800": {
+      "qid": "IGDB:45800",
+      "source_cursor": "45800",
+      "entity_url": "https://www.igdb.com/companies/varenyett",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Varenyett",
+      "website": "https://varenyett.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.436504+00:00",
+      "checked_at": "2026-11-08T20:54:39.377944+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45804": {
+      "qid": "IGDB:45804",
+      "source_cursor": "45804",
+      "entity_url": "https://www.igdb.com/companies/crestfallen-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Crestfallen Studios",
+      "website": "https://www.crestfallen.us/index.html",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.436518+00:00",
+      "checked_at": "2026-11-08T20:54:39.377949+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45806": {
+      "qid": "IGDB:45806",
+      "source_cursor": "45806",
+      "entity_url": "https://www.igdb.com/companies/eligos-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Eligos Games",
+      "website": "https://www.horatiu.nyc/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.436738+00:00",
+      "checked_at": "2026-11-08T20:54:42.012745+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45807": {
+      "qid": "IGDB:45807",
+      "source_cursor": "45807",
+      "entity_url": "https://www.igdb.com/companies/molamucho-dot-com",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "molamucho.com",
+      "website": "https://molamucho.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436751+00:00",
+      "checked_at": "2026-11-08T20:54:42.012774+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45816": {
+      "qid": "IGDB:45816",
+      "source_cursor": "45816",
+      "entity_url": "https://www.igdb.com/companies/pnwcyber",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "PNWCyber",
+      "website": "https://games.pnwcyber.com/webbased-game/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436971+00:00",
+      "checked_at": "2026-11-08T20:54:42.012784+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45820": {
+      "qid": "IGDB:45820",
+      "source_cursor": "45820",
+      "entity_url": "https://www.igdb.com/companies/leksen-engineering",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Leksen Engineering",
+      "website": "https://www.warmonium.com.au/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436987+00:00",
+      "checked_at": "2026-11-08T20:54:42.012793+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45821": {
+      "qid": "IGDB:45821",
+      "source_cursor": "45821",
+      "entity_url": "https://www.igdb.com/companies/bio-100-percent",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Bio_100%",
+      "website": "https://bio100.jp/introduction/index.html",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.437000+00:00",
+      "checked_at": "2026-11-08T20:54:42.012801+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45831": {
+      "qid": "IGDB:45831",
+      "source_cursor": "45831",
+      "entity_url": "https://www.igdb.com/companies/crash-magazine",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Crash Magazine",
+      "website": "https://www.crashmagazine.co.uk/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.437223+00:00",
+      "checked_at": "2026-11-08T20:54:42.012807+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45832": {
+      "qid": "IGDB:45832",
+      "source_cursor": "45832",
+      "entity_url": "https://www.igdb.com/companies/cryodon-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Cryodon Games",
+      "website": "https://cryodon.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.437236+00:00",
+      "checked_at": "2026-11-08T20:54:42.012815+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45844": {
+      "qid": "IGDB:45844",
+      "source_cursor": "45844",
+      "entity_url": "https://www.igdb.com/companies/david-pires",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "David Pires",
+      "website": "https://david-pires.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437264+00:00",
+      "checked_at": "2026-11-08T20:54:42.012821+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45845": {
+      "qid": "IGDB:45845",
+      "source_cursor": "45845",
+      "entity_url": "https://www.igdb.com/companies/char0n",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Char0n",
+      "website": "https://www.makerpendium.de/index.php/Char0n",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437278+00:00",
+      "checked_at": "2026-11-08T20:54:59.799130+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45849": {
+      "qid": "IGDB:45849",
+      "source_cursor": "45849",
+      "entity_url": "https://www.igdb.com/companies/osu-droid-team",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "osu!droid Team",
+      "website": "https://osudroid.moe/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.437291+00:00",
+      "checked_at": "2026-11-08T20:54:59.799156+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45853": {
+      "qid": "IGDB:45853",
+      "source_cursor": "45853",
+      "entity_url": "https://www.igdb.com/companies/geekspree",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Geekspree",
+      "website": "https://www.geekspree.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437520+00:00",
+      "checked_at": "2026-11-08T20:54:59.799167+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45858": {
+      "qid": "IGDB:45858",
+      "source_cursor": "45858",
+      "entity_url": "https://www.igdb.com/companies/playmining",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "PlayMining",
+      "website": "https://playmining.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437548+00:00",
+      "checked_at": "2026-11-08T20:54:59.799175+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45860": {
+      "qid": "IGDB:45860",
+      "source_cursor": "45860",
+      "entity_url": "https://www.igdb.com/companies/puresis",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "PURESIS",
+      "website": "https://puresis.jp/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437560+00:00",
+      "checked_at": "2026-11-08T20:54:59.799181+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45862": {
+      "qid": "IGDB:45862",
+      "source_cursor": "45862",
+      "entity_url": "https://www.igdb.com/companies/deadbolt-interactive",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Deadbolt Interactive",
+      "website": "https://www.deadboltinteractive.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "excluded",
+      "discovered_at": "2026-11-08T20:40:20.437781+00:00",
+      "checked_at": "2026-11-08T20:54:59.799187+00:00",
+      "next_check_at": null,
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "portfolio_or_company_content_exclusion"
+    },
+    "IGDB:45863": {
+      "qid": "IGDB:45863",
+      "source_cursor": "45863",
+      "entity_url": "https://www.igdb.com/companies/a17-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "A17 Studio",
+      "website": "https://a17.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.437793+00:00",
+      "checked_at": "2026-11-08T20:54:59.799194+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "robots-disallowed"
+    },
+    "IGDB:45864": {
+      "qid": "IGDB:45864",
+      "source_cursor": "45864",
+      "entity_url": "https://www.igdb.com/companies/fun-fetched",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Fun Fetched",
+      "website": "https://www.funfetched.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437806+00:00",
+      "checked_at": "2026-11-08T20:54:59.799200+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45867": {
+      "qid": "IGDB:45867",
+      "source_cursor": "45867",
+      "entity_url": "https://www.igdb.com/companies/mizrab",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Mizrab",
+      "website": "https://www.mizrab.co/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.437820+00:00",
+      "checked_at": "2026-11-08T20:55:06.274539+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "http-status"
+    },
+    "IGDB:45873": {
+      "qid": "IGDB:45873",
+      "source_cursor": "45873",
+      "entity_url": "https://www.igdb.com/companies/fad-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Fad Games",
+      "website": "https://www.fadgames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437847+00:00",
+      "checked_at": "2026-11-08T20:55:06.274561+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45874": {
+      "qid": "IGDB:45874",
+      "source_cursor": "45874",
+      "entity_url": "https://www.igdb.com/companies/sander-vanhove",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Sander Vanhove",
+      "website": "https://www.sandervanhove.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437859+00:00",
+      "checked_at": "2026-11-08T20:55:06.274570+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45875": {
+      "qid": "IGDB:45875",
+      "source_cursor": "45875",
+      "entity_url": "https://www.igdb.com/companies/gtibo",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "gtibo",
+      "website": "https://gtibo.tumblr.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437872+00:00",
+      "checked_at": "2026-11-08T20:55:06.274578+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45876": {
+      "qid": "IGDB:45876",
+      "source_cursor": "45876",
+      "entity_url": "https://www.igdb.com/companies/cocoa-moss",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Cocoa Moss",
+      "website": "https://cocoamoss.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437884+00:00",
+      "checked_at": "2026-11-08T20:55:06.274584+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45879": {
+      "qid": "IGDB:45879",
+      "source_cursor": "45879",
+      "entity_url": "https://www.igdb.com/companies/chanimk",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "ChaniMK",
+      "website": "https://chanimk19.wixsite.com/chanimk",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437898+00:00",
+      "checked_at": "2026-11-08T20:55:06.274591+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45893": {
+      "qid": "IGDB:45893",
+      "source_cursor": "45893",
+      "entity_url": "https://www.igdb.com/companies/white-flare",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "white flare",
+      "website": "https://46flare.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437912+00:00",
+      "checked_at": "2026-11-08T20:55:06.274598+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45900": {
+      "qid": "IGDB:45900",
+      "source_cursor": "45900",
+      "entity_url": "https://www.igdb.com/companies/skinny-bandit",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Skinny Bandit",
+      "website": "https://skinnybandit.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.437939+00:00",
+      "checked_at": "2026-11-08T20:55:06.274604+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45905": {
+      "qid": "IGDB:45905",
+      "source_cursor": "45905",
+      "entity_url": "https://www.igdb.com/companies/zero-sun-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Zero Sun Games",
+      "website": "https://www.zerosungames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.437951+00:00",
+      "checked_at": "2026-11-08T20:55:11.774929+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45906": {
+      "qid": "IGDB:45906",
+      "source_cursor": "45906",
+      "entity_url": "https://www.igdb.com/companies/studio-kraken",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Studio Kraken",
+      "website": "https://studiokraken.com.br/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.437964+00:00",
+      "checked_at": "2026-11-08T20:55:11.774954+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45916": {
+      "qid": "IGDB:45916",
+      "source_cursor": "45916",
+      "entity_url": "https://www.igdb.com/companies/dragon-lord-studio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Dragon Lord Studio",
+      "website": "https://dragonlordstudio.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "no_route",
+      "discovered_at": "2026-11-08T20:40:20.438188+00:00",
+      "checked_at": "2026-11-08T20:55:11.774965+00:00",
+      "next_check_at": "2027-02-06",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "no_explicit_speculative_route_found"
+    },
+    "IGDB:45922": {
+      "qid": "IGDB:45922",
+      "source_cursor": "45922",
+      "entity_url": "https://www.igdb.com/companies/longplay-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Longplay Games",
+      "website": "https://longplay.games/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438217+00:00",
+      "checked_at": "2026-11-08T20:55:11.774972+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45926": {
+      "qid": "IGDB:45926",
+      "source_cursor": "45926",
+      "entity_url": "https://www.igdb.com/companies/pukostudio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "PuKoStudio",
+      "website": "https://pukogames.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438230+00:00",
+      "checked_at": "2026-11-08T20:55:11.774979+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45927": {
+      "qid": "IGDB:45927",
+      "source_cursor": "45927",
+      "entity_url": "https://www.igdb.com/companies/heart-state-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Heart State Games",
+      "website": "https://heartstategames.online/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.438250+00:00",
+      "checked_at": "2026-11-08T20:55:11.774987+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "IGDB:45931": {
+      "qid": "IGDB:45931",
+      "source_cursor": "45931",
+      "entity_url": "https://www.igdb.com/companies/57digital",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "57Digital",
+      "website": "https://www.57digital.co.uk/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438535+00:00",
+      "checked_at": "2026-11-08T20:55:11.774992+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45932": {
+      "qid": "IGDB:45932",
+      "source_cursor": "45932",
+      "entity_url": "https://www.igdb.com/companies/walldotcom",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "WallDotCom",
+      "website": "https://walldotcom.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438551+00:00",
+      "checked_at": "2026-11-08T20:55:11.774998+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45934": {
+      "qid": "IGDB:45934",
+      "source_cursor": "45934",
+      "entity_url": "https://www.igdb.com/companies/archon-the-wizard",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Archon the Wizard",
+      "website": "https://www.streamdefense.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438566+00:00",
+      "checked_at": "2026-11-08T20:55:22.159358+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45940": {
+      "qid": "IGDB:45940",
+      "source_cursor": "45940",
+      "entity_url": "https://www.igdb.com/companies/nevergreen-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Nevergreen Games",
+      "website": "https://www.nevergreengames.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438598+00:00",
+      "checked_at": "2026-11-08T20:55:22.159400+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45942": {
+      "qid": "IGDB:45942",
+      "source_cursor": "45942",
+      "entity_url": "https://www.igdb.com/companies/batterycake",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "BatteryCake",
+      "website": "https://batterycake.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438612+00:00",
+      "checked_at": "2026-11-08T20:55:22.159412+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45944": {
+      "qid": "IGDB:45944",
+      "source_cursor": "45944",
+      "entity_url": "https://www.igdb.com/companies/cluck-games",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Cluck Games",
+      "website": "https://cluck.dev/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438626+00:00",
+      "checked_at": "2026-11-08T20:55:22.159419+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:45945": {
+      "qid": "IGDB:45945",
+      "source_cursor": "45945",
+      "entity_url": "https://www.igdb.com/companies/cubedood-studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "CubeDood Studios",
+      "website": "https://colack.me/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 20,
+      "status": "retry",
+      "discovered_at": "2026-11-08T20:40:20.438639+00:00",
+      "checked_at": "2026-11-08T20:55:22.159427+00:00",
+      "next_check_at": "2026-11-15",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "non-public-host-or-dns-failure"
+    },
+    "GDM:278f21c26574b666c606": {
+      "qid": "GDM:278f21c26574b666c606",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "source_start": "7801",
+      "name": "RedPain",
+      "website": "https://redpain.itch.io/",
+      "country": "Republic of Korea",
+      "hq_city": "Seoul",
+      "country_code": "",
+      "company_type": "Microstudio",
+      "sources_seen": [
+        "gamedevmap"
+      ],
+      "source_cycle": 3,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900023+00:00",
+      "checked_at": "2026-11-08T20:55:22.159432+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "GDM:bf9263c91e605d839568": {
+      "qid": "GDM:bf9263c91e605d839568",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "source_start": "7801",
+      "name": "RedWills Interactive",
+      "website": "https://www.redwills.com/",
+      "country": "India",
+      "hq_city": "Kochi, Kerala",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "gamedevmap"
+      ],
+      "source_cycle": 3,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900069+00:00",
+      "checked_at": "2026-11-08T20:55:22.159439+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "GDM:737e42d78a2906cb0bf3": {
+      "qid": "GDM:737e42d78a2906cb0bf3",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "source_start": "7801",
+      "name": "Refractive Entertainment",
+      "website": "https://www.refractiveentertainment.com/",
+      "country": "United States",
+      "hq_city": "Bentonville, Arkansas",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "gamedevmap"
+      ],
+      "source_cycle": 3,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900099+00:00",
+      "checked_at": "2026-11-08T20:55:22.159445+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "GDM:134dd101f1d31d9f4164": {
+      "qid": "GDM:134dd101f1d31d9f4164",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "source_start": "7801",
+      "name": "Rekka Games",
+      "website": "https://braveryandgreed.com/",
+      "country": "France",
+      "hq_city": "Le Gond-Pontouvre, Nouvelle-Aquitane",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "gamedevmap"
+      ],
+      "source_cycle": 3,
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900522+00:00",
+      "checked_at": "2026-11-08T20:55:25.578284+00:00",
+      "next_check_at": "2026-12-08",
+      "attempts": 1,
+      "cycle": 58,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
     }
   },
   "route_checks": {
@@ -359371,43 +363032,43 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-01T15:23:01.588239+00:00"
+      "last_checked_at": "2026-11-08T20:55:30.260062+00:00"
     },
     "Snowcastle Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-01T15:23:03.155401+00:00"
+      "last_checked_at": "2026-11-08T20:55:34.970159+00:00"
     },
     "SOFTGAMES": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-01T16:59:28.690028+00:00"
+      "last_checked_at": "2026-11-08T20:55:37.387155+00:00"
     },
     "Solid Clouds": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-01T16:59:31.394740+00:00"
+      "last_checked_at": "2026-11-08T20:55:40.163996+00:00"
     },
     "Spark Universe": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-01T16:59:36.226139+00:00"
+      "last_checked_at": "2026-11-08T20:55:44.604717+00:00"
     },
     "Speedway Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-01T16:59:38.789674+00:00"
+      "last_checked_at": "2026-11-08T20:55:47.545878+00:00"
     },
     "Sports Interactive": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-01T16:59:40.839173+00:00"
+      "last_checked_at": "2026-11-08T20:55:49.529720+00:00"
     },
     "Springlab": {
       "negative_count": 0,
@@ -360218,15 +363879,21 @@
       "gone_count": 0,
       "last_result": "unknown",
       "last_checked_at": "2026-11-08T07:48:12.937260+00:00"
+    },
+    "Smile Studios": {
+      "negative_count": 0,
+      "gone_count": 0,
+      "last_result": "active",
+      "last_checked_at": "2026-11-08T20:55:33.275346+00:00"
     }
   },
-  "route_check_index": 257,
+  "route_check_index": 265,
   "stats": {
-    "candidates_seen": 18049,
+    "candidates_seen": 18229,
     "routes_verified": 129,
-    "excluded": 90,
-    "no_route": 8525,
-    "needs_review": 2340
+    "excluded": 91,
+    "no_route": 8541,
+    "needs_review": 2417
   },
   "source_stats": {
     "wikidata_video_game_developers": {
@@ -360241,19 +363908,19 @@
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 5,
       "cycle_candidate_entities": 0,
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-07T20:31:35.797792+00:00",
-      "last_success_at": "2026-11-08T16:35:56.451015+00:00",
-      "next_retry_at": null
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: Wikidata batch failed safely: TimeoutError",
+      "last_failure_at": "2026-11-08T20:51:10.355724+00:00",
+      "last_success_at": "2026-11-08T20:49:09.948820+00:00",
+      "next_retry_at": "2026-11-08T20:56:10.355744+00:00"
     },
     "wikidata_game_developer_credits": {
-      "cycle": 42,
+      "cycle": 43,
       "cycle_additions": 0,
-      "empty_cycles": 29,
+      "empty_cycles": 30,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-08T16:42:51.093417+00:00",
+      "last_pass_completed_at": "2026-11-08T20:55:49.529750+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -360262,16 +363929,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T09:43:34.857097+00:00",
-      "last_success_at": "2026-11-08T16:31:33.519610+00:00",
+      "last_success_at": "2026-11-08T20:44:17.001013+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 58,
+      "cycle": 59,
       "cycle_additions": 0,
-      "empty_cycles": 56,
+      "empty_cycles": 57,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-08T16:42:51.093417+00:00",
+      "last_pass_completed_at": "2026-11-08T20:55:49.529750+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -360280,7 +363947,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-03T09:47:24.874109+00:00",
-      "last_success_at": "2026-11-08T16:23:50.640623+00:00",
+      "last_success_at": "2026-11-08T20:38:02.107998+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -360294,11 +363961,11 @@
       "last_pass_candidates": 8016,
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 1191,
-      "cycle_candidate_entities": 448,
+      "cycle_candidate_entities": 461,
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-08T16:39:56.004525+00:00",
+      "last_success_at": "2026-11-08T20:53:27.631066+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -360316,13 +363983,13 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-08T16:38:50.156082+00:00",
+      "last_success_at": "2026-11-08T20:52:21.941508+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
       "cycle": 20,
       "cycle_additions": 2,
-      "cycle_candidate_entities": 5173,
+      "cycle_candidate_entities": 5340,
       "empty_cycles": 0,
       "saturated": false,
       "complete": false,
@@ -360334,7 +364001,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-08T16:38:13.619089+00:00",
+      "last_success_at": "2026-11-08T20:40:20.165772+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -360349,11 +364016,11 @@
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 24,
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-07T22:25:12.708287+00:00",
+      "consecutive_failures": 2,
+      "last_error": "RuntimeError: Scottish Games Industry file index unavailable: robots-disallowed",
+      "last_failure_at": "2026-11-08T20:40:20.439777+00:00",
       "last_success_at": "2026-11-08T16:38:33.169003+00:00",
-      "next_retry_at": null
+      "next_retry_at": "2026-11-08T20:50:20.439779+00:00"
     }
   },
   "identity_review_queue": [
@@ -396356,6 +400023,510 @@
       "reason": "same_official_domain_different_entity_name",
       "status": "needs_review",
       "discovered_at": "2026-11-08T16:39:56.206464+00:00"
+    },
+    {
+      "qid": "IGDB:45333",
+      "name": "Warp Power Interactive Entertainment Ltd.",
+      "website": "https://web.archive.org/web/20020531143852/http://www.warppower.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/warp-power-interactive-entertainment-ltd",
+      "related_candidate_qid": "Q964885",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025546+00:00"
+    },
+    {
+      "qid": "IGDB:45362",
+      "name": "KONNECT",
+      "website": "https://github.com/KONNECT-Studios",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/konnect",
+      "related_candidate_qid": "IGDB:25547",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.025868+00:00"
+    },
+    {
+      "qid": "IGDB:45371",
+      "name": "Pontypants",
+      "website": "https://www.youtube.com/pontypants",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/pontypants",
+      "related_candidate_qid": "IGDB:24056",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026133+00:00"
+    },
+    {
+      "qid": "IGDB:45395",
+      "name": "Kaverna Produções",
+      "website": "https://www.facebook.com/kavernaproducoes",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/kaverna-producoes",
+      "related_candidate_qid": "GDM:20476e44db643e120351",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026377+00:00"
+    },
+    {
+      "qid": "IGDB:45419",
+      "name": "MD",
+      "website": "https://sites.google.com/view/trwotw/war-of-the-worlds/about-me?authuser=0",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/md",
+      "related_candidate_qid": "GDM:af778edf855a2965f377",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.026731+00:00"
+    },
+    {
+      "qid": "IGDB:45451",
+      "name": "E. Hashimoto",
+      "website": "https://hp.vector.co.jp/authors/VA025956/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/e-hashimoto",
+      "related_candidate_qid": "IGDB:43920",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027109+00:00"
+    },
+    {
+      "qid": "IGDB:45457",
+      "name": "Swashbucklers",
+      "website": "https://gamejolt.com/@Swashbucklers",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/swashbucklers",
+      "related_candidate_qid": "IGDB:19944",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027341+00:00"
+    },
+    {
+      "qid": "IGDB:45503",
+      "name": "Budai",
+      "website": "https://discord.gg/yCkAWzxhnP",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/budai",
+      "related_candidate_qid": "IGDB:42415",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027738+00:00"
+    },
+    {
+      "qid": "IGDB:45511",
+      "name": "Settefangames",
+      "website": "https://gamejolt.com/@settefangames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/settefangames",
+      "related_candidate_qid": "IGDB:19944",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.027963+00:00"
+    },
+    {
+      "qid": "IGDB:45518",
+      "name": "Nellyvision Limited",
+      "website": "https://www.nellyvision.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/nellyvision-limited",
+      "related_candidate_qid": "Q110189437",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028202+00:00"
+    },
+    {
+      "qid": "IGDB:45528",
+      "name": "Yojoyco Studios",
+      "website": "https://www.yojoyco.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/yojoyco-studios",
+      "related_candidate_qid": "Q123734788",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028464+00:00"
+    },
+    {
+      "qid": "IGDB:45549",
+      "name": "Locomotive Corporation",
+      "website": "https://web.archive.org/web/20001119013700/http://www.locomotive.co.jp/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/locomotive-corporation",
+      "related_candidate_qid": "Q964885",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028736+00:00"
+    },
+    {
+      "qid": "IGDB:45553",
+      "name": "Sungame Studio",
+      "website": "https://store.steampowered.com/developer/sungame",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/sungame-studio",
+      "related_candidate_qid": "GDM:7b86301d94db68b384f7",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.028974+00:00"
+    },
+    {
+      "qid": "IGDB:45554",
+      "name": "Bromageddon",
+      "website": "https://www.youtube.com/@Bromageddon",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/bromageddon",
+      "related_candidate_qid": "IGDB:24056",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029177+00:00"
+    },
+    {
+      "qid": "IGDB:45568",
+      "name": "Forsaken Studios",
+      "website": "https://gamejolt.com/@ForsakenStudio",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/forsaken-studios",
+      "related_candidate_qid": "IGDB:19944",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029465+00:00"
+    },
+    {
+      "qid": "IGDB:45609",
+      "name": "BiteMe Games",
+      "website": "https://www.youtube.com/@BiteMeGames",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/biteme-games",
+      "related_candidate_qid": "IGDB:24056",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.029766+00:00"
+    },
+    {
+      "qid": "IGDB:45632",
+      "name": "Estoty Games",
+      "website": "https://estoty.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/estoty-games",
+      "related_candidate_qid": "GDM:78ca15d737097c056df8",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.030029+00:00"
+    },
+    {
+      "qid": "IGDB:45639",
+      "name": "Lost Frame Development",
+      "website": "https://discord.gg/GXUpHvxmKu",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/lost-frame-development",
+      "related_candidate_qid": "IGDB:42415",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:35:19.030246+00:00"
+    },
+    {
+      "qid": "GDM:6507171999b080df40e7",
+      "name": "Rebellion Warwick",
+      "website": "https://www.rebellion.co.uk/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "GDM:9780adbc2cf9e54d01f1",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.890718+00:00"
+    },
+    {
+      "qid": "GDM:5461e0a4c79e9778455d",
+      "name": "Red Art Studios",
+      "website": "https://redartgames.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "GDM:99adc349a604294c29c2",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.890990+00:00"
+    },
+    {
+      "qid": "GDM:561c50075fb783053d7a",
+      "name": "Red Beard Games (Hi-Rez Studios)",
+      "website": "https://www.hirezstudios.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "GDM:0092db1fc99e37c64e29",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.891203+00:00"
+    },
+    {
+      "qid": "GDM:dfabcb2aa4dc74b059f0",
+      "name": "Red Crow Studio (Electronic Arts)",
+      "website": "https://www.ea.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "Q97728742",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.891426+00:00"
+    },
+    {
+      "qid": "GDM:31b30c519938deb378a0",
+      "name": "Red Sauce Games",
+      "website": "https://itch.io/profile/red-sauce",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "GDM:6f17dff01ac70faf2a92",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.891885+00:00"
+    },
+    {
+      "qid": "GDM:5d5f318f12a03670fd47",
+      "name": "Redly",
+      "website": "https://www.redlygames.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7701&state=&type=",
+      "related_candidate_qid": "GDM:243edde3bb58b7f2cfdd",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:19.892111+00:00"
+    },
+    {
+      "qid": "IGDB:45655",
+      "name": "takehata",
+      "website": "https://takevabu.booth.pm/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/takehata",
+      "related_candidate_qid": "IGDB:29195",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434449+00:00"
+    },
+    {
+      "qid": "IGDB:45716",
+      "name": "Gadget Soft",
+      "website": "https://web.archive.org/web/20250304081124/https://acgateway.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/gadget-soft",
+      "related_candidate_qid": "Q964885",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.434839+00:00"
+    },
+    {
+      "qid": "IGDB:45736",
+      "name": "Lesta Games",
+      "website": "https://lesta.ru/ru",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/lesta-games",
+      "related_candidate_qid": "GDM:8caa49780355697c2ae0",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435122+00:00"
+    },
+    {
+      "qid": "IGDB:45741",
+      "name": "Dreamy Dingo",
+      "website": "https://play.google.com/store/apps/developer?id=Dreamy+Dingo",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/dreamy-dingo",
+      "related_candidate_qid": "GDM:af778edf855a2965f377",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435349+00:00"
+    },
+    {
+      "qid": "IGDB:45742",
+      "name": "Hololabs Studio",
+      "website": "https://hololabs.org/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/hololabs-studio",
+      "related_candidate_qid": "GDM:0f10d912c4a45a090bde",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435566+00:00"
+    },
+    {
+      "qid": "IGDB:45744",
+      "name": "Fuga System",
+      "website": "https://copin.sakura.ne.jp/fuga/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/fuga-system",
+      "related_candidate_qid": "Q97656929",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.435792+00:00"
+    },
+    {
+      "qid": "IGDB:45771",
+      "name": "M3RDR",
+      "website": "https://m3rdr.carrd.co/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/m3rdr",
+      "related_candidate_qid": "GDM:2612b210201eb1d98f8a",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436152+00:00"
+    },
+    {
+      "qid": "IGDB:45774",
+      "name": "Krafton Montréal Studio",
+      "website": "https://www.kraftonmontreal.com/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/krafton-montreal-studio",
+      "related_candidate_qid": "GDM:ad377311a6c6a07d20b9",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436378+00:00"
+    },
+    {
+      "qid": "IGDB:45805",
+      "name": "AlexSantosWorks",
+      "website": "https://sites.google.com/view/alexsantosworks/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/alexsantosworks",
+      "related_candidate_qid": "GDM:af778edf855a2965f377",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436722+00:00"
+    },
+    {
+      "qid": "IGDB:45811",
+      "name": "Synergenix Interactive",
+      "website": "https://web.archive.org/web/20040605071326/http://www.synergenix.se/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/synergenix-interactive",
+      "related_candidate_qid": "Q964885",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.436954+00:00"
+    },
+    {
+      "qid": "IGDB:45830",
+      "name": "CGA Studio",
+      "website": "https://www.cgastudio.games/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/cga-studio",
+      "related_candidate_qid": "Q123117750",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437204+00:00"
+    },
+    {
+      "qid": "IGDB:45851",
+      "name": "Team Pollysoft",
+      "website": "https://sites.google.com/view/pollysoftofficial/home",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/team-pollysoft",
+      "related_candidate_qid": "GDM:af778edf855a2965f377",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437503+00:00"
+    },
+    {
+      "qid": "IGDB:45861",
+      "name": "JeliLiam",
+      "website": "https://gamejolt.com/@JeliLiam",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/jeliliam",
+      "related_candidate_qid": "IGDB:19944",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.437765+00:00"
+    },
+    {
+      "qid": "IGDB:45907",
+      "name": "Celeste Modding Community",
+      "website": "https://gamebanana.com/games/6460",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/celeste-modding-community",
+      "related_candidate_qid": "IGDB:39038",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438172+00:00"
+    },
+    {
+      "qid": "IGDB:45928",
+      "name": "Richard Lawther",
+      "website": "https://www.trle.net/sc/authorfeatures.php?aid=289",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/richard-lawther",
+      "related_candidate_qid": "IGDB:41584",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:40:20.438503+00:00"
+    },
+    {
+      "qid": "GDM:8a2d49699cfc40ba0304",
+      "name": "Rekim (Mike Robinson)",
+      "website": "https://www.rekim.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "related_candidate_qid": "IGDB:15156",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900501+00:00"
+    },
+    {
+      "qid": "GDM:2cfa2c9066d57bbc7563",
+      "name": "Relentless Studios (Amazon)",
+      "website": "https://www.amazongames.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "related_candidate_qid": "GDM:d3f0744c14e3bf0662b0",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.900733+00:00"
+    },
+    {
+      "qid": "GDM:072e6d1a599e886e39f4",
+      "name": "Retro Forge",
+      "website": "https://retroforgegames.com/",
+      "source_id": "gamedevmap",
+      "source_name": "GameDevMap",
+      "entity_url": "https://www.gamedevmap.com/index.php?city=&count=100&country=&location=&query=&start=7801&state=&type=",
+      "related_candidate_qid": "Q109923535",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-08T20:53:27.901012+00:00"
     }
   ]
 }
