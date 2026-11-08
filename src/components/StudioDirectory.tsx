@@ -18,7 +18,7 @@ import {
   orderedTags,
 } from "./studio-taxonomy";
 import type { StudioScale } from "./studio-taxonomy";
-import { continentsForLocation, countryPartsFor } from "./location";
+import { continentEmoji, continentsForLocation, countryFlagFor, countryFlagsFor, countryPartsFor } from "./location";
 import type { ContinentLabel } from "./location";
 import "./directory.css";
 
@@ -58,6 +58,13 @@ const workModelLabels: Record<string, string> = {
   on_site: "On-site",
   mixed: "Mixed",
   not_stated: "Not stated",
+};
+const workModelEmoji: Record<string, string> = {
+  remote: "🌐",
+  hybrid: "🏠",
+  on_site: "🏢",
+  mixed: "🔄",
+  not_stated: "❔",
 };
 const CONTINENT_ORDER = [
   "Europe",
@@ -126,15 +133,21 @@ function FilterPicker({
   options,
   selected,
   onToggle,
+  fieldClassName,
+  optionEmoji,
+  optionLabels,
 }: {
   label: string;
-  icon: "chart" | "monitor" | "target" | "building";
+  icon: "chart" | "monitor" | "target" | "building" | "laptop";
   options: string[];
   selected: string[];
   onToggle: (value: string) => void;
+  fieldClassName?: string;
+  optionEmoji?: Record<string, string>;
+  optionLabels?: Record<string, string>;
 }) {
   return (
-    <div className="form-field directory-filter-field">
+    <div className={["form-field directory-filter-field", fieldClassName].filter(Boolean).join(" ")}>
       <span className="directory-filter-label"><Icon name={icon} size={14} /><span>{label}</span></span>
       <details className="directory-filter-picker">
         <summary aria-label={label + " filters"}>
@@ -149,9 +162,10 @@ function FilterPicker({
                 type="checkbox"
                 checked={selected.includes(value)}
                 onChange={() => onToggle(value)}
-                aria-label={label + ": " + value}
+                aria-label={label + ": " + (optionLabels?.[value] || value)}
               />
-              <span>{value}</span>
+              {optionEmoji?.[value] ? <span aria-hidden="true">{optionEmoji[value]}</span> : null}
+              <span>{optionLabels?.[value] || value}</span>
             </label>
           )) : <span className="filter-picker-empty">No classified values yet</span>}
         </div>
@@ -214,7 +228,7 @@ export default function StudioDirectory({
   const [query, setQuery] = useState("");
   const [continent, setContinent] = useState<ContinentLabel | "All continents">("All continents");
   const [country, setCountry] = useState("All countries");
-  const [workModel, setWorkModel] = useState("all");
+  const [workModelFilters, setWorkModelFilters] = useState<string[]>([]);
   const [scaleFilters, setScaleFilters] = useState<string[]>([]);
   const [platformFilters, setPlatformFilters] = useState<string[]>([]);
   const [focusFilters, setFocusFilters] = useState<string[]>([]);
@@ -230,6 +244,10 @@ export default function StudioDirectory({
   const activeStudios = useMemo(
     () => studios.filter((studio) => studio.applicationResearch?.routeStatus === "active") as Studio[],
     [],
+  );
+  const newStudioCount = useMemo(
+    () => activeStudios.filter(isNewStudio).length,
+    [activeStudios],
   );
 
   const countries = useMemo(
@@ -322,7 +340,7 @@ export default function StudioDirectory({
         (!term || searchable.includes(term)) &&
         (continent === "All continents" || studioContinents.includes(continent)) &&
         (country === "All countries" || countryPartsFor(studioCountry).includes(country)) &&
-        (workModel === "all" || routeWorkModel === workModel) &&
+        (workModelFilters.length === 0 || workModelFilters.includes(routeWorkModel)) &&
         matchesFacet(scaleFilters, profile?.scale ? [profile.scale] : []) &&
         matchesFacet(platformFilters, profile?.platforms || []) &&
         matchesFacet(focusFilters, profile?.gameFocus || []) &&
@@ -362,12 +380,12 @@ export default function StudioDirectory({
     });
   }, [
     activeStudios, continent, country, focusFilters, platformFilters, query,
-    roleFilters, scaleFilters, showNewOnly, sortDirection, sortKey, workModel,
+    roleFilters, scaleFilters, showNewOnly, sortDirection, sortKey, workModelFilters,
   ]);
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [query, continent, country, workModel, scaleFilters, platformFilters, focusFilters, roleFilters, sortKey, sortDirection, showNewOnly]);
+  }, [query, continent, country, workModelFilters, scaleFilters, platformFilters, focusFilters, roleFilters, sortKey, sortDirection, showNewOnly]);
 
   useEffect(() => {
     const container = filterRowRef.current;
@@ -408,13 +426,13 @@ export default function StudioDirectory({
     (continent !== "All continents" ? 1 : 0) +
     (country !== "All countries" ? 1 : 0) +
     scaleFilters.length + platformFilters.length + focusFilters.length + roleFilters.length +
-    (workModel !== "all" ? 1 : 0) + (showNewOnly ? 1 : 0);
+    workModelFilters.length + (showNewOnly ? 1 : 0);
 
   function resetFilters() {
     setQuery("");
     setContinent("All continents");
     setCountry("All countries");
-    setWorkModel("all");
+    setWorkModelFilters([]);
     setScaleFilters([]);
     setPlatformFilters([]);
     setFocusFilters([]);
@@ -478,7 +496,7 @@ export default function StudioDirectory({
         </div>
       </div>
 
-      <DiscoveryStatus showNewOnly={showNewOnly} onToggleNewOnly={setShowNewOnly} />
+      <DiscoveryStatus showNewOnly={showNewOnly} onToggleNewOnly={setShowNewOnly} newStudioCount={newStudioCount} />
 
       <div className="directory-toolbar">
         <div className="directory-primary-filters">
@@ -492,14 +510,14 @@ export default function StudioDirectory({
             <span>Continent</span>
             <select className="form-select" value={continent} onChange={(event) => setContinent(event.target.value as ContinentLabel | "All continents")}>
               <option>All continents</option>
-              {continents.map((value) => <option key={value} value={value}>{value}</option>)}
+              {continents.map((value) => <option key={value} value={value}>{continentEmoji(value)} {value}</option>)}
             </select>
           </label>
           <label className="form-field">
             <span>Country</span>
             <select className="form-select" value={country} onChange={(event) => setCountry(event.target.value)}>
               <option>All countries</option>
-              {countries.map((value) => <option key={value} value={value}>{value}</option>)}
+              {countries.map((value) => <option key={value} value={value}>{countryFlagFor(value)} {value}</option>)}
             </select>
           </label>
         </div>
@@ -508,13 +526,16 @@ export default function StudioDirectory({
           <FilterPicker label="Platform" icon="monitor" options={platformOptions} selected={platformFilters} onToggle={value => toggleSelected(setPlatformFilters, value)} />
           <FilterPicker label="Focus" icon="target" options={focusOptions} selected={focusFilters} onToggle={value => toggleSelected(setFocusFilters, value)} />
           <FilterPicker label="Studio role" icon="building" options={[...roleOptions]} selected={roleFilters} onToggle={value => toggleSelected(setRoleFilters, value)} />
-          <label className="form-field work-model-filter">
-            <span className="directory-filter-label"><Icon name="laptop" size={14} /><span>Work model</span></span>
-            <select className="form-select" value={workModel} onChange={(event) => setWorkModel(event.target.value)}>
-              <option value="all">All work models</option>
-              {Object.entries(workModelLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
-            </select>
-          </label>
+          <FilterPicker
+            label="Work model"
+            icon="laptop"
+            fieldClassName="work-model-filter"
+            options={Object.keys(workModelLabels)}
+            selected={workModelFilters}
+            onToggle={value => toggleSelected(setWorkModelFilters, value)}
+            optionEmoji={workModelEmoji}
+            optionLabels={workModelLabels}
+          />
           <button className="btn btn-outline-secondary btn-sm reset-filters-button" type="button" onClick={resetFilters}>
             <Icon name="reset" size={14} />Reset filters
           </button>
@@ -523,10 +544,10 @@ export default function StudioDirectory({
       {activeFilterCount > 0 ? (
         <div className="active-filter-chips" aria-label="Active filters">
           {continent !== "All continents" ? (
-            <button type="button" onClick={() => setContinent("All continents")} className="active-filter-chip"><Icon name="map-pin" size={13} />{continent} <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setContinent("All continents")} className="active-filter-chip">{continentEmoji(continent)} {continent} <span aria-hidden="true">×</span></button>
           ) : null}
           {country !== "All countries" ? (
-            <button type="button" onClick={() => setCountry("All countries")} className="active-filter-chip"><Icon name="map-pin" size={13} />{country} <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setCountry("All countries")} className="active-filter-chip">{countryFlagFor(country)} {country} <span aria-hidden="true">×</span></button>
           ) : null}
           {scaleFilters.map(value => (
             <button type="button" key={"scale-" + value} onClick={() => toggleSelected(setScaleFilters, value)} className="active-filter-chip">Scale · {value} <span aria-hidden="true">×</span></button>
@@ -540,9 +561,9 @@ export default function StudioDirectory({
           {roleFilters.map(value => (
             <button type="button" key={"role-" + value} onClick={() => toggleSelected(setRoleFilters, value)} className="active-filter-chip">{value} <span aria-hidden="true">×</span></button>
           ))}
-          {workModel !== "all" ? (
-            <button type="button" onClick={() => setWorkModel("all")} className="active-filter-chip">Work model · {workModelLabels[workModel]} <span aria-hidden="true">×</span></button>
-          ) : null}
+          {workModelFilters.map(value => (
+            <button type="button" key={"work-model-" + value} onClick={() => toggleSelected(setWorkModelFilters, value)} className="active-filter-chip">{workModelEmoji[value]} {workModelLabels[value]} <span aria-hidden="true">×</span></button>
+          ))}
           {showNewOnly ? (
             <button type="button" onClick={() => setShowNewOnly(false)} className="active-filter-chip"><Icon name="sparkles" size={13} />New studios <span aria-hidden="true">×</span></button>
           ) : null}
@@ -574,13 +595,14 @@ export default function StudioDirectory({
               const studioCountry = profile?.headquarters?.country || studio.country || "Not stated";
               const countryCode = profile?.headquarters?.countryCode || "";
               const studioLocation = [profile?.headquarters?.city, studioCountry].filter(Boolean).join(", ");
+              const studioFlags = countryFlagsFor(studioCountry, countryCode);
               const studioHeadquarters =
                 [profile?.headquarters?.city, profile?.headquarters?.country].filter(Boolean).join(", ") ||
                 profile?.headquarters?.label || "Not stated";
               const routeWorkModel = studio.applicationResearch?.workModel || "not_stated";
               const isTracked = tracked.has(studio.name);
               const isNew = isNewStudio(studio);
-              const notableGames = profile?.popularGames?.slice(0, 1) || [];
+              const notableGames = profile?.popularGames?.slice(0, 2) || [];
               const profileGames = profile?.popularGames?.slice(0, 3) || [];
               const platforms = orderedTags(profile?.platforms || [], PLATFORM_ORDER);
               const focus = orderedTags(profile?.gameFocus || [], FOCUS_ORDER);
@@ -624,7 +646,7 @@ export default function StudioDirectory({
                     </td>
                     <td>
                       <span className="location-cell">
-                        <Icon name="map-pin" size={13} />
+                        {studioFlags.map((flag, index) => <span className="country-flag" key={flag + index} aria-hidden="true">{flag}</span>)}
                         <span>{studioLocation}</span>
                       </span>
                     </td>
@@ -680,7 +702,6 @@ export default function StudioDirectory({
                                 <p><Icon name="map-pin" size={13} /> Headquarters · {studioHeadquarters}</p>
                               </div>
                             </div>
-                            <button className="studio-profile-close" type="button" onClick={() => setExpandedStudio(null)} aria-label={"Close " + studio.name + " profile"}>×</button>
                           </div>
 
                           <div className="studio-details-grid studio-profile-grid">
@@ -690,7 +711,7 @@ export default function StudioDirectory({
                                 <p>{aboutText || "No studio description is available in the current profile."}</p>
                               </section>
                               <section className="studio-detail-section">
-                                <h3>Notable work <span className="section-count">· selected titles</span></h3>
+                                <h3>Notable work</h3>
                                 {profileGames.length > 0 ? (
                                   <div className="game-poster-grid">
                                     {profileGames.map((game) => <GamePoster game={game} key={game.title} />)}

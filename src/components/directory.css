@@ -537,18 +537,19 @@
 
 /* Game artwork keeps the directory compact and gives expanded profiles a visual portfolio strip. */
 .popular-work-list {
-  display: flex;
-  max-width: 286px;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 8px 7px;
+  display: grid;
+  width: max-content;
+  max-width: none;
+  grid-template-columns: repeat(2, 64px);
+  align-items: start;
+  gap: 8px;
 }
 
 .popular-game-entry {
   display: grid;
-  width: 82px;
+  width: 64px;
   min-width: 0;
-  flex: 0 1 82px;
+  flex: 0 0 64px;
   align-content: start;
   gap: 3px;
 }
@@ -580,48 +581,38 @@
 }
 
 .popular-game-cover {
-  display: inline-flex;
-  width: max-content;
-  min-width: 28px;
-  max-width: 82px;
-  height: auto;
-  flex: 0 0 auto;
+  display: flex;
+  width: 64px;
+  height: 96px;
+  flex: 0 0 64px;
   align-items: center;
-  justify-content: flex-start;
-  overflow: visible;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--tag-bg);
   text-decoration: none;
 }
 
 .popular-game-cover img {
   display: block;
-  width: auto;
-  max-width: 30px;
-  height: 42px;
-  border-radius: 3px;
-  object-fit: contain;
-}
-
-.popular-game-cover img[data-artwork-layout="landscape"] {
-  width: 82px;
-  max-width: 82px;
-  height: 42px;
+  width: 100%;
+  max-width: none;
+  height: 100%;
   object-fit: cover;
 }
-
-.popular-game-cover img[data-artwork-layout="square"] {
-  width: 42px;
-  max-width: 42px;
-  height: 42px;
+.popular-game-cover img[data-artwork-source]:not([data-artwork-source="IGDB"]) {
   object-fit: contain;
+  padding: 5px;
+  background: var(--tag-bg);
 }
 
+
+
 .popular-game-cover .game-cover-fallback.is-compact {
-  width: 30px;
-  height: 42px;
-  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
 }
 
 .game-poster-art img {
@@ -631,8 +622,9 @@
   object-fit: cover;
 }
 
-.game-poster-art img[data-artwork-layout="landscape"] {
+.game-poster-art img[data-artwork-source]:not([data-artwork-source="IGDB"]) {
   object-fit: contain;
+  padding: 6px;
   background: var(--tag-bg);
 }
 
@@ -713,20 +705,6 @@
   border-radius: 5px;
   background: var(--tag-bg);
   box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
-}
-
-/* Landscape Steam headers get a landscape frame, not a portrait frame with letterboxing. */
-.game-poster-art:has(img[data-artwork-layout="landscape"]) {
-  aspect-ratio: 460 / 215;
-}
-
-.game-poster-art:has(img[data-artwork-layout="square"]) {
-  aspect-ratio: 1;
-}
-
-.game-poster-art img[data-artwork-layout="square"] {
-  object-fit: contain;
-  background: var(--tag-bg);
 }
 
 .game-poster-art img {
@@ -865,7 +843,7 @@
 
 .directory-filter-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(170px, 1.1fr) auto;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) auto;
   align-items: end;
   gap: 12px;
 }
@@ -961,8 +939,9 @@
 .studio-table { min-width: 1210px; }
 .studio-table td .studio-tag-list { max-width: 190px; }
 .studio-table td .studio-tag-list .studio-facet-tag { max-width: 100%; }
-.studio-table .popular-work-list { max-width: 100px; }
-.studio-table .popular-game-entry { width: 92px; flex-basis: 92px; }
+.studio-table td:nth-child(3) { min-width: 150px; }
+.studio-table .popular-work-list { max-width: none; }
+.studio-table .popular-game-entry { width: 64px; flex-basis: 64px; }
 .games-toolbar {
   display: grid; grid-template-columns: minmax(260px, 1fr) minmax(180px, 260px);
   align-items: end; gap: 12px; padding: 12px; border: 1px solid var(--line);

@@ -143,7 +143,7 @@ async function main() {
         return { left: rect.left, width: rect.width };
       });
       const controls = Array.from(element.querySelectorAll(
-        ".directory-filter-picker summary, .work-model-filter .form-select, .reset-filters-button",
+        ".directory-filter-picker summary, .reset-filters-button",
       )).map(control => {
         const rect = control.getBoundingClientRect();
         return { top: rect.top, height: rect.height };
@@ -166,7 +166,7 @@ async function main() {
     );
     assert.equal(await page.locator(".filter-picker-chevron").count(), 0, "Filter dropdowns should not render a redundant chevron.");
     assert.equal(await page.locator(".directory-filter-picker summary svg").count(), 0, "Filter dropdown summaries should remain text-only.");
-    assert.equal(await page.locator(".directory-filter-field .directory-filter-label svg.ui-icon").count(), 4, "Each multi-select filter should show its icon on the label.");
+    assert.equal(await page.locator(".directory-filter-field .directory-filter-label svg.ui-icon").count(), 5, "Each multi-select filter, including Work model, should show its icon on the label.");
     assert.equal(await page.locator(".work-model-filter .directory-filter-label svg.ui-icon").count(), 1, "Work model should have a label icon.");
     assert.equal(await page.locator(".reset-filters-button svg.ui-icon").count(), 1, "Reset filters should have a reset icon.");
 
@@ -559,7 +559,7 @@ async function main() {
     assert.ok(totalResults > 100, "The global directory should contain a substantial set of active studios.");
     assert.equal(initialCount, 100, "The selected page size should cap the initial directory view at 100 rows.");
     assert.ok(await page.locator(".studio-mark").count() > 50, "Studio marks should appear for visible directory rows.");
-    assert.ok(await page.locator(".location-cell svg.ui-icon").count() > 50, "Known studio locations should display a consistent location icon.");
+    assert.ok(await page.locator(".studio-table .location-cell .country-flag").count() > 50, "Known studio locations should display country flags.");
     assert.ok(await page.locator(".studio-scale-tag").count() > 0, "Classified studios should show a scale badge beside the name.");
     assert.ok(await page.locator(".studio-table .tag-list-platform .studio-facet-tag").count() > 0, "Platform should have its own column.");
     assert.ok(await page.locator(".studio-table .tag-list-focus .studio-facet-tag").count() > 0, "Focus should have its own column.");
@@ -575,8 +575,12 @@ async function main() {
       8,
       "Every studio data row should have one cell for each separate studio facet and the tracker action.",
     );
+    const newStudioLabel = page.locator(".new-only-filter .form-check-label");
+    const displayedNewStudioCount = Number((await newStudioLabel.textContent() || "").match(/\((\d+)\)/)?.[1]);
+    assert.ok(Number.isInteger(displayedNewStudioCount), "The New studios filter should display its current count, including zero.");
     await page.getByLabel("Show only newly added studios").check();
     const newStudioCount = await rows.count();
+    assert.equal(displayedNewStudioCount, newStudioCount, "The New studios counter should match the studios currently marked NEW.");
     assert.ok(newStudioCount > 0, "The persistent New studios filter should show the current discovery batch.");
     assert.equal(await page.getByText("NEW", { exact: true }).count(), newStudioCount, "Every filtered studio should carry the NEW marker.");
     await page.getByRole("button", { name: "Reset filters" }).click();
@@ -592,6 +596,16 @@ async function main() {
     assert.equal(await rows.count(), 1, "A matching studio search should return the intended studio.");
     await rows.getByText("4A Games").waitFor();
     const fourARow = rows.filter({ hasText: "4A Games" });
+    const tablePosterEntries = fourARow.locator(".popular-work-list .popular-game-entry");
+    assert.equal(await tablePosterEntries.count(), 2, "The Notable work table column should show two poster covers.");
+    assert.equal(await tablePosterEntries.locator(".popular-game-caption small").count(), 2, "Both table posters should show their release year or verification status.");
+    const tablePosterFrames = await tablePosterEntries.locator(".popular-game-cover").evaluateAll(frames =>
+      frames.map(frame => {
+        const rect = frame.getBoundingClientRect();
+        return { width: rect.width, height: rect.height };
+      }),
+    );
+    assert.ok(tablePosterFrames.every(frame => frame.width === 64 && frame.height === 96), "Both table posters should use the same 64×96 portrait frame.");
     await fourARow.getByRole("button", { name: "4A Games" }).click();
     const fourAPosters = page.locator(".game-poster-grid .game-poster-card");
     assert.equal(await fourAPosters.count(), 2, "Expanded studio profiles should render one poster card per notable game.");
@@ -604,6 +618,17 @@ async function main() {
       "Listed games should render cover artwork images.",
     );
     const metroExodusPoster = page.locator('.game-poster-grid .game-poster-card[data-game-title="Metro Exodus"]');
+    assert.equal(await page.locator(".studio-profile-close").count(), 0, "Expanded studio profiles should close by re-clicking the studio row.");
+    assert.equal(await page.locator(".studio-detail-section .section-count").count(), 0, "Notable work should not show redundant selected-title metadata.");
+    assert.equal((await page.locator(".studio-detail-section h3").filter({ hasText: "Notable work" }).textContent() || "").trim(), "Notable work");
+    assert.equal(await fourAPosters.locator(".game-poster-caption small").count(), await fourAPosters.count(), "Every expanded-profile cover should show a release year or an explicit verification status.");
+    const expandedPosterFrames = await fourAPosters.locator(".game-poster-art").evaluateAll(frames =>
+      frames.map(frame => {
+        const rect = frame.getBoundingClientRect();
+        return { width: rect.width, height: rect.height };
+      }),
+    );
+    assert.ok(expandedPosterFrames.every(frame => Math.abs(frame.height / frame.width - 1.5) < 0.01), "Every expanded-profile cover should keep the same 2:3 portrait frame.");
     const metroExodusImage = metroExodusPoster.locator('img[data-artwork-source="IGDB"]');
     await metroExodusImage.waitFor();
     assert.ok(
@@ -611,6 +636,14 @@ async function main() {
       "When a game has both IGDB and Steam artwork, the IGDB cover should be displayed first.",
     );
     await fourARow.getByRole("button", { name: "4A Games" }).click();
+    await page.getByLabel("Search", { exact: true }).fill("Youniverse Games");
+    const youniverseRow = rows.filter({ hasText: "Youniverse Games" });
+    assert.equal(await youniverseRow.count(), 1, "Youniverse Games should be searchable in the directory.");
+    await youniverseRow.getByRole("button", { name: "Youniverse Games" }).click();
+    const yoocaPoster = page.locator('.game-poster-grid .game-poster-card[data-game-title="Yooca: Your Life"]');
+    assert.equal(await yoocaPoster.getAttribute("data-release-year"), "2026", "Yooca should display its source-verified 2026 launch year.");
+    assert.equal((await yoocaPoster.locator(".game-poster-caption small").textContent() || "").trim(), "2026");
+    await youniverseRow.getByRole("button", { name: "Youniverse Games" }).click();
     await page.getByLabel("Search", { exact: true }).fill("");
     assert.equal(await rows.count(), initialCount, "Clearing a successful search should restore the directory.");
 
@@ -622,6 +655,7 @@ async function main() {
     assert.ok(continentValues.includes("Europe"), "The continent filter should include Europe.");
     assert.ok(continentValues.includes("Asia"), "The continent filter should include Asia.");
     assert.ok(continentValues.includes("Africa"), "The continent filter should include Africa.");
+    assert.match(await continent.locator('option[value="Europe"]').textContent() || "", /🌍/, "Continent options should show their emoji.");
     assert.equal(continentValues.includes("Remote / distributed"), false, "Remote should not appear in the Continent filter.");
     assert.equal(continentValues.includes("Not stated"), false, "Not stated should not appear in the Continent filter.");
     await continent.selectOption("Europe");
@@ -641,6 +675,8 @@ async function main() {
     );
     const firstCountry = countryValues.find((value) => value !== "All countries");
     assert.ok(firstCountry, "The country filter should contain real countries.");
+    const countryOptionText = await country.locator('option[value="' + firstCountry + '"]').textContent() || "";
+    assert.ok(countryOptionText.trim().length > firstCountry.length, "Country options should show their flag emoji.");
     await country.selectOption(firstCountry);
     const countryCount = await filteredTotal();
     assert.ok(countryCount > 0 && countryCount < totalResults, "Country filtering should narrow the full directory result set.");
@@ -672,10 +708,20 @@ async function main() {
     await page.getByRole("button", { name: "Reset filters" }).click();
     assert.equal(await rows.count(), initialCount);
 
-    await page.getByLabel("Work model").selectOption("remote");
+    const workModelPicker = page.locator(".directory-filter-picker").nth(4);
+    await workModelPicker.locator("summary").click();
+    const remoteWorkModel = page.getByRole("checkbox", { name: "Work model: Remote" });
+    const hybridWorkModel = page.getByRole("checkbox", { name: "Work model: Hybrid" });
+    await remoteWorkModel.check();
     const remoteCount = await filteredTotal();
-    assert.ok(remoteCount > 0 && remoteCount < totalResults, "Work-model filtering should remain available with the integrated studio filters.");
-    await page.getByLabel("Work model").selectOption("all");
+    assert.ok(remoteCount > 0 && remoteCount < totalResults, "Remote work-model filtering should narrow the directory.");
+    await hybridWorkModel.check();
+    const combinedWorkModelCount = await filteredTotal();
+    assert.ok(combinedWorkModelCount >= remoteCount && combinedWorkModelCount < totalResults, "Selecting multiple work models should include studios matching either option.");
+    assert.equal(await page.locator(".active-filter-chip").count(), 2, "Each selected work model should appear as a removable chip.");
+    await workModelPicker.locator("summary").click();
+    await page.locator(".active-filter-chip").first().click();
+    assert.equal(await page.locator(".active-filter-chip").count(), 1, "Removing one work-model chip should retain the other selection.");
     await page.getByRole("button", { name: "Reset filters" }).click();
     await page.getByLabel("Search", { exact: true }).fill("Laki Studios");
     await country.selectOption("Poland");

@@ -46,9 +46,11 @@ function summaryText(summary: DiscoveryRunSummary | null): string {
 export default function DiscoveryStatus({
   showNewOnly,
   onToggleNewOnly,
+  newStudioCount,
 }: {
   showNewOnly: boolean;
   onToggleNewOnly: (checked: boolean) => void;
+  newStudioCount: number;
 }) {
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
   const [unavailable, setUnavailable] = useState(false);
@@ -83,7 +85,7 @@ export default function DiscoveryStatus({
       <input id="new-only-filter" className="form-check-input" type="checkbox"
         checked={showNewOnly} onChange={event => onToggleNewOnly(event.target.checked)}
         aria-label="Show only newly added studios" />
-      <span className="form-check-label"><Icon name="sparkles" size={14} />New studios</span>
+      <span className="form-check-label"><Icon name="sparkles" size={14} />New studios ({newStudioCount})</span>
     </label>
   );
 

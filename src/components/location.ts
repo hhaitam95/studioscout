@@ -160,8 +160,24 @@ export function countryFlagFor(country: string, countryCode?: string | null): st
   const label = country.trim();
   if (!label || /^(not stated|not publicly stated|not disclosed|unknown)$/i.test(label)) return null;
   if (label === "Remote") return "🌐";
-  const code = countryCode?.trim().toUpperCase() || COUNTRY_CODE_FALLBACK[label];
+  const code = countryCode?.trim().toUpperCase() || COUNTRY_CODE_FALLBACK[label] || COUNTRY_CODE_BY_NAME[label];
   return code ? flagFromCode(code) : null;
+}
+
+export function continentEmoji(continent: ContinentLabel): string {
+  const icons: Record<ContinentLabel, string> = {
+    Africa: "🌍", Asia: "🌏", Europe: "🌍", "North America": "🌎",
+    "South America": "🌎", Oceania: "🌏", "Remote / distributed": "🌐", "Not stated": "❔",
+  };
+  return icons[continent];
+}
+
+export function countryFlagsFor(country: string, countryCode?: string | null): string[] {
+  const parts = countryPartsFor(country);
+  const names = parts.length ? parts : [country.trim()];
+  return names
+    .map((part) => countryFlagFor(part, names.length === 1 ? countryCode : null))
+    .filter((flag): flag is string => Boolean(flag));
 }
 
 export function countryPartsFor(country: string): string[] {

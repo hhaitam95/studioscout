@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-08 — Studio directory filters, location flags and aligned game posters
+
+- Restore country flags in the Country dropdown, studio and tracker tables, and continent emoji in the Continent dropdown.
+- Make Work model a multi-select checklist with arrangement emoji; display the current NEW-marker count beside the New studios toggle.
+- Show two fixed-size portrait game posters in the Notable work table column, with non-IGDB artwork contained inside the same 2:3 frame.
+- Show a release-year line or an explicit verification status on every game poster; record Yooca: Your Life's verified 2026 launch year from Youniverse Games.
+- Remove the redundant selected-titles suffix and the separate studio-profile close button; re-clicking the studio row closes its details.
+- Extend unit and Chromium tests for multi-select filtering, emoji labels, two-cover layout, consistent frames and release-year labels.
+
 ## 2026-11-08 — Studio directory filter polish and consistent iconography
 
 - Remove Remote / distributed and Not stated from the Continent filter; work-model availability remains in the dedicated Work model control.

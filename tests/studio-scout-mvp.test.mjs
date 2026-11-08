@@ -38,7 +38,13 @@ test("studio directory renders separate studio facets and integrated filters", a
     assert.match(markup, /Sort by Scale/);
     assert.match(markup, /Sort by Studio role/);
     assert.match(markup, /Sort by Platform/);
-    assert.match(markup, /New studios/);
+    assert.match(markup, /New studios \(\d+\)/);
+    assert.match(markup, /Work model: Remote/);
+    assert.match(markup, /Work model: Not stated/);
+    assert.match(markup, /🌐/);
+    assert.match(markup, /🏠/);
+    assert.match(markup, /🌍 Europe/);
+    assert.match(markup, /🇦🇺 Australia/);
     assert.match(markup, /aria-label="Sort by Scale \(ascending\)"/);
     assert.match(markup, /<span>Scale<\/span>/);
     assert.match(markup, /Notable work/);
@@ -127,6 +133,8 @@ test("country and continent filters handle combined headquarters cleanly", async
     assert.deepEqual(location.continentsForLocation("Ukraine / Cyprus"), ["Europe"]);
     assert.deepEqual(location.countryPartsFor("Remote"), []);
     assert.equal(location.countryFlagFor("Uruguay"), "🇺🇾");
+    assert.deepEqual(location.countryFlagsFor("France / Canada"), ["🇫🇷", "🇨🇦"]);
+    assert.equal(location.continentEmoji("Europe"), "🌍");
   });
 });
 

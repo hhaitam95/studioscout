@@ -5,6 +5,7 @@ import { APPLICATION_PREPARATION_CHECKLIST, createEmptyApplicationPreparation } 
 import StudioMark from "./StudioMark";
 import Icon from "./Icon";
 import type { IconName } from "./Icon";
+import { countryFlagsFor } from "./location";
 import "./tracker.css";
 
 const tabs: { id: string; label: string; status: TrackerStatus }[] = [
@@ -235,6 +236,7 @@ export default function ApplicationTracker({
           </thead>
           <tbody>
             {visible.map((application) => {
+              const flags = countryFlagsFor(application.country, application.countryCode);
               const notesOpen = expandedNotesId === application.id;
               const preparationOpen = expandedPreparationId === application.id;
               const notesId = "tracker-notes-" + trackerRowId(application.id);
@@ -253,7 +255,7 @@ export default function ApplicationTracker({
                     </td>
                     <td>
                       <span className="location-cell">
-                        <Icon name="map-pin" size={13} />
+                        {flags.map((flag, index) => <span className="country-flag" key={flag + index} aria-hidden="true">{flag}</span>)}
                         <span>{application.country || "Not stated"}</span>
                       </span>
                     </td>

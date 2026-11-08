@@ -54,9 +54,25 @@ function GameCoverArtwork({ game, compact }: { game: PopularGame; compact: boole
   );
 }
 
-function gameYearLabel(game: PopularGame): string | null {
-  if (game.stage?.toLowerCase() === "in development") return "In development";
-  return game.releaseYear ? String(game.releaseYear) : null;
+function gameReleaseYear(game: PopularGame): number | null {
+  if (Number.isInteger(game.releaseYear) && game.releaseYear) return game.releaseYear;
+  if (game.steamReleaseDate) {
+    const timestamp = Date.parse(game.steamReleaseDate);
+    if (Number.isFinite(timestamp)) return new Date(timestamp).getUTCFullYear();
+  }
+  const stageYear = game.stage?.match(/^released(?:\s+in)?\s+(?:[a-z]+\s+)?(19\d{2}|20\d{2}|21\d{2})\b/i);
+  return stageYear ? Number(stageYear[1]) : null;
+}
+
+function gameYearLabel(game: PopularGame): string {
+  if (game.stage?.toLowerCase().includes("in development")) return "In development";
+  return String(gameReleaseYear(game) || "Year unverified");
+}
+
+function gameYearTitle(game: PopularGame): string {
+  if (game.releaseYear && game.releaseYearSourceUrl) return "Release year source: " + game.releaseYearSourceUrl;
+  if (game.stage?.toLowerCase().includes("in development")) return "This title is listed as in development.";
+  return gameReleaseYear(game) ? "Release year recorded from available game metadata." : "Release year could not be verified from the available metadata.";
 }
 
 function PosterContents({ game }: { game: PopularGame }) {
@@ -68,9 +84,7 @@ function PosterContents({ game }: { game: PopularGame }) {
       </span>
       <span className="game-poster-caption">
         <strong>{game.title}</strong>
-        {gameYearLabel(game) ? (
-          <small title={game.releaseYear && game.releaseYearSourceUrl ? "Release year source: " + game.releaseYearSourceUrl : undefined}>{gameYearLabel(game)}</small>
-        ) : null}
+        <small title={gameYearTitle(game)}>{gameYearLabel(game)}</small>
       </span>
     </>
   );
@@ -86,8 +100,8 @@ export default function GamePoster({ game }: { game: PopularGame }) {
         className="game-poster-card"
         role="group"
         data-game-title={game.title}
-        aria-label={game.title + (game.releaseYear ? " · " + game.releaseYear : "") + " · no verified game page"}
-        data-release-year={game.releaseYear || ""}
+        aria-label={game.title + " · " + gameYearLabel(game) + " · no verified game page"}
+        data-release-year={gameReleaseYear(game) || ""}
       >
         <PosterContents game={game} />
       </span>
@@ -101,9 +115,9 @@ export default function GamePoster({ game }: { game: PopularGame }) {
       target="_blank"
       rel="noopener noreferrer"
       title={linkLabel}
-      aria-label={linkLabel + (game.releaseYear ? " · " + game.releaseYear : "")}
+      aria-label={linkLabel + " · " + gameYearLabel(game)}
       data-game-title={game.title}
-      data-release-year={game.releaseYear || ""}
+      data-release-year={gameReleaseYear(game) || ""}
     >
       <PosterContents game={game} />
     </a>
@@ -117,13 +131,12 @@ export function GamePosterStrip({ games }: { games: PopularGame[] }) {
         const destination = gameDestination(game);
         const linkLabel = gameLinkLabel(game);
         const yearLabel = gameYearLabel(game);
+        const releaseYear = gameReleaseYear(game);
         const content = <GameCoverArtwork game={game} compact />;
         const caption = (
           <span className="popular-game-caption">
             <strong title={game.title}>{game.title}</strong>
-            {yearLabel ? (
-              <small title={game.releaseYear && game.releaseYearSourceUrl ? "Release year source: " + game.releaseYearSourceUrl : undefined}>{yearLabel}</small>
-            ) : null}
+            <small title={gameYearTitle(game)}>{yearLabel}</small>
           </span>
         );
 
@@ -138,7 +151,7 @@ export function GamePosterStrip({ games }: { games: PopularGame[] }) {
                 title={game.title + (yearLabel ? " " + yearLabel : "")}
                 aria-label={linkLabel + (yearLabel ? " " + yearLabel : "")}
                 data-game-title={game.title}
-                data-release-year={game.releaseYear || ""}
+                data-release-year={releaseYear || ""}
               >
                 {content}
               </a>
@@ -148,7 +161,7 @@ export function GamePosterStrip({ games }: { games: PopularGame[] }) {
                 role="group"
                 aria-label={game.title + (yearLabel ? " " + yearLabel : "") + " · no verified game page"}
                 data-game-title={game.title}
-                data-release-year={game.releaseYear || ""}
+                data-release-year={gameReleaseYear(game) || ""}
               >
                 {content}
               </span>

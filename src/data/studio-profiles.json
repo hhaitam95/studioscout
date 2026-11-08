@@ -17790,6 +17790,8 @@
     "popularGames": [
       {
         "title": "Yooca: Your Life",
+        "releaseYear": 2026,
+        "releaseYearSourceUrl": "https://youniverse.game/media.html",
         "appId": 4138870,
         "igdbGameId": 390516,
         "igdbSlug": "yooca-your-life",
