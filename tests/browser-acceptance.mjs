@@ -845,14 +845,19 @@ async function main() {
       trailArtworkPath.includes("/steam/apps/3544920/") && trailArtworkPath.endsWith("/header.jpg"),
       "The Trail should use its verified landscape Steam header in the expanded gallery. Actual URL: " + trailPosterImageUrl,
     );
-    const posterRatio = await trailPoster.locator(".game-poster-art").evaluate(element => {
+    const posterMetrics = await trailPoster.locator(".game-poster-art").evaluate(element => {
       const rect = element.getBoundingClientRect();
-      return rect.width / rect.height;
+      const image = element.querySelector("img");
+      return {
+        widthToHeight: rect.width / rect.height,
+        objectFit: image ? getComputedStyle(image).objectFit : "",
+      };
     });
     assert.ok(
-      posterRatio > 1.8 && posterRatio < 2.3,
-      "The expanded poster frame itself should be landscape-shaped, rather than a portrait frame containing a wide image.",
+      posterMetrics.widthToHeight > 0.62 && posterMetrics.widthToHeight < 0.71,
+      "Wide source artwork should retain the same 2:3 portrait poster frame as every other cover.",
     );
+    assert.equal(posterMetrics.objectFit, "contain", "Wide non-IGDB artwork should be contained inside the standard portrait frame.");
     await twentyTwoCansButton.click();
     await twentyTwoCansDetails.waitFor({ state: "detached" });
 
