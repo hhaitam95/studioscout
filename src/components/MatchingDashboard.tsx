@@ -14,6 +14,8 @@ import studiosJson from "../data/speculative-route-directory.json" with { type: 
 import profilesJson from "../data/studio-profiles.json" with { type: "json" };
 import { continentsForLocation } from "./location";
 import StudioMark from "./StudioMark";
+import Icon, { platformIconName } from "./Icon";
+import type { IconName } from "./Icon";
 import "./matching.css";
 
 type DirectoryStudio = {
@@ -95,14 +97,6 @@ function labelFromKey(value: string): string {
   return value.replace(/_/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function platformIcon(value: string): string {
-  const normalized = value.toLowerCase();
-  if (normalized.includes("pc")) return "💻";
-  if (normalized.includes("mobile")) return "📱";
-  if (normalized.includes("vr")) return "🥽";
-  if (normalized.includes("console")) return "🎮";
-  return "🕹️";
-}
 
 function focusIcon(value: string): string {
   const normalized = value.toLowerCase();
@@ -494,11 +488,11 @@ export default function MatchingDashboard({
           const expanded = expandedId === assessment.id;
           const studioInfo = studios.find(studio => studio.name === assessment.name);
           const studioProfile = studioProfiles[assessment.name];
-          const visualTags = [
+          const visualTags: { label: string; kind: string; icon?: IconName; emoji?: string }[] = [
             ...(studioProfile?.scale ? [{ label: studioProfile.scale, kind: "scale" }] : []),
-            ...(studioProfile?.studioRoles || []).slice(0, 1).map(value => ({ label: "🛠️ " + value, kind: "role" })),
-            ...(studioProfile?.platforms || []).slice(0, 2).map(value => ({ label: platformIcon(value) + " " + value, kind: "platform" })),
-            ...(studioProfile?.gameFocus || []).slice(0, 2).map(value => ({ label: focusIcon(value) + " " + value, kind: "focus" })),
+            ...(studioProfile?.studioRoles || []).slice(0, 1).map(value => ({ label: value, kind: "role", icon: "wrench" as const })),
+            ...(studioProfile?.platforms || []).slice(0, 2).map(value => ({ label: value, kind: "platform", icon: platformIconName(value) })),
+            ...(studioProfile?.gameFocus || []).slice(0, 2).map(value => ({ label: value, kind: "focus", emoji: focusIcon(value) })),
           ].slice(0, 5);
           return (
             <article
@@ -514,7 +508,7 @@ export default function MatchingDashboard({
                     <StudioMark name={assessment.name} websiteUrl={studioInfo?.websiteUrl || ""} />
                     <div>
                       <h2>{assessment.name}</h2>
-                      <p>🌐 {assessment.country} · recorded studio country · {labelFromKey(assessment.routeType)} route</p>
+                      <p><Icon name="map-pin" size={12} /> {assessment.country} · recorded studio country · {labelFromKey(assessment.routeType)} route</p>
                     </div>
                   </div>
                   {assessment.studioTypes.length ? (
@@ -524,7 +518,13 @@ export default function MatchingDashboard({
                   ) : null}
                   {visualTags.length ? (
                     <div className="match-tag-list match-visual-tags">
-                      {visualTags.map((tag, index) => <span className={"match-tag match-tag-" + tag.kind} key={tag.kind + tag.label + index}>{tag.label}</span>)}
+                      {visualTags.map((tag, index) => (
+                        <span className={"match-tag match-tag-" + tag.kind} key={tag.kind + tag.label + index}>
+                          {tag.icon ? <Icon name={tag.icon} size={13} /> : null}
+                          {tag.emoji ? <span aria-hidden="true">{tag.emoji}</span> : null}
+                          {tag.label}
+                        </span>
+                      ))}
                     </div>
                   ) : null}
                 </div>

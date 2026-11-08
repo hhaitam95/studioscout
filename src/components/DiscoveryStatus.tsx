@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Icon from "./Icon";
 
 const WORKFLOW_RUNS_URL =
   "https://api.github.com/repos/hhaitam95/studioscout/actions/workflows/discover-studios.yml/runs?per_page=10";
@@ -82,7 +83,7 @@ export default function DiscoveryStatus({
       <input id="new-only-filter" className="form-check-input" type="checkbox"
         checked={showNewOnly} onChange={event => onToggleNewOnly(event.target.checked)}
         aria-label="Show only newly added studios" />
-      <span className="form-check-label">✨ New studios</span>
+      <span className="form-check-label"><Icon name="sparkles" size={14} />New studios</span>
     </label>
   );
 

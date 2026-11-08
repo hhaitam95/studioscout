@@ -5,6 +5,7 @@ import ApplicationTracker from "./components/ApplicationTracker";
 import CandidateProfile from "./components/CandidateProfile";
 import MatchingDashboard from "./components/MatchingDashboard";
 import GamesDirectory from "./components/GamesDirectory";
+import Icon from "./components/Icon";
 import studioDirectory from "./data/speculative-route-directory.json" with { type: "json" };
 import { createApplicationTrackerBackup, parseStoredApplicationTracker, readApplicationTrackerBackup } from "./tracker/application-backup.mjs";
 import { createApplicationId } from "./tracker/application-identity.mjs";
@@ -399,7 +400,7 @@ export default function App() {
               aria-pressed={theme === "dark"}
               onClick={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
             >
-              <span aria-hidden="true">{theme === "dark" ? "☀" : "◐"}</span>
+              <Icon name={theme === "dark" ? "sun" : "moon"} size={15} />
             </button>
           </div>
         </div>

@@ -4,10 +4,6 @@ export type StudioScale = (typeof SCALE_ORDER)[number];
 export const PLATFORM_ORDER = ["PC", "Console", "Mobile", "VR", "XR", "Web"] as const;
 export type StudioPlatform = (typeof PLATFORM_ORDER)[number];
 
-export const PLATFORM_EMOJI: Record<StudioPlatform, string> = {
-  PC: "💻", Console: "🎮", Mobile: "📱", VR: "🥽", XR: "🕶️", Web: "🌐",
-};
-
 export const FOCUS_ORDER = [
   "Action", "Adventure", "RPG", "Shooter", "Horror", "Strategy", "Simulation",
   "Narrative", "Co-op", "Multiplayer", "Survival", "Puzzle", "Casual", "Racing",
@@ -30,9 +26,6 @@ export const FOCUS_EMOJI: Record<string, string> = {
 export const ROLE_ORDER = ["Developer", "Publisher", "Co-dev"] as const;
 export type StudioRole = (typeof ROLE_ORDER)[number];
 
-export function platformEmoji(value: string): string {
-  return PLATFORM_EMOJI[value as StudioPlatform] || "🎮";
-}
 export function focusEmoji(value: string): string {
   return FOCUS_EMOJI[value] || "🎮";
 }

@@ -133,14 +133,6 @@ const CONTINENT_ORDER: ContinentLabel[] = [
   "Not stated",
 ];
 
-export function continentEmoji(continent: ContinentLabel): string {
-  const icons: Record<ContinentLabel, string> = {
-    Africa: "🌍", Asia: "🌏", Europe: "🌍", "North America": "🌎",
-    "South America": "🌎", Oceania: "🌏", "Remote / distributed": "🌐", "Not stated": "❔",
-  };
-  return icons[continent];
-}
-
 export function countryPartsFor(country: string): string[] {
   return country.split(/\s*(?:\/|&)\s*/).map(value => value.trim())
     .filter(value => value && !/^(remote|not stated|not publicly stated|unknown)$/i.test(value));
@@ -165,33 +157,3 @@ export function continentsForLocation(country: string, countryCode?: string | nu
   );
 }
 
-function flagFromCode(code: string): string | null {
-  const normalized = code.trim().toUpperCase();
-  if (!/^[A-Z]{2}$/.test(normalized)) return null;
-  const first = normalized.codePointAt(0);
-  const second = normalized.codePointAt(1);
-  if (first === undefined || second === undefined) return null;
-  return String.fromCodePoint(first + 127397, second + 127397);
-}
-
-const COUNTRY_CODE_FALLBACK: Record<string, string> = {
-  Australia: "AU", Austria: "AT", Canada: "CA", China: "CN", Denmark: "DK",
-  England: "GB", Finland: "FI", France: "FR", Hungary: "HU", Iceland: "IS",
-  India: "IN", Netherlands: "NL", Norway: "NO", Pakistan: "PK", Poland: "PL",
-  Serbia: "RS", Sweden: "SE", Switzerland: "CH", "Türkiye": "TR",
-  "United States": "US", "United Kingdom": "GB", Mauritius: "MU", "Czech Republic": "CZ",
-  Czechia: "CZ", "South Korea": "KR", "Saudi Arabia": "SA", "United Arab Emirates": "AE",
-  "New Zealand": "NZ", Germany: "DE", Belgium: "BE", Brazil: "BR", Bulgaria: "BG",
-  "Costa Rica": "CR", Cyprus: "CY", Indonesia: "ID", Iraq: "IQ", Italy: "IT",
-  Japan: "JP", Malaysia: "MY", Malta: "MT", Moldova: "MD", Morocco: "MA",
-  Nigeria: "NG", Philippines: "PH", Portugal: "PT", Singapore: "SG", Spain: "ES",
-  Thailand: "TH", Ukraine: "UA", Uruguay: "UY", Vietnam: "VN",
-};
-
-export function countryFlagFor(country: string, countryCode?: string | null): string | null {
-  const label = country.trim();
-  if (!label || /^(not stated|not publicly stated|not disclosed|unknown)$/i.test(label)) return null;
-  if (label === "Remote") return "🌐";
-  const code = countryCode?.trim().toUpperCase() || COUNTRY_CODE_FALLBACK[label];
-  return code ? flagFromCode(code) : null;
-}

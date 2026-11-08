@@ -882,6 +882,12 @@
   min-width: 0;
   line-height: 16px;
 }
+.directory-filter-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink);
+}
 .directory-filter-row .directory-filter-picker {
   position: relative;
   width: 100%;
@@ -915,17 +921,11 @@
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 8px;
 }
 .directory-filter-row .filter-picker-value > span:last-child {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.directory-filter-row .filter-picker-chevron {
-  flex: 0 0 auto;
-  color: var(--subtle);
-  font-size: 11px;
 }
 .directory-filter-row .filter-picker-options {
   position: absolute;
@@ -946,6 +946,10 @@
 .directory-filter-row .filter-picker-option { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: 12px; }
 .directory-filter-row .work-model-filter .form-select { width: 100%; min-height: 40px; }
 .directory-filter-row .reset-filters-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   align-self: end;
   min-height: 40px;
   height: 40px;

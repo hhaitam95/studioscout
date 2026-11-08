@@ -331,6 +331,12 @@
 .profile-section-icon {
   display: inline-block;
   margin-right: 7px;
+  vertical-align: -0.15em;
+}
+.profile-field-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .profile-panel[id] { scroll-margin-top: 88px; }
 

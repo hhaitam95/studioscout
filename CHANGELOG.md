@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-08 — Studio directory filter polish and consistent iconography
+
+- Remove Remote / distributed and Not stated from the Continent filter; work-model availability remains in the dedicated Work model control.
+- Make directory filter menus mutually exclusive and close them on outside click or Escape; remove the redundant dropdown chevron.
+- Replace interface emoji with consistent inline outline SVG icons across filters, matching, profile, tracker and navigation, retaining emoji only for Focus taxonomy values.
+- Add Work model and Reset filters icons, and move multi-select icons to their labels rather than the dropdown value.
+- Extend Chromium browser acceptance to cover continent options, filter dismissal and icon placement.
+
+
 ## 2026-11-07 — StudioScout discovery and Games catalogue
 
 - Keep NEW markers on the latest genuinely added studio batch with no 24-hour expiry; clear prior markers only when a later batch publishes new studios.

@@ -1,8 +1,9 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { MouseEvent } from "react";
 import studios from "../data/speculative-route-directory.json" with { type: "json" };
 import profilesJson from "../data/studio-profiles.json" with { type: "json" };
 import type { TrackedApplication } from "./studio.types";
+import Icon, { platformIconName } from "./Icon";
 import DiscoveryStatus from "./DiscoveryStatus";
 import StudioMark from "./StudioMark";
 import CompanyMarks, { hasKnownCompanyMark } from "./CompanyMarks";
@@ -15,10 +16,9 @@ import {
   SCALE_ORDER,
   focusEmoji,
   orderedTags,
-  platformEmoji,
 } from "./studio-taxonomy";
 import type { StudioScale } from "./studio-taxonomy";
-import { continentEmoji, continentsForLocation, countryFlagFor, countryPartsFor } from "./location";
+import { continentsForLocation, countryPartsFor } from "./location";
 import type { ContinentLabel } from "./location";
 import "./directory.css";
 
@@ -66,8 +66,6 @@ const CONTINENT_ORDER = [
   "North America",
   "South America",
   "Oceania",
-  "Remote / distributed",
-  "Not stated",
 ];
 type SortKey = "name" | "location" | "popularWork" | "scale" | "role" | "platform" | "focus";
 type SortDirection = "asc" | "desc";
@@ -83,11 +81,9 @@ function locationFor(studio: Studio): string {
 }
 
 function locationSortFor(studio: Studio): string {
-  const hq = profiles[studio.name]?.headquarters;
-  const country = hq?.country || studio.country || "Not stated";
-  const flag = countryFlagFor(country, hq?.countryCode);
-  return [flag, locationFor(studio)].filter(Boolean).join(" ");
+  return locationFor(studio);
 }
+
 
 function studioId(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -115,7 +111,7 @@ function TagList({
     <div className={"studio-tag-list tag-list-" + kind}>
       {selected.map(value => (
         <span className={"studio-facet-tag facet-" + kind} key={value}>
-          {kind === "platform" ? <span aria-hidden="true">{platformEmoji(value)}</span> : null}
+          {kind === "platform" ? <Icon name={platformIconName(value)} size={13} /> : null}
           {kind === "focus" ? <span aria-hidden="true">{focusEmoji(value)}</span> : null}
           {value}
         </span>
@@ -126,40 +122,38 @@ function TagList({
 
 function FilterPicker({
   label,
-  emoji,
+  icon,
   options,
   selected,
   onToggle,
 }: {
   label: string;
-  emoji: string;
+  icon: "chart" | "monitor" | "target" | "building";
   options: string[];
   selected: string[];
   onToggle: (value: string) => void;
 }) {
   return (
     <div className="form-field directory-filter-field">
-      <span>{label}</span>
+      <span className="directory-filter-label"><Icon name={icon} size={14} />{label}</span>
       <details className="directory-filter-picker">
         <summary aria-label={label + " filters"}>
           <span className="filter-picker-value">
-            <span aria-hidden="true">{emoji}</span>
             <span>{selected.length ? selected.length + " selected" : "All"}</span>
           </span>
-          <span className="filter-picker-chevron" aria-hidden="true">▾</span>
         </summary>
         <div className="filter-picker-options" role="group" aria-label={label + " filters"}>
-        {options.length ? options.map(value => (
-          <label className="filter-picker-option" key={value}>
-            <input
-              type="checkbox"
-              checked={selected.includes(value)}
-              onChange={() => onToggle(value)}
-              aria-label={label + ": " + value}
-            />
-            <span>{value}</span>
-          </label>
-        )) : <span className="filter-picker-empty">No classified values yet</span>}
+          {options.length ? options.map(value => (
+            <label className="filter-picker-option" key={value}>
+              <input
+                type="checkbox"
+                checked={selected.includes(value)}
+                onChange={() => onToggle(value)}
+                aria-label={label + ": " + value}
+              />
+              <span>{value}</span>
+            </label>
+          )) : <span className="filter-picker-empty">No classified values yet</span>}
         </div>
       </details>
     </div>
@@ -231,6 +225,7 @@ export default function StudioDirectory({
   const [expandedStudio, setExpandedStudio] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(25);
+  const filterRowRef = useRef<HTMLDivElement>(null);
 
   const activeStudios = useMemo(
     () => studios.filter((studio) => studio.applicationResearch?.routeStatus === "active") as Studio[],
@@ -263,10 +258,12 @@ export default function StudioDirectory({
             );
           }),
         ),
-      ).sort(
-        (a, b) =>
-          CONTINENT_ORDER.indexOf(a) - CONTINENT_ORDER.indexOf(b) || a.localeCompare(b),
-      ),
+      )
+        .filter(value => value !== "Remote / distributed" && value !== "Not stated")
+        .sort(
+          (a, b) =>
+            CONTINENT_ORDER.indexOf(a) - CONTINENT_ORDER.indexOf(b) || a.localeCompare(b),
+        ),
     [activeStudios],
   );
 
@@ -372,6 +369,35 @@ export default function StudioDirectory({
     setCurrentPage(1);
   }, [query, continent, country, workModel, scaleFilters, platformFilters, focusFilters, roleFilters, sortKey, sortDirection, showNewOnly]);
 
+  useEffect(() => {
+    const container = filterRowRef.current;
+    if (!container) return;
+
+    const closeOtherPickers = (event: PointerEvent) => {
+      const target = event.target;
+      const clickedPicker = target instanceof Element
+        ? target.closest<HTMLDetailsElement>(".directory-filter-picker")
+        : null;
+      container.querySelectorAll<HTMLDetailsElement>(".directory-filter-picker[open]").forEach(picker => {
+        if (picker !== clickedPicker) picker.open = false;
+      });
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      const openPicker = container.querySelector<HTMLDetailsElement>(".directory-filter-picker[open]");
+      if (!openPicker) return;
+      openPicker.open = false;
+      openPicker.querySelector<HTMLElement>("summary")?.focus();
+    };
+
+    document.addEventListener("pointerdown", closeOtherPickers);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOtherPickers);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, []);
+
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
   const pageStart = filtered.length ? (currentPage - 1) * pageSize + 1 : 0;
   const pageEnd = Math.min(currentPage * pageSize, filtered.length);
@@ -466,45 +492,47 @@ export default function StudioDirectory({
             <span>Continent</span>
             <select className="form-select" value={continent} onChange={(event) => setContinent(event.target.value as ContinentLabel | "All continents")}>
               <option>All continents</option>
-              {continents.map((value) => <option key={value} value={value}>{continentEmoji(value)} {value}</option>)}
+              {continents.map((value) => <option key={value} value={value}>{value}</option>)}
             </select>
           </label>
           <label className="form-field">
             <span>Country</span>
             <select className="form-select" value={country} onChange={(event) => setCountry(event.target.value)}>
               <option>All countries</option>
-              {countries.map((value) => <option key={value} value={value}>{countryFlagFor(value)} {value}</option>)}
+              {countries.map((value) => <option key={value} value={value}>{value}</option>)}
             </select>
           </label>
         </div>
-        <div className="directory-filter-row" aria-label="Studio filters">
-          <FilterPicker label="Scale" emoji="📈" options={[...scaleOptions]} selected={scaleFilters} onToggle={value => toggleSelected(setScaleFilters, value)} />
-          <FilterPicker label="Platform" emoji="🖥️" options={platformOptions} selected={platformFilters} onToggle={value => toggleSelected(setPlatformFilters, value)} />
-          <FilterPicker label="Focus" emoji="🎯" options={focusOptions} selected={focusFilters} onToggle={value => toggleSelected(setFocusFilters, value)} />
-          <FilterPicker label="Studio role" emoji="🏢" options={[...roleOptions]} selected={roleFilters} onToggle={value => toggleSelected(setRoleFilters, value)} />
+        <div className="directory-filter-row" ref={filterRowRef} aria-label="Studio filters">
+          <FilterPicker label="Scale" icon="chart" options={[...scaleOptions]} selected={scaleFilters} onToggle={value => toggleSelected(setScaleFilters, value)} />
+          <FilterPicker label="Platform" icon="monitor" options={platformOptions} selected={platformFilters} onToggle={value => toggleSelected(setPlatformFilters, value)} />
+          <FilterPicker label="Focus" icon="target" options={focusOptions} selected={focusFilters} onToggle={value => toggleSelected(setFocusFilters, value)} />
+          <FilterPicker label="Studio role" icon="building" options={[...roleOptions]} selected={roleFilters} onToggle={value => toggleSelected(setRoleFilters, value)} />
           <label className="form-field work-model-filter">
-            <span>Work model</span>
+            <span className="directory-filter-label"><Icon name="laptop" size={14} />Work model</span>
             <select className="form-select" value={workModel} onChange={(event) => setWorkModel(event.target.value)}>
               <option value="all">All work models</option>
               {Object.entries(workModelLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
             </select>
           </label>
-          <button className="btn btn-outline-secondary btn-sm reset-filters-button" type="button" onClick={resetFilters}>Reset filters</button>
+          <button className="btn btn-outline-secondary btn-sm reset-filters-button" type="button" onClick={resetFilters}>
+            <Icon name="reset" size={14} />Reset filters
+          </button>
         </div>
       </div>
       {activeFilterCount > 0 ? (
         <div className="active-filter-chips" aria-label="Active filters">
           {continent !== "All continents" ? (
-            <button type="button" onClick={() => setContinent("All continents")} className="active-filter-chip">🌎 {continent} <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setContinent("All continents")} className="active-filter-chip"><Icon name="map-pin" size={13} />{continent} <span aria-hidden="true">×</span></button>
           ) : null}
           {country !== "All countries" ? (
-            <button type="button" onClick={() => setCountry("All countries")} className="active-filter-chip">{countryFlagFor(country)} {country} <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setCountry("All countries")} className="active-filter-chip"><Icon name="map-pin" size={13} />{country} <span aria-hidden="true">×</span></button>
           ) : null}
           {scaleFilters.map(value => (
             <button type="button" key={"scale-" + value} onClick={() => toggleSelected(setScaleFilters, value)} className="active-filter-chip">Scale · {value} <span aria-hidden="true">×</span></button>
           ))}
           {platformFilters.map(value => (
-            <button type="button" key={"platform-" + value} onClick={() => toggleSelected(setPlatformFilters, value)} className="active-filter-chip">{platformEmoji(value)} {value} <span aria-hidden="true">×</span></button>
+            <button type="button" key={"platform-" + value} onClick={() => toggleSelected(setPlatformFilters, value)} className="active-filter-chip"><Icon name={platformIconName(value)} size={13} />{value} <span aria-hidden="true">×</span></button>
           ))}
           {focusFilters.map(value => (
             <button type="button" key={"focus-" + value} onClick={() => toggleSelected(setFocusFilters, value)} className="active-filter-chip">{focusEmoji(value)} {value} <span aria-hidden="true">×</span></button>
@@ -516,7 +544,7 @@ export default function StudioDirectory({
             <button type="button" onClick={() => setWorkModel("all")} className="active-filter-chip">Work model · {workModelLabels[workModel]} <span aria-hidden="true">×</span></button>
           ) : null}
           {showNewOnly ? (
-            <button type="button" onClick={() => setShowNewOnly(false)} className="active-filter-chip">✨ New studios <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setShowNewOnly(false)} className="active-filter-chip"><Icon name="sparkles" size={13} />New studios <span aria-hidden="true">×</span></button>
           ) : null}
         </div>
       ) : null}
@@ -720,10 +748,10 @@ export default function StudioDirectory({
 
                           <div className="studio-profile-links">
                             <a className="studio-primary-link" href={studio.websiteUrl} target="_blank" rel="noopener noreferrer">
-                              <span aria-hidden="true">🌐</span> Official website <span className="external-link-mark" aria-hidden="true">↗</span>
+                              <Icon name="globe" size={14} /> Official website <span className="external-link-mark" aria-hidden="true">↗</span>
                             </a>
                             <a className="studio-primary-link" href={studio.applicationUrl} target="_blank" rel="noopener noreferrer">
-                              <span aria-hidden="true">📨</span> Application <span className="external-link-mark" aria-hidden="true">↗</span>
+                              <Icon name="send" size={14} /> Application <span className="external-link-mark" aria-hidden="true">↗</span>
                             </a>
                             {(profile?.socialLinks || []).map((link) => (
                               <a

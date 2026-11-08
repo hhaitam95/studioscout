@@ -129,7 +129,7 @@ async function main() {
     const navigation = page.getByRole("navigation", { name: "Main navigation" });
     assert.match(await page.title(), /StudioScout/);
     assert.equal(await page.locator(".workspace-label").count(), 0, "The redundant workspace label should not be displayed.");
-    assert.equal((await page.locator(".theme-toggle").innerText()).trim(), "◐", "The theme control should show only its icon.");
+    assert.equal(await page.locator(".theme-toggle svg.ui-icon").count(), 1, "The theme control should show an outline icon.");
     assert.ok(
       Number.parseFloat(await page.locator("body").evaluate(element => getComputedStyle(element).fontSize)) >= 17,
       "The global page typography should be larger than the 16px browser baseline.",
@@ -164,6 +164,11 @@ async function main() {
       toolbarGeometry.controls.every(control => Math.abs(control.height - 40) < 1),
       "Every secondary filter control should have the same 40px height.",
     );
+    assert.equal(await page.locator(".filter-picker-chevron").count(), 0, "Filter dropdowns should not render a redundant chevron.");
+    assert.equal(await page.locator(".directory-filter-picker summary svg").count(), 0, "Filter dropdown summaries should remain text-only.");
+    assert.equal(await page.locator(".directory-filter-field .directory-filter-label svg.ui-icon").count(), 4, "Each multi-select filter should show its icon on the label.");
+    assert.equal(await page.locator(".work-model-filter .directory-filter-label svg.ui-icon").count(), 1, "Work model should have a label icon.");
+    assert.equal(await page.locator(".reset-filters-button svg.ui-icon").count(), 1, "Reset filters should have a reset icon.");
 
     await navigation.getByRole("button", { name: /^Games(?:\s+\d+)?$/ }).click();
     await page.getByRole("heading", { name: "Games" }).waitFor();
@@ -617,6 +622,8 @@ async function main() {
     assert.ok(continentValues.includes("Europe"), "The continent filter should include Europe.");
     assert.ok(continentValues.includes("Asia"), "The continent filter should include Asia.");
     assert.ok(continentValues.includes("Africa"), "The continent filter should include Africa.");
+    assert.equal(continentValues.includes("Remote / distributed"), false, "Remote should not appear in the Continent filter.");
+    assert.equal(continentValues.includes("Not stated"), false, "Not stated should not appear in the Continent filter.");
     await continent.selectOption("Europe");
     const europeRows = await rows.count();
     const europeTotal = await filteredTotal();
@@ -639,7 +646,16 @@ async function main() {
     assert.ok(countryCount > 0 && countryCount < totalResults, "Country filtering should narrow the full directory result set.");
     await country.selectOption("All countries");
 
-    await page.locator(".directory-filter-picker").nth(1).locator("summary").click();
+    const scalePicker = page.locator(".directory-filter-picker").nth(0);
+    const platformPicker = page.locator(".directory-filter-picker").nth(1);
+    await scalePicker.locator("summary").click();
+    assert.notEqual(await scalePicker.getAttribute("open"), null, "A filter dropdown should open when its summary is selected.");
+    await platformPicker.locator("summary").click();
+    assert.equal(await scalePicker.getAttribute("open"), null, "Opening another filter should close the previously open dropdown.");
+    assert.notEqual(await platformPicker.getAttribute("open"), null, "The newly selected filter should open.");
+    await page.locator(".page-heading").click();
+    assert.equal(await platformPicker.getAttribute("open"), null, "Clicking outside the filters should close an open dropdown.");
+    await platformPicker.locator("summary").click();
     const pcFilter = page.getByRole("checkbox", { name: "Platform: PC" });
     const mobileFilter = page.getByRole("checkbox", { name: "Platform: Mobile" });
     await pcFilter.check();
@@ -647,7 +663,7 @@ async function main() {
     const platformCount = await filteredTotal();
     assert.ok(platformCount > 0 && platformCount < totalResults, "Selecting multiple platforms should narrow the full directory result set.");
     assert.equal(await page.locator(".active-filter-chip").count(), 2, "Each selected platform should appear as a removable active filter chip.");
-    await page.locator(".directory-filter-picker").nth(1).locator("summary").click();
+    await platformPicker.locator("summary").click();
     await page.locator(".active-filter-chip").first().click();
     assert.equal(await page.locator(".active-filter-chip").count(), 1, "Removing a filter chip should remove only that filter.");
     await page.getByRole("button", { name: "Reset filters" }).click();

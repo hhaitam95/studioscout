@@ -3,7 +3,8 @@ import type { ChangeEvent } from "react";
 import type { ApplicationPreparation, TrackedApplication, TrackerStatus } from "./studio.types";
 import { APPLICATION_PREPARATION_CHECKLIST, createEmptyApplicationPreparation } from "../tracker/application-preparation.mjs";
 import StudioMark from "./StudioMark";
-import { countryFlagFor } from "./location";
+import Icon from "./Icon";
+import type { IconName } from "./Icon";
 import "./tracker.css";
 
 const tabs: { id: string; label: string; status: TrackerStatus }[] = [
@@ -48,13 +49,13 @@ function trackerRowId(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
-const statusIcons: Record<TrackerStatus, string> = {
-  saved: "📌",
-  in_progress: "🛠️",
-  applied: "📨",
-  interview: "🎤",
-  offer: "🏆",
-  archived: "🗂️",
+const statusIcons: Record<TrackerStatus, IconName> = {
+  saved: "bookmark",
+  in_progress: "wrench",
+  applied: "send",
+  interview: "mic",
+  offer: "trophy",
+  archived: "archive",
 };
 
 export default function ApplicationTracker({
@@ -194,7 +195,7 @@ export default function ApplicationTracker({
                 setExpandedNotesId(null);
               }}
             >
-              <span className="tracker-tab-icon" aria-hidden="true">{statusIcons[tab.status]}</span>
+              <span className="tracker-tab-icon"><Icon name={statusIcons[tab.status]} size={14} /></span>
               {tab.label}
               <span>{counts[tab.id] || 0}</span>
             </button>
@@ -234,7 +235,6 @@ export default function ApplicationTracker({
           </thead>
           <tbody>
             {visible.map((application) => {
-              const flag = countryFlagFor(application.country, application.countryCode);
               const notesOpen = expandedNotesId === application.id;
               const preparationOpen = expandedPreparationId === application.id;
               const notesId = "tracker-notes-" + trackerRowId(application.id);
@@ -253,7 +253,6 @@ export default function ApplicationTracker({
                     </td>
                     <td>
                       <span className="location-cell">
-                        {flag ? <span className="country-flag" role="img" aria-label={application.country + " flag"}>{flag}</span> : null}
                         <span>{application.country || "Not stated"}</span>
                       </span>
                     </td>
@@ -261,8 +260,8 @@ export default function ApplicationTracker({
                     <td className="applied-date">{formatDate(application.appliedAt)}</td>
                     <td>
                       <div className="tracker-links">
-                        <a href={application.applicationUrl} target="_blank" rel="noopener noreferrer">📨 Open route</a>
-                        <a href={application.websiteUrl} target="_blank" rel="noopener noreferrer">🌐 Studio website</a>
+                        <a href={application.applicationUrl} target="_blank" rel="noopener noreferrer"><Icon name="send" size={13} />Open route</a>
+                        <a href={application.websiteUrl} target="_blank" rel="noopener noreferrer"><Icon name="globe" size={13} />Studio website</a>
                       </div>
                     </td>
                     <td>
@@ -282,7 +281,7 @@ export default function ApplicationTracker({
                     </td>
                     <td>
                       <label className="status-select-label">
-                        <span className="status-select-icon" aria-hidden="true">{statusIcons[application.status]}</span>
+                        <span className="status-select-icon"><Icon name={statusIcons[application.status]} size={14} /></span>
                         <span className="visually-hidden">Status for {application.studioName}</span>
                         <select
                           className={"form-select status-" + application.status}
@@ -306,7 +305,7 @@ export default function ApplicationTracker({
                         aria-label={"Edit notes for " + application.studioName}
                         onClick={() => setExpandedNotesId((current) => current === application.id ? null : application.id)}
                       >
-                        {note.trim() ? "📝 Edit notes" : "＋ Add notes"}
+                        {note.trim() ? <><Icon name="file" size={13} />Edit notes</> : "＋ Add notes"}
                       </button>
                       {note.trim() ? <span className="note-saved-indicator" aria-label="Notes saved">Saved</span> : null}
                     </td>

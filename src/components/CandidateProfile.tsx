@@ -19,6 +19,8 @@ import type {
   ProfileDocument,
   SkillEvidence,
 } from "../profile/profile.types";
+import Icon from "./Icon";
+import type { IconName } from "./Icon";
 import "./profile.css";
 
 type CollectionKey = "experience" | "education" | "projects" | "skills";
@@ -158,7 +160,7 @@ function Field({
   rows = 3,
   hint,
 }: {
-  label: string;
+  label: ReactNode;
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
@@ -171,7 +173,7 @@ function Field({
   const id = "profile-field-" + reactId.replace(/:/g, "");
   return (
     <label className="form-field profile-field" htmlFor={id}>
-      <span>{label}</span>
+      <span className="profile-field-label">{label}</span>
       {multiline ? (
         <textarea
           id={id}
@@ -326,7 +328,7 @@ function Section({
   children,
 }: {
   id: string;
-  icon: string;
+  icon: IconName;
   title: string;
   description?: string;
   children: ReactNode;
@@ -335,7 +337,7 @@ function Section({
     <section className="profile-panel" id={"profile-section-" + id}>
       <div className="profile-section-heading">
         <div>
-          <h2><span className="profile-section-icon" aria-hidden="true">{icon}</span>{title}</h2>
+          <h2><Icon className="profile-section-icon" name={icon} size={18} />{title}</h2>
           {description ? <p>{description}</p> : null}
         </div>
       </div>
@@ -660,29 +662,29 @@ export default function CandidateProfile() {
       </div>
 
       <nav className="profile-section-nav" aria-label="Jump to profile section">
-        <a href="#profile-section-personal"><span aria-hidden="true">👤</span> Contact</a>
-        <a href="#profile-section-summary"><span aria-hidden="true">🧭</span> Summary</a>
-        <a href="#profile-section-experience"><span aria-hidden="true">💼</span> Experience</a>
-        <a href="#profile-section-education"><span aria-hidden="true">🎓</span> Education</a>
-        <a href="#profile-section-projects"><span aria-hidden="true">🎮</span> Projects</a>
-        <a href="#profile-section-skills"><span aria-hidden="true">🧩</span> Skills</a>
-        <a href="#profile-section-materials"><span aria-hidden="true">📄</span> Materials</a>
-        <a href="#profile-section-preferences"><span aria-hidden="true">🎯</span> Preferences</a>
+        <a href="#profile-section-personal"><Icon name="user" size={14} />Contact</a>
+        <a href="#profile-section-summary"><Icon name="compass" size={14} />Summary</a>
+        <a href="#profile-section-experience"><Icon name="briefcase" size={14} />Experience</a>
+        <a href="#profile-section-education"><Icon name="graduation-cap" size={14} />Education</a>
+        <a href="#profile-section-projects"><Icon name="gamepad" size={14} />Projects</a>
+        <a href="#profile-section-skills"><Icon name="puzzle" size={14} />Skills</a>
+        <a href="#profile-section-materials"><Icon name="file" size={14} />Materials</a>
+        <a href="#profile-section-preferences"><Icon name="target" size={14} />Preferences</a>
       </nav>
 
-      <Section id="personal" icon="👤" title="Personal and contact details" description="Only add details you are comfortable keeping in this browser and reusing in applications.">
+      <Section id="personal" icon="user" title="Personal and contact details" description="Only add details you are comfortable keeping in this browser and reusing in applications.">
         <div className="profile-form-grid">
           <Field label="Full name" value={profile.personal.fullName} onChange={(value) => updatePersonal("fullName", value)} placeholder="Your full name" />
           <Field label="Email" value={profile.personal.email} onChange={(value) => updatePersonal("email", value)} type="email" placeholder="you@example.com" />
           <Field label="Phone" value={profile.personal.phone} onChange={(value) => updatePersonal("phone", value)} placeholder="Include country code if useful" />
           <Field label="Current location" value={profile.personal.currentLocation} onChange={(value) => updatePersonal("currentLocation", value)} placeholder="City, country" />
-          <Field label="🔗 LinkedIn" value={profile.personal.linkedinUrl} onChange={(value) => updatePersonal("linkedinUrl", value)} placeholder="https://www.linkedin.com/in/…" />
-          <Field label="🎨 Portfolio" value={profile.personal.portfolioUrl} onChange={(value) => updatePersonal("portfolioUrl", value)} placeholder="https://…" />
+          <Field label={<><Icon name="link" size={13} />LinkedIn</>} value={profile.personal.linkedinUrl} onChange={(value) => updatePersonal("linkedinUrl", value)} placeholder="https://www.linkedin.com/in/…" />
+          <Field label={<><Icon name="palette" size={13} />Portfolio</>} value={profile.personal.portfolioUrl} onChange={(value) => updatePersonal("portfolioUrl", value)} placeholder="https://…" />
           <Field label="Other professional link" value={profile.personal.otherLink} onChange={(value) => updatePersonal("otherLink", value)} placeholder="GitHub, ArtStation, personal site…" />
         </div>
       </Section>
 
-      <Section id="summary" icon="🧭" title="Professional summary" description="A concise, honest overview of your background and the contribution you want to make. You can refine the wording later.">
+      <Section id="summary" icon="compass" title="Professional summary" description="A concise, honest overview of your background and the contribution you want to make. You can refine the wording later.">
         <Field
           label="Professional summary"
           value={profile.professionalSummary}
@@ -694,7 +696,7 @@ export default function CandidateProfile() {
         />
       </Section>
 
-      <Section id="experience" icon="💼" title="Work experience" description="Keep employer names, job titles and dates accurate. Add responsibilities and achievements separately where possible.">
+      <Section id="experience" icon="briefcase" title="Work experience" description="Keep employer names, job titles and dates accurate. Add responsibilities and achievements separately where possible.">
         {profile.experience.length === 0 ? <EmptyList>No work experience has been added yet.</EmptyList> : null}
         <div className="profile-record-list">
           {profile.experience.map((item, index) => (
@@ -718,7 +720,7 @@ export default function CandidateProfile() {
         <button className="btn btn-outline-secondary btn-sm profile-add-button" type="button" onClick={addExperience}>＋ Add experience</button>
       </Section>
 
-      <Section id="education" icon="🎓" title="Education" description="Include degrees and other formal education that are relevant to your professional background.">
+      <Section id="education" icon="graduation-cap" title="Education" description="Include degrees and other formal education that are relevant to your professional background.">
         {profile.education.length === 0 ? <EmptyList>No education records have been added yet.</EmptyList> : null}
         <div className="profile-record-list">
           {profile.education.map((item, index) => (
@@ -740,7 +742,7 @@ export default function CandidateProfile() {
         <button className="btn btn-outline-secondary btn-sm profile-add-button" type="button" onClick={addEducation}>＋ Add education</button>
       </Section>
 
-      <Section id="projects" icon="🎮" title="Projects and training" description="Keep personal projects, bootcamps, coursework and certifications distinct from paid employment.">
+      <Section id="projects" icon="gamepad" title="Projects and training" description="Keep personal projects, bootcamps, coursework and certifications distinct from paid employment.">
         {profile.projects.length === 0 ? <EmptyList>No projects or training records have been added yet.</EmptyList> : null}
         <div className="profile-record-list">
           {profile.projects.map((item, index) => (
@@ -763,7 +765,7 @@ export default function CandidateProfile() {
         <button className="btn btn-outline-secondary btn-sm profile-add-button" type="button" onClick={addProject}>＋ Add project or training</button>
       </Section>
 
-      <Section id="skills" icon="🧩" title="Skills and evidence" description="A skill label is not a claim by itself. Record where and how you have used it; missing evidence is not automatically a confirmed gap.">
+      <Section id="skills" icon="puzzle" title="Skills and evidence" description="A skill label is not a claim by itself. Record where and how you have used it; missing evidence is not automatically a confirmed gap.">
         {profile.skills.length === 0 ? <EmptyList>No skills have been added yet.</EmptyList> : null}
         <div className="profile-record-list">
           {profile.skills.map((item, index) => (
@@ -790,7 +792,7 @@ export default function CandidateProfile() {
         <button className="btn btn-outline-secondary btn-sm profile-add-button" type="button" onClick={addSkill}>＋ Add skill</button>
       </Section>
 
-      <Section id="materials" icon="📄" title="Master application materials" description="Keep one reusable master package. Original documents are stored unchanged; no automatic tailoring or submission happens here.">
+      <Section id="materials" icon="file" title="Master application materials" description="Keep one reusable master package. Original documents are stored unchanged; no automatic tailoring or submission happens here.">
         <div className="profile-material-grid">
           <div className="profile-material-card">
             <h3>Master resume</h3>
@@ -850,7 +852,7 @@ export default function CandidateProfile() {
         <p className="profile-field-hint">PDF/DOCX files are stored as local browser data. This first version does not extract text from attachments; paste text above when you want it available for later matching.</p>
       </Section>
 
-      <Section id="preferences" icon="🎯" title="Application preferences" description="Choose from structured options to guide your private opportunity priority. These preferences do not remove or change studios in the global directory.">
+      <Section id="preferences" icon="sliders" title="Application preferences" description="Choose from structured options to guide your private opportunity priority. These preferences do not remove or change studios in the global directory.">
         <div className="profile-preference-grid">
           <ChoiceGroup
             id="profile-role-families"
