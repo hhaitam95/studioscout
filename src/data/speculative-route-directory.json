@@ -7895,7 +7895,7 @@
     "applicationUrl": "https://www.theorystudios.com/jobs",
     "evidenceUrl": "https://www.theorystudios.com/jobs",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -7907,7 +7907,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -7917,7 +7917,7 @@
     "applicationUrl": "https://www.therabytes.de/speculative-application",
     "evidenceUrl": "https://www.therabytes.de/careers",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: Speculative Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -7929,7 +7929,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-08"
     },
     "addedAt": "2026-11-07T20:42:04Z"
   },
@@ -7940,7 +7940,7 @@
     "applicationUrl": "https://thirdkindgames.careers.hibob.com/jobs/dad51ee2-0b6e-4638-8b3e-7082d462202c/apply",
     "evidenceUrl": "https://thirdkindgames.com/careers/speculative-application/",
     "notes": "Official Speculative Application page invites CVs and details when no current role fits, and its Apply Now link opens the employer-managed HiBob application form. The page also provides the recruitment email hello@thirdkindgames.com. Location/remote eligibility is not stated.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -7953,7 +7953,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -7963,7 +7963,7 @@
     "applicationUrl": "https://thought-pennies.careers-page.com/open-application",
     "evidenceUrl": "https://www.thoughtpennies.com/",
     "notes": "The official Thought Pennies website links directly to its “Join Us” page on the employer's careers-page.com subdomain. That linked page explicitly invites candidates to submit a resume even when no suitable position is listed and provides a dedicated Open application route. The studio describes itself as a fully remote, story-first RPG developer focused on emotional storytelling and technically ambitious role-playing games. The official site identifies the legal entity as Thought Pennies, Inc. but does not state a registered country or headquarters city. Remote work is stated; applicant-country and contracting eligibility are not.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -7987,7 +7987,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8021,7 +8021,7 @@
     "applicationUrl": "https://thunderlotusgames.com/careers/",
     "evidenceUrl": "https://thunderlotusgames.com/jobs/",
     "notes": "Official studio-controlled page explicitly invites spontaneous applications. Evidence: spontaneous applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8034,7 +8034,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8044,7 +8044,7 @@
     "applicationUrl": "https://emp.jobylon.com/jobs/78681-toca-boca-spontaneous-application/",
     "evidenceUrl": "https://www.tocaboca.com/careers",
     "notes": "Toca Boca's official Careers page explicitly invites spontaneous applications when no listed position fits and links to its Jobylon application. The employer describes its work across programming, play design, art, animation, production and QA; Jobylon identifies the spontaneous application as Stockholm-based and confirms Toca Boca develops digital games. The company is Toca Boca AB, a subsidiary of Spin Master Corp. Work model and international eligibility are not stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8060,7 +8060,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
