@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T19:18:34+00:00",
-  "discovery_state_updated_at": "2026-11-09T19:17:32.914132+00:00",
-  "workflow_run_id": "42678242469",
-  "workflow_run_number": "124",
-  "workflow_commit": "cbf7a19f9bfd62356980452ca93dc912d6338ccd",
+  "updated_at": "2026-11-10T02:39:37+00:00",
+  "discovery_state_updated_at": "2026-11-10T02:38:32.371763+00:00",
+  "workflow_run_id": "42741404915",
+  "workflow_run_number": "126",
+  "workflow_commit": "b96763b87875774feb493d8d7b117b6f8b89c9d2",
   "igdb_enabled": true,
   "source_count": 7,
   "enabled_source_count": 7,
   "all_enabled_sources_no_new_candidate_data": false,
-  "candidate_pool_size": 15474,
+  "candidate_pool_size": 15604,
   "candidate_due_counts": {
-    "queued": 182,
-    "retry": 0,
+    "queued": 312,
+    "retry": 133,
     "no_route": 0,
     "needs_review": 0
   },
-  "candidate_due_total": 182,
-  "identity_review_queue_count": 3155,
+  "candidate_due_total": 445,
+  "identity_review_queue_count": 3221,
   "candidate_status_counts": {
-    "queued": 182,
+    "queued": 312,
     "retry": 3946,
     "needs_review": 2470,
     "no_route": 8563,
@@ -52,21 +52,23 @@
         "relevant_career_page_unavailable": 1,
         "candidate_without_direct_game_development_evidence_on_official_site": 3
       },
-      "candidate_due_counts": {},
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-08T20:51:10.355724+00:00",
-      "last_success_at": "2026-11-09T19:12:32.370472+00:00",
-      "next_retry_at": null
+      "candidate_due_counts": {
+        "retry": 1
+      },
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: Wikidata returned HTTP 502",
+      "last_failure_at": "2026-11-10T02:35:57.328471+00:00",
+      "last_success_at": "2026-11-10T02:34:31.424424+00:00",
+      "next_retry_at": "2026-11-10T02:40:57.328488+00:00"
     },
     "wikidata_game_developer_credits": {
       "label": "Wikidata: organizations credited as video-game developers",
       "enabled": true,
-      "cycle": 45,
-      "empty_complete_passes": 32,
+      "cycle": 46,
+      "empty_complete_passes": 33,
       "saturated": true,
       "last_pass_status": "saturated",
-      "last_pass_completed_at": "2026-11-09T19:17:32.908315+00:00",
+      "last_pass_completed_at": "2026-11-10T02:38:32.368209+00:00",
       "new_candidate_entities_last_pass": 0,
       "verified_routes_last_pass": 0,
       "incomplete_candidates_last_pass": 0,
@@ -77,18 +79,18 @@
       "candidate_due_counts": {},
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-09T08:24:58.435385+00:00",
-      "last_success_at": "2026-11-09T19:02:22.672488+00:00",
+      "last_failure_at": "2026-11-10T02:19:16.308043+00:00",
+      "last_success_at": "2026-11-10T02:31:19.304636+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
       "label": "Wikidata: video-game company entities",
       "enabled": true,
-      "cycle": 62,
-      "empty_complete_passes": 60,
+      "cycle": 63,
+      "empty_complete_passes": 61,
       "saturated": true,
       "last_pass_status": "saturated",
-      "last_pass_completed_at": "2026-11-09T19:17:32.908315+00:00",
+      "last_pass_completed_at": "2026-11-10T02:38:32.368209+00:00",
       "new_candidate_entities_last_pass": 0,
       "verified_routes_last_pass": 0,
       "incomplete_candidates_last_pass": 0,
@@ -100,7 +102,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-03T09:47:24.874109+00:00",
-      "last_success_at": "2026-11-09T18:56:32.207833+00:00",
+      "last_success_at": "2026-11-10T02:20:21.907489+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -131,11 +133,13 @@
         "portfolio_or_company_content_exclusion": 6,
         "relevant_career_page_unavailable": 4
       },
-      "candidate_due_counts": {},
+      "candidate_due_counts": {
+        "retry": 36
+      },
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-09T19:13:47.355568+00:00",
+      "last_success_at": "2026-11-10T02:37:06.734330+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -158,11 +162,11 @@
         "needs_review": 192,
         "duplicate": 76,
         "excluded": 42,
-        "queued": 19
+        "queued": 31
       },
       "candidate_reason_counts": {
         "no_explicit_speculative_route_found": 6691,
-        "unspecified": 134,
+        "unspecified": 146,
         "robots-disallowed": 735,
         "explicit_route_text_without_a_detectable_submission_method": 67,
         "candidate_without_direct_game_development_evidence_on_official_site": 116,
@@ -177,12 +181,13 @@
         "verified_route_name_matches_existing_studio_but_domain_differs": 1
       },
       "candidate_due_counts": {
-        "queued": 19
+        "retry": 1,
+        "queued": 31
       },
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-09T19:14:53.278473+00:00",
+      "last_success_at": "2026-11-10T02:38:12.910126+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
@@ -205,7 +210,7 @@
         "excluded": 20,
         "duplicate": 6,
         "published": 2,
-        "queued": 163
+        "queued": 281
       },
       "candidate_reason_counts": {
         "http-status": 317,
@@ -217,19 +222,20 @@
         "official_domain_already_in_directory": 6,
         "relevant_career_page_unavailable": 27,
         "response-too-large": 3,
-        "unspecified": 165,
+        "unspecified": 283,
         "network-error:TimeoutError": 1,
         "explicit_route_text_without_a_detectable_submission_method": 2,
         "speculative_language_without_clear_employment_context": 1,
         "network-error:ConnectionResetError": 1
       },
       "candidate_due_counts": {
-        "queued": 163
+        "retry": 95,
+        "queued": 281
       },
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-09T18:58:51.713140+00:00",
+      "last_success_at": "2026-11-10T02:22:39.317841+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -262,7 +268,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T20:40:20.439777+00:00",
-      "last_success_at": "2026-11-09T08:11:38.418012+00:00",
+      "last_success_at": "2026-11-10T02:24:38.676052+00:00",
       "next_retry_at": null
     }
   }
