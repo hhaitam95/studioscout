@@ -7930,8 +7930,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-08"
-    },
-    "addedAt": "2026-11-07T20:42:04Z"
+    }
   },
   {
     "name": "Third Kind Games",
@@ -8036,6 +8035,29 @@
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-08"
     }
+  },
+  {
+    "name": "Thundermark",
+    "country": "Not stated",
+    "websiteUrl": "https://thundermark.gg/",
+    "applicationUrl": "https://www.thundermark.gg/careers",
+    "evidenceUrl": "https://www.thundermark.gg/careers",
+    "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-10",
+    "applicationResearch": {
+      "routeType": "general",
+      "submissionMethods": [
+        "website_form"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-08"
+    },
+    "addedAt": "2026-11-10T23:53:22Z"
   },
   {
     "name": "Toca Boca",
@@ -8304,7 +8326,7 @@
     "applicationUrl": "https://apply.workable.com/velanstudios/jobs/3417239",
     "evidenceUrl": "https://www.velanstudios.com/careers",
     "notes": "Official Careers page explicitly encourages applicants whose experience does not align perfectly with a listed vacancy to submit a General Application. The route is handled through Velan's Workable application form. The studio operates from Troy, New York and Toronto, Ontario; roles are hybrid, with a stated option of three days in the studio. Applicant-country eligibility should be confirmed for each role; US positions participate in E-Verify.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8318,7 +8340,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8328,7 +8350,7 @@
     "applicationUrl": "https://www.vertigo-games.com/jobs/",
     "evidenceUrl": "https://www.vertigo-games.com/jobs/",
     "notes": "Official Jobs page explicitly welcomes open applications and asks applicants to send a motivation letter, resume and/or portfolio to jobs@vertigo-games.com. HQ is Rotterdam; remote or applicant-country eligibility is not stated.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8340,7 +8362,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8350,7 +8372,7 @@
     "applicationUrl": "https://vestgames.com/jobs/unsolicited-application/",
     "evidenceUrl": "https://vestgames.com/jobs/unsolicited-application/",
     "notes": "Official Unsolicited Application accepts candidates when no role is open. On-site, hybrid or remote; English required, German for full-time roles.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -8364,7 +8386,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8374,7 +8396,7 @@
     "applicationUrl": "https://videoreality.de/team_gruendung/karriere",
     "evidenceUrl": "https://videoreality.de/team_gruendung/karriere",
     "notes": "Official studio-controlled page explicitly invites spontaneous applications. Evidence: Initiativbewerbung. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-02",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8386,7 +8408,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8396,7 +8418,7 @@
     "applicationUrl": "https://villainstudios.nl/jobs",
     "evidenceUrl": "https://villainstudios.nl/jobs",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8408,7 +8430,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8418,7 +8440,7 @@
     "applicationUrl": "https://vpltd.com/careers",
     "evidenceUrl": "https://vpltd.com/careers",
     "notes": "Official careers page explicitly invites speculative applications from strong C++ or graphics engineers when no roles are open. The company requests a CV and a short note; this is a discipline-specific opportunity rather than a general all-departments route.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8435,7 +8457,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
@@ -8445,7 +8467,7 @@
     "applicationUrl": "https://vyrexinteractive.com/careers",
     "evidenceUrl": "https://vyrexinteractive.com/careers",
     "notes": "Official careers page says there are no open roles right now but accepts speculative applications from people who believe they fit.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-10",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8457,7 +8479,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-08"
     }
   },
   {
