@@ -3793,6 +3793,29 @@
     }
   },
   {
+    "name": "Iron Fox Games",
+    "country": "Not stated",
+    "websiteUrl": "https://www.ironfoxgames.com/",
+    "applicationUrl": "https://www.ironfoxgames.com/careers",
+    "evidenceUrl": "https://www.ironfoxgames.com/careers",
+    "notes": "Official studio-controlled page explicitly invites general applications. Evidence: General Application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-11",
+    "applicationResearch": {
+      "routeType": "general",
+      "submissionMethods": [
+        "email"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-09"
+    },
+    "addedAt": "2026-11-11T03:30:43Z"
+  },
+  {
     "name": "Ironroot Games",
     "country": "United States",
     "websiteUrl": "https://ironrootgames.com/",
@@ -6948,6 +6971,29 @@
     }
   },
   {
+    "name": "Soulven Games",
+    "country": "Not stated",
+    "websiteUrl": "https://www.soulven.com/",
+    "applicationUrl": "https://www.soulven.com/",
+    "evidenceUrl": "https://www.soulven.com/",
+    "notes": "Official studio-controlled page explicitly invites unsolicited applications. Evidence: unsolicited application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-11",
+    "applicationResearch": {
+      "routeType": "unsolicited",
+      "submissionMethods": [
+        "email"
+      ],
+      "workModel": "remote",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-09"
+    },
+    "addedAt": "2026-11-11T03:30:43Z"
+  },
+  {
     "name": "Spark Universe",
     "country": "Germany",
     "websiteUrl": "https://sparkuniverse.com/",
@@ -8056,8 +8102,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-08"
-    },
-    "addedAt": "2026-11-10T23:53:22Z"
+    }
   },
   {
     "name": "Toca Boca",
@@ -8467,7 +8512,7 @@
     "applicationUrl": "https://vyrexinteractive.com/careers",
     "evidenceUrl": "https://vyrexinteractive.com/careers",
     "notes": "Official careers page says there are no open roles right now but accepts speculative applications from people who believe they fit.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8479,7 +8524,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8489,7 +8534,7 @@
     "applicationUrl": "https://walkthefrog.com/",
     "evidenceUrl": "https://walkthefrog.com/",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: speculative application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8501,7 +8546,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8511,7 +8556,7 @@
     "applicationUrl": "https://career.welevel.com/jobs/initiative-application",
     "evidenceUrl": "https://career.welevel.com/jobs/initiative-application",
     "notes": "welevel's official site identifies it as an independent Munich game studio with a team of 20+ developing a survival city-builder. Its employer-managed Initiative Application explicitly invites speculative applications across areas including art, development, design and operations when no listed role fits. The application is full-time and on-site in Munich and explicitly requires valid EU work authorisation; it asks for a CV and portfolio or work samples.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8527,7 +8572,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8537,7 +8582,7 @@
     "applicationUrl": "https://winningstreakgames.de/",
     "evidenceUrl": "https://winningstreakgames.de/",
     "notes": "Official company homepage contains a dedicated Initiativbewerbung section explicitly inviting candidates to write even when no listed job fits. The company's Impressum publishes the recruitment contact gkoehler@winningstreak.de. Winning Streak Games is a Cologne-based developer of PC simulation games; its own site identifies WE ARE FOOTBALL 2027 and WE ARE FOOTBALL 2024 and records the company's founding in Cologne in 2018. All advertised jobs are full-time in Cologne; home office is possible only as an exception. The company has a publishing agreement with THQ Nordic but is a direct developer, not a publisher-only business.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8562,7 +8607,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8572,7 +8617,7 @@
     "applicationUrl": "https://jobs.ashbyhq.com/wolfjaw-careers/1cd44061-26c9-4cad-b542-6f9820986f16",
     "evidenceUrl": "https://jobs.ashbyhq.com/wolfjaw-careers/1cd44061-26c9-4cad-b542-6f9820986f16",
     "notes": "Official Ashby Engineer - General Application is an evergreen, full-time W-2 engineering talent pool for future opportunities. The studio builds backend and online services for multiplayer games. Remote work is restricted to eligible US states (Arizona, California, Florida, Georgia, Idaho, Illinois, Maryland, Massachusetts, Michigan, Nevada, New Jersey, New York, North Carolina, North Dakota, Pennsylvania, South Carolina, Texas, Vermont, Virginia and Washington); candidates local to Troy, New York may be hybrid. A separate Producer General Application is linked as a related route. This is not an international-remote position.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8593,7 +8638,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8603,7 +8648,7 @@
     "applicationUrl": "https://www.wolfpackgamedesign.com/general-member-application",
     "evidenceUrl": "https://www.wolfpackgamedesign.com/join-us",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8615,7 +8660,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8625,7 +8670,7 @@
     "applicationUrl": "https://wonder-works-studio-inc.breezy.hr/p/abffc4775170-general-application",
     "evidenceUrl": "https://wonder-works-studio-inc.breezy.hr/p/abffc4775170-general-application",
     "notes": "The studio-controlled Breezy page is titled General Application and explicitly invites candidates who do not see a matching advertised job to submit a resume and cover letter for future opportunities. The listing is full-time and marked Remote Any, with Arlington, Texas shown as the company location. The page does not state which countries may be hired remotely; international eligibility should be confirmed before applying.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8645,7 +8690,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
@@ -8655,7 +8700,7 @@
     "applicationUrl": "https://www.wonderstorm.net/careers",
     "evidenceUrl": "https://www.wonderstorm.net/careers",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-03",
+    "checkedAt": "2026-11-11",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8667,7 +8712,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-01"
+      "nextReviewAt": "2027-02-09"
     }
   },
   {
