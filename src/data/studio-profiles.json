@@ -3334,6 +3334,31 @@
       "Publisher"
     ]
   },
+  "Byte": {
+    "description": "Not yet researched. The studio was identified through public game-industry data and has an application route verified on its official site.",
+    "headquarters": {
+      "city": null,
+      "country": "Not stated",
+      "countryCode": "",
+      "label": "Not disclosed · IGDB"
+    },
+    "otherLocations": [],
+    "companyType": [
+      "Developer"
+    ],
+    "ownership": "Not yet researched",
+    "parentCompany": null,
+    "industryScale": "Mixed / Unclassified",
+    "teamSize": "Not disclosed",
+    "teamSizeAsOf": null,
+    "focus": [],
+    "popularGames": [],
+    "profileSources": [
+      "https://www.igdb.com/companies/byte",
+      "https://www.bytelab.com.tr/"
+    ],
+    "applicationLocation": "Not specified · confirm on the official application route"
+  },
   "ByteRockers' Games": {
     "description": "Independent Berlin-based game developer and publisher founded in 2008. The studio develops its own PC/console games and began representing other creative teams' projects as a publisher in 2024.",
     "headquarters": {
