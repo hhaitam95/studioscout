@@ -2291,7 +2291,7 @@
     "applicationUrl": "https://www.ernstborg.studio/career",
     "evidenceUrl": "https://www.ernstborg.studio/career",
     "notes": "Official Careers page explicitly says applicants may submit an open application by emailing a CV and portfolio to job@ernstborg.studio. The studio is based in Malmö and says relocation help may be available for the right candidate. No remote-work or applicant-country eligibility is stated.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -2310,7 +2310,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2320,7 +2320,7 @@
     "applicationUrl": "https://www.eidosmontreal.com/careers/",
     "evidenceUrl": "https://www.eidosmontreal.com/news/tips-for-your-application/",
     "notes": "Paused pending a directly usable general submission channel. Eidos-Montréal's official application advice article explicitly discusses spontaneous applications and asks candidates to prepare a CV, cover letter and portfolio, but its linked Careers page currently exposes individual job postings through Dayforce and no dedicated open/general application form. The record is retained for review; do not treat the current job list as a verified general application route.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [],
@@ -2332,7 +2332,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "paused",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2342,7 +2342,7 @@
     "applicationUrl": "https://electricsquare.com/come-join-us/",
     "evidenceUrl": "https://electricsquare.com/come-join-us/",
     "notes": "Official Come Join Us page explicitly welcomes speculative applications when no current vacancy fits and asks applicants to email a CV and cover letter to Charlotte.pook@electricsquare.com. Electric Square has bases in the UK and Malta and says its flexible work-from-home policy allows it to consider candidates from anywhere in the world. Applicant work rights and the exact arrangement remain role-specific.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -2356,7 +2356,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2391,7 +2391,7 @@
     "applicationUrl": "https://embers.games/",
     "evidenceUrl": "https://embers.games/",
     "notes": "The official site identifies Embers as a game studio in Strasbourg and invites general applications through its contact channel. The page lists the Strasbourg address; remote and international applicant eligibility are not stated.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -2405,7 +2405,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "email"
@@ -2421,7 +2421,7 @@
     "applicationUrl": "https://careers.facepunch.com/jobs/5154164/applications/new?iframe=true",
     "evidenceUrl": "https://facepunch.com/careers",
     "notes": "Official careers page explicitly says it accepts general applications when no listed role fits. The linked Teamtailor General Application form collects a CV, portfolio/GitHub URL, country and preferred discipline. Facepunch describes itself as remote-first and says applicants can work from wherever they prefer, subject to local employment laws.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -2451,7 +2451,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2461,7 +2461,7 @@
     "applicationUrl": "https://www.fakefishgames.com/jobs/open-application",
     "evidenceUrl": "https://www.fakefishgames.com/jobs",
     "notes": "Official Careers page explicitly tells candidates not to hesitate to fill out the Open Application form if no current role fits. The dedicated application asks candidates who do not see their job listed to submit information so the studio can keep them in mind for future opportunities. FakeFish is an independent game-development studio working on Barotrauma and an undisclosed second game. Its current About page describes a flexible workplace with headquarters in Turku and a smaller Helsinki office. The Open Application page reports a team of about 25 people as of early 2023; the current homepage describes about 20 people, so the older role-page figure should not be treated as current headcount.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -2486,7 +2486,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2496,7 +2496,7 @@
     "applicationUrl": "https://www.fasttravelgames.com/career",
     "evidenceUrl": "https://www.fasttravelgames.com/career",
     "notes": "The official Careers page invites open applications by email to career@fasttravelgames.com. Fast Travel Games is a Stockholm-based VR developer and publisher; the open route does not state remote or cross-border eligibility.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -2510,7 +2510,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "email"
