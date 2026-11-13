@@ -3009,7 +3009,7 @@
     "applicationUrl": "https://hrmos.co/pages/gamefreak/jobs/10-4",
     "evidenceUrl": "https://hrmos.co/pages/gamefreak/jobs/10-4",
     "notes": "The official GAME FREAK recruiting site links to the employer's HRMOS recruitment system; the company-branded Career Registration listing invites candidates to register their career experience even when they do not currently have a target position, so HR can contact them if a suitable role or hiring event arises. The registration is for regular employees, retained for up to two years, and does not guarantee a matching opening or contact. The official FAQ confirms overseas applications are accepted; business-level Japanese is required for all positions and approximately JLPT N1 is specified for development work. The Career Registration listing itself does not state work-model or specific role location; GAME FREAK's HQ is in Tokyo.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -3034,7 +3034,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -3044,7 +3044,7 @@
     "applicationUrl": "https://www.gametailors.com/over-ons/vacatures/open-sollicitatie",
     "evidenceUrl": "https://www.gametailors.com/over-ons/vacatures/open-sollicitatie",
     "notes": "The official Open Sollicitatie page describes internship opportunities and invites applications for marketing, development, art and UX research. Game Tailors is based in Delft and indicates office attendance is preferred; it does not state fully remote or international internship eligibility.",
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -3064,7 +3064,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-01-29"
+      "nextReviewAt": "2027-02-11"
     },
     "routeType": "discipline_specific",
     "submissionMethods": [
@@ -3089,7 +3089,7 @@
     "applicationUrl": "https://careers.garena.com/global/careers/J02131365",
     "evidenceUrl": "https://careers.garena.com/global/careers/J02131365",
     "notes": "Official Garena careers now show several future-opportunity channels: Singapore General Openings (Associate) across game operations, marketing, game design, product management and software engineering; Jakarta Development Program and Product Associate talent pools (growth/monetization, localization QA, live operations, product health and player feedback); and a Vietnam Future Opportunities pool for Hanoi/Ho Chi Minh City spanning marketing, game development, esports, graphics/video, product/game operations and data/engineering. These are location-specific talent pools with separate experience and education requirements; no global-remote eligibility is stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -3125,7 +3125,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -3135,7 +3135,7 @@
     "applicationUrl": "https://www.gauravgo.com/careers",
     "evidenceUrl": "https://www.gauravgo.com/careers",
     "notes": "The official Careers page explicitly invites speculative applications when no suitable role is listed and links to an application form. The company lists a corporate office in Bhubaneswar and a registered office in Puri, Odisha; remote and international eligibility are not stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -3149,7 +3149,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "website_form"
@@ -3165,7 +3165,7 @@
     "applicationUrl": "https://jobs.ghostship.dk/connect",
     "evidenceUrl": "https://jobs.ghostship.dk/",
     "notes": "The official Ghost Ship FAQ directs unsolicited applicants to its Teamtailor Connect page and explicitly warns that applications submitted through the general Contact form are not reviewed. Connect lets candidates select departments/interests and share their email for future opportunities. Regular positions are on-site only: applicants must live in Copenhagen or within commuting distance; the studio provides limited work-from-home days but no relocation support. Internships are separately limited to at least six months and are unpaid.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -3187,7 +3187,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -3197,7 +3197,7 @@
     "applicationUrl": "https://glowmade.jobs.personio.com/job/2805976",
     "evidenceUrl": "https://www.glowmade.com/careers",
     "notes": "Official Personio Speculative Application invites talent across art, code, design, production, audio, QA and operations. Hybrid from Guildford or remote within the UK; applicants must have UK right to work.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -3212,7 +3212,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "studio_controlled_ats",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -3222,7 +3222,7 @@
     "applicationUrl": "https://tt.playgoals.com/connect",
     "evidenceUrl": "https://studio.playgoals.com/open-positions",
     "notes": "Official Open positions page links an 'Open Application All/Optional Remote - Stockholm / Hybrid / Remote' route to GOALS' Teamtailor talent-connection form. The form lets applicants specify departments and role interests and opt in to future opportunities. Exact applicant-country eligibility is not stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -3236,7 +3236,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -3246,7 +3246,7 @@
     "applicationUrl": "https://www.goecraft.com/careers/",
     "evidenceUrl": "https://www.goecraft.com/careers/",
     "notes": "Official Careers page includes remote roles and explicitly invites a general application from creators whose role is not listed. GoE-Craft describes itself as an official Microsoft Minecraft Marketplace partner since 2018, producing Bedrock add-ons, texture packs and worlds. Role terms vary between full-time, freelance and commission-based; country eligibility for remote work is not stated.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -3269,7 +3269,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
