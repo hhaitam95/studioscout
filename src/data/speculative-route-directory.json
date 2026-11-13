@@ -2526,7 +2526,7 @@
     "applicationUrl": "https://favogames.com/careers",
     "evidenceUrl": "https://favogames.com/careers",
     "notes": "The official Careers page has an explicit Open application option for candidates with skills not listed in the current roles and asks how they would improve the studio's games. The site form accepts a CV and portfolio link, is used to consider applicants for jobs, and says the studio replies to every application. The five-person Istanbul team says it works remotely from anywhere; country-specific legal/contract arrangements are not detailed.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -2540,7 +2540,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2550,7 +2550,7 @@
     "applicationUrl": "https://fawkesgames.com/en/careers/",
     "evidenceUrl": "https://fawkesgames.com/en/careers/",
     "notes": "The official Careers page explicitly invites spontaneous applications by email and says work can be remote from anywhere. Its landing page still lists five freelance disciplines (Unity game engineering, 2D game art, game design, production and pixel art), with Europe-friendly time zones preferred. The linked Breezy ATS currently exposes one concrete vacancy: Senior Unreal Engineer (contractor), worldwide remote, 12-month contract, Eastern Europe preferred, requiring 5+ years of Unreal Engine and strong C++/Blueprint/shader experience. The landing-page role list and live ATS board are not fully aligned; confirm the specific role before applying.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -2576,7 +2576,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2586,7 +2586,7 @@
     "applicationUrl": "https://careers.fenris.com/en/register-your-interest/new",
     "evidenceUrl": "https://fenris.com/careers",
     "notes": "The official careers FAQ says applicants without a matching vacancy can make a general application and have their CV added to the database. The linked Pinpoint careers platform has a dedicated “Register Your Interest” form under “Speculative Applications”, with CV upload and location/department preferences.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -2600,7 +2600,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2610,7 +2610,7 @@
     "applicationUrl": "https://www.flashbulbgames.com/blank",
     "evidenceUrl": "https://www.flashbulbgames.com/blank",
     "notes": "The official Jobs page states there are currently no open positions and explicitly invites unsolicited applications by email to job@flashbulbgames.com. The studio's July 2026 privacy policy confirms that job applications are processed when submitted by email. Remote and cross-border applicant eligibility are not stated.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -2624,7 +2624,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
@@ -2634,7 +2634,7 @@
     "applicationUrl": "https://www.flowgamestudio.com/opportunities",
     "evidenceUrl": "https://www.flowgamestudio.com/opportunities",
     "notes": "The official Opportunities page invites Expressions of Interest and provides an email submission route. Flow Studio is based in Brisbane, Australia; remote and international eligibility are not stated.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -2650,7 +2650,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "email"
@@ -2669,7 +2669,7 @@
     "applicationUrl": "https://careers.foolstheory.com/connect",
     "evidenceUrl": "https://careers.foolstheory.com/",
     "notes": "The official Teamtailor Careers site provides an Open Applications/Connect form with discipline selections and future-opportunity notifications. The studio is based in Bielsko-Biała and says remote work is available within approximately two hours of GMT+1; confirm any role-specific country and work-authorisation constraints.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -2692,7 +2692,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "ats"
@@ -2719,7 +2719,7 @@
     "applicationUrl": "https://formation.games/careers",
     "evidenceUrl": "https://formation.games/careers",
     "notes": "The official Careers page invites general applications and provides a CV/portfolio/cover-letter email route. The studio is identified as a UK-based independent sports-game developer; the page does not state remote or cross-border applicant eligibility.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -2733,7 +2733,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     },
     "submissionMethods": [
       "email"
@@ -2749,7 +2749,7 @@
     "applicationUrl": "https://frimastudio.com/en/careers/",
     "evidenceUrl": "https://frimastudio.com/en/careers/",
     "notes": "Official Québec careers page lists a Spontaneous Application and invites interested candidates to send an English CV and cover letter.",
-    "checkedAt": "2026-11-06",
+    "checkedAt": "2026-11-13",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -2763,7 +2763,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-04"
+      "nextReviewAt": "2027-02-11"
     }
   },
   {
