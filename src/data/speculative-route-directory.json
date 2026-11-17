@@ -4546,8 +4546,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-12"
-    },
-    "addedAt": "2026-11-14T23:33:54Z"
+    }
   },
   {
     "name": "Lost Native Games",
@@ -5031,6 +5030,30 @@
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-13"
     }
+  },
+  {
+    "name": "Next Big Game Studio",
+    "country": "Not stated",
+    "websiteUrl": "https://nbgamestudio.com/",
+    "applicationUrl": "https://nbgamestudio.com/",
+    "evidenceUrl": "https://nbgamestudio.com/",
+    "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-17",
+    "applicationResearch": {
+      "routeType": "open",
+      "submissionMethods": [
+        "email",
+        "website_form"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-15"
+    },
+    "addedAt": "2026-11-17T23:22:03Z"
   },
   {
     "name": "Next Level Games",
@@ -5631,6 +5654,29 @@
       "sourceType": "employer_managed_career_platform",
       "nextReviewAt": "2027-01-29"
     }
+  },
+  {
+    "name": "Playing History",
+    "country": "Not stated",
+    "websiteUrl": "https://playinghistory.de/",
+    "applicationUrl": "https://playinghistory.de/en/main-home/jobs/",
+    "evidenceUrl": "https://playinghistory.de/en/main-home/jobs/",
+    "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: Speculative application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-17",
+    "applicationResearch": {
+      "routeType": "speculative",
+      "submissionMethods": [
+        "email"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-15"
+    },
+    "addedAt": "2026-11-17T23:22:03Z"
   },
   {
     "name": "PlayQ",
@@ -6771,7 +6817,7 @@
     "applicationUrl": "https://www.sinnstudio.com/careers",
     "evidenceUrl": "https://www.sinnstudio.com/careers",
     "notes": "Official studio-controlled page explicitly invites spontaneous applications. Evidence: spontaneous application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -6783,7 +6829,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6793,7 +6839,7 @@
     "applicationUrl": "https://app.skytale.fr/rejoindre",
     "evidenceUrl": "https://app.skytale.fr/rejoindre",
     "notes": "Official application page includes a “Candidature spontanée” route and invites people to join the studio. Skytale is a French non-profit, volunteer-run video-game studio: it reports 80+ volunteers across three continents, 100% remote work, no employees and no commercial budget. The application is for volunteering, not paid employment. Its projects include The Last Artifact, a free Minecraft adventure/puzzle game, and Z'Wonder Battle, a charity tower-defense project. Candidates can apply with a CV and two or three links; preserve the volunteer-only status prominently.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -6818,7 +6864,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6828,7 +6874,7 @@
     "applicationUrl": "https://sleeprunnerstudios.com/jobs/",
     "evidenceUrl": "https://sleeprunnerstudios.com/jobs/",
     "notes": "Official Jobs page explicitly invites unsolicited applications from designers, programmers, artists, marketers and other contributors when no current vacancy fits. Applications must be sent by email to hello@sleeprunnerstudios.com in PDF format, with CV, portfolio and motivation letter. The five-person indie studio is based in Bayreuth and develops core PC/console games with Unreal Engine. The employer says employees must reside in Germany or the EU; freelance collaborations are possible worldwide. Its current workplace is hybrid, and relocation support is mentioned.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -6854,7 +6900,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6864,7 +6910,7 @@
     "applicationUrl": "https://job-boards.greenhouse.io/sggcareers/jobs/5669163004",
     "evidenceUrl": "https://job-boards.greenhouse.io/sggcareers/jobs/5669163004",
     "notes": "The employer's Greenhouse board has a dedicated Open Application for candidates who do not see a suitable listed role and invites a CV/resume and covering letter. The studio is based in Helsinki and states that it uses a hybrid model, with each team setting its own office days. The application form asks for country but does not publish country eligibility or remote-from-abroad rules.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -6881,7 +6927,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6923,7 +6969,7 @@
     "applicationUrl": "https://smile-studios.com/jobs/",
     "evidenceUrl": "https://smile-studios.com/jobs/",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -6935,7 +6981,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6945,7 +6991,7 @@
     "applicationUrl": "https://www.snowcastlegames.com/jobsmain",
     "evidenceUrl": "https://www.snowcastlegames.com/jobsmain",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: open applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -6957,7 +7003,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
@@ -6967,7 +7013,7 @@
     "applicationUrl": "https://jobs.softgames.de/o/unsolicited-application",
     "evidenceUrl": "https://jobs.softgames.de/o/unsolicited-application",
     "notes": "Official employer-managed Unsolicited Application explicitly invites candidates even when no matching position is available. Applicants must submit an English CV and cover letter and state their discipline/area of interest (examples include Game Design, QA and Business Development); salary expectations and earliest start date are also requested. The employer describes itself as remote-first with a team from many countries. The precise legal work-eligibility and location rules for the unsolicited route are not stated, so worldwide employment eligibility is not inferred.",
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-17",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -6989,7 +7035,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-06"
+      "nextReviewAt": "2027-02-15"
     }
   },
   {
