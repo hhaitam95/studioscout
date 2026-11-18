@@ -4890,6 +4890,30 @@
     }
   },
   {
+    "name": "MiTale",
+    "country": "Not stated",
+    "websiteUrl": "https://www.mitalegames.com/",
+    "applicationUrl": "https://www.mitalegames.com/jobs",
+    "evidenceUrl": "https://www.mitalegames.com/jobs",
+    "notes": "Official studio-controlled page explicitly invites open applications. Evidence: open application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-18",
+    "applicationResearch": {
+      "routeType": "open",
+      "submissionMethods": [
+        "email",
+        "website_form"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-16"
+    },
+    "addedAt": "2026-11-18T14:38:19Z"
+  },
+  {
     "name": "Modern Wolf",
     "country": "England",
     "websiteUrl": "https://www.modernwolf.net/",
@@ -5052,8 +5076,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-15"
-    },
-    "addedAt": "2026-11-17T23:22:03Z"
+    }
   },
   {
     "name": "Next Level Games",
@@ -5675,8 +5698,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-15"
-    },
-    "addedAt": "2026-11-17T23:22:03Z"
+    }
   },
   {
     "name": "PlayQ",
@@ -7407,7 +7429,7 @@
     "applicationUrl": "https://www.stitch.media/careers",
     "evidenceUrl": "https://www.stitch.media/careers",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -7420,7 +7442,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
@@ -7430,7 +7452,7 @@
     "applicationUrl": "https://stormindgames.com/careers/",
     "evidenceUrl": "https://stormindgames.com/careers/",
     "notes": "Official Careers page says candidates can send a spontaneous application if no listed job matches. Its embedded form collects name, city, phone, email, website/LinkedIn, message and a CV/resume attachment. The company page describes Stormind as an independent Italian PC/console studio founded in 2016, focused on original IP and co-development for AAA IP holders, with 100+ internal resources plus external collaborators. Its HQ is in Catania/Acireale and its registered office is in Milan. The application route does not specify remote-work or applicant-country eligibility.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -7454,7 +7476,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
@@ -7512,7 +7534,7 @@
     "applicationUrl": "https://streamlinestudios.bamboohr.com/careers/106",
     "evidenceUrl": "https://www.streamline-studios.com/en/careers",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: General Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -7525,7 +7547,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
@@ -7535,7 +7557,7 @@
     "applicationUrl": "https://studio316.co.uk/jobs/",
     "evidenceUrl": "https://studio316.co.uk/jobs/",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: speculative applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -7547,7 +7569,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
@@ -7557,7 +7579,7 @@
     "applicationUrl": "https://studio555.io/",
     "evidenceUrl": "https://studio555.io/",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -7569,7 +7591,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
@@ -7579,7 +7601,7 @@
     "applicationUrl": "https://studiosdrama.com/unsolicited-application/",
     "evidenceUrl": "https://studiosdrama.com/unsolicited-application/",
     "notes": "Official Unsolicited Application form accepts applicants across art, programming, design, production, audio, QA, marketing, community management, business/publishing and other disciplines. It requires a concise motivation statement explaining the applicant's interest in UNRECORD and asks about Unreal Engine expertise and employment options. Regular on-site presence in Rennes is expected, with role-dependent flexibility.",
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-18",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -7604,7 +7626,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-07"
+      "nextReviewAt": "2027-02-16"
     }
   },
   {
