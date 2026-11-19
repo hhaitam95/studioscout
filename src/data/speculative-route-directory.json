@@ -8834,7 +8834,7 @@
     "applicationUrl": "https://www.wonderstorm.net/careers",
     "evidenceUrl": "https://www.wonderstorm.net/careers",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8846,7 +8846,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8856,7 +8856,7 @@
     "applicationUrl": "https://wushustudios.com/careers/",
     "evidenceUrl": "https://wushustudios.com/careers/",
     "notes": "Official careers page explicitly welcomes speculative applications even when no vacancy matches and invites applicants to send a CV and portfolio where applicable to the studio's recruitment email.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8868,7 +8868,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8878,7 +8878,7 @@
     "applicationUrl": "https://yabugames.io/careers/",
     "evidenceUrl": "https://yabugames.io/careers/",
     "notes": "Official careers page invites applications beyond listed roles; applicants choose Open application in the form. Studio office is in Istanbul. Work model: hybrid.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8892,7 +8892,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8902,7 +8902,7 @@
     "applicationUrl": "https://careers.yodo1.com/",
     "evidenceUrl": "https://www.yodo1.com/en/careers",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8914,7 +8914,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8924,7 +8924,7 @@
     "applicationUrl": "https://youniverse.game/contact.html?type=careers",
     "evidenceUrl": "https://youniverse.game/careers.html",
     "notes": "The official Careers page explicitly invites open applications from designers, engineers, artists and other candidates, even without a matching vacancy. Its linked contact form has a Careers category and requires a work-portfolio link; the site also lists a careers contact. Current advertised roles are based in Petaling Jaya, but the work model for open applications is not specified.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8946,7 +8946,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8979,7 +8979,7 @@
     "applicationUrl": "https://www.zunisha.com/careers",
     "evidenceUrl": "https://www.zunisha.com/careers",
     "notes": "The official Careers page provides a General or Direct Application form for candidates who do not see a suitable role. Zunisha describes itself as a global remote-first real-time 3D and immersive technology studio working on game development, game art, AR/VR and interactive digital content. It is included as a game-development/co-production services studio; country-of-employment eligibility is not stated.",
-    "checkedAt": "2026-11-11",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -9001,7 +9001,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-09"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
