@@ -806,6 +806,30 @@
     }
   },
   {
+    "name": "Aurora Studio",
+    "country": "Not stated",
+    "websiteUrl": "https://www.aurora-studio.org/",
+    "applicationUrl": "https://www.aurora-studio.org/careers/",
+    "evidenceUrl": "https://www.aurora-studio.org/careers/",
+    "notes": "Official studio-controlled page explicitly invites discipline specific applications. Evidence: Open Application. Hiring geography is not inferred from headquarters.",
+    "checkedAt": "2026-11-19",
+    "applicationResearch": {
+      "routeType": "discipline_specific",
+      "submissionMethods": [
+        "email",
+        "website_form"
+      ],
+      "workModel": "not_stated",
+      "eligibleLocations": [],
+      "disciplineScope": [],
+      "relatedApplicationUrls": [],
+      "routeStatus": "active",
+      "sourceType": "official_company_site",
+      "nextReviewAt": "2027-02-17"
+    },
+    "addedAt": "2026-11-19T12:36:07Z"
+  },
+  {
     "name": "Awe Interactive",
     "country": "United Kingdom",
     "websiteUrl": "https://www.aweinteractive.com/",
@@ -8221,7 +8245,7 @@
     "applicationUrl": "https://emp.jobylon.com/jobs/78681-toca-boca-spontaneous-application/",
     "evidenceUrl": "https://www.tocaboca.com/careers",
     "notes": "Toca Boca's official Careers page explicitly invites spontaneous applications when no listed position fits and links to its Jobylon application. The employer describes its work across programming, play design, art, animation, production and QA; Jobylon identifies the spontaneous application as Stockholm-based and confirms Toca Boca develops digital games. The company is Toca Boca AB, a subsidiary of Spin Master Corp. Work model and international eligibility are not stated.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8237,7 +8261,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8247,7 +8271,7 @@
     "applicationUrl": "https://www.traega.com/careers",
     "evidenceUrl": "https://www.traega.com/careers",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8259,7 +8283,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8269,7 +8293,7 @@
     "applicationUrl": "https://www.triangularpixels.net/jobs",
     "evidenceUrl": "https://www.triangularpixels.net/jobs",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: speculative applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8281,7 +8305,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8353,7 +8377,7 @@
     "applicationUrl": "https://twinharbour.teamtailor.com/jobs/6958619-unsolicited-application-twin-harbour-interactive/applications/new",
     "evidenceUrl": "https://twinharbour.teamtailor.com/jobs/6958619-unsolicited-application-twin-harbour-interactive/applications/new",
     "notes": "Official Teamtailor Unsolicited Application supports future opportunities and asks candidates to select Hamburg (Germany) or San Ġiljan (Malta), provide current residence and confirm work-permit status for Germany or Malta. Hybrid; this is not a worldwide-remote route.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -8368,7 +8392,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "studio_controlled_ats",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8378,7 +8402,7 @@
     "applicationUrl": "https://saguenay.ubisoft.com/fr/emplois/",
     "evidenceUrl": "https://saguenay.ubisoft.com/fr/emplois/",
     "notes": "The official Ubisoft Saguenay careers page has a Candidature Spontanée section. It explicitly says that if the desired position is not advertised, applicants should send their CV and portfolio to rhsaguenay@ubisoft.com. The route is tied to the Saguenay studio; applicant-country and remote-work eligibility are not stated.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8392,7 +8416,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8402,7 +8426,7 @@
     "applicationUrl": "https://job-boards.greenhouse.io/unknownworlds/jobs/7535230002",
     "evidenceUrl": "https://job-boards.greenhouse.io/unknownworlds/jobs/7535230002",
     "notes": "Official Greenhouse General Application accepts candidates for future opportunities. Team is globally distributed; eligible hiring countries are not listed. Work model: remote.",
-    "checkedAt": "2026-11-10",
+    "checkedAt": "2026-11-19",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8414,7 +8438,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-08"
+      "nextReviewAt": "2027-02-17"
     }
   },
   {
@@ -8946,8 +8970,7 @@
       "routeStatus": "active",
       "sourceType": "official_company_site",
       "nextReviewAt": "2027-02-17"
-    },
-    "addedAt": "2026-11-19T04:02:46Z"
+    }
   },
   {
     "name": "Zunisha",
