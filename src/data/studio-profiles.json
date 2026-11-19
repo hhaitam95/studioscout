@@ -18018,6 +18018,31 @@
     "scale": "Indie",
     "scaleBasis": "recorded"
   },
+  "Yuka Factory": {
+    "description": "Not yet researched. The studio was identified through public game-industry data and has an application route verified on its official site.",
+    "headquarters": {
+      "city": null,
+      "country": "Not stated",
+      "countryCode": "",
+      "label": "Not disclosed · IGDB"
+    },
+    "otherLocations": [],
+    "companyType": [
+      "Developer"
+    ],
+    "ownership": "Not yet researched",
+    "parentCompany": null,
+    "industryScale": "Mixed / Unclassified",
+    "teamSize": "Not disclosed",
+    "teamSizeAsOf": null,
+    "focus": [],
+    "popularGames": [],
+    "profileSources": [
+      "https://www.igdb.com/companies/yuka-factory",
+      "https://yukafactory.com/"
+    ],
+    "applicationLocation": "Not specified · confirm on the official application route"
+  },
   "Zunisha": {
     "description": "India-headquartered real-time 3D and immersive technology studio providing game development, game art, AR/VR and interactive digital production services.",
     "headquarters": {
