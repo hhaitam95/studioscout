@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T13:32:03+00:00",
-  "discovery_state_updated_at": "2026-11-20T13:31:05.762059+00:00",
-  "workflow_run_id": "44741641842",
-  "workflow_run_number": "198",
-  "workflow_commit": "a36a0ddc48492604394dd88b89b8748dd56ff85d",
+  "updated_at": "2026-11-20T19:17:33+00:00",
+  "discovery_state_updated_at": "2026-11-20T19:16:24.723365+00:00",
+  "workflow_run_id": "44796686945",
+  "workflow_run_number": "199",
+  "workflow_commit": "a6cd7a7cdabc24a5c98541ccda67820661c94435",
   "igdb_enabled": true,
   "source_count": 7,
   "enabled_source_count": 7,
@@ -57,8 +57,8 @@
       "candidate_due_counts": {},
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-19T22:32:18.620761+00:00",
-      "last_success_at": "2026-11-20T13:30:33.462913+00:00",
+      "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
+      "last_success_at": "2026-11-20T19:16:24.169920+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
@@ -79,18 +79,18 @@
       "candidate_due_counts": {},
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-20T03:42:16.103408+00:00",
-      "last_success_at": "2026-11-20T13:15:36.033404+00:00",
+      "last_failure_at": "2026-11-20T18:59:21.777174+00:00",
+      "last_success_at": "2026-11-20T19:12:27.124169+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
       "label": "Wikidata: video-game company entities",
       "enabled": true,
-      "cycle": 115,
-      "empty_complete_passes": 113,
+      "cycle": 116,
+      "empty_complete_passes": 114,
       "saturated": true,
       "last_pass_status": "saturated",
-      "last_pass_completed_at": "2026-11-20T13:31:05.751946+00:00",
+      "last_pass_completed_at": "2026-11-20T19:16:24.716084+00:00",
       "new_candidate_entities_last_pass": 0,
       "verified_routes_last_pass": 0,
       "incomplete_candidates_last_pass": 0,
@@ -102,7 +102,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-11T15:25:39.748246+00:00",
-      "last_success_at": "2026-11-20T13:09:54.677979+00:00",
+      "last_success_at": "2026-11-20T18:53:41.378016+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -136,11 +136,11 @@
       "candidate_due_counts": {
         "retry": 37
       },
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-17T04:51:12.174168+00:00",
-      "last_success_at": "2026-11-20T13:11:01.360274+00:00",
-      "next_retry_at": null
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: Wikidata returned HTTP 502",
+      "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
+      "last_success_at": "2026-11-20T19:04:11.850672+00:00",
+      "next_retry_at": "2026-11-20T19:10:20.657918+00:00"
     },
     "gamedevmap": {
       "label": "GameDevMap: public worldwide studio directory",

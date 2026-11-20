@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-20T13:31:05.762059+00:00",
+  "updated_at": "2026-11-20T19:16:24.723365+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q24256009",
-    "wikidata_game_developer_credits": "",
+    "wikidata_video_game_developers": "Q60761534",
+    "wikidata_game_developer_credits": "Q99540288",
     "wikidata_video_game_companies": "",
     "gamedevmap": "11001",
-    "wikidata_video_game_industry": "Q5183495",
+    "wikidata_video_game_industry": "Q5901057",
     "igdb_companies": "3150",
     "scottish_games_industry": "200"
   },
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 115,
+  "cycle": 116,
   "cycle_additions": 1,
   "empty_cycles": 0,
   "saturated": false,
@@ -560451,8 +560451,8 @@
       "cycle_candidate_entities": 0,
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-19T22:32:18.620761+00:00",
-      "last_success_at": "2026-11-20T13:30:33.462913+00:00",
+      "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
+      "last_success_at": "2026-11-20T19:16:24.169920+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
@@ -560469,17 +560469,17 @@
       "cycle_candidate_entities": 0,
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-20T03:42:16.103408+00:00",
-      "last_success_at": "2026-11-20T13:15:36.033404+00:00",
+      "last_failure_at": "2026-11-20T18:59:21.777174+00:00",
+      "last_success_at": "2026-11-20T19:12:27.124169+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 115,
+      "cycle": 116,
       "cycle_additions": 0,
-      "empty_cycles": 113,
+      "empty_cycles": 114,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-20T13:31:05.751946+00:00",
+      "last_pass_completed_at": "2026-11-20T19:16:24.716084+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560488,7 +560488,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-11T15:25:39.748246+00:00",
-      "last_success_at": "2026-11-20T13:09:54.677979+00:00",
+      "last_success_at": "2026-11-20T18:53:41.378016+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560521,11 +560521,11 @@
       "last_pass_candidates": 1,
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 755,
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-17T04:51:12.174168+00:00",
-      "last_success_at": "2026-11-20T13:11:01.360274+00:00",
-      "next_retry_at": null
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: Wikidata returned HTTP 502",
+      "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
+      "last_success_at": "2026-11-20T19:04:11.850672+00:00",
+      "next_retry_at": "2026-11-20T19:10:20.657918+00:00"
     },
     "igdb_companies": {
       "cycle": 21,
