@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-20T10:56:58.385306+00:00",
+  "updated_at": "2026-11-20T13:31:05.762059+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q113587545",
+    "wikidata_video_game_developers": "Q24256009",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
     "gamedevmap": "11001",
-    "wikidata_video_game_industry": "Q481968",
+    "wikidata_video_game_industry": "Q5183495",
     "igdb_companies": "3150",
     "scottish_games_industry": "200"
   },
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 114,
+  "cycle": 115,
   "cycle_additions": 1,
   "empty_cycles": 0,
   "saturated": false,
@@ -281482,9 +281482,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.497750+00:00",
-      "checked_at": "2026-11-13T19:03:07.120907+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887484+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281506,9 +281506,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.497934+00:00",
-      "checked_at": "2026-11-13T19:03:07.120912+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887527+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281530,9 +281530,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498201+00:00",
-      "checked_at": "2026-11-13T19:03:07.120919+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887539+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281554,9 +281554,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498325+00:00",
-      "checked_at": "2026-11-13T19:03:07.120925+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887547+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -281578,9 +281578,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498340+00:00",
-      "checked_at": "2026-11-13T19:03:17.371360+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887553+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -281602,9 +281602,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498525+00:00",
-      "checked_at": "2026-11-13T19:03:17.371398+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887558+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -281675,9 +281675,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498745+00:00",
-      "checked_at": "2026-11-13T19:03:17.371409+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887564+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281699,9 +281699,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498762+00:00",
-      "checked_at": "2026-11-13T19:03:17.371416+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:33.887570+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281771,9 +281771,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498922+00:00",
-      "checked_at": "2026-11-13T19:03:17.371427+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522669+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281820,9 +281820,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498947+00:00",
-      "checked_at": "2026-11-13T19:03:17.371433+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522699+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281844,9 +281844,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.498959+00:00",
-      "checked_at": "2026-11-13T19:03:17.371440+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522709+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281868,9 +281868,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.499094+00:00",
-      "checked_at": "2026-11-13T19:03:17.371445+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522717+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281892,9 +281892,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.499107+00:00",
-      "checked_at": "2026-11-13T19:03:27.509110+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522725+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -281988,9 +281988,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.499350+00:00",
-      "checked_at": "2026-11-13T19:03:27.509152+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522732+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -282036,9 +282036,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.499502+00:00",
-      "checked_at": "2026-11-13T19:03:27.509162+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522739+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "http-status"
     },
@@ -282109,9 +282109,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T12:03:06.499930+00:00",
-      "checked_at": "2026-11-13T19:03:27.509169+00:00",
-      "next_check_at": "2026-11-20",
-      "attempts": 2,
+      "checked_at": "2026-11-20T13:30:34.522745+00:00",
+      "next_check_at": "2026-11-27",
+      "attempts": 3,
       "cycle": 36,
       "reason": "robots-disallowed"
     },
@@ -558397,19 +558397,19 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-11T23:07:45.348503+00:00"
+      "last_checked_at": "2026-11-20T13:30:51.213683+00:00"
     },
     "Aska Studios": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:49.720026+00:00"
+      "last_checked_at": "2026-11-20T13:30:55.621686+00:00"
     },
     "Asobo Studio": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:53.969717+00:00"
+      "last_checked_at": "2026-11-20T13:31:00.067169+00:00"
     },
     "Awe Interactive": {
       "negative_count": 0,
@@ -560071,31 +560071,31 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:40.248430+00:00"
+      "last_checked_at": "2026-11-20T13:30:46.003413+00:00"
     },
     "Apog Labs": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:43.699404+00:00"
+      "last_checked_at": "2026-11-20T13:30:49.538258+00:00"
     },
     "Ashborne Games (THQ Nordic)": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:47.026578+00:00"
+      "last_checked_at": "2026-11-20T13:30:52.764318+00:00"
     },
     "AstroBeam": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:07:56.743285+00:00"
+      "last_checked_at": "2026-11-20T13:31:02.750663+00:00"
     },
     "Atvis": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-11T23:08:00.208961+00:00"
+      "last_checked_at": "2026-11-20T13:31:05.751903+00:00"
     },
     "AxesInMotion (gamigo Group)": {
       "negative_count": 0,
@@ -560428,7 +560428,7 @@
       "last_checked_at": "2026-11-19T22:39:22.770718+00:00"
     }
   },
-  "route_check_index": 24,
+  "route_check_index": 32,
   "stats": {
     "candidates_seen": 28454,
     "routes_verified": 140,
@@ -560452,16 +560452,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-19T22:32:18.620761+00:00",
-      "last_success_at": "2026-11-20T10:53:50.532954+00:00",
+      "last_success_at": "2026-11-20T13:30:33.462913+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 94,
+      "cycle": 95,
       "cycle_additions": 0,
-      "empty_cycles": 81,
+      "empty_cycles": 82,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-20T10:56:58.377805+00:00",
+      "last_pass_completed_at": "2026-11-20T13:31:05.751946+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560470,16 +560470,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T03:42:16.103408+00:00",
-      "last_success_at": "2026-11-20T10:47:00.118978+00:00",
+      "last_success_at": "2026-11-20T13:15:36.033404+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 114,
+      "cycle": 115,
       "cycle_additions": 0,
-      "empty_cycles": 112,
+      "empty_cycles": 113,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-20T10:56:58.377805+00:00",
+      "last_pass_completed_at": "2026-11-20T13:31:05.751946+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560488,7 +560488,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-11T15:25:39.748246+00:00",
-      "last_success_at": "2026-11-20T10:39:11.391112+00:00",
+      "last_success_at": "2026-11-20T13:09:54.677979+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560524,7 +560524,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-17T04:51:12.174168+00:00",
-      "last_success_at": "2026-11-20T10:40:22.281130+00:00",
+      "last_success_at": "2026-11-20T13:11:01.360274+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
