@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-21T17:21:18.254664+00:00",
+  "updated_at": "2026-11-21T19:51:54.337590+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q118558676",
+    "wikidata_video_game_developers": "Q24256009",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "701",
-    "wikidata_video_game_industry": "Q111985956",
-    "igdb_companies": "8494",
-    "scottish_games_industry": ""
+    "gamedevmap": "801",
+    "wikidata_video_game_industry": "Q1130046",
+    "igdb_companies": "9005",
+    "scottish_games_industry": "100"
   },
   "feed_done": {
     "wikidata_video_game_developers": false,
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 122,
+  "cycle": 123,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -36136,7 +36136,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:9566eced440cb85b2f47": {
@@ -558511,19 +558512,19 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:43.391878+00:00"
+      "last_checked_at": "2026-11-21T19:51:35.114531+00:00"
     },
     "Cyanide Studio": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:55.418453+00:00"
+      "last_checked_at": "2026-11-21T19:51:49.408162+00:00"
     },
     "Cybernation Team": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:58.651601+00:00"
+      "last_checked_at": "2026-11-21T19:51:52.650365+00:00"
     },
     "Dark Cloud Games": {
       "negative_count": 0,
@@ -558625,19 +558626,19 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:46.479785+00:00"
+      "last_checked_at": "2026-11-21T19:51:38.359607+00:00"
     },
     "Cutting Corner Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:52.802721+00:00"
+      "last_checked_at": "2026-11-21T19:51:47.101982+00:00"
     },
     "Cyborn": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:18:00.325349+00:00"
+      "last_checked_at": "2026-11-21T19:51:54.335261+00:00"
     },
     "DON'T NOD (Montreal)": {
       "negative_count": 0,
@@ -560233,7 +560234,7 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-12T21:17:57.260990+00:00"
+      "last_checked_at": "2026-11-21T19:51:51.160263+00:00"
     },
     "Cygames Group": {
       "negative_count": 0,
@@ -560458,7 +560459,7 @@
       "last_checked_at": "2026-11-20T21:38:49.558438+00:00"
     }
   },
-  "route_check_index": 73,
+  "route_check_index": 80,
   "stats": {
     "candidates_seen": 28460,
     "routes_verified": 140,
@@ -560482,7 +560483,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-21T17:17:29.571058+00:00",
+      "last_success_at": "2026-11-21T19:51:33.049773+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
@@ -560497,19 +560498,19 @@
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 0,
       "cycle_candidate_entities": 0,
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-21T02:55:37.352339+00:00",
+      "consecutive_failures": 3,
+      "last_error": "RuntimeError: Wikidata batch failed safely: TimeoutError",
+      "last_failure_at": "2026-11-21T19:48:05.340572+00:00",
       "last_success_at": "2026-11-21T17:07:16.905806+00:00",
-      "next_retry_at": null
+      "next_retry_at": "2026-11-21T20:08:05.340594+00:00"
     },
     "wikidata_video_game_companies": {
-      "cycle": 122,
+      "cycle": 123,
       "cycle_additions": 0,
-      "empty_cycles": 120,
+      "empty_cycles": 121,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-21T17:21:18.247323+00:00",
+      "last_pass_completed_at": "2026-11-21T19:51:54.335375+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560518,7 +560519,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-21T17:01:30.371053+00:00",
+      "last_success_at": "2026-11-21T19:29:41.970284+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560536,7 +560537,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-21T17:03:45.612135+00:00",
+      "last_success_at": "2026-11-21T19:32:19.412819+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -560554,7 +560555,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-21T17:02:38.350200+00:00",
+      "last_success_at": "2026-11-21T19:31:11.987734+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
@@ -560572,7 +560573,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-21T17:03:46.953524+00:00",
+      "last_success_at": "2026-11-21T19:32:20.853619+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -560590,7 +560591,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-14T23:17:56.738899+00:00",
-      "last_success_at": "2026-11-21T16:58:53.548248+00:00",
+      "last_success_at": "2026-11-21T19:34:23.049446+00:00",
       "next_retry_at": null
     }
   },
