@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-22T08:30:01.768093+00:00",
+  "updated_at": "2026-11-22T10:44:35.369058+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q1984338",
+    "wikidata_video_game_developers": "Q60761534",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "1501",
-    "wikidata_video_game_industry": "Q12718948",
-    "igdb_companies": "13093",
-    "scottish_games_industry": ""
+    "gamedevmap": "1601",
+    "wikidata_video_game_industry": "Q133858478",
+    "igdb_companies": "13700",
+    "scottish_games_industry": "100"
   },
   "feed_done": {
     "wikidata_video_game_developers": false,
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 127,
+  "cycle": 128,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -280894,7 +280894,8 @@
       "company_type": "Industry lead",
       "source_id": "wikidata_video_game_industry",
       "sources_seen": [
-        "wikidata_video_game_industry"
+        "wikidata_video_game_industry",
+        "igdb_companies"
       ],
       "source_cycle": 20,
       "status": "needs_review",
@@ -298737,9 +298738,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.023789+00:00",
-      "checked_at": "2026-11-14T23:23:26.675134+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728742+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "http-status"
     },
@@ -298809,9 +298810,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024004+00:00",
-      "checked_at": "2026-11-14T23:23:26.675166+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728786+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -298833,9 +298834,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024356+00:00",
-      "checked_at": "2026-11-14T23:23:26.675175+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728799+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -298857,9 +298858,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024375+00:00",
-      "checked_at": "2026-11-14T23:23:26.675185+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728811+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -298881,9 +298882,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024547+00:00",
-      "checked_at": "2026-11-14T23:23:26.675192+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728819+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -298905,9 +298906,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024568+00:00",
-      "checked_at": "2026-11-14T23:23:26.675200+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728829+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -298929,9 +298930,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024588+00:00",
-      "checked_at": "2026-11-14T23:23:26.675208+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728837+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -298953,9 +298954,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.024922+00:00",
-      "checked_at": "2026-11-14T23:23:26.675214+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:43:56.728844+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -299001,9 +299002,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025288+00:00",
-      "checked_at": "2026-11-14T23:23:36.684403+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744379+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -299073,9 +299074,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025670+00:00",
-      "checked_at": "2026-11-14T23:23:36.684455+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744424+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -299121,9 +299122,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025733+00:00",
-      "checked_at": "2026-11-14T23:23:36.684467+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744437+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -299145,9 +299146,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025754+00:00",
-      "checked_at": "2026-11-14T23:23:36.684476+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744447+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -299169,9 +299170,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025774+00:00",
-      "checked_at": "2026-11-14T23:23:36.684483+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744460+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -299217,9 +299218,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025962+00:00",
-      "checked_at": "2026-11-14T23:23:36.684492+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744471+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "robots-disallowed"
     },
@@ -299241,9 +299242,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T21:44:17.025983+00:00",
-      "checked_at": "2026-11-14T23:23:36.684499+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744480+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 39,
       "reason": "non-public-host-or-dns-failure"
     },
@@ -299263,9 +299264,9 @@
       "source_cycle": 20,
       "status": "retry",
       "discovered_at": "2026-11-06T23:52:08.956545+00:00",
-      "checked_at": "2026-11-14T23:23:36.684506+00:00",
-      "next_check_at": "2026-11-21",
-      "attempts": 2,
+      "checked_at": "2026-11-22T10:44:06.744488+00:00",
+      "next_check_at": "2026-11-29",
+      "attempts": 3,
       "cycle": 40,
       "reason": "robots-disallowed"
     },
@@ -558784,37 +558785,37 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T10:04:26.728607+00:00"
+      "last_checked_at": "2026-11-22T10:44:18.342859+00:00"
     },
     "Game Tailors": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T11:59:49.915268+00:00"
+      "last_checked_at": "2026-11-22T10:44:21.811756+00:00"
     },
     "GauravGo Games Technologies": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T11:59:55.611586+00:00"
+      "last_checked_at": "2026-11-22T10:44:28.311964+00:00"
     },
     "Ghost Ship Games": {
       "negative_count": 0,
       "gone_count": 0,
-      "last_result": "active",
-      "last_checked_at": "2026-11-13T11:59:59.412777+00:00"
+      "last_result": "unknown",
+      "last_checked_at": "2026-11-22T10:44:28.600941+00:00"
     },
     "Glowmade": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T12:00:02.707140+00:00"
+      "last_checked_at": "2026-11-22T10:44:31.998005+00:00"
     },
     "GOALS": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T12:00:06.918136+00:00"
+      "last_checked_at": "2026-11-22T10:44:35.363090+00:00"
     },
     "Gold Town Games": {
       "negative_count": 0,
@@ -560338,13 +560339,13 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T11:59:48.042954+00:00"
+      "last_checked_at": "2026-11-22T10:44:20.298338+00:00"
     },
     "Garena": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-13T11:59:52.816119+00:00"
+      "last_checked_at": "2026-11-22T10:44:25.435855+00:00"
     },
     "GoE-Craft": {
       "negative_count": 0,
@@ -560485,7 +560486,7 @@
       "last_checked_at": "2026-11-20T21:38:49.558438+00:00"
     }
   },
-  "route_check_index": 112,
+  "route_check_index": 120,
   "stats": {
     "candidates_seen": 28462,
     "routes_verified": 140,
@@ -560509,16 +560510,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-22T08:26:08.460438+00:00",
+      "last_success_at": "2026-11-22T10:43:55.986079+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 104,
+      "cycle": 105,
       "cycle_additions": 0,
-      "empty_cycles": 91,
+      "empty_cycles": 92,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-22T08:30:01.762604+00:00",
+      "last_pass_completed_at": "2026-11-22T10:44:35.363128+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560526,17 +560527,17 @@
       "cycle_candidate_entities": 0,
       "consecutive_failures": 0,
       "last_error": null,
-      "last_failure_at": "2026-11-21T19:48:05.340572+00:00",
-      "last_success_at": "2026-11-22T08:14:56.231743+00:00",
+      "last_failure_at": "2026-11-22T10:22:52.444930+00:00",
+      "last_success_at": "2026-11-22T10:34:49.730127+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 127,
+      "cycle": 128,
       "cycle_additions": 0,
-      "empty_cycles": 125,
+      "empty_cycles": 126,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-22T08:30:01.762604+00:00",
+      "last_pass_completed_at": "2026-11-22T10:44:35.363128+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560545,7 +560546,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-22T08:08:46.175114+00:00",
+      "last_success_at": "2026-11-22T10:23:57.553073+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560563,7 +560564,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-22T08:11:00.302006+00:00",
+      "last_success_at": "2026-11-22T10:26:11.976612+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -560581,7 +560582,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-22T08:09:52.957492+00:00",
+      "last_success_at": "2026-11-22T10:25:04.356565+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
@@ -560599,7 +560600,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-22T08:11:01.861583+00:00",
+      "last_success_at": "2026-11-22T10:26:13.590153+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -560617,7 +560618,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-14T23:17:56.738899+00:00",
-      "last_success_at": "2026-11-22T08:11:30.614088+00:00",
+      "last_success_at": "2026-11-22T10:28:15.771279+00:00",
       "next_retry_at": null
     }
   },
