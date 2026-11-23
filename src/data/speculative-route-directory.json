@@ -4719,7 +4719,7 @@
     "applicationUrl": "https://careers.mainstaygames.com/roles/open-application",
     "evidenceUrl": "https://careers.mainstaygames.com/",
     "notes": "The employer-managed careers portal has a dedicated Open Application. Mainstay says it reads every application and keeps details on file for future partner-project needs. Its work is game development/co-development embedded in partner teams, including ownership of features and systems; this is a development-services route, not evidence of an owned-IP portfolio. The application asks for country of residence but does not publish a geographic eligibility list.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -4735,7 +4735,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4745,7 +4745,7 @@
     "applicationUrl": "https://makemake.com.tr/career/general-application",
     "evidenceUrl": "https://makemake.com.tr/career",
     "notes": "The official Careers page lists a General Application for Game Professionals. The linked form invites candidates interested in game design, development, art or product to submit a CV and brief cover letter. Makemake describes itself as an Istanbul-based creative game and animation studio developing mobile games; the open route does not state remote-work or applicant-country eligibility.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -4767,7 +4767,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4777,7 +4777,7 @@
     "applicationUrl": "https://www.melcher.ca/careers.html",
     "evidenceUrl": "https://www.melcher.ca/careers.html",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: General Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -4789,7 +4789,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4799,7 +4799,7 @@
     "applicationUrl": "https://metricmindsgmbh.bamboohr.com/careers",
     "evidenceUrl": "https://metricminds.com/jobs/",
     "notes": "Official studio-controlled page explicitly invites unsolicited applications. Evidence: unsolicited application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -4813,7 +4813,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4823,7 +4823,7 @@
     "applicationUrl": "https://www.mightycoconut.com/jobs",
     "evidenceUrl": "https://www.mightycoconut.com/jobs",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -4836,7 +4836,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4846,7 +4846,7 @@
     "applicationUrl": "https://www.milkytea.com/",
     "evidenceUrl": "https://www.milkytea.com/",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: OPEN APPLICATION. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -4859,7 +4859,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4869,7 +4869,7 @@
     "applicationUrl": "https://minder.studio/",
     "evidenceUrl": "https://minder.studio/",
     "notes": "The official Careers section has a distinct Open application invitation for people in 2D art, marketing or QA, alongside named full-time openings. The page identifies the open-application location as Nghia Do, Hanoi and lists the studio's careers email. This route is discipline-specific; the page does not state remote or cross-border eligibility.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -4887,7 +4887,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
@@ -4897,7 +4897,7 @@
     "applicationUrl": "https://mindstormstudios.com/",
     "evidenceUrl": "https://mindstormstudios.com/",
     "notes": "Official studio-controlled page explicitly invites discipline specific applications. Evidence: Expression of Interest. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-23",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -4909,7 +4909,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-12"
+      "nextReviewAt": "2027-02-21"
     }
   },
   {
