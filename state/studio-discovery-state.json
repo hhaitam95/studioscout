@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T08:35:09.037982+00:00",
+  "updated_at": "2026-11-23T15:11:19.821875+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "",
+    "wikidata_video_game_developers": "Q116838649",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "2901",
-    "wikidata_video_game_industry": "Q4048789",
-    "igdb_companies": "20602",
+    "gamedevmap": "3001",
+    "wikidata_video_game_industry": "Q4816734",
+    "igdb_companies": "21124",
     "scottish_games_industry": ""
   },
   "feed_done": {
@@ -19,8 +19,8 @@
     "igdb_companies": false,
     "scottish_games_industry": false
   },
-  "feed_index": 5,
-  "cycle": 134,
+  "feed_index": 1,
+  "cycle": 135,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -559172,43 +559172,43 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-14T14:39:07.729888+00:00"
+      "last_checked_at": "2026-11-23T15:11:07.789581+00:00"
     },
     "Lost Native Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-14T19:39:28.571511+00:00"
+      "last_checked_at": "2026-11-23T15:11:09.591139+00:00"
     },
     "Lucid Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-14T19:39:30.683811+00:00"
+      "last_checked_at": "2026-11-23T15:11:11.754691+00:00"
     },
     "Lucid Labs": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-14T19:39:32.103349+00:00"
+      "last_checked_at": "2026-11-23T15:11:13.150362+00:00"
     },
     "Ludia": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-14T19:39:35.284113+00:00"
+      "last_checked_at": "2026-11-23T15:11:16.243533+00:00"
     },
     "Lunacy Studios": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-14T19:39:38.013328+00:00"
+      "last_checked_at": "2026-11-23T15:11:18.199215+00:00"
     },
     "Mainframe Industries": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-14T19:39:39.558582+00:00"
+      "last_checked_at": "2026-11-23T15:11:19.817918+00:00"
     },
     "Mainstay Games": {
       "negative_count": 0,
@@ -560607,9 +560607,15 @@
       "gone_count": 0,
       "last_result": "active",
       "last_checked_at": "2026-11-20T21:38:49.558438+00:00"
+    },
+    "Lost Gate Studios": {
+      "negative_count": 0,
+      "gone_count": 0,
+      "last_result": "active",
+      "last_checked_at": "2026-11-23T15:11:09.154732+00:00"
     }
   },
-  "route_check_index": 168,
+  "route_check_index": 176,
   "stats": {
     "candidates_seen": 28469,
     "routes_verified": 140,
@@ -560633,16 +560639,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-23T04:01:50.345118+00:00",
+      "last_success_at": "2026-11-23T15:11:05.642843+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 111,
+      "cycle": 112,
       "cycle_additions": 0,
-      "empty_cycles": 98,
+      "empty_cycles": 99,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-23T08:35:09.026505+00:00",
+      "last_pass_completed_at": "2026-11-23T15:11:19.817951+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560651,16 +560657,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-22T10:22:52.444930+00:00",
-      "last_success_at": "2026-11-23T08:27:23.624748+00:00",
+      "last_success_at": "2026-11-23T15:01:53.359786+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 134,
+      "cycle": 135,
       "cycle_additions": 0,
-      "empty_cycles": 132,
+      "empty_cycles": 133,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-23T08:35:09.026505+00:00",
+      "last_pass_completed_at": "2026-11-23T15:11:19.817951+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560669,7 +560675,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-23T08:22:00.706344+00:00",
+      "last_success_at": "2026-11-23T14:56:13.461305+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560687,7 +560693,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-23T08:32:19.567373+00:00",
+      "last_success_at": "2026-11-23T14:58:28.214380+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -560705,7 +560711,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-23T08:31:13.788488+00:00",
+      "last_success_at": "2026-11-23T14:57:21.095483+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
@@ -560723,7 +560729,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-23T08:31:12.038934+00:00",
+      "last_success_at": "2026-11-23T14:58:28.840444+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -560738,11 +560744,11 @@
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 25,
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_failure_at": "2026-11-14T23:17:56.738899+00:00",
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: Scottish Games Industry file index unavailable: robots-disallowed",
+      "last_failure_at": "2026-11-23T14:53:34.120534+00:00",
       "last_success_at": "2026-11-23T08:30:03.240818+00:00",
-      "next_retry_at": null
+      "next_retry_at": "2026-11-23T14:58:34.120548+00:00"
     }
   },
   "identity_review_queue": [
