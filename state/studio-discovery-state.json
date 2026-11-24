@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T16:52:31.810634+00:00",
+  "updated_at": "2026-11-24T23:51:18.395016+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q116838649",
+    "wikidata_video_game_developers": "Q224593",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "4001",
-    "wikidata_video_game_industry": "Q8062945",
-    "igdb_companies": "30774",
-    "scottish_games_industry": "200"
+    "gamedevmap": "4101",
+    "wikidata_video_game_industry": "Q930354",
+    "igdb_companies": "32298",
+    "scottish_games_industry": ""
   },
   "feed_done": {
     "wikidata_video_game_developers": false,
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 140,
+  "cycle": 141,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -4661,7 +4661,8 @@
       "sources_seen": [
         "wikidata_video_game_industry",
         "wikidata_video_game_developers",
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "Q105787276": {
@@ -130294,7 +130295,8 @@
       "reason": "no_explicit_speculative_route_found",
       "source_cycle": 2,
       "sources_seen": [
-        "gamedevmap"
+        "gamedevmap",
+        "igdb_companies"
       ]
     },
     "GDM:33a54271c1dabdf874c4": {
@@ -558598,13 +558600,13 @@
         "igdb_companies"
       ],
       "source_cycle": 21,
-      "status": "queued",
+      "status": "no_route",
       "discovered_at": "2026-11-24T16:36:49.792727+00:00",
-      "checked_at": null,
-      "next_check_at": null,
-      "attempts": 0,
+      "checked_at": "2026-11-24T23:50:40.955284+00:00",
+      "next_check_at": "2027-02-22",
+      "attempts": 1,
       "cycle": 139,
-      "reason": null
+      "reason": "no_explicit_speculative_route_found"
     },
     "IGDB:30506": {
       "qid": "IGDB:30506",
@@ -558622,13 +558624,13 @@
         "igdb_companies"
       ],
       "source_cycle": 21,
-      "status": "queued",
+      "status": "needs_review",
       "discovered_at": "2026-11-24T16:36:49.793531+00:00",
-      "checked_at": null,
-      "next_check_at": null,
-      "attempts": 0,
+      "checked_at": "2026-11-24T23:50:40.955308+00:00",
+      "next_check_at": "2026-12-24",
+      "attempts": 1,
       "cycle": 139,
-      "reason": null
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
     },
     "IGDB:30711": {
       "qid": "IGDB:30711",
@@ -558646,13 +558648,57 @@
         "igdb_companies"
       ],
       "source_cycle": 21,
-      "status": "queued",
+      "status": "needs_review",
       "discovered_at": "2026-11-24T16:36:49.794186+00:00",
-      "checked_at": null,
-      "next_check_at": null,
-      "attempts": 0,
+      "checked_at": "2026-11-24T23:50:40.955319+00:00",
+      "next_check_at": "2026-12-24",
+      "attempts": 1,
       "cycle": 139,
-      "reason": null
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "Q142268456": {
+      "qid": "Q142268456",
+      "entity_url": "https://www.wikidata.org/entity/Q142268456",
+      "name": "KAS Studio",
+      "website": "https://kasstudio.id/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "ID",
+      "company_type": "Developer",
+      "source_id": "wikidata_video_game_developers",
+      "sources_seen": [
+        "wikidata_video_game_developers"
+      ],
+      "source_cycle": 29,
+      "status": "needs_review",
+      "discovered_at": "2026-11-24T23:47:16.356519+00:00",
+      "checked_at": "2026-11-24T23:50:40.955327+00:00",
+      "next_check_at": "2026-12-24",
+      "attempts": 1,
+      "cycle": 140,
+      "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "Q142273133": {
+      "qid": "Q142273133",
+      "entity_url": "https://www.wikidata.org/entity/Q142273133",
+      "name": "ER Games Studios",
+      "website": "https://thehacker.quest/studio.html",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "IL",
+      "company_type": "Developer",
+      "source_id": "wikidata_video_game_developers",
+      "sources_seen": [
+        "wikidata_video_game_developers"
+      ],
+      "source_cycle": 29,
+      "status": "needs_review",
+      "discovered_at": "2026-11-24T23:47:16.357132+00:00",
+      "checked_at": "2026-11-24T23:50:40.955334+00:00",
+      "next_check_at": "2026-12-24",
+      "attempts": 1,
+      "cycle": 140,
+      "reason": "relevant_career_page_unavailable"
     }
   },
   "route_checks": {
@@ -559548,43 +559594,43 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:29.746805+00:00"
+      "last_checked_at": "2026-11-24T23:50:48.493386+00:00"
     },
     "Playrion": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:31.819142+00:00"
+      "last_checked_at": "2026-11-24T23:50:50.988479+00:00"
     },
     "Playsport Games": {
       "negative_count": 0,
       "gone_count": 0,
-      "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:34.593602+00:00"
+      "last_result": "unknown",
+      "last_checked_at": "2026-11-24T23:51:01.078446+00:00"
     },
     "Playtouch": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:36.297040+00:00"
+      "last_checked_at": "2026-11-24T23:51:02.930371+00:00"
     },
     "Plummy Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-16T03:13:15.488450+00:00"
+      "last_checked_at": "2026-11-24T23:51:05.579147+00:00"
     },
     "Pneuma Games Group": {
       "negative_count": 0,
       "gone_count": 0,
-      "last_result": "active",
-      "last_checked_at": "2026-11-16T03:13:19.622166+00:00"
+      "last_result": "unknown",
+      "last_checked_at": "2026-11-24T23:51:09.707650+00:00"
     },
     "Pontoco": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-16T03:13:28.602317+00:00"
+      "last_checked_at": "2026-11-24T23:51:18.388091+00:00"
     },
     "Preloaded": {
       "negative_count": 0,
@@ -560664,7 +560710,7 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-16T03:13:26.767533+00:00"
+      "last_checked_at": "2026-11-24T23:51:16.832717+00:00"
     },
     "President Studio": {
       "negative_count": 0,
@@ -560757,13 +560803,13 @@
       "last_checked_at": "2026-11-24T16:52:31.804566+00:00"
     }
   },
-  "route_check_index": 216,
+  "route_check_index": 224,
   "stats": {
-    "candidates_seen": 28477,
+    "candidates_seen": 28481,
     "routes_verified": 140,
     "excluded": 113,
-    "no_route": 10372,
-    "needs_review": 7362
+    "no_route": 10373,
+    "needs_review": 7366
   },
   "source_stats": {
     "wikidata_video_game_developers": {
@@ -560777,20 +560823,20 @@
       "last_pass_candidates": 1,
       "last_pass_verified": 0,
       "last_pass_incomplete_candidates": 14,
-      "cycle_candidate_entities": 0,
+      "cycle_candidate_entities": 3,
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-24T16:52:02.033354+00:00",
+      "last_success_at": "2026-11-24T23:50:40.309564+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 117,
+      "cycle": 118,
       "cycle_additions": 0,
-      "empty_cycles": 104,
+      "empty_cycles": 105,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-24T16:52:31.804609+00:00",
+      "last_pass_completed_at": "2026-11-24T23:51:18.388125+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560799,16 +560845,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-24T05:01:18.537300+00:00",
-      "last_success_at": "2026-11-24T16:42:13.222760+00:00",
+      "last_success_at": "2026-11-24T23:39:22.285502+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 140,
+      "cycle": 141,
       "cycle_additions": 0,
-      "empty_cycles": 138,
+      "empty_cycles": 139,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-24T16:52:31.804609+00:00",
+      "last_pass_completed_at": "2026-11-24T23:51:18.388125+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560817,7 +560863,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-24T16:34:34.936176+00:00",
+      "last_success_at": "2026-11-24T23:33:14.248397+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560835,7 +560881,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-24T16:36:48.070135+00:00",
+      "last_success_at": "2026-11-24T23:35:27.505395+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -560853,13 +560899,13 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-24T16:35:40.857605+00:00",
+      "last_success_at": "2026-11-24T23:34:20.250041+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
       "cycle": 21,
       "cycle_additions": 0,
-      "cycle_candidate_entities": 150,
+      "cycle_candidate_entities": 151,
       "empty_cycles": 0,
       "saturated": false,
       "complete": false,
@@ -560871,17 +560917,17 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-24T16:36:49.384583+00:00",
+      "last_success_at": "2026-11-24T23:35:28.760002+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
-      "cycle": 71,
+      "cycle": 72,
       "cycle_additions": 0,
       "cycle_candidate_entities": 0,
       "empty_cycles": 0,
       "saturated": false,
       "complete": false,
-      "last_pass_completed_at": "2026-11-24T14:08:32.936636+00:00",
+      "last_pass_completed_at": "2026-11-24T23:51:18.388125+00:00",
       "last_pass_status": "incomplete",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560889,7 +560935,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-24T05:17:08.610271+00:00",
-      "last_success_at": "2026-11-24T16:38:48.752680+00:00",
+      "last_success_at": "2026-11-24T23:35:57.527363+00:00",
       "next_retry_at": null
     }
   },
@@ -624649,6 +624695,30 @@
       "reason": "same_official_domain_different_entity_name",
       "status": "needs_review",
       "discovered_at": "2026-11-24T14:04:02.383918+00:00"
+    },
+    {
+      "qid": "IGDB:32105",
+      "name": "Games From Earth",
+      "website": "https://web.archive.org/web/20250318065516/https://gamesfrom.earth/",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "entity_url": "https://www.igdb.com/companies/games-from-earth",
+      "related_candidate_qid": "Q964885",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-24T23:35:29.379265+00:00"
+    },
+    {
+      "qid": "Q142271336",
+      "name": "Bantam Forge",
+      "website": "https://rune-night.web.app/",
+      "source_id": "wikidata_video_game_developers",
+      "source_name": "",
+      "entity_url": "https://www.wikidata.org/entity/Q142271336",
+      "related_candidate_qid": "Q107300327",
+      "reason": "same_official_domain_different_entity_name",
+      "status": "needs_review",
+      "discovered_at": "2026-11-24T23:47:16.357095+00:00"
     }
   ]
 }
