@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T14:08:32.946245+00:00",
+  "updated_at": "2026-11-24T16:52:31.810634+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "",
+    "wikidata_video_game_developers": "Q116838649",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "3901",
-    "wikidata_video_game_industry": "Q7698390",
-    "igdb_companies": "29208",
-    "scottish_games_industry": ""
+    "gamedevmap": "4001",
+    "wikidata_video_game_industry": "Q8062945",
+    "igdb_companies": "30774",
+    "scottish_games_industry": "200"
   },
   "feed_done": {
     "wikidata_video_game_developers": false,
@@ -19,8 +19,8 @@
     "igdb_companies": false,
     "scottish_games_industry": false
   },
-  "feed_index": 6,
-  "cycle": 139,
+  "feed_index": 1,
+  "cycle": 140,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -558581,6 +558581,78 @@
       "attempts": 1,
       "cycle": 138,
       "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:30196": {
+      "qid": "IGDB:30196",
+      "source_cursor": "30196",
+      "entity_url": "https://www.igdb.com/companies/izzle",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "IZZLE",
+      "website": "https://izzle.net/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 21,
+      "status": "queued",
+      "discovered_at": "2026-11-24T16:36:49.792727+00:00",
+      "checked_at": null,
+      "next_check_at": null,
+      "attempts": 0,
+      "cycle": 139,
+      "reason": null
+    },
+    "IGDB:30506": {
+      "qid": "IGDB:30506",
+      "source_cursor": "30506",
+      "entity_url": "https://www.igdb.com/companies/blake-andrews",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Blake Andrews",
+      "website": "https://pbjabcusa.com/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 21,
+      "status": "queued",
+      "discovered_at": "2026-11-24T16:36:49.793531+00:00",
+      "checked_at": null,
+      "next_check_at": null,
+      "attempts": 0,
+      "cycle": 139,
+      "reason": null
+    },
+    "IGDB:30711": {
+      "qid": "IGDB:30711",
+      "source_cursor": "30711",
+      "entity_url": "https://www.igdb.com/companies/maxi-molina-maximjdev",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Maxi Molina (MaxiMJdev)",
+      "website": "https://maximj.dev/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 21,
+      "status": "queued",
+      "discovered_at": "2026-11-24T16:36:49.794186+00:00",
+      "checked_at": null,
+      "next_check_at": null,
+      "attempts": 0,
+      "cycle": 139,
+      "reason": null
     }
   },
   "route_checks": {
@@ -559440,37 +559512,37 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T18:12:51.608935+00:00"
+      "last_checked_at": "2026-11-24T16:52:09.937623+00:00"
     },
     "Piktiv": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T18:12:53.696455+00:00"
+      "last_checked_at": "2026-11-24T16:52:11.639844+00:00"
     },
     "PixelAnt Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-15T23:21:17.906380+00:00"
+      "last_checked_at": "2026-11-24T16:52:15.433572+00:00"
     },
     "Playa Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:20.504062+00:00"
+      "last_checked_at": "2026-11-24T16:52:18.350780+00:00"
     },
     "Playdead": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T23:21:22.127097+00:00"
+      "last_checked_at": "2026-11-24T16:52:20.062585+00:00"
     },
     "Played With Fire": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-15T23:21:26.821513+00:00"
+      "last_checked_at": "2026-11-24T16:52:24.887992+00:00"
     },
     "PlayQ": {
       "negative_count": 0,
@@ -560586,7 +560658,7 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-15T18:12:49.956353+00:00"
+      "last_checked_at": "2026-11-24T16:52:04.974256+00:00"
     },
     "Pomelo Games": {
       "negative_count": 0,
@@ -560677,11 +560749,17 @@
       "gone_count": 0,
       "last_result": "active",
       "last_checked_at": "2026-11-24T02:41:44.152690+00:00"
+    },
+    "Playing History": {
+      "negative_count": 0,
+      "gone_count": 0,
+      "last_result": "active",
+      "last_checked_at": "2026-11-24T16:52:31.804566+00:00"
     }
   },
-  "route_check_index": 208,
+  "route_check_index": 216,
   "stats": {
-    "candidates_seen": 28474,
+    "candidates_seen": 28477,
     "routes_verified": 140,
     "excluded": 113,
     "no_route": 10372,
@@ -560703,16 +560781,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-24T05:14:54.890449+00:00",
+      "last_success_at": "2026-11-24T16:52:02.033354+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 116,
+      "cycle": 117,
       "cycle_additions": 0,
-      "empty_cycles": 103,
+      "empty_cycles": 104,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-24T14:08:32.936636+00:00",
+      "last_pass_completed_at": "2026-11-24T16:52:31.804609+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560721,16 +560799,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-24T05:01:18.537300+00:00",
-      "last_success_at": "2026-11-24T14:01:47.530427+00:00",
+      "last_success_at": "2026-11-24T16:42:13.222760+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 139,
+      "cycle": 140,
       "cycle_additions": 0,
-      "empty_cycles": 137,
+      "empty_cycles": 138,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-24T14:08:32.936636+00:00",
+      "last_pass_completed_at": "2026-11-24T16:52:31.804609+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -560739,7 +560817,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-24T13:57:52.714305+00:00",
+      "last_success_at": "2026-11-24T16:34:34.936176+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -560757,7 +560835,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-24T14:07:30.421257+00:00",
+      "last_success_at": "2026-11-24T16:36:48.070135+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -560775,13 +560853,13 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-24T14:06:24.395388+00:00",
+      "last_success_at": "2026-11-24T16:35:40.857605+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
       "cycle": 21,
       "cycle_additions": 0,
-      "cycle_candidate_entities": 147,
+      "cycle_candidate_entities": 150,
       "empty_cycles": 0,
       "saturated": false,
       "complete": false,
@@ -560793,7 +560871,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-24T14:07:31.200510+00:00",
+      "last_success_at": "2026-11-24T16:36:49.384583+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -560811,7 +560889,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-24T05:17:08.610271+00:00",
-      "last_success_at": "2026-11-24T14:00:37.958571+00:00",
+      "last_success_at": "2026-11-24T16:38:48.752680+00:00",
       "next_retry_at": null
     }
   },
