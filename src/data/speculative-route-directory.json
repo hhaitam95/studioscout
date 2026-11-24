@@ -5323,7 +5323,7 @@
     "applicationUrl": "https://oddshot.gg/jobs/open-application/",
     "evidenceUrl": "https://oddshot.gg/jobs/open-application/",
     "notes": "Official Open Application page invites applications even when no current role matches. Applicants must live in Flanders, Belgium; the role is remote but not globally eligible. The page instructs applicants to email their materials with the subject “Open Application”.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -5337,7 +5337,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5347,7 +5347,7 @@
     "applicationUrl": "https://odenity.se/",
     "evidenceUrl": "https://odenity.se/",
     "notes": "Official studio-controlled page explicitly invites spontaneous applications. Evidence: spontaneous application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-07",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -5360,7 +5360,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-05"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5421,7 +5421,7 @@
     "applicationUrl": "https://www.optillusion.games/job",
     "evidenceUrl": "https://www.optillusion.games/job/",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: General Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -5433,7 +5433,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5443,7 +5443,7 @@
     "applicationUrl": "https://otherocean.com/",
     "evidenceUrl": "https://otherocean.com/",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: GENERAL APPLICATION. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -5456,7 +5456,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5466,7 +5466,7 @@
     "applicationUrl": "https://outplayentertainment.applytojob.com/apply/CS3Wh2/Speculative-Applications",
     "evidenceUrl": "https://outplay.com/careers/speculative-applications/",
     "notes": "Official ATS route for speculative applications when no specific role fits. Listed as flexi-hybrid with remote options in the UK/EU. Eligible locations: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -5480,7 +5480,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5490,7 +5490,7 @@
     "applicationUrl": "https://paintbucket.de/en/jobs",
     "evidenceUrl": "https://paintbucket.de/en/jobs",
     "notes": "Official Jobs page lists a full-time Unsolicited Application and explicitly welcomes candidates when no current job offer fits. Applicants are asked to send their application by email to jobs@paintbucket.de.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -5502,7 +5502,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
