@@ -5729,7 +5729,7 @@
     "applicationUrl": "https://job-boards.greenhouse.io/playq/jobs/3055199",
     "evidenceUrl": "https://www.playq.com/careers",
     "notes": "Official Careers page explicitly invites applicants who do not see a suitable opening to submit a resume for future matching and links directly to its Greenhouse General Application. The form lists Santa Monica, California and asks applicants about US work authorization and current/future visa sponsorship; remote eligibility for speculative applicants is not stated.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -5750,7 +5750,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5760,7 +5760,7 @@
     "applicationUrl": "https://www.playrion.com/recruitment/",
     "evidenceUrl": "https://www.playrion.com/recruitment/",
     "notes": "Official studio-controlled page explicitly invites unsolicited applications. Evidence: unsolicited applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -5772,7 +5772,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5806,7 +5806,7 @@
     "applicationUrl": "https://playtouch.net/career",
     "evidenceUrl": "https://playtouch.net/career",
     "notes": "The official Careers page explicitly invites spontaneous applications year-round, even while the team is currently complete. Applicants select one of six skill tracks (AI/automation, HTML5 game/web engineering, 2D art/motion/Creative AI, game design/narrative/audio, QA/release operations, or product/AdTech/B2B) and submit a CV or portfolio directly to studio management in Grand Baie; email contact@playtouch.net is also accepted. Playtouch describes its production studio in Grand Baie, Mauritius and separately lists its French headquarters in Roquefort-les-Pins. The route is a talent pool for future openings, not a current vacancy for all tracks. Current listed positions are on-site in Grand Baie.",
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -5830,7 +5830,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-13"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5840,7 +5840,7 @@
     "applicationUrl": "https://plummygames.teamtailor.com/jobs/6670751-open-application/applications/new",
     "evidenceUrl": "https://plummygames.teamtailor.com/jobs/6670751-open-application/applications/new",
     "notes": "The employer-branded Teamtailor site hosts an Open Application and lists Plummy Games, its company information and homepage. However, the current official plummygames.com homepage could not be inspected for a forward link to the Teamtailor application. Under the project's direct employer-linkage standard, the relationship has not been independently established from the official company domain. Route paused pending a verifiable link from the official homepage/careers page or direct confirmation from the employer; this is not evidence that the application has closed.",
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -5854,7 +5854,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "paused",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-14"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5887,7 +5887,7 @@
     "applicationUrl": "https://www.pomelogames.com/careers/",
     "evidenceUrl": "https://www.pomelogames.com/careers/",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: Speculative Application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -5900,7 +5900,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-14"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
@@ -5910,7 +5910,7 @@
     "applicationUrl": "https://pontoco.com/jobs",
     "evidenceUrl": "https://pontoco.com/jobs",
     "notes": "Official studio-controlled page explicitly invites general applications. Evidence: general application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-24",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -5922,7 +5922,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-14"
+      "nextReviewAt": "2027-02-22"
     }
   },
   {
