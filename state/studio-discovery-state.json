@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-25T19:44:00.429497+00:00",
+  "updated_at": "2026-11-25T20:34:57.787384+00:00",
   "feed_cursors": {
-    "wikidata_video_game_developers": "Q195722",
+    "wikidata_video_game_developers": "Q6433719",
     "wikidata_game_developer_credits": "",
     "wikidata_video_game_companies": "",
-    "gamedevmap": "4701",
-    "wikidata_video_game_industry": "Q110059537",
-    "igdb_companies": "39184",
-    "scottish_games_industry": ""
+    "gamedevmap": "4801",
+    "wikidata_video_game_industry": "Q110775975",
+    "igdb_companies": "39632",
+    "scottish_games_industry": "100"
   },
   "feed_done": {
     "wikidata_video_game_developers": false,
@@ -20,7 +20,7 @@
     "scottish_games_industry": false
   },
   "feed_index": 1,
-  "cycle": 145,
+  "cycle": 146,
   "cycle_additions": 0,
   "empty_cycles": 0,
   "saturated": false,
@@ -558865,6 +558865,30 @@
       "attempts": 1,
       "cycle": 144,
       "reason": "candidate_without_direct_game_development_evidence_on_official_site"
+    },
+    "IGDB:39365": {
+      "qid": "IGDB:39365",
+      "source_cursor": "39365",
+      "entity_url": "https://www.igdb.com/companies/team-terrible",
+      "source_id": "igdb_companies",
+      "source_name": "IGDB",
+      "name": "Team Terrible",
+      "website": "https://teamterrible.itch.io/",
+      "country": "Not stated",
+      "hq_city": "",
+      "country_code": "",
+      "company_type": "Developer",
+      "sources_seen": [
+        "igdb_companies"
+      ],
+      "source_cycle": 21,
+      "status": "needs_review",
+      "discovered_at": "2026-11-25T20:18:04.471832+00:00",
+      "checked_at": "2026-11-25T20:34:33.030976+00:00",
+      "next_check_at": "2026-12-25",
+      "attempts": 1,
+      "cycle": 145,
+      "reason": "relevant_career_page_unavailable"
     }
   },
   "route_checks": {
@@ -559982,49 +560006,49 @@
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T15:00:19.669301+00:00"
+      "last_checked_at": "2026-11-25T20:34:44.767698+00:00"
     },
     "Side": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "unknown",
-      "last_checked_at": "2026-11-17T15:00:22.682801+00:00"
+      "last_checked_at": "2026-11-25T20:34:47.666863+00:00"
     },
     "Silent Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T15:00:24.390117+00:00"
+      "last_checked_at": "2026-11-25T20:34:49.376603+00:00"
     },
     "Silkroad Studios": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T15:00:27.048004+00:00"
+      "last_checked_at": "2026-11-25T20:34:51.510052+00:00"
     },
     "Simply Sweet Games": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T15:00:28.496896+00:00"
+      "last_checked_at": "2026-11-25T20:34:52.995607+00:00"
     },
     "Sinn Studio": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T23:20:57.626664+00:00"
+      "last_checked_at": "2026-11-25T20:34:54.400495+00:00"
     },
     "Skytale": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T23:20:59.557163+00:00"
+      "last_checked_at": "2026-11-25T20:34:56.118904+00:00"
     },
     "Sleeprunner Studios": {
       "negative_count": 0,
       "gone_count": 0,
       "last_result": "active",
-      "last_checked_at": "2026-11-17T23:21:01.555788+00:00"
+      "last_checked_at": "2026-11-25T20:34:57.779140+00:00"
     },
     "Small Giant Games": {
       "negative_count": 0,
@@ -560975,13 +560999,13 @@
       "last_checked_at": "2026-11-25T10:52:32.316761+00:00"
     }
   },
-  "route_check_index": 256,
+  "route_check_index": 264,
   "stats": {
-    "candidates_seen": 28489,
+    "candidates_seen": 28490,
     "routes_verified": 140,
     "excluded": 114,
     "no_route": 10379,
-    "needs_review": 7373
+    "needs_review": 7374
   },
   "source_stats": {
     "wikidata_video_game_developers": {
@@ -560999,16 +561023,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:01:21.894579+00:00",
-      "last_success_at": "2026-11-25T19:43:33.652882+00:00",
+      "last_success_at": "2026-11-25T20:34:32.539306+00:00",
       "next_retry_at": null
     },
     "wikidata_game_developer_credits": {
-      "cycle": 122,
+      "cycle": 123,
       "cycle_additions": 0,
-      "empty_cycles": 109,
+      "empty_cycles": 110,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-25T19:44:00.422111+00:00",
+      "last_pass_completed_at": "2026-11-25T20:34:57.779182+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -561017,16 +561041,16 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-25T08:50:31.157063+00:00",
-      "last_success_at": "2026-11-25T19:32:24.861099+00:00",
+      "last_success_at": "2026-11-25T20:23:26.504271+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_companies": {
-      "cycle": 145,
+      "cycle": 146,
       "cycle_additions": 0,
-      "empty_cycles": 143,
+      "empty_cycles": 144,
       "saturated": true,
       "complete": false,
-      "last_pass_completed_at": "2026-11-25T19:44:00.422111+00:00",
+      "last_pass_completed_at": "2026-11-25T20:34:57.779182+00:00",
       "last_pass_status": "saturated",
       "last_pass_candidates": 0,
       "last_pass_verified": 0,
@@ -561035,7 +561059,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-21T02:36:55.240087+00:00",
-      "last_success_at": "2026-11-25T19:26:14.277975+00:00",
+      "last_success_at": "2026-11-25T20:15:46.889178+00:00",
       "next_retry_at": null
     },
     "gamedevmap": {
@@ -561053,7 +561077,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-08T10:07:45.439016+00:00",
-      "last_success_at": "2026-11-25T19:28:29.071639+00:00",
+      "last_success_at": "2026-11-25T20:18:02.681431+00:00",
       "next_retry_at": null
     },
     "wikidata_video_game_industry": {
@@ -561071,13 +561095,13 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-20T19:05:20.657906+00:00",
-      "last_success_at": "2026-11-25T19:27:21.793611+00:00",
+      "last_success_at": "2026-11-25T20:16:55.304131+00:00",
       "next_retry_at": null
     },
     "igdb_companies": {
       "cycle": 21,
       "cycle_additions": 0,
-      "cycle_candidate_entities": 157,
+      "cycle_candidate_entities": 158,
       "empty_cycles": 0,
       "saturated": false,
       "complete": false,
@@ -561089,7 +561113,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": null,
-      "last_success_at": "2026-11-25T19:28:30.334853+00:00",
+      "last_success_at": "2026-11-25T20:18:04.077309+00:00",
       "next_retry_at": null
     },
     "scottish_games_industry": {
@@ -561107,7 +561131,7 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_failure_at": "2026-11-24T05:17:08.610271+00:00",
-      "last_success_at": "2026-11-25T19:28:59.123124+00:00",
+      "last_success_at": "2026-11-25T20:20:06.294862+00:00",
       "next_retry_at": null
     }
   },
