@@ -208,8 +208,8 @@
   color: var(--warning);
 }
 .tracker-table .status-offer {
-  border-color: var(--success-line);
-  color: var(--success);
+  border-color: rgb(192 38 211 / 45%);
+  color: #a21caf;
 }
 .tracker-row-focused > td {
   background: var(--tab-active-bg) !important;
@@ -551,8 +551,8 @@
 }
 
 .status-icon-offer {
-  color: #16a34a;
-  background: rgb(22 163 74 / 14%);
+  color: #c026d3;
+  background: rgb(192 38 211 / 14%);
 }
 
 .status-icon-archived {
@@ -569,4 +569,20 @@
 
 .tracker-table {
   min-width: 980px;
+}
+
+
+/* Make the destructive action read and behave like a button, not an inline text link. */
+.tracker-remove-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
 }
