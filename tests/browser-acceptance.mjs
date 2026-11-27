@@ -652,6 +652,9 @@ async function main() {
       "The tracker should not show Notes or Prepare columns.",
     );
     assert.equal(await trackedRow.locator("td").count(), 8);
+    assert.equal(await trackedRow.locator(".tracker-row-actions button.btn-outline-danger").count(), 1, "Remove should appear as a bordered danger button.");
+    assert.equal(await trackedRow.locator(".tracker-row-actions button svg.ui-icon").count(), 1, "The Remove button should show a trash icon.");
+    assert.match(await trackedRow.locator(".tracker-row-actions button").getAttribute("aria-label") || "", /^Remove 4A Games$/);
     assert.equal(await page.locator(".tracker-table .notes-toggle, .tracker-table .tracker-preparation-count").count(), 0);
     assert.equal(await page.locator(".tracker-notes-row, .tracker-preparation-row").count(), 0);
     assert.equal(await page.getByRole("button", { name: /Export backup|Restore backup/ }).count(), 0);
@@ -667,6 +670,11 @@ async function main() {
     assert.equal(tabIconMetrics.length, 6, "Each application status should have an icon.");
     assert.ok(tabIconMetrics.every(icon => icon.width === 18 && icon.height === 18), "Status icons should be slightly larger at 18px.");
     assert.equal(new Set(tabIconMetrics.map(icon => icon.color)).size, 6, "Each status icon should have its own color.");
+    assert.equal(
+      await page.locator(".status-icon-offer").first().evaluate(element => getComputedStyle(element).color),
+      "rgb(192, 38, 211)",
+      "Offer should use its distinct magenta status color.",
+    );
     assert.equal(
       await page.locator(".status-select-icon svg").evaluate(icon => getComputedStyle(icon).width),
       "18px",
