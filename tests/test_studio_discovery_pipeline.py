@@ -243,12 +243,16 @@ class DiscoveryParsingTests(unittest.TestCase):
         self.assertEqual(discovery.route_type_for(japanese_registration), "general")
 
     def test_negative_route_language_overrides_positive_ambiguity(self):
-        text = (
-            "Our jobs page welcomes applicants. We are not currently accepting "
-            "speculative applications."
-        )
-        self.assertIsNotNone(discovery.positive_route_match(text))
-        self.assertIsNotNone(discovery.negative_route_match(text))
+        examples = [
+            "Our jobs page welcomes applicants. We are not currently accepting speculative applications.",
+            "THQ Nordic: We no longer accept spontaneous applications. Please consider our open positions.",
+            "We are no longer accepting unsolicited applications.",
+            "Spontaneous applications are no longer accepted.",
+        ]
+        for text in examples:
+            with self.subTest(text=text):
+                self.assertIsNotNone(discovery.negative_route_match(text))
+        self.assertIsNotNone(discovery.positive_route_match(examples[0]))
 
     def test_ambiguous_generic_careers_language_is_not_a_speculative_route(self):
         for text in [
@@ -1135,13 +1139,16 @@ class DatasetUpdateTests(unittest.TestCase):
         }
         state = discovery.empty_state()
         discovery.maintain_existing_routes(state, [tracked], 1, page_fetcher)
-        self.assertEqual(tracked["applicationResearch"]["routeStatus"], "active")
+        self.assertEqual(tracked["applicationResearch"]["routeStatus"], "paused")
         self.assertEqual(state["route_checks"]["Example Game Studio"]["last_result"], "gone")
+        review = tracked["applicationResearch"]["routeReview"]
+        self.assertEqual(review["status"], "pending")
+        self.assertEqual(review["reason"], "submission_endpoint_unavailable")
         discovery.maintain_existing_routes(state, [tracked], 1, page_fetcher)
-        self.assertEqual(tracked["applicationResearch"]["routeStatus"], "closed")
-        self.assertIn("application URL returned 404/410", tracked["notes"])
+        self.assertEqual(tracked["applicationResearch"]["routeStatus"], "paused")
+        self.assertEqual(review["consecutiveDetections"], 2)
 
-    def test_two_consecutive_confirmed_missing_checks_close_route_but_preserve_record(self):
+    def test_two_consecutive_confirmed_missing_checks_require_manual_review(self):
         studio = {
             "name": "Example Game Studio",
             "websiteUrl": "https://example-studio.example/",
@@ -1157,11 +1164,46 @@ class DatasetUpdateTests(unittest.TestCase):
         state = discovery.empty_state()
         missing = lambda url, allowed: discovery.FetchResult(False, url, 404, "", "http-status")
         discovery.maintain_existing_routes(state, [studio], 1, missing)
-        self.assertEqual(studio["applicationResearch"]["routeStatus"], "active")
+        self.assertEqual(studio["applicationResearch"]["routeStatus"], "paused")
         discovery.maintain_existing_routes(state, [studio], 1, missing)
-        self.assertEqual(studio["applicationResearch"]["routeStatus"], "closed")
+        self.assertEqual(studio["applicationResearch"]["routeStatus"], "paused")
+        self.assertEqual(studio["applicationResearch"]["routeReview"]["status"], "pending")
+        self.assertEqual(studio["applicationResearch"]["routeReview"]["consecutiveDetections"], 2)
         self.assertEqual(studio["name"], "Example Game Studio")
-        self.assertIn("two consecutive", studio["notes"])
+        self.assertNotIn("marked closed", studio["notes"])
+
+    def test_no_longer_accepts_spontaneous_applications_creates_review_evidence(self):
+        studio = {
+            "name": "THQ Nordic GmbH",
+            "websiteUrl": "https://thqnordic.com/",
+            "applicationUrl": "https://join.com/companies/thqnordiccom/spontaneous-application",
+            "evidenceUrl": "https://join.com/companies/thqnordiccom/spontaneous-application",
+            "notes": "Previously verified spontaneous application route.",
+            "checkedAt": "2026-11-02",
+            "applicationResearch": {
+                "routeStatus": "active",
+                "nextReviewAt": "2027-01-31",
+            },
+        }
+        page = discovery.FetchResult(
+            True,
+            studio["applicationUrl"],
+            200,
+            "<p>We no longer accept spontaneous applications.</p>"
+            "<p>Please consider our open positions.</p>",
+        )
+        details = discovery.route_page_check_details(studio, lambda url, allowed: page)
+        self.assertEqual(details["status"], "negative")
+        self.assertIn("We no longer accept spontaneous applications", details["evidence"][0]["text"])
+
+        state = discovery.empty_state()
+        discovery.maintain_existing_routes(state, [studio], 1, lambda url, allowed: page)
+        self.assertEqual(studio["applicationResearch"]["routeStatus"], "paused")
+        review = studio["applicationResearch"]["routeReview"]
+        self.assertEqual(review["status"], "pending")
+        self.assertEqual(review["reason"], "explicit_rejection")
+        self.assertEqual(review["evidence"][0]["url"], studio["applicationUrl"])
+        self.assertIn("We no longer accept spontaneous applications", review["evidence"][0]["text"])
 
     def test_future_retry_does_not_block_completion_of_a_discovery_cycle(self):
         state = discovery.empty_state()
