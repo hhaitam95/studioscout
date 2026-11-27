@@ -1,7 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
-import type { ChangeEvent } from "react";
-import type { ApplicationPreparation, TrackedApplication, TrackerStatus } from "./studio.types";
-import { APPLICATION_PREPARATION_CHECKLIST, createEmptyApplicationPreparation } from "../tracker/application-preparation.mjs";
+import type { TrackedApplication, TrackerStatus } from "./studio.types";
 import StudioMark from "./StudioMark";
 import Icon from "./Icon";
 import type { IconName } from "./Icon";
@@ -16,6 +14,7 @@ const tabs: { id: string; label: string; status: TrackerStatus }[] = [
   { id: "offer", label: "Offer", status: "offer" },
   { id: "archived", label: "Archived", status: "archived" },
 ];
+
 const routeTypeLabels: Record<string, string> = {
   spontaneous: "Spontaneous application",
   unsolicited: "Unsolicited application",
@@ -41,14 +40,6 @@ const statusLabels: Record<TrackerStatus, string> = {
   offer: "Offer",
   archived: "Not moving forward",
 };
-function formatDate(value: string | null | undefined) {
-  if (!value) return "—";
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? "—" : date.toLocaleDateString();
-}
-function trackerRowId(value: string): string {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-}
 
 const statusIcons: Record<TrackerStatus, IconName> = {
   saved: "bookmark",
@@ -59,59 +50,44 @@ const statusIcons: Record<TrackerStatus, IconName> = {
   archived: "archive",
 };
 
+const statusIconClasses: Record<TrackerStatus, string> = {
+  saved: "status-icon-saved",
+  in_progress: "status-icon-in-progress",
+  applied: "status-icon-applied",
+  interview: "status-icon-interview",
+  offer: "status-icon-offer",
+  archived: "status-icon-archived",
+};
+
+function formatDate(value: string | null | undefined) {
+  if (!value) return "—";
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? "—" : date.toLocaleDateString();
+}
+
+function trackerRowId(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 export default function ApplicationTracker({
   initialTab = "saved",
   focusApplicationId,
   applications,
   onChangeStatus,
-  onUpdateNote,
-  onUpdatePreparation,
   onRemove,
   onOpenDirectory,
-  onExportBackup,
-  onImportBackup,
 }: {
   initialTab?: string;
   focusApplicationId?: string | null;
   applications: TrackedApplication[];
   onChangeStatus: (id: string, status: TrackerStatus) => void;
-  onUpdateNote: (id: string, note: string) => void;
-  onUpdatePreparation: (id: string, preparation: ApplicationPreparation) => void;
   onRemove: (id: string) => void;
   onOpenDirectory: () => void;
-  onExportBackup: () => void;
-  onImportBackup: (file: File) => Promise<number | null>;
 }) {
   const [activeTab, setActiveTab] = useState(initialTab);
   const [query, setQuery] = useState("");
-  const [expandedNotesId, setExpandedNotesId] = useState<string | null>(null);
-  const [expandedPreparationId, setExpandedPreparationId] = useState<string | null>(null);
   const [expandedRouteId, setExpandedRouteId] = useState<string | null>(null);
-  const [backupInputKey, setBackupInputKey] = useState(0);
-  const [backupNotice, setBackupNotice] = useState("");
-  const [backupError, setBackupError] = useState("");
   const active = tabs.find((tab) => tab.id === activeTab) || tabs[0];
-  
-  async function handleBackupImport(event: ChangeEvent<HTMLInputElement>) {
-    const file = event.currentTarget.files?.[0];
-    event.currentTarget.value = "";
-    if (!file) return;
-    setBackupNotice("");
-    setBackupError("");
-    try {
-      const restoredCount = await onImportBackup(file);
-      setBackupNotice(
-        restoredCount === null
-          ? "Restore cancelled. Your existing application tracker was not changed."
-          : "Restored " + restoredCount + " application " + (restoredCount === 1 ? "record" : "records") + " in this browser.",
-      );
-    } catch (importError) {
-      setBackupError(importError instanceof Error ? importError.message : "Could not restore the application backup.");
-    } finally {
-      setBackupInputKey((current) => current + 1);
-    }
-  }
-
 
   const counts = useMemo(
     () =>
@@ -123,6 +99,7 @@ export default function ApplicationTracker({
       ),
     [applications],
   );
+
   const visible = applications
     .filter((application) => {
       const searchable = [
@@ -135,9 +112,6 @@ export default function ApplicationTracker({
         ...(application.disciplineScope || []),
         ...(application.eligibleLocations || []),
         application.routeNotes || "",
-        application.note || "",
-        application.preparation?.requirementsNotes || "",
-        application.preparation?.draftAnswers || "",
       ].join(" ").toLowerCase();
       return application.status === active.status && searchable.includes(query.trim().toLowerCase());
     })
@@ -158,29 +132,14 @@ export default function ApplicationTracker({
       <div className="page-heading tracker-page-heading">
         <div>
           <h1>My applications</h1>
-          <p>Keep track of studios you're considering, applications you've sent, and your follow-up notes.</p>
+          <p>Track studios you're considering and applications you've submitted.</p>
         </div>
         <div className="tracker-heading-actions">
-          <button className="btn btn-outline-secondary btn-sm" type="button" onClick={onExportBackup} disabled={applications.length === 0}>
-            Export backup
-          </button>
-          <label className="btn btn-outline-secondary btn-sm tracker-restore-control">
-            Restore backup
-            <input
-              key={backupInputKey}
-              className="visually-hidden"
-              type="file"
-              accept=".json,application/json"
-              onChange={handleBackupImport}
-            />
-          </label>
           <button className="btn btn-primary" type="button" onClick={onOpenDirectory}>
             Browse studios
           </button>
         </div>
       </div>
-      {backupNotice ? <p className="tracker-backup-notice" role="status">{backupNotice}</p> : null}
-      {backupError ? <p className="tracker-backup-error" role="alert">{backupError}</p> : null}
 
       <div className="tracker-toolbar">
         <div className="tracker-tabs" role="tablist" aria-label="Application status">
@@ -193,10 +152,12 @@ export default function ApplicationTracker({
               aria-selected={activeTab === tab.id}
               onClick={() => {
                 setActiveTab(tab.id);
-                setExpandedNotesId(null);
+                setExpandedRouteId(null);
               }}
             >
-              <span className="tracker-tab-icon"><Icon name={statusIcons[tab.status]} size={14} /></span>
+              <span className={"tracker-tab-icon status-icon " + statusIconClasses[tab.status]}>
+                <Icon name={statusIcons[tab.status]} size={18} />
+              </span>
               {tab.label}
               <span>{counts[tab.id] || 0}</span>
             </button>
@@ -209,7 +170,7 @@ export default function ApplicationTracker({
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Studio, country or note"
+            placeholder="Studio, country or route"
           />
         </label>
       </div>
@@ -230,20 +191,13 @@ export default function ApplicationTracker({
               <th scope="col">Official links</th>
               <th scope="col">Route context</th>
               <th scope="col">Status</th>
-              <th scope="col">Notes</th>
-              <th scope="col">Action</th>
+              <th scope="col">Remove</th>
             </tr>
           </thead>
           <tbody>
             {visible.map((application) => {
               const flags = countryFlagsFor(application.country, application.countryCode);
-              const notesOpen = expandedNotesId === application.id;
-              const preparationOpen = expandedPreparationId === application.id;
-              const notesId = "tracker-notes-" + trackerRowId(application.id);
-              const preparationId = "tracker-preparation-" + trackerRowId(application.id);
-              const note = application.note || "";
-              const preparation = application.preparation || createEmptyApplicationPreparation();
-              const preparationCompleted = APPLICATION_PREPARATION_CHECKLIST.filter((item) => preparation[item.key]).length;
+              const routeExpanded = expandedRouteId === application.id;
               return (
                 <Fragment key={application.id}>
                   <tr id={"tracker-row-" + trackerRowId(application.id)}>
@@ -274,24 +228,24 @@ export default function ApplicationTracker({
                         <button
                           className="text-button"
                           type="button"
-                          aria-expanded={expandedRouteId === application.id}
-                          aria-label={(expandedRouteId === application.id ? "Hide route context for " : "View route context for ") + application.studioName}
+                          aria-expanded={routeExpanded}
+                          aria-label={(routeExpanded ? "Hide route context for " : "View route context for ") + application.studioName}
                           onClick={() => setExpandedRouteId((current) => current === application.id ? null : application.id)}
                         >
-                          {expandedRouteId === application.id ? "Hide route context" : "View route context"}
+                          {routeExpanded ? "Hide route context" : "View route context"}
                         </button>
                       </div>
                     </td>
                     <td>
                       <label className="status-select-label">
-                        <span className="status-select-icon"><Icon name={statusIcons[application.status]} size={14} /></span>
+                        <span className={"status-select-icon status-icon " + statusIconClasses[application.status]}>
+                          <Icon name={statusIcons[application.status]} size={18} />
+                        </span>
                         <span className="visually-hidden">Status for {application.studioName}</span>
                         <select
                           className={"form-select status-" + application.status}
                           value={application.status}
-                          onChange={(event) =>
-                            onChangeStatus(application.id, event.target.value as TrackerStatus)
-                          }
+                          onChange={(event) => onChangeStatus(application.id, event.target.value as TrackerStatus)}
                         >
                           {tabs.map((tab) => (
                             <option key={tab.id} value={tab.status}>{statusLabels[tab.status]}</option>
@@ -300,34 +254,11 @@ export default function ApplicationTracker({
                       </label>
                     </td>
                     <td>
-                      <button
-                        className={note.trim() ? "btn btn-outline-secondary btn-sm notes-toggle has-note" : "btn btn-outline-secondary btn-sm notes-toggle"}
-                        type="button"
-                        aria-expanded={notesOpen}
-                        aria-controls={notesId}
-                        aria-label={"Edit notes for " + application.studioName}
-                        onClick={() => setExpandedNotesId((current) => current === application.id ? null : application.id)}
-                      >
-                        {note.trim() ? <><Icon name="file" size={13} />Edit notes</> : "＋ Add notes"}
-                      </button>
-                      {note.trim() ? <span className="note-saved-indicator" aria-label="Notes saved">Saved</span> : null}
-                    </td>
-                    <td>
                       <div className="tracker-row-actions">
-                        <button
-                          className="btn btn-outline-secondary btn-sm"
-                          type="button"
-                          aria-expanded={preparationOpen}
-                          aria-controls={preparationId}
-                          aria-label={(preparationOpen ? "Hide preparation for " : "Prepare application for ") + application.studioName}
-                          onClick={() => setExpandedPreparationId((current) => current === application.id ? null : application.id)}
-                        >
-                          {preparationOpen ? "Hide prep" : "Prepare"}
-                          <span className="tracker-preparation-count">{preparationCompleted}/6</span>
-                        </button>
                         <button
                           className="btn btn-link btn-sm text-danger p-0"
                           type="button"
+                          aria-label={"Remove " + application.studioName}
                           onClick={() => onRemove(application.id)}
                         >
                           × Remove
@@ -335,9 +266,9 @@ export default function ApplicationTracker({
                       </div>
                     </td>
                   </tr>
-                  {expandedRouteId === application.id ? (
+                  {routeExpanded ? (
                     <tr className="tracker-route-row" id={"tracker-route-" + trackerRowId(application.id)}>
-                      <td colSpan={9}>
+                      <td colSpan={8}>
                         <div className="tracker-route-panel">
                           <div className="tracker-route-panel-heading">
                             <strong>Official route context · {application.studioName}</strong>
@@ -356,98 +287,6 @@ export default function ApplicationTracker({
                           </dl>
                           {application.routeNotes ? <p className="tracker-route-notes">{application.routeNotes}</p> : null}
                           <p className="tracker-route-caveat">This is a saved snapshot, not a live vacancy or a guarantee of eligibility. Open the employer's current route and confirm the role, language, location, work authorisation, sponsorship and relocation requirements before applying.</p>
-                        </div>
-                      </td>
-                    </tr>
-                  ) : null}
-                  {preparationOpen ? (
-                    <tr className="tracker-preparation-row" id={preparationId}>
-                      <td colSpan={9}>
-                        <section className="tracker-preparation-panel" aria-label={"Application preparation for " + application.studioName}>
-                          <div className="tracker-preparation-heading">
-                            <div>
-                              <strong>Application preparation · {application.studioName}</strong>
-                              <p>Review the employer's current form yourself. Record requirements and prepare materials here; nothing is filled in or submitted automatically.</p>
-                            </div>
-                            <span className="tracker-preparation-progress">{preparationCompleted} / 6 ready</span>
-                          </div>
-                          <div className="tracker-preparation-checklist">
-                            {APPLICATION_PREPARATION_CHECKLIST.map((item) => (
-                              <label className="form-check" key={item.key}>
-                                <input
-                                  className="form-check-input"
-                                  type="checkbox"
-                                  aria-label={item.label + " · " + application.studioName}
-                                  checked={preparation[item.key]}
-                                  onChange={(event) => onUpdatePreparation(application.id, {
-                                    ...preparation,
-                                    [item.key]: event.target.checked,
-                                  })}
-                                />
-                                <span className="form-check-label">{item.label}</span>
-                              </label>
-                            ))}
-                          </div>
-                          <div className="tracker-preparation-fields">
-                            <label className="form-field" htmlFor={preparationId + "-requirements"}>
-                              <span>Employer requirements & application questions · {application.studioName}</span>
-                              <textarea
-                                id={preparationId + "-requirements"}
-                                className="form-control"
-                                rows={4}
-                                maxLength={10000}
-                                value={preparation.requirementsNotes}
-                                onChange={(event) => onUpdatePreparation(application.id, {
-                                  ...preparation,
-                                  requirementsNotes: event.target.value,
-                                })}
-                                placeholder="Paste or summarize the official form fields, required documents, role/discipline choices, language and eligibility instructions. Include the source URL in your notes where useful."
-                              />
-                            </label>
-                            <label className="form-field" htmlFor={preparationId + "-answers"}>
-                              <span>Draft answers & missing information · {application.studioName}</span>
-                              <textarea
-                                id={preparationId + "-answers"}
-                                className="form-control"
-                                rows={4}
-                                maxLength={10000}
-                                value={preparation.draftAnswers}
-                                onChange={(event) => onUpdatePreparation(application.id, {
-                                  ...preparation,
-                                  draftAnswers: event.target.value,
-                                })}
-                                placeholder="Prepare your answers here. Keep factual claims grounded in your Candidate Profile and mark any question that still needs your input."
-                              />
-                            </label>
-                          </div>
-                          <div className="tracker-notes-meta">
-                            <span>Preparation notes and checklist save automatically in this browser only. Open the official employer route to verify the live form.</span>
-                            <span>{preparation.requirementsNotes.length + preparation.draftAnswers.length} / 20,000</span>
-                          </div>
-                        </section>
-                      </td>
-                    </tr>
-                  ) : null}
-                  {notesOpen ? (
-                    <tr className="tracker-notes-row" id={notesId}>
-                      <td colSpan={9}>
-                        <div className="tracker-notes-panel">
-                          <label className="form-field" htmlFor={notesId + "-input"}>
-                            <span>Application notes · {application.studioName}</span>
-                            <textarea
-                              id={notesId + "-input"}
-                              className="form-control tracker-note-input"
-                              value={note}
-                              maxLength={2000}
-                              rows={3}
-                              onChange={(event) => onUpdateNote(application.id, event.target.value)}
-                              placeholder="Role or team, contact person, submission details, interview notes, and follow-up reminders…"
-                            />
-                          </label>
-                          <div className="tracker-notes-meta">
-                            <span>Saved automatically in this browser only.</span>
-                            <span>{note.length.toLocaleString()} / 2,000</span>
-                          </div>
                         </div>
                       </td>
                     </tr>
@@ -472,7 +311,7 @@ export default function ApplicationTracker({
       </div>
 
       <p className="tracker-note">
-        Your tracker, notes and application dates are saved in this browser only. They are not connected to a server or shared with anyone. Export a backup regularly; backup files contain private application history and notes, so keep them somewhere secure.
+        Your application tracker and dates are saved in this browser only. They are not connected to a server or shared with anyone.
       </p>
     </section>
   );
