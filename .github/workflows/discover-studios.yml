@@ -101,6 +101,7 @@ jobs:
     if: github.ref == 'refs/heads/main' && needs.schedule-guard.outputs.proceed == 'true'
     permissions:
       contents: write
+      issues: write
       pages: write
       id-token: write
     runs-on: ubuntu-latest
@@ -256,6 +257,81 @@ jobs:
       - name: Validate merged directory before publishing
         run: npm run check:studio-directory
 
+      - name: Notify about routes awaiting manual review
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          DATA_FILE="src/data/speculative-route-directory.json"
+          REVIEW_DIR="$RUNNER_TEMP/route-review-issues"
+          mkdir -p "$REVIEW_DIR"
+
+          python3 - "$DATA_FILE" "$REVIEW_DIR/manifest.json" "$REVIEW_DIR" <<'PY'
+          import json
+          import pathlib
+          import sys
+
+          data_path, manifest_path, output_dir = map(pathlib.Path, sys.argv[1:])
+          studios = json.loads(data_path.read_text(encoding="utf-8"))
+          items = []
+          for index, studio in enumerate(studios):
+              review = (studio.get("applicationResearch") or {}).get("routeReview") or {}
+              if review.get("status") != "pending":
+                  continue
+              evidence = (review.get("evidence") or [{}])[0]
+              name = studio.get("name", "Unknown studio")
+              evidence_url = evidence.get("url") or studio.get("evidenceUrl", "")
+              evidence_text = evidence.get("text") or "No text excerpt was available."
+              body = "\n".join([
+                  "An automated check found evidence that this speculative application route may no longer be accepting applications.",
+                  "The record has been paused and hidden from the active directory, but it has **not** been permanently closed.",
+                  "",
+                  f"- **Studio:** {name}",
+                  f"- **Application URL:** {studio.get('applicationUrl', '')}",
+                  f"- **Official website:** {studio.get('websiteUrl', '')}",
+                  f"- **Evidence page:** {evidence_url}",
+                  f"- **Reason:** {review.get('reason', 'unknown')}",
+                  f"- **First detected:** {review.get('firstDetectedAt', 'unknown')}",
+                  "",
+                  "**Detected evidence**",
+                  "> " + evidence_text,
+                  "",
+                  "## Please verify",
+                  "Open the evidence and submission pages and decide whether the route is still usable. The checker deliberately does not permanently close routes automatically when it detects rejection language or a missing endpoint.",
+                  "",
+                  "After checking, update `src/data/speculative-route-directory.json`:",
+                  "- If the route is still valid, set `applicationResearch.routeStatus` to `active` and remove `applicationResearch.routeReview`.",
+                  "- If the route is obsolete, set `applicationResearch.routeStatus` to `closed`, update the notes with the evidence, and remove `applicationResearch.routeReview`.",
+                  "- If uncertain, leave it `paused` with the review object so it stays out of the active directory.",
+              ]) + "\n"
+              body_path = output_dir / f"{index}.md"
+              body_path.write_text(body, encoding="utf-8")
+              items.append({"title": f"[Route review] {name}", "bodyPath": str(body_path)})
+
+          manifest_path.write_text(json.dumps(items, indent=2) + "\n", encoding="utf-8")
+          print(f"Pending route reviews: {len(items)}")
+          PY
+
+          if [ ! -s "$REVIEW_DIR/manifest.json" ] || [ "$(jq 'length' "$REVIEW_DIR/manifest.json")" -eq 0 ]; then
+            echo "No application routes are awaiting manual review."
+            exit 0
+          fi
+
+          if ! gh label list --json name --jq '.[].name' | grep -Fxq 'route-review'; then
+            gh label create route-review --color D4A72C --description "Application route needs human verification before closure"
+          fi
+
+          open_titles="$(gh issue list --state open --label route-review --limit 1000 --json title --jq '.[].title')"
+          while IFS=$'\t' read -r title body_file; do
+            [ -n "$title" ] || continue
+            if grep -Fqx "$title" <<< "$open_titles"; then
+              echo "Existing review issue remains open: $title"
+              continue
+            fi
+            gh issue create --title "$title" --label route-review --body-file "$body_file"
+            open_titles="$(printf '%s\n%s' "$open_titles" "$title")"
+          done < <(jq -r '.[] | [.title, .bodyPath] | @tsv' "$REVIEW_DIR/manifest.json")
       - name: Rebuild static directory after merging latest main
         if: steps.commit.outputs.data_changed == 'true'
         run: npm run build
@@ -460,6 +536,8 @@ jobs:
         run: |
           {
             echo "## StudioScout discovery run"
+            pending_route_reviews="$(jq '[.[] | select(.applicationResearch.routeReview.status == "pending")] | length' src/data/speculative-route-directory.json)"
+            echo "- Application routes awaiting manual review: $pending_route_reviews"
             echo "- Mode: ${{ steps.discovery.outputs.mode || 'not started' }}"
             echo "- Source-page cap: ${{ steps.discovery.outputs.source_page_limit || 'not set' }}"
             echo "- Public changes: ${{ steps.commit.outputs.data_changed || 'not committed' }}"
