@@ -170,375 +170,11 @@ async function main() {
     assert.equal(await page.locator(".work-model-filter .directory-filter-label svg.ui-icon").count(), 1, "Work model should have a label icon.");
     assert.equal(await page.locator(".reset-filters-button svg.ui-icon").count(), 1, "Reset filters should have a reset icon.");
 
-    await navigation.getByRole("button", { name: /^Games(?:\s+\d+)?$/ }).click();
-    await page.getByRole("heading", { name: "Games" }).waitFor();
-    await page.getByText(/Steam user reviews/).waitFor();
-    await navigation.getByRole("button", { name: /^Studios(?:\s+\d+)?$/ }).click();
-    await page.getByRole("heading", { name: "Studio directory" }).waitFor();
-
-    // Candidate Profile is private browser-local data, including original document bytes.
-    await page.getByRole("button", { name: "My profile" }).click();
-    await page.getByRole("heading", { name: "My profile" }).waitFor();
-    await page.getByLabel("Full name").fill("Test Candidate");
-    await page.getByLabel("Email").fill("candidate@example.test");
-    await page.getByLabel("Current location").fill("Budapest, Hungary");
-    await page.getByLabel("Professional summary").fill("A test profile with an evidence-backed technical background.");
-    // Switching views must not discard profile edits that have not yet been saved.
-    await navigation.getByRole("button", { name: /^Studios(?:\s+\d+)?$/ }).click();
-    await page.getByRole("button", { name: "My profile" }).click();
-    assert.equal(await page.getByLabel("Full name").inputValue(), "Test Candidate");
-    await page.getByRole("button", { name: /Add experience/ }).click();
-    await page.getByLabel("Employer").fill("Example Studio");
-    await page.getByLabel("Exact job title").fill("Product Support Engineer");
-    await page.getByLabel("Start date").fill("Sep 2023");
-    await page.getByLabel("Responsibilities").fill("Investigated application and API issues.");
-    await page.getByRole("button", { name: /Add education/ }).click();
-    await page.getByLabel("Qualification").fill("MSc Computer Science");
-    await page.getByLabel("Institution").fill("Example University");
-    await page.getByRole("button", { name: /Add project or training/ }).click();
-    await page.getByRole("textbox", { name: "Type", exact: true }).fill("Bootcamp");
-    await page.getByLabel("Description and your contribution").fill("Completed a practical training project.");
-    await page.getByRole("button", { name: /Add skill/ }).click();
-    await page.getByLabel("Skill or technology").fill("REST APIs");
-    await page.getByLabel("Evidence level").selectOption("demonstrated");
-    await page.getByLabel("Evidence source").fill("Example Studio · Product Support Engineer");
-    await page.getByLabel("What supports this assessment?").fill("Investigated and troubleshot API behavior in production.");
-    await page.locator("#profile-role-families").getByLabel("Developer support", { exact: true }).check();
-    await page.locator("#profile-role-families").getByLabel("DevOps", { exact: true }).check();
-    await page.locator("#profile-preferred-regions").getByLabel("Europe", { exact: true }).check();
-    await page.locator("#profile-preferred-regions").locator("summary").click();
-    await page.locator("#profile-preferred-regions").getByLabel("United Kingdom", { exact: true }).check();
-    const additionalNotes = page.getByLabel("Additional notes (optional)");
-    await additionalNotes.click();
-    await additionalNotes.pressSequentially("Prefer a collaborative studio environment");
-    assert.equal(await additionalNotes.inputValue(), "Prefer a collaborative studio environment");
-    await page.getByLabel("Motivation text").fill("I am interested in contributing to game development teams.");
-    const resumeFixture = Buffer.from("%PDF-1.4\\nCandidate resume fixture\\n%%EOF");
-    await page.locator(".profile-material-card").first().locator('input[type="file"]').setInputFiles({
-      name: "candidate-resume.pdf",
-      mimeType: "application/pdf",
-      buffer: resumeFixture,
-    });
-    await page.getByText("candidate-resume.pdf").waitFor();
-
-    // Hold the IndexedDB completion callback after its transaction commits so we can edit
-    // the form while the UI is still awaiting the previous snapshot's save.
-    await page.evaluate(() => {
-      let prototype = IDBTransaction.prototype;
-      let descriptor;
-      while (prototype && !descriptor) {
-        descriptor = Object.getOwnPropertyDescriptor(prototype, "oncomplete");
-        prototype = Object.getPrototypeOf(prototype);
-      }
-      if (!descriptor?.set) throw new Error("Could not intercept IndexedDB transaction completion for the save-race test.");
-      Object.defineProperty(IDBTransaction.prototype, "oncomplete", {
-        configurable: true,
-        enumerable: descriptor.enumerable,
-        get() {
-          return descriptor.get?.call(this);
-        },
-        set(handler) {
-          if (this.mode === "readwrite" && window.__holdNextProfileSave) {
-            window.__holdNextProfileSave = false;
-            const transaction = this;
-            descriptor.set.call(this, (event) => {
-              window.__profileSaveCommitted = true;
-              window.__releaseProfileSave = () => {
-                window.__releaseProfileSave = null;
-                handler.call(transaction, event);
-              };
-            });
-            return;
-          }
-          descriptor.set.call(this, handler);
-        },
-      });
-      window.__holdNextProfileSave = true;
-    });
-    await page.locator(".profile-actions").getByRole("button", { name: "Save profile" }).click();
-    await page.waitForFunction(() => window.__profileSaveCommitted === true);
-    const newerProfileLink = "https://portfolio.example.test/edited-during-save";
-    await page.getByLabel("Other professional link").fill(newerProfileLink);
-    assert.equal(
-      await page.getByLabel("Other professional link").inputValue(),
-      newerProfileLink,
-      "The newer edit should be visible while the previous IndexedDB save is awaiting completion.",
-    );
-    await page.evaluate(() => window.__releaseProfileSave?.());
-    await page.locator(".profile-actions").getByRole("button", { name: "Save profile" }).waitFor();
-    assert.equal(
-      await page.getByLabel("Other professional link").inputValue(),
-      newerProfileLink,
-      "Completing an older save must not replace a newer in-memory profile edit.",
-    );
-    await page.locator(".profile-actions").getByRole("button", { name: "Save profile" }).click();
-    await page.getByRole("button", { name: "Profile saved" }).waitFor();
-
-    const savedCandidateProfile = await page.evaluate(() => new Promise((resolve, reject) => {
-      const openRequest = indexedDB.open("game-industry-outreach-private", 1);
-      openRequest.onerror = () => reject(openRequest.error);
-      openRequest.onsuccess = () => {
-        const transaction = openRequest.result.transaction("candidate-profile", "readonly");
-        const request = transaction.objectStore("candidate-profile").get("primary");
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => resolve(request.result?.profile);
-      };
-    }));
-    assert.equal(savedCandidateProfile.personal.fullName, "Test Candidate");
-    assert.equal(savedCandidateProfile.personal.otherLink, "https://portfolio.example.test/edited-during-save");
-    assert.equal(savedCandidateProfile.experience[0].title, "Product Support Engineer");
-    assert.equal(savedCandidateProfile.education[0].qualification, "MSc Computer Science");
-    assert.equal(savedCandidateProfile.skills[0].evidence, "demonstrated");
-    assert.equal(savedCandidateProfile.preferences.preferredRegions[0], "Europe");
-    assert.ok(savedCandidateProfile.preferences.preferredRegions.includes("United Kingdom"));
-    assert.deepEqual(savedCandidateProfile.preferences.roleFamilies, ["Developer support", "DevOps"]);
-    assert.equal(savedCandidateProfile.preferences.additionalConsiderations, "Prefer a collaborative studio environment");
-    assert.equal(savedCandidateProfile.materials.masterResume.name, "candidate-resume.pdf");
-    assert.equal(Buffer.from(savedCandidateProfile.materials.masterResume.dataBase64, "base64").toString(), resumeFixture.toString());
-
-    await page.reload({ waitUntil: "networkidle" });
-    await page.getByRole("button", { name: "My profile" }).click();
-    await page.getByRole("heading", { name: "My profile" }).waitFor();
-    assert.equal(await page.getByLabel("Full name").inputValue(), "Test Candidate", "The structured profile should survive a page reload.");
-    assert.equal(await page.getByLabel("Other professional link").inputValue(), "https://portfolio.example.test/edited-during-save");
-    assert.equal(await page.getByLabel("Motivation text").inputValue(), "I am interested in contributing to game development teams.");
-    await page.getByText("candidate-resume.pdf").waitFor();
-
-    const [profileBackupDownload] = await Promise.all([
-      page.waitForEvent("download"),
-      page.getByRole("button", { name: "Export backup" }).click(),
-    ]);
-    const profileBackup = JSON.parse(readFileSync(await profileBackupDownload.path(), "utf8"));
-    assert.equal(profileBackup.format, "game-industry-outreach-candidate-profile");
-    assert.equal(profileBackup.profile.personal.fullName, "Test Candidate");
-    assert.equal(profileBackup.profile.materials.masterResume.dataBase64, savedCandidateProfile.materials.masterResume.dataBase64);
-
-    // Edits made while a selected backup is being read must not be silently replaced by that import.
-    await page.evaluate(() => {
-      const originalText = File.prototype.text;
-      let pauseNextRead = true;
-      Object.defineProperty(File.prototype, "text", {
-        configurable: true,
-        writable: true,
-        value: function () {
-          if (!pauseNextRead) return originalText.call(this);
-          pauseNextRead = false;
-          window.__profileBackupReadStarted = true;
-          return new Promise((resolve, reject) => {
-            window.__releaseProfileBackupRead = () => {
-              originalText.call(this).then(resolve, reject);
-            };
-          });
-        },
-      });
-    });
-    await page.locator('.profile-actions input[type="file"][accept=".json,application/json"]').setInputFiles(await profileBackupDownload.path());
-    await page.waitForFunction(() => window.__profileBackupReadStarted === true);
-    const latestProfileName = "Latest edit made during backup import";
-    await page.getByLabel("Full name").fill(latestProfileName);
-    const importRaceDialogPromise = page.waitForEvent("dialog");
-    await page.evaluate(() => window.__releaseProfileBackupRead?.());
-    const importRaceDialog = await importRaceDialogPromise;
-    assert.equal(importRaceDialog.type(), "confirm");
-    assert.match(importRaceDialog.message(), /Replace the profile currently in this browser/);
-    await importRaceDialog.accept();
-    await page.getByText(/Your profile changed while the backup was being read/).waitFor();
-    assert.equal(
-      await page.getByLabel("Full name").inputValue(),
-      latestProfileName,
-      "An edit made while the backup file is being read must remain visible.",
-    );
-    assert.equal(
-      await page.locator(".profile-actions").getByRole("button", { name: "Save profile" }).isDisabled(),
-      false,
-      "The preserved edit must remain available to save after the import is cancelled.",
-    );
-    const profileAfterCancelledImport = await page.evaluate(() => new Promise((resolve, reject) => {
-      const openRequest = indexedDB.open("game-industry-outreach-private", 1);
-      openRequest.onerror = () => reject(openRequest.error);
-      openRequest.onsuccess = () => {
-        const transaction = openRequest.result.transaction("candidate-profile", "readonly");
-        const request = transaction.objectStore("candidate-profile").get("primary");
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => resolve(request.result?.profile);
-      };
-    }));
-    assert.equal(
-      profileAfterCancelledImport.personal.fullName,
-      "Test Candidate",
-      "A cancelled import must leave the previously persisted profile untouched.",
-    );
-    await page.locator(".profile-actions").getByRole("button", { name: "Save profile" }).click();
-    await page.getByRole("button", { name: "Profile saved" }).waitFor();
-
-    await page.evaluate(() => new Promise((resolve, reject) => {
-      const openRequest = indexedDB.open("game-industry-outreach-private", 1);
-      openRequest.onerror = () => reject(openRequest.error);
-      openRequest.onsuccess = () => {
-        const transaction = openRequest.result.transaction("candidate-profile", "readwrite");
-        transaction.objectStore("candidate-profile").delete("primary");
-        transaction.oncomplete = resolve;
-        transaction.onerror = () => reject(transaction.error);
-      };
-    }));
-    // Reload after clearing IndexedDB so the import test cannot pass from stale React state.
-    await page.reload({ waitUntil: "networkidle" });
-    await page.getByRole("button", { name: "My profile" }).click();
-    await page.getByRole("heading", { name: "My profile" }).waitFor();
-    assert.equal(await page.getByLabel("Full name").inputValue(), "", "The profile should be empty after its IndexedDB record is removed.");
-    assert.equal(await page.getByText("candidate-resume.pdf").count(), 0, "The removed resume should no longer appear.");
-
-    const backupPath = await profileBackupDownload.path();
-    const importInput = page.locator('input[type="file"][accept=".json,application/json"]');
-    const importedDialog = await performWithDialog(
-      page,
-      () => importInput.setInputFiles(backupPath),
-      true,
-    );
-    assert.equal(importedDialog.type, "confirm");
-    assert.match(importedDialog.message, /Replace the profile currently in this browser/);
-    await page.waitForFunction(() => {
-      const label = Array.from(document.querySelectorAll("label"))
-        .find((item) => item.textContent?.trim() === "Full name");
-      return label?.querySelector("input")?.value === "Test Candidate";
-    });
-    assert.equal(await page.getByLabel("Full name").inputValue(), "Test Candidate", "Import should restore the structured profile.");
-    assert.equal(await page.getByText("candidate-resume.pdf").count(), 1, "Import should restore the original resume attachment.");
-    const restoredCandidateProfile = await page.evaluate(() => new Promise((resolve, reject) => {
-      const openRequest = indexedDB.open("game-industry-outreach-private", 1);
-      openRequest.onerror = () => reject(openRequest.error);
-      openRequest.onsuccess = () => {
-        const transaction = openRequest.result.transaction("candidate-profile", "readonly");
-        const request = transaction.objectStore("candidate-profile").get("primary");
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => resolve(request.result?.profile);
-      };
-    }));
-    assert.equal(
-      restoredCandidateProfile.materials.masterResume.dataBase64,
-      savedCandidateProfile.materials.masterResume.dataBase64,
-      "Backup import should restore the exact original document bytes.",
-    );
-
-    // A transient IndexedDB open failure must not enable overwriting a profile that was not loaded.
-    // The failed open must also release its cached promise so a validated backup can recover storage.
-    const profileRecoveryPage = await context.newPage();
-    profileRecoveryPage.on("pageerror", (error) => pageErrors.push(error.message));
-    await profileRecoveryPage.addInitScript(() => {
-      const originalOpen = IDBFactory.prototype.open;
-      let failFirstOpen = true;
-      Object.defineProperty(IDBFactory.prototype, "open", {
-        configurable: true,
-        writable: true,
-        value: function (...args) {
-          if (failFirstOpen) {
-            failFirstOpen = false;
-            throw new DOMException("Temporary IndexedDB open failure", "UnknownError");
-          }
-          return originalOpen.apply(this, args);
-        },
-      });
-    });
-    await profileRecoveryPage.route("https://api.github.com/**", async (route) => {
-      await route.fulfill({
-        status: 200,
-        contentType: "application/json",
-        body: JSON.stringify({ workflow_runs: [] }),
-      });
-    });
-    await profileRecoveryPage.goto(appUrl, { waitUntil: "networkidle" });
-    await profileRecoveryPage.waitForFunction(() =>
-      Array.from(document.querySelectorAll(".profile-save-state"))
-        .some((element) => element.textContent?.includes("Temporary IndexedDB open failure")),
-    );
-    await profileRecoveryPage.getByRole("button", { name: "My profile" }).click();
-    await profileRecoveryPage.getByRole("heading", { name: "My profile" }).waitFor();
-    await profileRecoveryPage.getByLabel("Full name").fill("Unsaved edit while profile storage is unavailable");
-    const blockedSaveButton = profileRecoveryPage.locator(".profile-actions").getByRole("button", { name: "Save profile" });
-    assert.equal(await blockedSaveButton.isDisabled(), true, "Saving must stay disabled until profile storage has loaded or been restored.");
-    const profileRecoveryInput = profileRecoveryPage.locator(
-      '.profile-actions input[type="file"][accept=".json,application/json"]',
-    );
-    const profileRecoveryDialog = await performWithDialog(
-      profileRecoveryPage,
-      () => profileRecoveryInput.setInputFiles(backupPath),
-      true,
-    );
-    assert.equal(profileRecoveryDialog.type, "confirm");
-    await profileRecoveryPage.getByLabel("Full name").waitFor();
-    await profileRecoveryPage.waitForFunction(() => {
-      const label = Array.from(document.querySelectorAll("label"))
-        .find((item) => item.textContent?.trim() === "Full name");
-      return label?.querySelector("input")?.value === "Test Candidate";
-    });
-    await profileRecoveryPage.getByText("candidate-resume.pdf").waitFor();
     assert.deepEqual(
-      await profileRecoveryPage.evaluate(() => new Promise((resolve, reject) => {
-        const openRequest = indexedDB.open("game-industry-outreach-private", 1);
-        openRequest.onerror = () => reject(openRequest.error);
-        openRequest.onsuccess = () => {
-          const transaction = openRequest.result.transaction("candidate-profile", "readonly");
-          const request = transaction.objectStore("candidate-profile").get("primary");
-          request.onerror = () => reject(request.error);
-          request.onsuccess = () => resolve({
-            fullName: request.result?.profile.personal.fullName,
-            otherLink: request.result?.profile.personal.otherLink,
-          });
-        };
-      })),
-      {
-        fullName: "Test Candidate",
-        otherLink: "https://portfolio.example.test/edited-during-save",
-      },
-      "A successful backup import should recover IndexedDB after a transient open failure.",
+      await navigation.locator(".nav-label").allTextContents(),
+      ["Studios", "My applications"],
+      "Games, Matches and My profile should remain hidden from the active navigation.",
     );
-    await profileRecoveryPage.close();
-
-    // Matches are generated locally from the restored profile and the public studio directory.
-    await navigation.getByRole("button", { name: /^Matches(?:\s+\d+)?$/ }).click();
-    await page.getByRole("heading", { name: "Your matches" }).waitFor();
-    const matchCards = page.locator(".match-card");
-    const matchCount = await matchCards.count();
-    assert.ok(matchCount > 100, "The matching page should assess the active public studio routes.");
-    assert.equal(
-      await page.locator("#matching-sort").inputValue(),
-      "priority",
-      "The campaign view should default to personal priority ordering.",
-    );
-    const playtouchMatch = matchCards.filter({ hasText: "Playtouch" });
-    assert.equal(await playtouchMatch.count(), 1, "Playtouch should remain available in the matching results.");
-    const playtouchLocation = await playtouchMatch.locator(".match-studio-title p").innerText();
-    assert.match(playtouchLocation, /Mauritius/, "Matching should use the directory's recorded studio country.");
-    assert.doesNotMatch(playtouchLocation, /France/, "Headquarters country must not override the directory country.");
-    assert.ok(await page.getByText(/Professional relevance, application-route readiness and personal priority are assessed separately/).count());
-    await page.locator("#matching-relevance-filter").selectOption("potential");
-    assert.ok(await matchCards.count() > 0, "Potential matches should remain visible for general and transferable routes.");
-    await page.locator("#matching-relevance-filter").selectOption("all");
-    await matchCards.first().getByRole("button", { name: "View assessment details" }).click();
-    await page.getByRole("heading", { name: "Application route and instructions" }).waitFor();
-    await page.getByText(/Confirm the employer's latest instructions/).waitFor();
-
-    // A selected match can be saved directly into the existing private application tracker.
-    const firstMatch = matchCards.first();
-    const matchStudioName = (await firstMatch.locator("h2").innerText()).trim();
-    await firstMatch.getByRole("button", { name: "Save " + matchStudioName + " to My applications" }).click();
-    await firstMatch.getByRole("button", { name: "Open in My applications" }).waitFor();
-    await firstMatch.getByRole("button", { name: "Open in My applications" }).click();
-    await page.getByRole("heading", { name: "My applications" }).waitFor();
-    const matchSavedRow = page.locator(".tracker-table tbody tr")
-      .filter({ has: page.locator(".status-select-label") })
-      .filter({ hasText: matchStudioName });
-    await matchSavedRow.waitFor();
-    await performWithDialog(
-      page,
-      () => matchSavedRow.getByRole("button", { name: "Remove" }).click(),
-      true,
-    );
-    await navigation.getByRole("button", { name: /^Matches(?:\s+\d+)?$/ }).click();
-    await page.getByRole("heading", { name: "Your matches" }).waitFor();
-
-    await navigation.getByRole("button", { name: /^Studios(?:\s+\d+)?$/ }).click();
-    await page.getByRole("heading", { name: "Studio directory" }).waitFor();
 
     await page.getByRole("button", { name: "Switch to dark theme" }).click();
     assert.equal(await page.locator("html").getAttribute("data-bs-theme"), "dark");
@@ -576,6 +212,16 @@ async function main() {
       "Every studio data row should have one cell for each separate studio facet and the tracker action.",
     );
     const newStudioLabel = page.locator(".new-only-filter .form-check-label");
+    assert.match(
+      (await newStudioLabel.textContent() || "").trim(),
+      /^✨ New studios \(\d+\)$/,
+      "The New studios toggle should use the sparkle emoji label.",
+    );
+    assert.equal(
+      await newStudioLabel.locator("svg").count(),
+      0,
+      "The New studios label should not render the former inline sparkle icon.",
+    );
     const displayedNewStudioCount = Number((await newStudioLabel.textContent() || "").match(/\((\d+)\)/)?.[1]);
     assert.ok(Number.isInteger(displayedNewStudioCount), "The New studios filter should display its current count, including zero.");
     await page.getByLabel("Show only newly added studios").check();
@@ -944,7 +590,10 @@ async function main() {
       const rect = element.getBoundingClientRect();
       return rect.width / rect.height;
     });
-    assert.ok(fruitNinjaRatio > 0.9 && fruitNinjaRatio < 1.1);
+    assert.ok(
+      Math.abs(fruitNinjaRatio - 2 / 3) < 0.02,
+      "Square App Store artwork should be contained within the same 2:3 portrait frame as other studio-profile posters.",
+    );
     await halfbrickRow.getByRole("button", { name: /Halfbrick Studios/ }).click();
     await halfbrickDetails.waitFor({ state: "detached" });
     await page.getByLabel("Search", { exact: true }).fill("");
@@ -959,7 +608,7 @@ async function main() {
     const studioRow = page.getByRole("row").filter({ hasText: "4A Games" });
     assert.equal(await studioRow.count(), 1, "The test studio should appear exactly once.");
     await studioRow.getByRole("button", { name: "Save" }).click();
-    const viewInTracker = studioRow.getByRole("button", { name: /View in Tracker/ });
+    const viewInTracker = studioRow.getByRole("button", { name: /Saved/ });
     await viewInTracker.waitFor();
     await viewInTracker.click();
     await page.getByRole("heading", { name: "My applications" }).waitFor();
@@ -1069,6 +718,25 @@ async function main() {
     await page.getByRole("tab", { name: /Archived/ }).click();
     trackedRow = page.locator(".tracker-table tbody tr").filter({ has: page.locator(".status-select-label") }).filter({ hasText: "4A Games" });
     assert.equal(await trackedRow.count(), 1, "Archived applications should remain accessible in their status tab.");
+
+    // The directory action mirrors the current status of the canonical tracker record.
+    await page.getByRole("button", { name: "Browse studios" }).click();
+    await page.getByLabel("Search", { exact: true }).fill("4A Games");
+    const currentStatusAction = page.locator(".studio-data-row")
+      .filter({ hasText: "4A Games" })
+      .getByRole("button", { name: /Not moving forward/ });
+    await currentStatusAction.waitFor();
+    await currentStatusAction.click();
+    await page.getByRole("heading", { name: "My applications" }).waitFor();
+    assert.equal(
+      await page.getByLabel("Status for 4A Games").inputValue(),
+      "archived",
+      "The directory action should show the latest status and reopen the same tracker record.",
+    );
+    trackedRow = page.locator(".tracker-table tbody tr")
+      .filter({ has: page.locator(".status-select-label") })
+      .filter({ hasText: "4A Games" });
+    await trackedRow.waitFor();
 
     // Export an application backup and verify that its note and progress history are included.
     const [trackerBackupDownload] = await Promise.all([
@@ -1261,7 +929,7 @@ async function main() {
     assert.deepEqual(pageErrors, [], "The browser should not report uncaught application errors.");
 
     process.stdout.write(
-      "Browser acceptance passed: directory and match filters/sorting/links, direct match-to-tracker handoff, profile and tracker backup/restore, save and reload persistence, all tracker statuses, editable/searchable/persistent notes, confirmation dialogs, removal, local-only storage, and desktop/mobile overflow checks.\n",
+      "Browser acceptance passed: simplified navigation, directory filters/sorting/links and artwork, live directory-to-tracker status handoff, tracker backup/restore, save and reload persistence, all tracker statuses, editable/searchable/persistent notes, confirmation dialogs, removal, local-only storage, and desktop/mobile overflow checks.\n",
     );
     await context.close();
   } finally {

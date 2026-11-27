@@ -1,5 +1,10 @@
 # Handoff
 
+## Active workspace focus — 2026-11-27 (pending review)
+
+The current UI update is intended to keep the active workspace focused on **Studios** and **My applications** while the application campaign targets the full directory. Games, Matches and My profile are temporarily hidden from the active navigation and page rendering. Their source modules and existing browser-local profile data are preserved, and notable game metadata remains visible within studio profiles. Studio-row actions mirror the latest status from the canonical My applications record. This change is pending review and is not yet merged or deployed.
+
+
 StudioScout is a five-system workflow for discovering suitable studios, matching them against a private candidate profile, preparing applications and tracking confirmed submissions.
 
 ## Read first

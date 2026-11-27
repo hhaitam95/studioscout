@@ -4,11 +4,9 @@
 
 **Live site:** https://hhaitam95.github.io/studioscout/
 
-StudioScout helps you discover game studios worldwide, identify verified speculative application opportunities, match them against your professional profile, and manage your outreach campaign. It is an end-to-end personal game-industry application workflow built around five connected systems: Studio Discovery, Candidate Profile, Matching Engine, Application Preparation and Application Tracker.
+StudioScout's active workspace is focused on the worldwide studio directory and the private My applications tracker. The directory remains broad and evidence-backed; the tracker is the single browser-local record for studios you're considering and applications you've submitted.
 
-Studio Discovery maintains the worldwide directory of studios with verified speculative/open application routes. Candidate Profile is the private source of truth for professional facts, evidence, preferences and approved materials. Matching compares that profile with discovered studios. Application Preparation now has a manual-assisted first version inside My applications: each selected studio has six readiness checks, a private space for employer requirements/questions and a separate draft-answer/missing-information area. This content is saved in the browser and included in tracker backups. Automatic page analysis, cross-origin ATS inspection, autofill and uploads are not implemented. Application Tracker records user-confirmed submissions and later progress.
-
-The Candidate Profile feeds both Matching and Application Preparation. The existing browser-local My applications item remains the single canonical private record from selection/preparation through confirmed submission and outcomes. Candidate data and application history stay browser-local; matching is calculated on-device. The user reviews all prepared content and performs the final submission on the employer's site.
+The dedicated Games catalogue, Matches dashboard and Candidate Profile screen are temporarily hidden while the campaign focuses on applying across the directory. Their underlying source modules and existing browser-local data are preserved rather than deleted. Notable game titles and artwork remain available within studio profiles as useful context. The five-system architecture below remains the long-term product model.
 
 **Product architecture and workflow:** [Five-System Product Blueprint](docs/architecture/five-system-product-blueprint.md). Read it before changing system boundaries, data ownership, application preparation or the application lifecycle.
 
@@ -22,7 +20,7 @@ The Candidate Profile feeds both Matching and Application Preparation. The exist
 
 ## Studio directory
 
-The **Games** tab combines titles already associated with studio profiles. Where a verified Steam app ID exists, it can display Steam's release date, developer, publisher and aggregate review totals. Default popularity sorting uses total Steam reviews as a public signal, not sales or player counts. Missing values are left unknown rather than estimated.
+Notable game titles remain attached to studio profiles and provide context about each team's work. The standalone Games catalogue is temporarily hidden; the profile-level game metadata and artwork remain in place.
 
 
 Search studios by name, country and studio type; filter by country and work model; open the official studio website or application route; and save studios to the tracker.
