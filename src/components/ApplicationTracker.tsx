@@ -256,12 +256,13 @@ export default function ApplicationTracker({
                     <td>
                       <div className="tracker-row-actions">
                         <button
-                          className="btn btn-link btn-sm text-danger p-0"
+                          className="btn btn-outline-danger btn-sm tracker-remove-button"
                           type="button"
                           aria-label={"Remove " + application.studioName}
                           onClick={() => onRemove(application.id)}
                         >
-                          × Remove
+                          <Icon name="trash" size={14} />
+                          Remove
                         </button>
                       </div>
                     </td>
