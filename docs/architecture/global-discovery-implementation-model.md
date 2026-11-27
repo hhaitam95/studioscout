@@ -1,7 +1,7 @@
 # Global discovery implementation model
 
 **Status:** Authoritative project guidance  
-**Last updated:** 2026-11-02  
+**Last updated:** 2026-11-27  
 **Applies to:** Candidate discovery, studio qualification, industry exclusions, speculative-route verification, source coverage and handovers.
 
 This document records the agreed discovery model. Read it before changing discovery scope, source adapters, qualification rules, exclusion rules, verification logic or discovery cadence. It is the durable source of truth when work moves to another chat, contributor or AI assistant.
@@ -240,8 +240,12 @@ The Scottish feed reads the upstream repository's Git tree and sorted `data/comp
 - Do not invent missing HQ, team size, ownership, games, hiring location, remote eligibility or work authorisation.
 - Keep listed office location distinct from headquarters and application location.
 - Preserve conflicting official evidence as a discrepancy instead of choosing a convenient number.
-- Do not close routes after transient fetch errors. Follow the existing requirement for repeated, explicit negative evidence before closure.
-- Keep manual-review candidates visible in discovery reporting, but out of the public verified directory until resolved.
+- Never treat transient fetch failures (timeouts, robots denial, 403/429 responses, parsing errors or blocked requests) as proof that an application route has closed.
+- When an official application page explicitly rejects speculative/open applications (for example, “we no longer accept spontaneous applications”), or the configured submission endpoint returns HTTP 404/410, pause the route and attach a structured pending review containing the source URL, HTTP status and a short evidence excerpt.
+- A paused route is hidden from the active public directory, but its historical record is preserved. The automated checker must not permanently close or delete it.
+- Create one GitHub issue labeled `route-review` for each pending route, with the evidence and steps for a human to verify it. Repeated detections can update the review record; they do not bypass human confirmation.
+- The human reviewer resolves the flag explicitly: set `routeStatus` to `active` if the route still works, or `closed` if it is obsolete, then remove `applicationResearch.routeReview`. If evidence remains uncertain, leave the route `paused` and the review pending.
+- Keep manual-review routes visible in discovery reporting, but out of the public verified directory until resolved.
 - Keep personal application records, CVs, recruiter conversations, secrets and private profile information out of public source datasets and public issue/PR text.
 - Add tests for every new source adapter, language pattern, exclusion rule and false-positive edge case.
 - Require exact-head CI and review before merging dataset or pipeline changes.
