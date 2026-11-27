@@ -504,3 +504,87 @@
     padding: 12px;
   }
 }
+
+
+/* Status icons use a slightly larger, distinct tint for quick visual scanning. */
+.tracker-tab {
+  min-height: 36px;
+  gap: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tracker-tab > span:last-child {
+  display: inline-grid;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--tab-count-bg);
+  color: var(--tab-count-ink);
+  font-size: 10px;
+}
+
+.tracker-tab.active > span:last-child {
+  background: var(--tab-active-border);
+  color: var(--tab-active-ink);
+}
+
+.tracker-tab span.tracker-tab-icon,
+.status-select-icon {
+  display: inline-grid;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  place-items: center;
+  padding: 0;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.tracker-tab.active span.tracker-tab-icon {
+  border-color: transparent;
+}
+
+.status-icon-saved {
+  color: #64748b;
+  background: rgb(100 116 139 / 14%);
+}
+
+.status-icon-in-progress {
+  color: #d97706;
+  background: rgb(217 119 6 / 14%);
+}
+
+.status-icon-applied {
+  color: #2563eb;
+  background: rgb(37 99 235 / 14%);
+}
+
+.status-icon-interview {
+  color: #8b5cf6;
+  background: rgb(139 92 246 / 14%);
+}
+
+.status-icon-offer {
+  color: #16a34a;
+  background: rgb(22 163 74 / 14%);
+}
+
+.status-icon-archived {
+  color: #94a3b8;
+  background: rgb(148 163 184 / 16%);
+}
+
+.status-select-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 145px;
+}
+
+.tracker-table {
+  min-width: 980px;
+}
