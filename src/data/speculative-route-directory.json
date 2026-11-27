@@ -8448,7 +8448,7 @@
     "applicationUrl": "https://job-boards.greenhouse.io/unknownworlds/jobs/7535230002",
     "evidenceUrl": "https://job-boards.greenhouse.io/unknownworlds/jobs/7535230002",
     "notes": "Official Greenhouse General Application accepts candidates for future opportunities. Team is globally distributed; eligible hiring countries are not listed. Work model: remote.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8460,7 +8460,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8470,7 +8470,7 @@
     "applicationUrl": "https://www.uplift.games/careers/general-application",
     "evidenceUrl": "https://www.uplift.games/careers/general-application",
     "notes": "The official General Application is remote-first, but the studio does not publish a confirmed headquarters country on the reviewed pages. Applicants must live in and be authorized to work in the United States or United Kingdom.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8484,7 +8484,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8527,7 +8527,7 @@
     "applicationUrl": "https://apply.workable.com/velanstudios/jobs/3417239",
     "evidenceUrl": "https://www.velanstudios.com/careers",
     "notes": "Official Careers page explicitly encourages applicants whose experience does not align perfectly with a listed vacancy to submit a General Application. The route is handled through Velan's Workable application form. The studio operates from Troy, New York and Toronto, Ontario; roles are hybrid, with a stated option of three days in the studio. Applicant-country eligibility should be confirmed for each role; US positions participate in E-Verify.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -8541,7 +8541,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8551,7 +8551,7 @@
     "applicationUrl": "https://www.vertigo-games.com/jobs/",
     "evidenceUrl": "https://www.vertigo-games.com/jobs/",
     "notes": "Official Jobs page explicitly welcomes open applications and asks applicants to send a motivation letter, resume and/or portfolio to jobs@vertigo-games.com. HQ is Rotterdam; remote or applicant-country eligibility is not stated.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8563,7 +8563,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8573,7 +8573,7 @@
     "applicationUrl": "https://vestgames.com/jobs/unsolicited-application/",
     "evidenceUrl": "https://vestgames.com/jobs/unsolicited-application/",
     "notes": "Official Unsolicited Application accepts candidates when no role is open. On-site, hybrid or remote; English required, German for full-time roles.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -8587,7 +8587,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8597,7 +8597,7 @@
     "applicationUrl": "https://videoreality.de/team_gruendung/karriere",
     "evidenceUrl": "https://videoreality.de/team_gruendung/karriere",
     "notes": "Official studio-controlled page explicitly invites spontaneous applications. Evidence: Initiativbewerbung. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8609,7 +8609,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8619,7 +8619,7 @@
     "applicationUrl": "https://villainstudios.nl/jobs",
     "evidenceUrl": "https://villainstudios.nl/jobs",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -8631,7 +8631,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8641,7 +8641,7 @@
     "applicationUrl": "https://vpltd.com/careers",
     "evidenceUrl": "https://vpltd.com/careers",
     "notes": "Official careers page explicitly invites speculative applications from strong C++ or graphics engineers when no roles are open. The company requests a CV and a short note; this is a discipline-specific opportunity rather than a general all-departments route.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8658,7 +8658,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8668,7 +8668,7 @@
     "applicationUrl": "https://vyrexinteractive.com/careers",
     "evidenceUrl": "https://vyrexinteractive.com/careers",
     "notes": "Official careers page says there are no open roles right now but accepts speculative applications from people who believe they fit.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8680,7 +8680,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8690,7 +8690,7 @@
     "applicationUrl": "https://walkthefrog.com/",
     "evidenceUrl": "https://walkthefrog.com/",
     "notes": "Official studio-controlled page explicitly invites speculative applications. Evidence: speculative application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -8702,7 +8702,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
@@ -8712,7 +8712,7 @@
     "applicationUrl": "https://career.welevel.com/jobs/initiative-application",
     "evidenceUrl": "https://career.welevel.com/jobs/initiative-application",
     "notes": "welevel's official site identifies it as an independent Munich game studio with a team of 20+ developing a survival city-builder. Its employer-managed Initiative Application explicitly invites speculative applications across areas including art, development, design and operations when no listed role fits. The application is full-time and on-site in Munich and explicitly requires valid EU work authorisation; it asks for a CV and portfolio or work samples.",
-    "checkedAt": "2026-11-19",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8728,7 +8728,7 @@
       ],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-17"
+      "nextReviewAt": "2027-02-25"
     }
   },
   {
