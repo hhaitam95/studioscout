@@ -1098,7 +1098,7 @@ class DatasetUpdateTests(unittest.TestCase):
         result = discovery.route_page_check(studio, lambda url, allowed: pages[url])
         self.assertEqual(result, "unknown")
 
-    def test_live_evidence_page_with_missing_submission_page_is_unknown(self):
+    def test_live_evidence_page_does_not_mask_missing_submission_page(self):
         studio = {
             "name": "Example Game Studio",
             "websiteUrl": "https://example-studio.example/",
@@ -1115,16 +1115,14 @@ class DatasetUpdateTests(unittest.TestCase):
             "https://example-studio.example/apply": discovery.FetchResult(
                 False,
                 "https://example-studio.example/apply",
-                404,
+                410,
                 "",
                 "http-status",
             ),
         }
-        result = discovery.route_page_check(
-            studio,
-            lambda url, allowed: pages[url],
-        )
-        self.assertEqual(result, "unknown")
+        page_fetcher = lambda url, allowed: pages[url]
+        result = discovery.route_page_check(studio, page_fetcher)
+        self.assertEqual(result, "gone")
 
         tracked = {
             **studio,
@@ -1136,14 +1134,12 @@ class DatasetUpdateTests(unittest.TestCase):
             },
         }
         state = discovery.empty_state()
-        discovery.maintain_existing_routes(
-            state,
-            [tracked],
-            1,
-            lambda url, allowed: pages[url],
-        )
+        discovery.maintain_existing_routes(state, [tracked], 1, page_fetcher)
         self.assertEqual(tracked["applicationResearch"]["routeStatus"], "active")
-        self.assertEqual(state["route_checks"]["Example Game Studio"]["last_result"], "unknown")
+        self.assertEqual(state["route_checks"]["Example Game Studio"]["last_result"], "gone")
+        discovery.maintain_existing_routes(state, [tracked], 1, page_fetcher)
+        self.assertEqual(tracked["applicationResearch"]["routeStatus"], "closed")
+        self.assertIn("application URL returned 404/410", tracked["notes"])
 
     def test_two_consecutive_confirmed_missing_checks_close_route_but_preserve_record(self):
         studio = {
