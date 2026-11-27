@@ -434,10 +434,12 @@ export default function StudioDirectory({
   const visibleStudios = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   const trackedApplications = useMemo(
-    () => new Map(applications.map((application) => [
-      application.studioName.trim().toLocaleLowerCase(),
-      application,
-    ])),
+    () => new Map<string, TrackedApplication>(
+      applications.map((application): [string, TrackedApplication] => [
+        application.studioName.trim().toLocaleLowerCase(),
+        application,
+      ]),
+    ),
     [applications],
   );
   const activeFilterCount =
