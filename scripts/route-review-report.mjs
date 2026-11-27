@@ -34,6 +34,18 @@ for (const [type, count] of Object.entries(byType).sort(([a], [b]) => a.localeCo
 }
 process.stdout.write("\nCountries: " + countries.size + "\n");
 
+const flagged = studios.filter((studio) => studio.applicationResearch?.routeReview?.status === "pending");
+process.stdout.write("\nAwaiting manual route review: " + flagged.length + "\n");
+for (const studio of flagged.sort((a, b) => a.name.localeCompare(b.name))) {
+  const review = studio.applicationResearch.routeReview;
+  const evidence = review.evidence?.[0];
+  process.stdout.write(
+    "  " + studio.name + "  [" + review.reason + "]  " + studio.applicationUrl + "\n" +
+    "    Evidence: " + (evidence?.url || studio.evidenceUrl) + "\n" +
+    "    " + (evidence?.text || "No text excerpt available.") + "\n"
+  );
+}
+
 if (due.length) {
   process.stdout.write("\nRoutes to review:\n");
   for (const studio of due.sort((a, b) =>
