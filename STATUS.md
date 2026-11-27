@@ -1,9 +1,21 @@
 # StudioScout status
 
 **Product name:** StudioScout — Your personalized gateway into the game industry.  
-**Last verified:** 2026-11-07  
+**Last reviewed:** 2026-11-27  
 **Product scope:** Five connected systems: global Studio Discovery, private Candidate Profile, Matching Engine, manual-assisted Application Preparation and Application Tracker. The preparation checklist/notes foundation is in PR #116; automatic application-page analysis and ATS interaction remain future work.  
 **Authoritative discovery rules:** [Global Discovery Implementation Model](docs/architecture/global-discovery-implementation-model.md).
+
+## Active workspace focus — 2026-11-27 (pending review)
+
+The proposed interface update narrows the active navigation to **Studios** and **My applications** while the application campaign focuses on submitting applications across the directory.
+
+- The dedicated Games catalogue, Matches dashboard and My profile screen are temporarily hidden from navigation and page rendering.
+- Their implementation modules and existing browser-local profile data are preserved; this is a UI pause, not a feature deletion or storage migration.
+- Game metadata and artwork remain available as contextual notable work inside studio profiles.
+- Studio-row tracker actions display the matching canonical application record's current status and open that same record.
+- This UI change is on a review branch and is **not yet merged or deployed**. The five-system architecture and private-data boundaries remain unchanged.
+
+
 
 ## Studio directory, discovery status and Games catalogue — 2026-11-07
 

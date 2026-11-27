@@ -23,6 +23,15 @@ import type { ContinentLabel } from "./location";
 import "./directory.css";
 
 type Studio = (typeof studios)[number] & { addedAt?: string };
+const trackerStatusLabels: Record<TrackedApplication["status"], string> = {
+  saved: "Saved",
+  in_progress: "In progress",
+  applied: "Applied",
+  interview: "Interview",
+  offer: "Offer",
+  archived: "Not moving forward",
+};
+
 type Profile = {
   description?: string;
   headquarters?: {
@@ -424,7 +433,13 @@ export default function StudioDirectory({
   const pageEnd = Math.min(currentPage * pageSize, filtered.length);
   const visibleStudios = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
-  const tracked = new Set(applications.map((application) => application.studioName));
+  const trackedApplications = useMemo(
+    () => new Map(applications.map((application) => [
+      application.studioName.trim().toLocaleLowerCase(),
+      application,
+    ])),
+    [applications],
+  );
   const activeFilterCount =
     (continent !== "All continents" ? 1 : 0) +
     (country !== "All countries" ? 1 : 0) +
@@ -568,7 +583,7 @@ export default function StudioDirectory({
             <button type="button" key={"work-model-" + value} onClick={() => toggleSelected(setWorkModelFilters, value)} className="active-filter-chip">{workModelEmoji[value]} {workModelLabels[value]} <span aria-hidden="true">×</span></button>
           ))}
           {showNewOnly ? (
-            <button type="button" onClick={() => setShowNewOnly(false)} className="active-filter-chip"><Icon name="sparkles" size={13} />New studios <span aria-hidden="true">×</span></button>
+            <button type="button" onClick={() => setShowNewOnly(false)} className="active-filter-chip">✨ New studios <span aria-hidden="true">×</span></button>
           ) : null}
         </div>
       ) : null}
@@ -603,7 +618,8 @@ export default function StudioDirectory({
                 [profile?.headquarters?.city, profile?.headquarters?.country].filter(Boolean).join(", ") ||
                 profile?.headquarters?.label || "Not stated";
               const routeWorkModel = studio.applicationResearch?.workModel || "not_stated";
-              const isTracked = tracked.has(studio.name);
+              const trackedApplication = trackedApplications.get(studio.name.trim().toLocaleLowerCase());
+              const isTracked = Boolean(trackedApplication);
               const isNew = isNewStudio(studio);
               const notableGames = profile?.popularGames?.slice(0, 2) || [];
               const profileGames = profile?.popularGames?.slice(0, 3) || [];
@@ -685,7 +701,7 @@ export default function StudioDirectory({
                           });
                         }}
                       >
-                        {isTracked ? "↗ View in Tracker" : "＋ Save"}
+                        {trackedApplication ? "↗ " + trackerStatusLabels[trackedApplication.status] : "＋ Save"}
                       </button>
                     </td>
                   </tr>

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-27 — Application-focused navigation and live tracker status (pending review)
+
+- Replace the New studios filter's inline sparkle SVG with the ✨ emoji.
+- Show the current status of each studio's canonical My applications record in the directory action; changes to Saved, In progress, Applied, Interview, Offer or Not moving forward are reflected from the current tracker state.
+- Temporarily hide the standalone Games, Matches and My profile screens, leaving Studios and My applications as the active navigation.
+- Preserve the hidden feature modules, existing browser-local profile data and game metadata within studio profiles; this is a UI pause, not a destructive removal or data migration.
+- Update browser acceptance coverage for the simplified navigation, emoji label and live status handoff. This change is pending review and is not yet merged or deployed.
+
+
 ## 2026-11-08 — Studio directory filters, location flags and aligned game posters
 
 - Restore country flags in the Country dropdown, studio and tracker tables, and continent emoji in the Continent dropdown.
