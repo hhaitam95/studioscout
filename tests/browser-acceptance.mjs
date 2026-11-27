@@ -590,7 +590,10 @@ async function main() {
       const rect = element.getBoundingClientRect();
       return rect.width / rect.height;
     });
-    assert.ok(fruitNinjaRatio > 0.9 && fruitNinjaRatio < 1.1);
+    assert.ok(
+      Math.abs(fruitNinjaRatio - 2 / 3) < 0.02,
+      "Square App Store artwork should be contained within the same 2:3 portrait frame as other studio-profile posters.",
+    );
     await halfbrickRow.getByRole("button", { name: /Halfbrick Studios/ }).click();
     await halfbrickDetails.waitFor({ state: "detached" });
     await page.getByLabel("Search", { exact: true }).fill("");
