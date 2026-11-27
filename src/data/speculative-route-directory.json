@@ -8197,8 +8197,8 @@
     "websiteUrl": "https://thqnordic.com/",
     "applicationUrl": "https://join.com/companies/thqnordiccom/spontaneous-application",
     "evidenceUrl": "https://thqnordic.com/company/careers",
-    "notes": "Company-managed JOIN page offers a Spontaneous Application for future roles at THQ Nordic GmbH. This route is for the Vienna headquarters; THQ Nordic states that its subsidiary development studios manage their own recruitment separately.",
-    "checkedAt": "2026-11-02",
+    "notes": "The former company-managed JOIN spontaneous-application endpoint returned HTTP 410 Gone on 2026-11-27. The current official THQ Nordic Careers page lists headquarters vacancies and directs applicants interested in development-studio roles to contact the respective studios, but no longer links to or confirms a spontaneous-application route for THQ Nordic GmbH headquarters. Route closed; subsidiary studio routes are tracked separately.",
+    "checkedAt": "2026-11-27",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -8210,9 +8210,9 @@
       ],
       "disciplineScope": [],
       "relatedApplicationUrls": [],
-      "routeStatus": "active",
+      "routeStatus": "closed",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-01-31"
+      "nextReviewAt": "2026-11-27"
     }
   },
   {
