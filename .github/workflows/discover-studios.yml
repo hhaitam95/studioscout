@@ -174,7 +174,7 @@ jobs:
               --batch-size 100 \
               --max-source-pages 110 \
               --max-candidate-checks 1000 \
-              --route-check-count 8 \
+              --route-check-count 12 \
               --max-run-seconds 1500 \
               --state-file "$STATE_FILE" 2>&1 | tee "$RUNNER_TEMP/game-industry-outreach-tracker-discovery.log"
           else
@@ -187,7 +187,7 @@ jobs:
               --batch-size 100 \
               --max-source-pages "$SOURCE_PAGE_LIMIT" \
               --max-candidate-checks 1000 \
-              --route-check-count 8 \
+              --route-check-count 12 \
               --max-run-seconds 1500 \
               --state-file "$STATE_FILE" 2>&1 | tee "$RUNNER_TEMP/game-industry-outreach-tracker-discovery.log"
           fi
