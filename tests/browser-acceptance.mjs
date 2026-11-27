@@ -805,6 +805,7 @@ async function main() {
     const recoveryAlert = recoveryPage.getByRole("alert");
     await recoveryAlert.getByText(/not valid JSON/).waitFor();
     await recoveryAlert.getByText(/original browser data has been left untouched/).waitFor();
+    assert.equal(await recoveryPage.getByRole("button", { name: /restore a backup/i }).count(), 0);
     await recoveryPage.getByRole("button", { name: /My applications/ }).click();
     await recoveryPage.getByRole("heading", { name: "My applications" }).waitFor();
     assert.equal(await recoveryPage.getByRole("button", { name: /Export backup|Restore backup/ }).count(), 0);
