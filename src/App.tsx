@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import type { ApplicationPreparation, TrackedApplication, TrackerStatus } from "./components/studio.types";
+import { useEffect, useMemo, useState } from "react";
+import type { TrackedApplication, TrackerStatus } from "./components/studio.types";
 import StudioDirectory from "./components/StudioDirectory";
 import ApplicationTracker from "./components/ApplicationTracker";
 import Icon from "./components/Icon";
 import studioDirectory from "./data/speculative-route-directory.json" with { type: "json" };
-import { createApplicationTrackerBackup, parseStoredApplicationTracker, readApplicationTrackerBackup } from "./tracker/application-backup.mjs";
+import { parseStoredApplicationTracker } from "./tracker/application-backup.mjs";
 import { createApplicationId } from "./tracker/application-identity.mjs";
 import { createEmptyApplicationPreparation } from "./tracker/application-preparation.mjs";
 
@@ -91,7 +91,6 @@ export default function App() {
     () => studioDirectory.filter(studio => studio.applicationResearch?.routeStatus === "active").length,
     [],
   );
-  const applicationsRevision = useRef(0);
   const [storageReady, setStorageReady] = useState(false);
   const [storageLoadError, setStorageLoadError] = useState("");
   const [storageError, setStorageError] = useState(false);
@@ -140,14 +139,13 @@ export default function App() {
     location?: StudioLocation,
   ) {
     if (!storageReady) {
-      setStorageLoadError("Restore a valid application backup before adding or changing tracker records.");
+      setStorageLoadError("The existing browser tracker data could not be read, so this studio was not saved.");
       return;
     }
     const normalizedName = studio.name.trim().toLocaleLowerCase();
     if (applications.some((item) => item.studioName.trim().toLocaleLowerCase() === normalizedName)) return;
 
     const timestamp = new Date().toISOString();
-    applicationsRevision.current += 1;
     setApplications((previous) => {
       if (previous.some((item) => item.studioName.trim().toLocaleLowerCase() === normalizedName)) return previous;
 
@@ -200,7 +198,6 @@ export default function App() {
     }
 
     const timestamp = new Date().toISOString();
-    applicationsRevision.current += 1;
     setApplications((previous) =>
       previous.map((item) =>
         item.id !== id
@@ -218,74 +215,11 @@ export default function App() {
     );
   }
 
-  function updateApplicationNote(id: string, note: string) {
-    if (!storageReady) return;
-    const current = applications.find((item) => item.id === id);
-    if (!current || current.note === note) return;
-    applicationsRevision.current += 1;
-    setApplications((previous) =>
-      previous.map((item) =>
-        item.id === id ? { ...item, note, updatedAt: new Date().toISOString() } : item,
-      ),
-    );
-  }
-
-  function updateApplicationPreparation(id: string, preparation: ApplicationPreparation) {
-    if (!storageReady) return;
-    const current = applications.find((item) => item.id === id);
-    if (!current || JSON.stringify(current.preparation || createEmptyApplicationPreparation()) === JSON.stringify(preparation)) return;
-    applicationsRevision.current += 1;
-    setApplications((previous) =>
-      previous.map((item) =>
-        item.id === id
-          ? { ...item, preparation, updatedAt: new Date().toISOString() }
-          : item,
-      ),
-    );
-  }
-
   function removeApplication(id: string) {
     if (!storageReady) return;
     const item = applications.find((application) => application.id === id);
     if (!item || !window.confirm("Remove " + item.studioName + " from your tracker?")) return;
-    applicationsRevision.current += 1;
     setApplications((previous) => previous.filter((application) => application.id !== id));
-  }
-
-  function exportApplicationBackup() {
-    const backup = createApplicationTrackerBackup(applications);
-    const url = URL.createObjectURL(backup);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = "application-tracker-backup-" + new Date().toISOString().slice(0, 10) + ".json";
-    anchor.click();
-    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-  }
-
-  async function importApplicationBackup(file: File): Promise<number | null> {
-    const importRevision = applicationsRevision.current;
-    const imported = await readApplicationTrackerBackup(file);
-    if (applicationsRevision.current !== importRevision) {
-      throw new Error(
-        "Your application tracker changed while the backup was being read. No changes were imported. Select the backup again to review it against the latest records.",
-      );
-    }
-    const confirmed = window.confirm(
-      "Replace the " + applications.length + " application records currently in this browser with " +
-      imported.length + " records from this backup? This cannot be undone.",
-    );
-    if (!confirmed) return null;
-    if (applicationsRevision.current !== importRevision) {
-      throw new Error(
-        "Your application tracker changed while the backup was being reviewed. No changes were imported. Select the backup again.",
-      );
-    }
-    applicationsRevision.current += 1;
-    setApplications(imported);
-    setStorageLoadError("");
-    setStorageReady(true);
-    setStorageError(false);
-    return imported.length;
   }
 
   function openTracker(tab = "saved") {
@@ -360,7 +294,7 @@ export default function App() {
       <main className="page-container">
         {storageLoadError ? (
           <p className="storage-warning" role="alert">
-            {storageLoadError} Restore a valid application backup before continuing to use the tracker.
+            {storageLoadError} The tracker is unavailable until the saved browser data can be read.
             <button className="text-button" type="button" onClick={() => openTracker()}>
               Open My applications to restore a backup
             </button>
@@ -385,12 +319,8 @@ export default function App() {
             focusApplicationId={trackerFocusApplicationId}
             applications={applications}
             onChangeStatus={changeStatus}
-            onUpdateNote={updateApplicationNote}
-            onUpdatePreparation={updateApplicationPreparation}
             onRemove={removeApplication}
             onOpenDirectory={() => setPage("studios")}
-            onExportBackup={exportApplicationBackup}
-            onImportBackup={importApplicationBackup}
           />
         ) : null}
       </main>
