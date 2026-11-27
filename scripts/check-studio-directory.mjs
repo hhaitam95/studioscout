@@ -84,6 +84,41 @@ if (Array.isArray(studios) && profiles && typeof profiles === "object" && !Array
       for (const [field, allowed] of Object.entries(enums)) {
         if (!allowed.includes(research[field])) errors.push(row + ".applicationResearch." + field + " must be one of: " + allowed.join(", ") + ".");
       }
+      if (research.routeReview !== undefined) {
+        const review = research.routeReview;
+        if (!review || typeof review !== "object" || Array.isArray(review)) {
+          errors.push(row + ".applicationResearch.routeReview must be an object when supplied.");
+        } else {
+          if (review.status !== "pending") errors.push(row + ".applicationResearch.routeReview.status must be pending.");
+          if (!["explicit_rejection", "submission_endpoint_unavailable"].includes(review.reason)) {
+            errors.push(row + ".applicationResearch.routeReview.reason is unsupported.");
+          }
+          for (const field of ["firstDetectedAt", "lastDetectedAt"]) {
+            if (typeof review[field] !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(review[field])) {
+              errors.push(row + ".applicationResearch.routeReview." + field + " must use YYYY-MM-DD.");
+            }
+          }
+          if (research.routeStatus !== "paused") {
+            errors.push(row + ".applicationResearch.routeReview requires routeStatus paused.");
+          }
+          if (!Array.isArray(review.evidence) || review.evidence.length === 0) {
+            errors.push(row + ".applicationResearch.routeReview.evidence must be a non-empty array.");
+          } else {
+            for (const [evidenceIndex, evidence] of review.evidence.entries()) {
+              if (!evidence || typeof evidence !== "object" || Array.isArray(evidence)) {
+                errors.push(row + ".applicationResearch.routeReview.evidence[" + evidenceIndex + "] must be an object.");
+                continue;
+              }
+              try { httpsUrl(evidence.url, row + ".applicationResearch.routeReview.evidence[" + evidenceIndex + "].url"); }
+              catch (error) { errors.push(error.message); }
+              requiredText(evidence.text, row + ".applicationResearch.routeReview.evidence[" + evidenceIndex + "].text");
+              if (!Number.isInteger(evidence.httpStatus) || evidence.httpStatus < 100 || evidence.httpStatus > 599) {
+                errors.push(row + ".applicationResearch.routeReview.evidence[" + evidenceIndex + "].httpStatus must be a valid HTTP status.");
+              }
+            }
+          }
+        }
+      }
       for (const field of ["submissionMethods", "eligibleLocations", "disciplineScope", "relatedApplicationUrls"]) {
         if (!Array.isArray(research[field])) {
           errors.push(row + ".applicationResearch." + field + " must be an array.");
