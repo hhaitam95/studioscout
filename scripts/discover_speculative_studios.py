@@ -1894,33 +1894,55 @@ def process_candidate_queue(
     return checked, published
 
 def route_page_check(studio: dict[str, Any], page_fetcher: Callable[[str, bool], FetchResult]) -> str:
-    urls = []
-    for key in ("evidenceUrl", "applicationUrl"):
-        url = canonical_url(str(studio.get(key, "")))
-        if url and url not in urls:
-            urls.append(url)
+    application_url = canonical_url(str(studio.get("applicationUrl", "")))
+    evidence_url = canonical_url(str(studio.get("evidenceUrl", "")))
+    urls = [url for url in (application_url, evidence_url) if url]
+    urls = list(dict.fromkeys(urls))
     if not urls:
         return "unknown"
+
     results: list[FetchResult] = []
     positive_pages = 0
     negative_pages = 0
-    for url in urls:
-        result = page_fetcher(url, not same_site(studio["websiteUrl"], url))
-        results.append(result)
-        if result.ok:
-            page = parse_page(result.url, result.body)
+
+    # The submission endpoint is the critical user-facing route. A live careers
+    # page must not mask a dead JOIN/ATS/application URL: users click applicationUrl,
+    # not the supporting evidence page. Treat a definitive 404/410 on that endpoint
+    # as a missing route and let the existing consecutive-check policy confirm it.
+    if application_url:
+        application_result = page_fetcher(
+            application_url,
+            not same_site(studio["websiteUrl"], application_url),
+        )
+        results.append(application_result)
+        if application_result.status_code in {404, 410}:
+            return "gone"
+        if application_result.ok:
+            page = parse_page(application_result.url, application_result.body)
             if negative_route_match(page.text):
                 negative_pages += 1
             elif positive_route_match(page.text):
                 positive_pages += 1
+
+    if evidence_url and evidence_url != application_url:
+        evidence_result = page_fetcher(
+            evidence_url,
+            not same_site(studio["websiteUrl"], evidence_url),
+        )
+        results.append(evidence_result)
+        if evidence_result.ok:
+            page = parse_page(evidence_result.url, evidence_result.body)
+            if negative_route_match(page.text):
+                negative_pages += 1
+            elif positive_route_match(page.text):
+                positive_pages += 1
+
     if results and all(result.status_code in {404, 410} for result in results):
         return "gone"
     if positive_pages and negative_pages:
         return "unknown"
     if negative_pages:
         return "negative"
-    # A live evidence page does not make a missing submission URL healthy. Keep the
-    # record active while uncertain, but do not reset its closure counters either.
     if positive_pages and all(result.ok for result in results):
         return "active"
     return "unknown"
@@ -1977,7 +1999,7 @@ def maintain_existing_routes(
         if check["negative_count"] >= 2 or check["gone_count"] >= 2:
             research = studio["applicationResearch"]
             if research.get("routeStatus") != "closed":
-                evidence = "two consecutive official-site checks rejected speculative applications" if check["negative_count"] >= 2 else "all configured official application/evidence URLs returned 404/410 on two consecutive checks"
+                evidence = "two consecutive official-site checks rejected speculative applications" if check["negative_count"] >= 2 else "the configured application URL returned 404/410 on two consecutive checks"
                 studio["notes"] = str(studio.get("notes", "")).rstrip() + " Automated route review: marked closed after " + evidence + "."
                 research["routeStatus"] = "closed"
                 studio["checkedAt"] = today
@@ -2123,6 +2145,13 @@ def run_pipeline(
         raise ValueError("Public studio datasets have an invalid shape.")
 
     deadline = time.monotonic() + max_run_seconds
+    # Reserve the start of each run for maintenance of already-published routes.
+    # New-source discovery and candidate verification can consume most of the
+    # runtime budget, so doing maintenance last can leave stale public links
+    # unchecked indefinitely.
+    routes_checked = maintain_existing_routes(
+        state, studios, route_check_count, page_fetcher, deadline
+    )
     source_pages = 0
     source_candidates = 0
     source_failures: dict[str, dict[str, Any]] = {}
@@ -2223,9 +2252,6 @@ def run_pipeline(
 
     checked, published = process_candidate_queue(
         state, studios, profiles, max_candidate_checks, page_fetcher, deadline
-    )
-    routes_checked = maintain_existing_routes(
-        state, studios, route_check_count, page_fetcher, deadline
     )
     completed_sources = finish_source_cycles(state)
     cycle_completed = bool(completed_sources)
