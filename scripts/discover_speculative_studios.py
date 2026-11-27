@@ -255,6 +255,10 @@ GAME_DEVELOPMENT_EVIDENCE_PATTERNS = (
 
 
 NEGATIVE_ROUTE_PATTERNS = (
+    # Explicit withdrawal language used by employer-managed application pages (including JOIN).
+    re.compile(r"\b(?:we\s+)?no\s+longer\s+accepts?\s+(?:any\s+)?(?:speculative|unsolicited|spontaneous)\s+applications?\b", re.I),
+    re.compile(r"\b(?:we\s+)?(?:are\s+)?no\s+longer\s+accepting\s+(?:any\s+)?(?:speculative|unsolicited|spontaneous)\s+applications?\b", re.I),
+    re.compile(r"\b(?:speculative|unsolicited|spontaneous)\s+applications?\s+(?:are|is)\s+no\s+longer\s+(?:accepted|being\s+accepted)\b", re.I),
     re.compile(r"\bnot\s+(?:currently\s+)?accepting\s+(?:any\s+)?(?:speculative|unsolicited|spontaneous)\s+applications?\b", re.I),
     re.compile(r"\bdo\s+not\s+accept\s+(?:any\s+)?(?:speculative|unsolicited|spontaneous)\s+applications?\b", re.I),
     re.compile(r"\bwe\s+don't\s+accept\s+(?:any\s+)?(?:speculative|unsolicited|spontaneous)\s+applications?\b", re.I),
@@ -1893,22 +1897,35 @@ def process_candidate_queue(
                 apply_result(candidate, result)
     return checked, published
 
-def route_page_check(studio: dict[str, Any], page_fetcher: Callable[[str, bool], FetchResult]) -> str:
+def route_evidence_excerpt(text: str, match: re.Match[str], radius: int = 110) -> str:
+    normalized = re.sub(r"\s+", " ", text).strip()
+    start = max(0, match.start() - radius)
+    end = min(len(normalized), match.end() + radius)
+    excerpt = normalized[start:end]
+    if start:
+        excerpt = "…" + excerpt
+    if end < len(normalized):
+        excerpt += "…"
+    return excerpt[:360]
+
+
+def route_page_check_details(
+    studio: dict[str, Any],
+    page_fetcher: Callable[[str, bool], FetchResult],
+) -> dict[str, Any]:
     application_url = canonical_url(str(studio.get("applicationUrl", "")))
     evidence_url = canonical_url(str(studio.get("evidenceUrl", "")))
     urls = [url for url in (application_url, evidence_url) if url]
     urls = list(dict.fromkeys(urls))
     if not urls:
-        return "unknown"
+        return {"status": "unknown", "evidence": []}
 
     results: list[FetchResult] = []
     positive_pages = 0
-    negative_pages = 0
+    negative_evidence: list[dict[str, Any]] = []
 
     # The submission endpoint is the critical user-facing route. A live careers
-    # page must not mask a dead JOIN/ATS/application URL: users click applicationUrl,
-    # not the supporting evidence page. Treat a definitive 404/410 on that endpoint
-    # as a missing route and let the existing consecutive-check policy confirm it.
+    # page must not mask a dead JOIN/ATS/application URL.
     if application_url:
         application_result = page_fetcher(
             application_url,
@@ -1916,12 +1933,25 @@ def route_page_check(studio: dict[str, Any], page_fetcher: Callable[[str, bool],
         )
         results.append(application_result)
         if application_result.status_code in {404, 410}:
-            return "gone"
+            return {
+                "status": "gone",
+                "evidence": [{
+                    "url": application_url,
+                    "text": f"Submission endpoint returned HTTP {application_result.status_code}.",
+                    "httpStatus": application_result.status_code,
+                }],
+            }
         if application_result.ok:
             page = parse_page(application_result.url, application_result.body)
-            if negative_route_match(page.text):
-                negative_pages += 1
-            elif positive_route_match(page.text):
+            page_text = re.sub(r"\s+", " ", page.text).strip()
+            negative_match = negative_route_match(page_text)
+            if negative_match:
+                negative_evidence.append({
+                    "url": application_result.url,
+                    "text": route_evidence_excerpt(page_text, negative_match),
+                    "httpStatus": application_result.status_code,
+                })
+            elif positive_route_match(page_text):
                 positive_pages += 1
 
     if evidence_url and evidence_url != application_url:
@@ -1932,20 +1962,38 @@ def route_page_check(studio: dict[str, Any], page_fetcher: Callable[[str, bool],
         results.append(evidence_result)
         if evidence_result.ok:
             page = parse_page(evidence_result.url, evidence_result.body)
-            if negative_route_match(page.text):
-                negative_pages += 1
-            elif positive_route_match(page.text):
+            page_text = re.sub(r"\s+", " ", page.text).strip()
+            negative_match = negative_route_match(page_text)
+            if negative_match:
+                negative_evidence.append({
+                    "url": evidence_result.url,
+                    "text": route_evidence_excerpt(page_text, negative_match),
+                    "httpStatus": evidence_result.status_code,
+                })
+            elif positive_route_match(page_text):
                 positive_pages += 1
 
     if results and all(result.status_code in {404, 410} for result in results):
-        return "gone"
-    if positive_pages and negative_pages:
-        return "unknown"
-    if negative_pages:
-        return "negative"
+        return {
+            "status": "gone",
+            "evidence": [{
+                "url": application_url or evidence_url,
+                "text": "All configured application and evidence pages returned HTTP 404/410.",
+                "httpStatus": results[0].status_code,
+            }],
+        }
+    if positive_pages and negative_evidence:
+        return {"status": "unknown", "evidence": negative_evidence}
+    if negative_evidence:
+        return {"status": "negative", "evidence": negative_evidence}
     if positive_pages and all(result.ok for result in results):
-        return "active"
-    return "unknown"
+        return {"status": "active", "evidence": []}
+    return {"status": "unknown", "evidence": []}
+
+
+def route_page_check(studio: dict[str, Any], page_fetcher: Callable[[str, bool], FetchResult]) -> str:
+    """Compatibility wrapper exposing the route result without its review evidence."""
+    return str(route_page_check_details(studio, page_fetcher)["status"])
 
 
 def maintain_existing_routes(
@@ -1976,37 +2024,84 @@ def maintain_existing_routes(
         if deadline is not None and time.monotonic() + worst_case_route_seconds >= deadline:
             break
         name = studio["name"]
-        result = route_page_check(studio, page_fetcher)
+        details = route_page_check_details(studio, page_fetcher)
+        result = str(details["status"])
+        evidence_items = details.get("evidence", [])
         checked += 1
         check = state["route_checks"].setdefault(name, {"negative_count": 0, "gone_count": 0, "last_result": None})
         check["last_checked_at"] = utc_now().isoformat()
-        check["last_result"] = result
+        check["last_result"] = "negative" if evidence_items and result != "gone" else result
+        research = studio["applicationResearch"]
+        existing_review = research.get("routeReview")
+
         if result == "active":
             check["negative_count"] = 0
             check["gone_count"] = 0
-            studio["checkedAt"] = today
-            studio["applicationResearch"]["nextReviewAt"] = plus_days(today, REVIEW_DAYS)
-        elif result == "negative":
+            # A previously flagged route stays paused until a person resolves its
+            # review record. A positive subsequent fetch is useful evidence, but
+            # it must not silently undo a pending human decision.
+            if isinstance(existing_review, dict) and existing_review.get("status") == "pending":
+                existing_review["lastCheckResult"] = "active"
+                existing_review["lastCheckedAt"] = today
+            else:
+                studio["checkedAt"] = today
+                research["nextReviewAt"] = plus_days(today, REVIEW_DAYS)
+            continue
+
+        negative_signal = bool(evidence_items) and result != "gone"
+        gone_signal = result == "gone"
+        if negative_signal:
             check["negative_count"] = int(check.get("negative_count", 0)) + 1
             check["gone_count"] = 0
-        elif result == "gone":
+        elif gone_signal:
             check["gone_count"] = int(check.get("gone_count", 0)) + 1
             check["negative_count"] = 0
         else:
             # Network errors, robots restrictions, blocked requests and ambiguous pages
-            # never change public route status.
+            # without a specific rejection signal never alter public route status.
             continue
-        if check["negative_count"] >= 2 or check["gone_count"] >= 2:
-            research = studio["applicationResearch"]
-            if research.get("routeStatus") != "closed":
-                evidence = "two consecutive official-site checks rejected speculative applications" if check["negative_count"] >= 2 else "the configured application URL returned 404/410 on two consecutive checks"
-                studio["notes"] = str(studio.get("notes", "")).rstrip() + " Automated route review: marked closed after " + evidence + "."
-                research["routeStatus"] = "closed"
-                studio["checkedAt"] = today
-                research["nextReviewAt"] = today
+
+        if not isinstance(existing_review, dict) or existing_review.get("status") != "pending":
+            reason = "explicit_rejection" if negative_signal else "submission_endpoint_unavailable"
+            review = {
+                "status": "pending",
+                "reason": reason,
+                "firstDetectedAt": today,
+                "lastDetectedAt": today,
+                "consecutiveDetections": 1,
+                "originalRouteStatus": research.get("routeStatus", "active"),
+                "evidence": [],
+            }
+            if research.get("routeStatus") == "active":
+                research["routeStatus"] = "paused"
+            studio["notes"] = str(studio.get("notes", "")).rstrip() + (
+                " Automated route review: paused pending manual confirmation after "
+                + ("an official application page explicitly rejected speculative applications." if negative_signal
+                   else "the configured submission endpoint returned HTTP 404/410.")
+            )
+        else:
+            review = existing_review
+            review["lastDetectedAt"] = today
+            review["consecutiveDetections"] = int(review.get("consecutiveDetections", 1)) + 1
+            if negative_signal:
+                review["reason"] = "explicit_rejection"
+
+        known_evidence = {
+            (item.get("url"), item.get("text"), item.get("httpStatus"))
+            for item in review.get("evidence", [])
+            if isinstance(item, dict)
+        }
+        for item in evidence_items:
+            key = (item.get("url"), item.get("text"), item.get("httpStatus"))
+            if key not in known_evidence:
+                review.setdefault("evidence", []).append(item)
+                known_evidence.add(key)
+        review["evidence"] = review.get("evidence", [])[-3:]
+        research["routeReview"] = review
+        studio["checkedAt"] = today
+        research["nextReviewAt"] = today
     state["route_check_index"] = (start + checked) % len(active)
     return checked
-
 
 def source_page_budget(feed: dict[str, Any], state: dict[str, Any], max_pages: int) -> int:
     metrics = state.get("source_stats", {}).get(feed["id"], {})
