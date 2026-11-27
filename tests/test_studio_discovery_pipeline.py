@@ -9,9 +9,54 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import discover_speculative_studios as discovery
+import merge_discovery_datasets as merge_datasets
 
 
 class DiscoveryParsingTests(unittest.TestCase):
+    def test_same_day_manual_review_flag_survives_discovery_dataset_merge(self):
+        base = [{
+            "name": "Example Studio",
+            "country": "Canada",
+            "websiteUrl": "https://example-studio.example/",
+            "applicationUrl": "https://example-studio.example/apply",
+            "evidenceUrl": "https://example-studio.example/careers",
+            "notes": "Previously verified.",
+            "checkedAt": "2026-11-27",
+            "applicationResearch": {
+                "routeStatus": "active",
+                "nextReviewAt": "2027-02-25",
+            },
+        }]
+        incoming = [{
+            **base[0],
+            "notes": "Automated review: paused pending confirmation.",
+            "applicationResearch": {
+                "routeStatus": "paused",
+                "nextReviewAt": "2026-11-27",
+                "routeReview": {
+                    "status": "pending",
+                    "reason": "explicit_rejection",
+                    "firstDetectedAt": "2026-11-27",
+                    "lastDetectedAt": "2026-11-27",
+                    "consecutiveDetections": 1,
+                    "originalRouteStatus": "active",
+                    "evidence": [{
+                        "url": "https://example-studio.example/apply",
+                        "text": "We no longer accept spontaneous applications.",
+                        "httpStatus": 200,
+                    }],
+                },
+            },
+        }]
+        profiles = {"Example Studio": {}}
+        rows, _profiles, summary = merge_datasets.merge_datasets(
+            base, incoming, profiles, profiles
+        )
+        self.assertEqual(rows[0]["applicationResearch"]["routeStatus"], "paused")
+        self.assertEqual(rows[0]["applicationResearch"]["routeReview"]["status"], "pending")
+        self.assertEqual(summary["updated_routes"], 1)
+
+
     def test_wikidata_429_honours_retry_after_and_retries_once(self):
         class FakeResponse:
             def __enter__(self):
