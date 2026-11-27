@@ -673,7 +673,7 @@ async function main() {
       "The status selector icon should use the larger size too.",
     );
 
-    let status = page.getByLabel("Status for 4A Games");
+    status = page.getByLabel("Status for 4A Games");
 
     // Move through every tracker status. The Applied transition must require confirmation.
     await status.selectOption("in_progress");
