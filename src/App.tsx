@@ -294,10 +294,7 @@ export default function App() {
       <main className="page-container">
         {storageLoadError ? (
           <p className="storage-warning" role="alert">
-            {storageLoadError} The tracker is unavailable until the saved browser data can be read.
-            <button className="text-button" type="button" onClick={() => openTracker()}>
-              Open My applications to restore a backup
-            </button>
+            {storageLoadError} Tracker changes are disabled to protect the existing browser data.
           </p>
         ) : null}
         {storageError ? (
