@@ -323,7 +323,23 @@ def merge_datasets(
         existing_date = str(existing.get("checkedAt", ""))
         existing_name = str(existing.get("name", ""))
 
-        if incoming_date > existing_date:
+        incoming_research = incoming.get("applicationResearch") or {}
+        existing_research = existing.get("applicationResearch") or {}
+        incoming_has_pending_review = (
+            isinstance(incoming_research, dict)
+            and isinstance(incoming_research.get("routeReview"), dict)
+            and incoming_research["routeReview"].get("status") == "pending"
+        )
+        existing_has_pending_review = (
+            isinstance(existing_research, dict)
+            and isinstance(existing_research.get("routeReview"), dict)
+            and existing_research["routeReview"].get("status") == "pending"
+        )
+        # A newly detected route-review flag must not be lost just because an
+        # earlier successful fetch updated checkedAt on the same calendar day.
+        review_flag_added = incoming_has_pending_review and not existing_has_pending_review
+
+        if incoming_date > existing_date or review_flag_added:
             for field in route_fields:
                 if field in incoming:
                     existing[field] = copy.deepcopy(incoming[field])
