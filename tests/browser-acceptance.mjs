@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { chromium } from "playwright";
@@ -645,44 +645,35 @@ async function main() {
     let status = page.getByLabel("Status for 4A Games");
     assert.equal(await status.inputValue(), "saved");
 
-    // Editable notes, note search and browser-local persistence.
-    const notesButton = trackedRow.getByRole("button", { name: "Edit notes for 4A Games" });
-    await notesButton.click();
-    const notesInput = page.getByLabel("Application notes · 4A Games");
-    const savedNote = "Submitted via the studio careers portal; follow up next Tuesday.";
-    await notesInput.fill(savedNote);
-    await page.getByLabel("Search tracker").fill("follow up next Tuesday");
-    assert.equal(await trackedRow.count(), 1, "Tracker search should include application notes.");
-    await page.getByLabel("Search tracker").fill("");
-    await page.reload({ waitUntil: "networkidle" });
-    await page.getByRole("button", { name: /My applications/ }).click();
-    trackedRow = page.locator(".tracker-table tbody tr").filter({ has: page.locator(".status-select-label") }).filter({ hasText: "4A Games" });
-    assert.equal(await trackedRow.count(), 1, "The saved studio should remain after reload.");
-    await trackedRow.getByRole("button", { name: "Edit notes for 4A Games" }).click();
-    assert.equal(await page.getByLabel("Application notes · 4A Games").inputValue(), savedNote, "Application notes should persist after reload.");
+    // The application tracker stays focused on status, route context and removal.
+    assert.deepEqual(
+      (await page.locator(".tracker-table thead th").allTextContents()).map(label => label.trim()),
+      ["Studio", "Location", "Added", "Applied", "Official links", "Route context", "Status", "Remove"],
+      "The tracker should not show Notes or Prepare columns.",
+    );
+    assert.equal(await trackedRow.locator("td").count(), 8);
+    assert.equal(await page.locator(".tracker-table .notes-toggle, .tracker-table .tracker-preparation-count").count(), 0);
+    assert.equal(await page.locator(".tracker-notes-row, .tracker-preparation-row").count(), 0);
+    assert.equal(await page.getByRole("button", { name: /Export backup|Restore backup/ }).count(), 0);
+    assert.equal(await page.locator(".tracker-page input[type=\"file\"]").count(), 0);
 
-    // Prepare an application with a private checklist, employer requirements and draft answers.
-    await trackedRow.getByRole("button", { name: "Prepare application for 4A Games" }).click();
-    const requirementNotes = "The official form asks for a CV, portfolio URL, preferred discipline and a short motivation answer.";
-    const answerDrafts = "Motivation: I enjoy solving technical problems close to game development teams.\nDiscipline: Developer support / technical operations.";
-    await page.getByLabel("Official application route rechecked · 4A Games").check();
-    await page.getByLabel("Requirements and questions reviewed · 4A Games").check();
-    await page.getByLabel("Employer requirements & application questions · 4A Games").fill(requirementNotes);
-    await page.getByLabel("Draft answers & missing information · 4A Games").fill(answerDrafts);
-    await page.getByText("2 / 6 ready").waitFor();
-    await page.getByLabel("Search tracker").fill("preferred discipline");
-    assert.equal(await trackedRow.count(), 1, "Preparation notes should be included in tracker search.");
-    await page.getByLabel("Search tracker").fill("");
-    await page.reload({ waitUntil: "networkidle" });
-    await page.getByRole("button", { name: /My applications/ }).click();
-    trackedRow = page.locator(".tracker-table tbody tr").filter({ has: page.locator(".status-select-label") }).filter({ hasText: "4A Games" });
-    await trackedRow.waitFor();
-    await trackedRow.getByRole("button", { name: "Prepare application for 4A Games" }).click();
-    assert.equal(await page.getByLabel("Official application route rechecked · 4A Games").isChecked(), true);
-    assert.equal(await page.getByLabel("Requirements and questions reviewed · 4A Games").isChecked(), true);
-    assert.equal(await page.getByLabel("Employer requirements & application questions · 4A Games").inputValue(), requirementNotes);
-    assert.equal(await page.getByLabel("Draft answers & missing information · 4A Games").inputValue(), answerDrafts);
-    status = page.getByLabel("Status for 4A Games");
+    const tabIconMetrics = await page.locator(".tracker-tab-icon svg").evaluateAll(icons =>
+      icons.map(icon => ({
+        width: Number.parseFloat(getComputedStyle(icon).width),
+        height: Number.parseFloat(getComputedStyle(icon).height),
+        color: getComputedStyle(icon).color,
+      })),
+    );
+    assert.equal(tabIconMetrics.length, 6, "Each application status should have an icon.");
+    assert.ok(tabIconMetrics.every(icon => icon.width === 18 && icon.height === 18), "Status icons should be slightly larger at 18px.");
+    assert.equal(new Set(tabIconMetrics.map(icon => icon.color)).size, 6, "Each status icon should have its own color.");
+    assert.equal(
+      await page.locator(".status-select-icon svg").evaluate(icon => getComputedStyle(icon).width),
+      "18px",
+      "The status selector icon should use the larger size too.",
+    );
+
+    let status = page.getByLabel("Status for 4A Games");
 
     // Move through every tracker status. The Applied transition must require confirmation.
     await status.selectOption("in_progress");
@@ -738,27 +729,10 @@ async function main() {
       .filter({ hasText: "4A Games" });
     await trackedRow.waitFor();
 
-    // Export an application backup and verify that its note and progress history are included.
-    const [trackerBackupDownload] = await Promise.all([
-      page.waitForEvent("download"),
-      page.getByRole("button", { name: "Export backup" }).click(),
-    ]);
-    const trackerBackupPath = await trackerBackupDownload.path();
-    const trackerBackup = JSON.parse(readFileSync(trackerBackupPath, "utf8"));
-    assert.equal(trackerBackup.format, "game-industry-outreach-application-tracker");
-    assert.equal(trackerBackup.version, 1);
-    assert.equal(trackerBackup.applications.length, 1);
-    assert.equal(trackerBackup.applications[0].studioName, "4A Games");
-    assert.equal(trackerBackup.applications[0].status, "archived");
-    assert.equal(trackerBackup.applications[0].note, savedNote);
-    assert.equal(trackerBackup.applications[0].preparation.routeVerified, true);
-    assert.equal(trackerBackup.applications[0].preparation.requirementsReviewed, true);
-    assert.equal(trackerBackup.applications[0].preparation.requirementsNotes, requirementNotes);
-    assert.equal(trackerBackup.applications[0].preparation.draftAnswers, answerDrafts);
-
+    // Removal remains explicit and persists only in this browser.
     const cancelledRemoval = await performWithDialog(
       page,
-      () => trackedRow.getByRole("button", { name: "Remove" }).click(),
+      () => trackedRow.getByRole("button", { name: /Remove 4A Games/ }).click(),
       false,
     );
     assert.equal(cancelledRemoval.type, "confirm");
@@ -767,7 +741,7 @@ async function main() {
 
     await performWithDialog(
       page,
-      () => trackedRow.getByRole("button", { name: "Remove" }).click(),
+      () => trackedRow.getByRole("button", { name: /Remove 4A Games/ }).click(),
       true,
     );
     assert.equal(await trackedRow.count(), 0, "Confirming removal should delete the tracker record.");
@@ -776,68 +750,7 @@ async function main() {
     await page.getByText("No studios in this list yet.").waitFor();
     const storedAfterRemoval = await page.evaluate((key) => JSON.parse(localStorage.getItem(key) || "[]"), storageKey);
     assert.deepEqual(storedAfterRemoval, [], "Removal should persist in browser storage.");
-
-    // Restore the backup with explicit confirmation; the previous tracker data is replaced locally.
-    const trackerRestoreInput = page.locator(".tracker-page input[type=\"file\"][accept=\".json,application/json\"]");
-    const acceptedRestore = await performWithDialog(
-      page,
-      () => trackerRestoreInput.setInputFiles(trackerBackupPath),
-      true,
-    );
-    assert.equal(acceptedRestore.type, "confirm");
-    assert.match(acceptedRestore.message, /Replace the 0 application records currently in this browser/);
-    await page.getByText("Restored 1 application record in this browser.").waitFor();
-    await page.getByRole("tab", { name: /Archived/ }).click();
-    const restoredTrackerRow = page.locator(".tracker-table tbody tr")
-      .filter({ has: page.locator(".status-select-label") })
-      .filter({ hasText: "4A Games" });
-    await restoredTrackerRow.waitFor();
-    assert.equal(await page.getByLabel("Status for 4A Games").inputValue(), "archived");
-    await restoredTrackerRow.getByRole("button", { name: "Edit notes for 4A Games" }).click();
-    assert.equal(await page.getByLabel("Application notes · 4A Games").inputValue(), savedNote);
-    const storedAfterRestore = await page.evaluate((key) => JSON.parse(localStorage.getItem(key) || "[]"), storageKey);
-    assert.equal(storedAfterRestore.length, 1);
-    assert.equal(storedAfterRestore[0].studioName, "4A Games");
-
-    // A backup read must not overwrite tracker edits made while the file is being read.
-    await page.evaluate(() => {
-      const originalText = File.prototype.text;
-      let pauseNextRead = true;
-      Object.defineProperty(File.prototype, "text", {
-        configurable: true,
-        writable: true,
-        value: function () {
-          if (!pauseNextRead) return originalText.call(this);
-          pauseNextRead = false;
-          window.__trackerBackupReadStarted = true;
-          return new Promise((resolve, reject) => {
-            window.__releaseTrackerBackupRead = () => {
-              originalText.call(this).then(resolve, reject);
-            };
-          });
-        },
-      });
-    });
-    const raceRestoreInput = page.locator(".tracker-page input[type=\"file\"][accept=\".json,application/json\"]");
-    await raceRestoreInput.setInputFiles(trackerBackupPath);
-    await page.waitForFunction(() => window.__trackerBackupReadStarted === true);
-    const trackerNoteDuringImport = "Updated while the backup file was being read; keep this version.";
-    // The notes editor was opened above to verify the restored value; keep it open during the race.
-    await page.getByLabel("Application notes · 4A Games").fill(trackerNoteDuringImport);
-    await page.evaluate(() => window.__releaseTrackerBackupRead?.());
-    await page.getByText(/Your application tracker changed while the backup was being read/).waitFor();
-    assert.equal(
-      await page.getByLabel("Application notes · 4A Games").inputValue(),
-      trackerNoteDuringImport,
-      "An edit made while the backup was being read must remain visible.",
-    );
-    const trackerAfterCancelledImport = await page.evaluate((key) => JSON.parse(localStorage.getItem(key) || "[]"), storageKey);
-    assert.equal(trackerAfterCancelledImport.length, 1);
-    assert.equal(
-      trackerAfterCancelledImport[0].note,
-      trackerNoteDuringImport,
-      "A stale backup import must not replace the newer browser-local tracker note.",
-    );
+    assert.equal(await page.getByRole("button", { name: /Export backup|Restore backup/ }).count(), 0);
 
     // Check both mobile layouts and ensure the directory table scrolls inside its container.
     await page.getByRole("button", { name: "Browse studios" }).click();
@@ -872,7 +785,7 @@ async function main() {
       "The mobile tracker must not create horizontal page overflow.",
     );
 
-    // Corrupt saved tracker data must remain untouched until the user explicitly restores a backup.
+    // Corrupt browser-local tracker data is preserved; there is no backup UI to import/export.
     const recoveryPage = await context.newPage();
     const recoveryPageErrors = [];
     recoveryPage.on("pageerror", (error) => recoveryPageErrors.push(error.message));
@@ -892,8 +805,14 @@ async function main() {
     const recoveryAlert = recoveryPage.getByRole("alert");
     await recoveryAlert.getByText(/not valid JSON/).waitFor();
     await recoveryAlert.getByText(/original browser data has been left untouched/).waitFor();
-    await recoveryPage.getByRole("button", { name: "Open My applications to restore a backup" }).click();
+    await recoveryPage.getByRole("button", { name: /My applications/ }).click();
     await recoveryPage.getByRole("heading", { name: "My applications" }).waitFor();
+    assert.equal(await recoveryPage.getByRole("button", { name: /Export backup|Restore backup/ }).count(), 0);
+    assert.equal(await recoveryPage.locator(".tracker-page input[type=\"file\"]").count(), 0);
+    assert.deepEqual(
+      (await recoveryPage.locator(".tracker-table thead th").allTextContents()).map(label => label.trim()),
+      ["Studio", "Location", "Added", "Applied", "Official links", "Route context", "Status", "Remove"],
+    );
     const untouchedTrackerValue = await recoveryPage.evaluate(
       (key) => localStorage.getItem(key),
       storageKey,
@@ -903,33 +822,14 @@ async function main() {
       corruptedTrackerValue,
       "Loading malformed tracker data must not replace the original localStorage value.",
     );
-
-    const recoveryRestoreInput = recoveryPage.locator(
-      ".tracker-page input[type=\"file\"][accept=\".json,application/json\"]",
-    );
-    const recoveryRestore = await performWithDialog(
-      recoveryPage,
-      () => recoveryRestoreInput.setInputFiles(trackerBackupPath),
-      true,
-    );
-    assert.equal(recoveryRestore.type, "confirm");
-    assert.match(recoveryRestore.message, /Replace the 0 application records currently in this browser/);
-    await recoveryPage.getByText("Restored 1 application record in this browser.").waitFor();
-    const recoveredTracker = await recoveryPage.evaluate(
-      (key) => JSON.parse(localStorage.getItem(key) || "[]"),
-      storageKey,
-    );
-    assert.equal(recoveredTracker.length, 1);
-    assert.equal(recoveredTracker[0].studioName, "4A Games");
-    assert.equal(recoveredTracker[0].note, savedNote);
-    assert.deepEqual(recoveryPageErrors, [], "The tracker recovery flow should not throw browser errors.");
+    assert.deepEqual(recoveryPageErrors, [], "The tracker should report malformed local storage without browser errors.");
     await recoveryPage.close();
 
     assert.deepEqual(writeRequests, [], "Personal tracker actions must not issue network write requests.");
     assert.deepEqual(pageErrors, [], "The browser should not report uncaught application errors.");
 
     process.stdout.write(
-      "Browser acceptance passed: simplified navigation, directory filters/sorting/links and artwork, live directory-to-tracker status handoff, tracker backup/restore, save and reload persistence, all tracker statuses, editable/searchable/persistent notes, confirmation dialogs, removal, local-only storage, and desktop/mobile overflow checks.\n",
+      "Browser acceptance passed: simplified navigation, directory filters/sorting/links and artwork, live directory-to-tracker status handoff, color-coded tracker status icons, streamlined tracker columns, save and reload persistence, all tracker statuses, confirmation dialogs, removal, local-only storage, and desktop/mobile overflow checks.\n",
     );
     await context.close();
   } finally {
