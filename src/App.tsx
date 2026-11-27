@@ -295,7 +295,10 @@ export default function App() {
   }
 
   function openTrackedStudio(studioName: string) {
-    const application = applications.find(item => item.studioName === studioName);
+    const normalizedName = studioName.trim().toLocaleLowerCase();
+    const application = applications.find(
+      item => item.studioName.trim().toLocaleLowerCase() === normalizedName,
+    );
     if (!application) return;
     setTrackerInitialTab(application.status);
     setTrackerFocusApplicationId(application.id);
