@@ -909,7 +909,7 @@
     "applicationUrl": "https://ayelet.studio/jobs",
     "evidenceUrl": "https://ayelet.studio/jobs",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: Open application. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-20",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -922,7 +922,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-18"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -932,7 +932,7 @@
     "applicationUrl": "https://www.ereban.com/careers/open-position",
     "evidenceUrl": "https://www.ereban.com/contact/",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: open applications. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-20",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -944,7 +944,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-18"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -954,7 +954,7 @@
     "applicationUrl": "https://bananagun.games/",
     "evidenceUrl": "https://bananagun.games/",
     "notes": "The current official Careers page includes a Wildcard Open Application for any discipline and invites applicants to send their best work and explain what they would build. Applications are directed to jobs@bananagun.games. The wildcard route itself is marked flexible and does not state a work location; specific listed roles include hybrid and remote-friendly arrangements.",
-    "checkedAt": "2026-11-20",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -970,7 +970,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-18"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -980,7 +980,7 @@
     "applicationUrl": "https://www.bandit-island.com/careers",
     "evidenceUrl": "https://www.bandit-island.com/careers",
     "notes": "Official studio-controlled page explicitly invites open applications. Evidence: OPEN APPLICATION. Hiring geography is not inferred from headquarters.",
-    "checkedAt": "2026-11-20",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "open",
       "submissionMethods": [
@@ -992,7 +992,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-18"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1002,7 +1002,7 @@
     "applicationUrl": "https://www.barnstormgames.com/speculative-application/",
     "evidenceUrl": "https://www.barnstormgames.com/speculative-application/",
     "notes": "Dedicated Speculative Application page invites applications from candidates who do not see the right role advertised. Company registered in England and Wales.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "speculative",
       "submissionMethods": [
@@ -1014,7 +1014,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1024,7 +1024,7 @@
     "applicationUrl": "https://apply.workable.com/beamng/",
     "evidenceUrl": "https://www.beamng.gmbh/career/",
     "notes": "Official BeamNG careers page invites unsolicited applications. The company describes itself as remote-first, with HQ in Bremen and employees working around the globe; it does not state an unrestricted worldwide work-authorisation policy.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "unsolicited",
       "submissionMethods": [
@@ -1038,7 +1038,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1070,7 +1070,7 @@
     "applicationUrl": "https://betadwarfaps.bamboohr.com/careers/34",
     "evidenceUrl": "https://betadwarf.com/career",
     "notes": "Official Careers page accepts unsolicited applications only under its Unsolicited Internships section, linking to this BambooHR listing. The page asks applicants for a CV, cover letter and portfolio link. BetaDwarf states that internships are unpaid and must last at least three months. This is not a general unsolicited route for permanent roles.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "discipline_specific",
       "submissionMethods": [
@@ -1087,7 +1087,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "employer_managed_career_platform",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1123,7 +1123,7 @@
     "applicationUrl": "https://www.binaryimpact.de/jobs/",
     "evidenceUrl": "https://www.binaryimpact.de/jobs/",
     "notes": "Binary Impact's official Jobs page invites unsolicited applications by email to jobs@binaryimpact.de. It says remote work is possible from anywhere in Germany and asks applicants to include a cover letter. The legal/company name is Binary Impact GmbH.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -1137,7 +1137,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1147,7 +1147,7 @@
     "applicationUrl": "https://www.blacc.studio/",
     "evidenceUrl": "https://www.blacc.studio/",
     "notes": "The official site says candidates who do not find a matching role may submit a spontaneous application by email, including a portfolio and an explanation of their interests. The studio identifies itself as a game developer based in Izmir, founded in 2024; its first game is not yet publicly announced. Work model and applicant-country eligibility are not stated.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "spontaneous",
       "submissionMethods": [
@@ -1165,7 +1165,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
@@ -1175,7 +1175,7 @@
     "applicationUrl": "https://jobs.lever.co/blackbirdinteractive/498bb3c2-b23f-4aed-8fdd-ee80649e381d",
     "evidenceUrl": "https://jobs.lever.co/blackbirdinteractive/498bb3c2-b23f-4aed-8fdd-ee80649e381d",
     "notes": "Official Lever General Application invites candidates who do not fit current openings. Current eligibility is restricted to applicants legally eligible to work in Canada and residing in Canada; studio describes flexible, remote-first arrangements.",
-    "checkedAt": "2026-11-21",
+    "checkedAt": "2026-11-28",
     "applicationResearch": {
       "routeType": "general",
       "submissionMethods": [
@@ -1189,7 +1189,7 @@
       "relatedApplicationUrls": [],
       "routeStatus": "active",
       "sourceType": "official_company_site",
-      "nextReviewAt": "2027-02-19"
+      "nextReviewAt": "2027-02-26"
     }
   },
   {
